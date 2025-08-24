@@ -1,0 +1,220 @@
+/** ============================================================================
+    File: Text formatting
+    ITCSS Group: Base
+============================================================================= */
+
+p {
+  word-wrap: break-word;
+}
+
+hr {
+  height: 0.1rem;
+  margin: 2.3rem var(--space-rg) var(--space-rg);
+  border-style: unset;
+  background-color: slategray;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+  transition: all 200ms linear;
+  cursor: default;
+
+  // a:hover MUST come after a:link and a:visited
+  // a:active MUST come after a:hover
+
+  /* prettier-ignore */
+  &:link { color: inherit; }
+  /* prettier-ignore */
+  &:visited { color: inherit; }
+  /* prettier-ignore */
+  &:hover { color: inherit; }
+  /* prettier-ignore */
+  &:active { color: inherit; }
+  /* prettier-ignore */
+  &:focus { color: inherit; }
+
+  p & {
+    text-decoration: underline;
+  }
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+em {
+  font-family: var(--font-stack-serif);
+}
+
+mark {
+  display: inline-block;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: greenyellow;
+  color: inherit;
+}
+
+abbr,
+dfn {
+  text-decoration: unset;
+  font-variant: unset;
+
+  &[title] {
+    font-style: italic;
+    font-family: var(--font-stack-serif);
+    text-decoration: underline dotted;
+    cursor: default;
+  }
+}
+
+blockquote {
+  padding-left: var(--space-rg);
+  border-left: 0.3rem solid;
+}
+
+cite,
+q {
+  font-style: italic;
+  font-family: var(--font-stack-serif);
+}
+
+q {
+  quotes: '\201C''\201D''\2018''\2019';
+}
+
+del,
+s {
+  text-decoration: line-through;
+}
+
+u {
+  text-decoration: underline;
+}
+
+del,
+ins {
+  display: inline-block;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 0.6rem;
+}
+
+del {
+  background-color: lightpink;
+  color: red;
+}
+
+ins {
+  background-color: lightgreen;
+  color: green;
+  text-decoration: unset;
+
+  &::before {
+    content: '+ ';
+    color: green;
+    font-weight: bolder;
+  }
+}
+
+// time {}
+
+small,
+sub,
+sup {
+  font-size: var(--font-size-xs);
+}
+
+sub,
+sup {
+  line-height: 1;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+sup {
+  vertical-align: super;
+}
+
+address {
+  font-style: unset;
+}
+
+code,
+kbd,
+samp,
+var {
+  display: inline-block;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 0.6rem;
+  white-space: normal;
+}
+
+code,
+samp,
+var {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+code {
+  background-color: var(--ui-color-30);
+  color: lime;
+  font-family: var(--font-stack-monospace);
+}
+
+kbd {
+  border: 0.1rem solid var(--ui-color-80);
+  background-color: var(--ui-color-90);
+  color: var(--ui-color-30);
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  line-height: 2.2rem;
+}
+
+samp {
+  background-color: var(--ui-color-30);
+  color: var(--ui-color-90);
+  font-family: var(--font-stack-monospace);
+}
+
+var {
+  background-color: var(--ui-color-90);
+  color: var(--ui-color-30);
+  font-style: italic;
+}
+
+pre {
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  background-color: var(--ui-color-30);
+  color: var(--ui-color-90);
+  font-family: var(--font-stack-monospace);
+}
+
+// bdi, bdo {}
+
+ruby {
+  font-size: inherit;
+  line-height: 3;
+  text-align: center;
+}
+
+rp,
+rt {
+  font-size: 50%;
+  line-height: 1;
+  text-align: center;
+}
+
+/* END OF FILE ============================================================== */

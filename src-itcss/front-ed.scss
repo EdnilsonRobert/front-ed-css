@@ -1,0 +1,41 @@
+/** ============================================================================
+    Project: .front-ed CSS
+    ----------------------------------------------------------------------------
+    @description: Biblioteca CSS para uso pessoal de EdnilsonRobert
+    @author: EdnilsonRobert
+============================================================================= */
+
+// SETTINGS --------------------------------------------------------------------
+@use './1-settings/variables';
+@use './1-settings/colors';
+@use './1-settings/typography';
+
+// TOOLS -----------------------------------------------------------------------
+// @use './2-tools/';
+
+// GENERIC ---------------------------------------------------------------------
+@use './3-generics/reset';
+
+// BASE ------------------------------------------------------------------------
+@use './4-base/basic';
+@use './4-base/headlines';
+@use './4-base/text-formatting';
+@use './4-base/media';
+
+// OBJECTS ---------------------------------------------------------------------
+// @use './5-objects/headlines';
+// @use './5-objects/text-formatting';
+// @use './5-objects/media';
+
+// COMPONENTS ------------------------------------------------------------------
+// @use './6-components/';
+// grid, flex, toolbar, wireframe, cards
+
+// UTILS -----------------------------------------------------------------------
+@use './7-utils/utilities';
+
+// objects - layout classes
+// components - ui classes
+// trumps - utils
+
+/* END OF FILE ============================================================== */

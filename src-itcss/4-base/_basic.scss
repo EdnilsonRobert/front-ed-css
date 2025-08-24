@@ -1,0 +1,29 @@
+/** ============================================================================
+    File: Basic
+    ITCSS Group: Base
+============================================================================= */
+
+html,
+body {
+  min-height: 100dvh;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(---main-background-color);
+  color: var(--main-font-color);
+  font-weight: var(--font-weight-rg);
+  font-style: normal;
+  font-size: var(--font-size-rg);
+  font-family: var(--font-stack-sans);
+  line-height: var(--line-height-rg);
+  font-size-adjust: unset;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+}
+
+/* END OF FILE ============================================================== */

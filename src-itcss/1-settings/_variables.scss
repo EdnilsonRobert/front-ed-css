@@ -1,0 +1,18 @@
+/** ============================================================================
+    File: Variables
+    ITCSS Group: Settings
+============================================================================= */
+
+:root {
+  // SPACING -------------------------------------------------------------------
+  --spacing-unit: 2.4rem;
+
+  --space-xs: calc(var(--spacing-unit) / 4);
+  --space-sm: calc(var(--spacing-unit) / 2);
+  --space-rg: calc(var(--spacing-unit) * 1);
+  --space-md: calc(var(--spacing-unit) * 2);
+  --space-lg: calc(var(--spacing-unit) * 3);
+  --space-xl: calc(var(--spacing-unit) * 4);
+}
+
+/* END OF FILE ============================================================== */

@@ -1,0 +1,66 @@
+/** ============================================================================
+    File: Reset
+    ITCSS Group: Generics
+============================================================================= */
+
+// ALL HTML TAGS ---------------------------------------------------------------
+// Basic -------------------------------
+body, br, hr, html, h1, h2, h3, h4, h5, h6, p,
+// Semantic sectioning -----------------
+article, aside, data, details, dialog, div, footer, header, main, nav, search, section, span, summary,
+// Text formatting ---------------------
+a, abbr, address, b, bdi, bdo, blockquote, cite, code, del, dfn, em, i, ins, kbd, mark, pre, q, rp, rt, ruby, s, samp, small, strong, sub, sup, time, u, var, wbr,
+// Lists -------------------------------
+dd, dl, dt, li, menu, ol, ul,
+// Tables ------------------------------
+caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr,
+// Images and multimedia ---------------
+audio, canvas, figcaption, figure, img, map, picture, svg, video,
+// Forms -------------------------------
+button, datalist, fieldset, form, input, label, legend, meter, optgroup, option, output, progress, select, textarea,
+// Embedded ----------------------------
+iframe, object,
+// Scripting ---------------------------
+noscript,
+// External lib ------------------------
+ion-icon,
+// Pseudo-elements ---------------------
+::before, ::after {
+  box-sizing: border-box;
+  margin: unset;
+  padding: unset;
+}
+
+// Elemento utilizado pelo framework Electron ----------------------------------
+webview {
+  box-sizing: content-box;
+  margin: unset;
+  padding: unset;
+}
+
+// Elementos customizados ------------------------------------------------------
+custom-element {
+  box-sizing: border-box;
+}
+
+/*
+NOT APPLICABLE -----------------------------------------------------------------
+  Metadata:       base, head, link, meta, style, title
+  Images:         area,
+  Embedded:       source,
+  Scripting:      script,
+
+NOT TESTED ---------------------------------------------------------------------
+  Multimedia:     track
+  Embedded:       portal,
+  Mathml:         math,
+  Web components: template, slot,
+
+NOT SUPPORTED ------------------------------------------------------------------
+  keygen
+
+DEPRECATED ---------------------------------------------------------------------
+  acronym, applet, basefont, bgsound, big, blink, center, content, dir, embed, font, frame, frameset, hgroup, marquee, menuitem, nobr, noembed, noframes, param, plaintext, rb, rtc, shadow, spacer, strike, tt, xmp
+*/
+
+/* END OF FILE ============================================================== */

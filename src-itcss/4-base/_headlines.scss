@@ -1,0 +1,32 @@
+/** ============================================================================
+    File: Headlines
+    ITCSS Group: Base
+============================================================================= */
+
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: unset;
+  font-family: var(--font-stack-display);
+  line-height: var(--line-height-sm);
+  // font-variation-settings: 'wdth' 100;
+}
+
+/* prettier-ignore */
+h1 { font-size: var(--font-size-headline-1); }
+
+/* prettier-ignore */
+h2 { font-size: var(--font-size-headline-2); }
+
+/* prettier-ignore */
+h3 { font-size: var(--font-size-headline-3); }
+
+/* prettier-ignore */
+h4 { font-size: var(--font-size-headline-4); }
+
+/* prettier-ignore */
+h5 { font-size: var(--font-size-headline-5); }
+
+/* prettier-ignore */
+h6 { font-size: var(--font-size-headline-6); }
+
+/* END OF FILE ============================================================== */
