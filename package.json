@@ -1,18 +1,16 @@
 {
-  "name": "front-ed",
-  "version": "1.0.1",
-  "description": "Biblioteca CSS para uso pessoal de EdnilsonRobert",
-  "main": "main.js",
+  "name": "front-ed-css",
+  "version": "1.0.0",
+  "description": "Biblioteca CSS para uso pessoal de Ed Robert",
+  "main": "scripts.js",
+  "type": "commonjs",
   "scripts": {
-    "dev": "sass --watch --style=compressed src-itcss:dist"
+    "css": "sass source:css --style=compressed",
+    "dev": "sass --watch source:css --style=compressed"
   },
-  "keywords": [
-    "css",
-    "lib"
-  ],
   "author": "EdnilsonRobert",
   "license": "MIT",
   "devDependencies": {
-    "sass": "^1.90.0"
+    "sass": "^1.101.0"
   }
 }

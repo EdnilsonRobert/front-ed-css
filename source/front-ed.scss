@@ -1,0 +1,46 @@
+/* =============================================================================
+  Project: front-ed.css
+  ------------------------------------------------------------------------------
+  File: Front-Ed
+  Description: Biblioteca CSS para uso pessoal de Ed Robert
+  Author: Ed Robert
+============================================================================= */
+
+// SETTINGS - Global variables, config switches
+@use './1-settings/settings';
+
+// TOOLS - Default mixins and functions
+@use './2-tools/functions';
+
+// GENERIC - Ground-zero styles (3rd party, reset, normalize)
+@use './3-generic/reset';
+
+// ELEMENTS - Bare elements (unclassed HTML / type selectors)
+// @use './4-elements/basic-html';
+// @use './4-elements/bare-embedded';
+// @use './4-elements/bare-forms';
+// @use './4-elements/bare-images';
+// @use './4-elements/bare-lists';
+// @use './4-elements/bare-multimedia';
+// @use './4-elements/bare-scripting';
+// @use './4-elements/bare-tables';
+
+// OBJECTS - Layout classes, cosmetic-free design patterns
+// @use './5-objects/embedded';
+// @use './5-objects/forms';
+// @use './5-objects/headings';
+// @use './5-objects/images';
+// @use './5-objects/lists';
+// @use './5-objects/multimedia';
+// @use './5-objects/scripting';
+// @use './5-objects/tables';
+// @use './5-objects/text-formatting';
+
+// COMPONENTS - UI Classes, designed components, chunks of UI
+// @use './6-components/';
+
+// UTILITIES - IDs and !important, helpers and overrides
+// @use './7-utilities/text-utils';
+// @use './7-utilities/linter';
+
+/* END OF FILE ============================================================== */

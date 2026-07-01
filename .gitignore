@@ -1,8 +1,7 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+node_modules
+package-lock.json
 
-_notes.md
-index.html
-favicon.svg
+.vscode
+
+css/custom.css
+css/front-ed.css.map
