@@ -1,0 +1,109 @@
+/* =============================================================================
+  ITCSS layer: Elements
+  Bundle: Bare elements (unclassed HTML / type selectors)
+  File: Basic HTML
+============================================================================= */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--body-background);
+  color: var(--body-text);
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-family: var(--font-sans-text);
+  line-height: var(--lh-150);
+  font-optical-sizing: auto;
+  font-kerning: auto;
+}
+
+// main {}
+// header {}
+// article {}
+// section {}
+// aside {}
+// footer {}
+// nav {}
+// search {}
+
+address { font-style: unset; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-weight: var(--heading-weight);
+  font-style: normal;
+  font-family: var(--heading-font);
+  line-height: var(--lh-125);
+}
+
+h1 { font-size: 176%; } // 160% * 1.1
+h2 { font-size: 160%; } // 146% * 1.1
+h3 { font-size: 146%; } // 133% * 1.1
+h4 { font-size: 133%; } // 121% * 1.1
+h5 { font-size: 121%; } // 110% * 1.1
+h6 { font-size: 110%; } // 100% * 1.1
+
+p { overflow-wrap: break-word; }
+
+hr {
+  height: var(--ruler-height);
+  border-style: unset;
+  background-color: var(--ruler-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+  cursor: default;
+}
+
+b, strong { font-weight: bolder; }
+
+i, em { font-style: italic; }
+
+mark {
+  display: inline-block;
+  padding: 0 .6rem;
+  border-radius: .6rem;
+  background-color: var(--ui-color-2);
+  color: inherit;
+  line-height: inherit;
+}
+
+del, s {
+  text-decoration: line-through;
+}
+
+ins, u {
+  text-decoration: underline;
+}
+
+small { font-size: 1.4rem; }
+
+sub, sup {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+sub { vertical-align: sub; }
+sup { vertical-align: super; }
+
+code, kbd {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: inherit;
+}
+code { font-family: var(--font-monospace); }
+kbd { font-family: var(--font-sans-text); }
+
+dialog {
+  position: unset;
+  border: unset;
+  background-color: unset;
+}
+
+/* END OF FILE ============================================================== */

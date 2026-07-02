@@ -1,0 +1,34 @@
+/* =============================================================================
+  ITCSS layer: Objects
+  Bundle: Layout classes, cosmetic-free design patterns
+  File: Headings
+============================================================================= */
+
+.heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6 {
+  color: var(--heading-color);
+  font-weight: var(--heading-weight);
+}
+
+.heading-1 { font-size: 176%; } // 160% * 1.1
+.heading-2 { font-size: 160%; } // 146% * 1.1
+.heading-3 { font-size: 146%; } // 133% * 1.1
+.heading-4 { font-size: 133%; } // 121% * 1.1
+.heading-5 { font-size: 121%; } // 110% * 1.1
+.heading-6 { font-size: 110%; } // 100% * 1.1
+
+.overline, .caption {
+  font-size: 1.4rem;
+  line-height: var(--lh-125);
+}
+
+.overline {
+  padding: .3rem 0;
+  color: var(--heading-color-overline);
+}
+
+.caption {
+  padding: .6rem 0;
+  color: var(--heading-color-caption);
+}
+
+/* END OF FILE ============================================================== */

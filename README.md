@@ -21,20 +21,20 @@
 
 ### Settings - Global variables, config switches
 - [x] Color palette
-- [ ] Tipografia
+- [x] Tipografia
 
 ### Generic - Ground-zero styles (3rd party, reset, normalize)
 - [x] Reset
 
 ### Elements - Bare elements (unclassed HTML / type selectors)
-- [ ] Semantic sectioning
+- [x] Semantic sectioning
 - address, article, aside, footer, header, main, nav, search, section
-- [ ] Basic HTML
-- body, br, div, hr, html, h1, h2, h3, h4, h5, h6, p, span
-- [ ] Text Formatting
-- a, abbr, b, bdi, bdo, blockquote, cite, code, del, dfn, em, i, ins, kbd, mark, pre, q, rt, ruby, s, samp, small, strong, sub, sup, time, u, var, wbr
-- [ ] Interactive elements
-- details, dialog, summary
+- [x] Basic HTML
+- body, div, hr, html, h1, h2, h3, h4, h5, h6, p, span
+- [x] Text Formatting
+- a, b, code, del, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
+- [x] Interactive elements
+- dialog
 - [ ] Lists
 - dd, dl, dt, li, menu, ol, ul
 - [ ] Tables
@@ -80,8 +80,8 @@ canvas, noscript
 - [ ] [outros ...]
 
 ### Utilities - IDs and !important, helpers and overrides
-- [ ] Text utils
-- [ ] CSS linter
+- [X] Text utils
+- [X] CSS linter
 
 
 ---

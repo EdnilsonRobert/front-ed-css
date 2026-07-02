@@ -1,0 +1,92 @@
+/* =============================================================================
+  ITCSS layer: Objects
+  Bundle: Layout classes, cosmetic-free design patterns
+  File: Text formatting
+============================================================================= */
+
+// address {}
+
+.paragraph {
+  padding: .3rem 0;
+  text-indent: 2em;
+}
+
+.ruler { margin: var(--ruler-margin); }
+.ruler-33 { max-width: 33%; margin: var(--ruler-margin); }
+.ruler-50 { max-width: 50%; margin: var(--ruler-margin); }
+.ruler-66 { max-width: 66%; margin: var(--ruler-margin); }
+
+// a:hover MUST come after a:link and a:visited
+// a:active MUST come after a:hover
+.anchor {
+  display: inline-block;
+  border-bottom: .1rem solid;
+  transition: all 200ms linear;
+}
+.anchor:link    { color: var(--anchor-color-link); }
+.anchor:visited { color: var(--anchor-color-visited); }
+.anchor:hover   { color: var(--anchor-color-hover); }
+.anchor:active  { color: var(--anchor-color-active); }
+.anchor:focus   { color: var(--anchor-color-focus); }
+
+// b, strong {}
+// i, em {}
+
+.mark-red       { background-color: var(--red-2); }
+.mark-orange    { background-color: var(--orange-2); }
+.mark-gold      { background-color: var(--gold-2); }
+.mark-lime      { background-color: var(--lime-2); }
+.mark-green     { background-color: var(--green-2); }
+.mark-tiffany   { background-color: var(--tiffany-2); }
+.mark-blue      { background-color: var(--blue-2); }
+.mark-royalblue { background-color: var(--royalblue-2); }
+.mark-purple    { background-color: var(--purple-2); }
+.mark-brown     { background-color: var(--brown-2); }
+
+.text-del, .text-ins {
+  display: inline-block;
+  padding: 0 .6rem;
+  border-radius: .6rem;
+  line-height: inherit;
+}
+.text-del {
+  background-color: var(--red-2);
+  color: var(--red-8);
+}
+.text-ins {
+  text-decoration: unset;
+  background-color: var(--green-2);
+  color: var(--green-8);
+}
+
+.text-s {text-decoration: line-through var(--ui-color-5); }
+.text-u { text-decoration: underline var(--ui-color-5); }
+
+.font-small { font-size: 1.4rem; }
+
+.text-sub, .text-sup {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.text-sub { vertical-align: sub; }
+.text-sup { vertical-align: super; }
+
+.code, .kbd {
+  display: inline-block;
+  border-radius: .6rem;
+}
+.code {
+  padding: 0 .6rem;
+  background-color: var(--ui-color-8);
+  color: var(--lime-4);
+}
+.kbd {
+  padding: 0 1.2rem;
+  border: .1rem solid var(--ui-color-3);
+  background-color: var(--ui-color-1);
+  font-weight: var(--font-weight-bolder);
+}
+
+// dialog {}
+
+/* END OF FILE ============================================================== */

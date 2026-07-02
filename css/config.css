@@ -6,7 +6,55 @@
   Author: Ed Robert
 ============================================================================= */
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&display=swap');
+/* font-family: 'Libre Franklin', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap'); */
+/* font-family: 'Young Serif', serif; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap'); */
+/* font-family: 'Libre Baskerville', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+/* font-family: 'Source Code Pro', monospace; */
+
 :root {
+  /* TYPOGRAPHY ------------------------------------------------------------- */
+  --font-sans-display: 'Libre Franklin', sans-serif;
+  --font-sans-text: 'Open Sans', sans-serif;
+  --font-serif-display: 'Young Serif', serif;
+  --font-serif-text: 'Libre Baskerville', serif;
+  --font-monospace: 'Source Code Pro', monospace;
+
+  /* BASIC HTML ------------------------------------------------------------- */
+  --body-background: var(--ui-color-0);
+  --body-text: var(--ui-color-9);
+
+  --heading-font: var(--font-sans-display);
+  --heading-weight: unset;
+  --heading-color: var(--ui-color-8);
+  --heading-color-overline: var(--ui-color-8);
+  --heading-color-caption: var(--ui-color-6);
+
+  --ruler-height: .1rem;
+  --ruler-margin: 1.2rem auto;
+  --ruler-color: var(--ui-color-5);
+
+  /* TEXT FORMATTING -------------------------------------------------------- */
+  --font-weight-bolder: 600;
+
+  --lh-150: 1.5;
+  --lh-125: 1.25;
+
+  --anchor-color-link: var(--ui-color-7);
+  --anchor-color-visited: var(--ui-color-7);
+  --anchor-color-hover: var(--ui-color-9);
+  --anchor-color-active: var(--ui-color-9);
+  --anchor-color-focus: var(--ui-color-9);
+
   /* COLOR PALETTE ---------------------------------------------------------- */
   --ui-color:  hsl(210, 12%, 50%);
   --red:       hsl(348, 83%, 47%);
