@@ -60,6 +60,10 @@
   --blockquote-font: var(--font-serif-text);
   --blockquote-font-size: 1.6rem;
 
+  --list-spacing: .3rem 0;
+  --list-indent: 1em;
+  --list-marker-color: var(--ui-color-5);
+
   /* TEXT FORMATTING -------------------------------------------------------- */
   --lh-150: 1.5;
   --lh-125: 1.25;

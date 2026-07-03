@@ -35,7 +35,7 @@
 - a, b, code, del, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
 - [x] Interactive elements
 - dialog
-- [ ] Lists
+- [x] Lists
 - dd, dl, dt, li, menu, ol, ul
 - [ ] Tables
 - caption, table, tbody, td, tfoot, th, thead, tr
@@ -56,7 +56,7 @@ canvas, noscript
 - [x] Semantic sectioning
 - [x] Basic HTML
 - [x] Text Formatting
-- [ ] Lists
+- [x] Lists
 - [ ] Tables
 - [ ] Images
 - [ ] Audio and Video
