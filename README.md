@@ -37,7 +37,7 @@
 - dialog
 - [x] Lists
 - dd, dl, dt, li, menu, ol, ul
-- [ ] Tables
+- [x] Tables
 - caption, table, tbody, td, tfoot, th, thead, tr
 - [ ] Images
 - figcaption, figure, img, meter, picture, progress, svg
@@ -57,7 +57,7 @@ canvas, noscript
 - [x] Basic HTML
 - [x] Text Formatting
 - [x] Lists
-- [ ] Tables
+- [x] Tables
 - [ ] Images
 - [ ] Audio and Video
 - [ ] Embedded

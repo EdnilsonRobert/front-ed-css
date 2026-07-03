@@ -1,0 +1,41 @@
+/* =============================================================================
+  ITCSS layer: Elements
+  Bundle: Bare elements (unclassed HTML / type selectors)
+  File: Tables
+============================================================================= */
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+caption {
+  margin-bottom: .6rem;
+  font-size: 1.6rem;
+}
+
+thead {
+  border-top: .1rem solid var(--table-border-color);
+  border-bottom: .1rem solid var(--table-border-color);
+}
+
+// tbody {}
+// tfoot {}
+
+tbody tr, tfoot tr {
+  border-bottom: .1rem solid var(--table-border-color);
+}
+
+th {
+  padding: var(--table-cell-padding);
+  font-weight: var(--table-header-font);
+  line-height: 1.5;
+}
+
+td {
+  padding: var(--table-cell-padding);
+  line-height: 1.5;
+}
+
+/* END OF FILE ============================================================== */
