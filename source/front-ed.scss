@@ -21,7 +21,7 @@
 @use './4-elements/bare-tables';
 @use './4-elements/bare-images';
 @use './4-elements/bare-multimedia';
-// @use './4-elements/bare-embedded';
+@use './4-elements/bare-embedded';
 // @use './4-elements/bare-forms';
 // @use './4-elements/bare-scripting';
 
@@ -32,7 +32,7 @@
 @use './5-objects/tables';
 @use './5-objects/images';
 @use './5-objects/multimedia';
-// @use './5-objects/embedded';
+@use './5-objects/embedded';
 // @use './5-objects/forms';
 // @use './5-objects/scripting';
 

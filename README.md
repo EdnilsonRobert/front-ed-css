@@ -43,7 +43,7 @@
 - figcaption, figure, img, meter, picture, progress, svg
 - [x] Audio and Video
 - audio, video
-- [ ] Embedded
+- [x] Embedded
 - iframe, object
 - [ ] Scripting
 canvas, noscript
@@ -60,7 +60,7 @@ canvas, noscript
 - [x] Tables
 - [x] Images
 - [x] Audio and Video
-- [ ] Embedded
+- [x] Embedded
 - [ ] Scripting
 - [ ] Forms
 - [ ] External lib

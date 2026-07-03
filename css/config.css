@@ -81,6 +81,9 @@
   --table-cell-padding: .3rem 1.2rem;
   --table-colgroup-highlight: var(--ui-color-1);
 
+  /* Embedded --------------------------------------------------------------- */
+  --embed-aspect-ratio: 16 / 9;
+
   /* COLOR PALETTE ---------------------------------------------------------- */
   --ui-color:  hsl(220, 24%, 44%);
   --red:       hsl(348, 83%, 47%);

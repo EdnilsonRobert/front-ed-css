@@ -1,0 +1,20 @@
+/* =============================================================================
+  ITCSS layer: Elements
+  Bundle: Bare elements (unclassed HTML / type selectors)
+  File: Embedded
+============================================================================= */
+
+object {
+  display: block;
+  min-width: 100%;
+  aspect-ratio: var(--embed-aspect-ratio);
+}
+
+iframe {
+  display: block;
+  min-width: 100%;
+  aspect-ratio: var(--embed-aspect-ratio);
+  border: unset;
+}
+
+/* END OF FILE ============================================================== */
