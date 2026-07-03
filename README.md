@@ -41,7 +41,7 @@
 - caption, table, tbody, td, tfoot, th, thead, tr
 - [x] Images
 - figcaption, figure, img, meter, picture, progress, svg
-- [ ] Audio and Video
+- [x] Audio and Video
 - audio, video
 - [ ] Embedded
 - iframe, object
@@ -59,7 +59,7 @@ canvas, noscript
 - [x] Lists
 - [x] Tables
 - [x] Images
-- [ ] Audio and Video
+- [x] Audio and Video
 - [ ] Embedded
 - [ ] Scripting
 - [ ] Forms

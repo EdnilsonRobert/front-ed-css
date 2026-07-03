@@ -1,0 +1,19 @@
+/* =============================================================================
+  ITCSS layer: Elements
+  Bundle: Bare elements (unclassed HTML / type selectors)
+  File: Multimedia (audio and video)
+============================================================================= */
+
+audio {
+  display: block;
+  width: 100%;
+}
+
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* END OF FILE ============================================================== */

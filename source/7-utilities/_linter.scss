@@ -6,43 +6,37 @@
 
 img:not([alt]) {
   padding: .6rem;
-  border-radius: 0 0 .6rem .6rem;
   border: .6rem solid var(--red-5);
   background-color: var(--red-1);
 }
+
+audio:not([controls]) { display: none; }
+
+video:not([controls]) {
+  padding: .6rem;
+  border: .6rem solid var(--red-5);
+  background-color: var(--red-1);
+}
+
 :has( > img:not([alt]))::before { content: 'img requer um atributo alt'; }
-:has( > img:not([alt]))::before {
+:has( > audio:not([controls]))::before {
+  content: 'audio requer um atributo controls';
+}
+:has( > video:not([controls]))::before {
+  content: 'video requer um atributo controls';
+}
+
+:has( > img:not([alt]))::before,
+:has( > audio:not([controls]))::before,
+:has( > video:not([controls]))::before {
   display: block;
   padding: .6rem 1.2rem;
-  border-radius: .6rem .6rem .6rem 0;
   background-color: var(--red-5);
   color: var(--ui-color-0);
   font-size: 1.4rem;
 }
 
 /*
-audio:not([controls]) { display: none; }
-
-video:not([controls]) {
-  padding: .6rem;
-  border-radius: .6rem;
-  border: .6rem solid crimson;
-  background-color: white;
-}
-
-:has( > audio:not([controls]))::before { content: 'audio requer um atributo controls.'; }
-:has( > video:not([controls]))::before { content: 'video requer um atributo controls.'; }
-
-:has( > audio:not([controls]))::before,
-:has( > video:not([controls]))::before {
-  display: inline-block;
-  padding: .3rem .6rem;
-  border-radius: .6rem;
-  background-color: crimson;
-  color: white;
-  font-size: 1.4rem;
-}
-
 // DEPRECATED ------------------------------------------------------------------
 hgroup::after, center::after, dir::after,
 :has(> acronym)::after, :has(> big)::after, :has(> blink)::after,
