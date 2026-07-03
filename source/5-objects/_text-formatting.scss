@@ -6,15 +6,30 @@
 
 // address {}
 
-.paragraph {
-  padding: .3rem 0;
-  text-indent: 2em;
-}
-
-.ruler { margin: var(--ruler-margin); }
+.ruler    { margin: var(--ruler-margin); }
 .ruler-33 { max-width: 33%; margin: var(--ruler-margin); }
 .ruler-50 { max-width: 50%; margin: var(--ruler-margin); }
 .ruler-66 { max-width: 66%; margin: var(--ruler-margin); }
+
+.paragraph {
+  padding: var(--paragraph-spacing);
+  text-indent: var(--paragraph-indent);
+}
+
+.blockquote {
+  padding: 1.2rem 1em .6rem 2rem;
+  border-radius: 0 .6rem .6rem 0;
+  border-left: .3rem solid var(--blockquote-border);
+  background-color: var(--blockquote-background);
+  font-family: var(--blockquote-font);
+  text-indent: var(--paragraph-indent);
+}
+.quotation {
+  quotes: auto;
+  font-size: var(--blockquote-font-size);
+  &::before { content: open-quote; }
+  &::after  { content: close-quote; }
+}
 
 // a:hover MUST come after a:link and a:visited
 // a:active MUST come after a:hover
@@ -74,6 +89,7 @@
 .code, .kbd {
   display: inline-block;
   border-radius: .6rem;
+  line-height: inherit;
 }
 .code {
   padding: 0 .6rem;

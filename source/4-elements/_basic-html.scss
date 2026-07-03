@@ -4,6 +4,7 @@
   File: Basic HTML
 ============================================================================= */
 
+// Basic HTML ------------------------------------------------------------------
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -15,12 +16,26 @@ body {
   color: var(--body-text);
   font-weight: 400;
   font-size: 1.6rem;
-  font-family: var(--font-sans-text);
+  font-family: var(--body-font);
   line-height: var(--lh-150);
   font-optical-sizing: auto;
   font-kerning: auto;
 }
 
+hr {
+  height: var(--ruler-height);
+  border-style: unset;
+  background-color: var(--ruler-color);
+}
+
+p { overflow-wrap: break-word; }
+
+blockquote {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+// Semantic sectioning ---------------------------------------------------------
 // main {}
 // header {}
 // article {}
@@ -32,6 +47,7 @@ body {
 
 address { font-style: unset; }
 
+// Headings --------------------------------------------------------------------
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-weight: var(--heading-weight);
@@ -39,22 +55,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   line-height: var(--lh-125);
 }
+h1 { font-size: var(--heading-1-size); }
+h2 { font-size: var(--heading-2-size); }
+h3 { font-size: var(--heading-3-size); }
+h4 { font-size: var(--heading-4-size); }
+h5 { font-size: var(--heading-5-size); }
+h6 { font-size: var(--heading-6-size); }
 
-h1 { font-size: 176%; } // 160% * 1.1
-h2 { font-size: 160%; } // 146% * 1.1
-h3 { font-size: 146%; } // 133% * 1.1
-h4 { font-size: 133%; } // 121% * 1.1
-h5 { font-size: 121%; } // 110% * 1.1
-h6 { font-size: 110%; } // 100% * 1.1
-
-p { overflow-wrap: break-word; }
-
-hr {
-  height: var(--ruler-height);
-  border-style: unset;
-  background-color: var(--ruler-color);
-}
-
+// Text formatting -------------------------------------------------------------
 a {
   color: inherit;
   text-decoration: unset;

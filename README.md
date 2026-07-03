@@ -12,8 +12,8 @@
 
 ## Build
 
-- config.css
-- front-ed.css
+- `./css/config.css`
+- `./css/front-ed.css`
 
 ## Biblioteca
 
@@ -53,10 +53,9 @@ canvas, noscript
 - ion-icon
 
 ### Objects - Layout classes, cosmetic-free design patterns
-- [ ] Semantic sectioning
-- [ ] Basic HTML
-- [ ] Text Formatting
-- [ ] Interactive elements
+- [x] Semantic sectioning
+- [x] Basic HTML
+- [x] Text Formatting
 - [ ] Lists
 - [ ] Tables
 - [ ] Images
