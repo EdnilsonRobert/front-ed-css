@@ -1,0 +1,17 @@
+/* =============================================================================
+  ITCSS layer: Elements
+  Bundle: Bare elements (unclassed HTML / type selectors)
+  File: Scripting
+============================================================================= */
+
+noscript {
+  display: block;
+  padding: .6rem 1.2rem;
+  background-color: var(--red-5);
+  color: var(--ui-color-0);
+  font-size: 1.4rem;
+}
+
+canvas { background-color: var(--ui-color-1); }
+
+/* END OF FILE ============================================================== */

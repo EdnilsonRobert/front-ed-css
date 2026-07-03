@@ -511,6 +511,48 @@
         </div>
     </div>
 
+    <!-- Scripting -->
+    <div class="container" id="scripting">
+        <div class="wrapper">
+            <noscript>&lt;noscript&gt; Este conteúdo está dentro de um noscript</noscript>
+
+            <figure>
+                <canvas id="js-canvas1" width="128" height="128"></canvas>
+                <canvas id="js-canvas2" width="128" height="128"></canvas>
+                <canvas id="js-canvas3" width="128" height="128"></canvas>
+
+                <script>
+                    // CANVAS #1
+                    const canvas1 = document.querySelector('#js-canvas1');
+                    let ctx1 = canvas1.getContext('2d');
+                    ctx1.fillStyle = 'hsl(220, 24%, 44%)';
+                    ctx1.fillRect(20,20,88,88);
+
+                    // CANVAS #2
+                    const canvas2 = document.querySelector('#js-canvas2');
+                    let ctx2 = canvas2.getContext('2d');
+                    ctx2.beginPath();
+                    ctx2.arc(64,64,50,0,2*Math.PI);
+                    ctx2.lineWidth = 6;
+                    ctx2.strokeStyle = 'hsl(220, 24%, 44%)';
+                    ctx2.stroke();
+
+                    // CANVAS #3
+                    const canvas3 = document.querySelector('#js-canvas3');
+                    let ctx3 = canvas3.getContext('2d');
+                    ctx3.fillStyle = 'hsl(220, 24%, 90%)';
+                    ctx3.strokeStyle = 'hsl(220, 24%, 44%)';
+                    ctx3.lineWidth = 6;
+                    ctx3.font = 'bold 24px sans-serif';
+                    ctx3.fillRect(0,0,128,128);
+                    ctx3.strokeText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
+                    ctx3.fillText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
+                </script>
+                <figcaption>&lt;canvas&gt; Canvas [gráficos via script]</figcaption>
+            </figure>
+        </div>
+    </div>
+
 </body>
 
 </html>

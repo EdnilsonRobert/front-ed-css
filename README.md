@@ -45,7 +45,7 @@
 - audio, video
 - [x] Embedded
 - iframe, object
-- [ ] Scripting
+- [x] Scripting
 canvas, noscript
 - [ ] Forms
 - button, datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
@@ -61,7 +61,7 @@ canvas, noscript
 - [x] Images
 - [x] Audio and Video
 - [x] Embedded
-- [ ] Scripting
+- [x] Scripting
 - [ ] Forms
 - [ ] External lib
 
