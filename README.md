@@ -39,7 +39,7 @@
 - dd, dl, dt, li, menu, ol, ul
 - [x] Tables
 - caption, table, tbody, td, tfoot, th, thead, tr
-- [ ] Images
+- [x] Images
 - figcaption, figure, img, meter, picture, progress, svg
 - [ ] Audio and Video
 - audio, video
@@ -58,7 +58,7 @@ canvas, noscript
 - [x] Text Formatting
 - [x] Lists
 - [x] Tables
-- [ ] Images
+- [x] Images
 - [ ] Audio and Video
 - [ ] Embedded
 - [ ] Scripting

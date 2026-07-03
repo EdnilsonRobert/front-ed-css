@@ -4,14 +4,23 @@
   File: Linter
 ============================================================================= */
 
-/*
 img:not([alt]) {
   padding: .6rem;
-  border-radius: .6rem;
-  border: .6rem solid crimson;
-  background-color: white;
+  border-radius: 0 0 .6rem .6rem;
+  border: .6rem solid var(--red-5);
+  background-color: var(--red-1);
+}
+:has( > img:not([alt]))::before { content: 'img requer um atributo alt'; }
+:has( > img:not([alt]))::before {
+  display: block;
+  padding: .6rem 1.2rem;
+  border-radius: .6rem .6rem .6rem 0;
+  background-color: var(--red-5);
+  color: var(--ui-color-0);
+  font-size: 1.4rem;
 }
 
+/*
 audio:not([controls]) { display: none; }
 
 video:not([controls]) {
@@ -21,11 +30,9 @@ video:not([controls]) {
   background-color: white;
 }
 
-:has( > img:not([alt]))::before { content: 'img requer um atributo alt.'; }
 :has( > audio:not([controls]))::before { content: 'audio requer um atributo controls.'; }
 :has( > video:not([controls]))::before { content: 'video requer um atributo controls.'; }
 
-:has( > img:not([alt]))::before,
 :has( > audio:not([controls]))::before,
 :has( > video:not([controls]))::before {
   display: inline-block;

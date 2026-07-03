@@ -1,0 +1,23 @@
+/* =============================================================================
+  ITCSS layer: Elements
+  Bundle: Bare elements (unclassed HTML / type selectors)
+  File: Images
+============================================================================= */
+
+// picture {}
+// figure {}
+
+figcaption { font-size: 1.4rem; }
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+meter, progress {
+  display: block;
+  width: 100%;
+}
+
+/* END OF FILE ============================================================== */
