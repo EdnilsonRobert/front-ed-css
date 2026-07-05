@@ -23,7 +23,7 @@
 @use './4-elements/bare-multimedia';
 @use './4-elements/bare-embedded';
 @use './4-elements/bare-scripting';
-// @use './4-elements/bare-forms';
+@use './4-elements/bare-forms';
 
 // OBJECTS - Layout classes, cosmetic-free design patterns
 @use './5-objects/headings';
@@ -34,7 +34,8 @@
 @use './5-objects/multimedia';
 @use './5-objects/embedded';
 @use './5-objects/scripting';
-// @use './5-objects/forms';
+@use './5-objects/buttons';
+@use './5-objects/forms';
 
 // COMPONENTS - UI Classes, designed components, chunks of UI
 // @use './6-components/';

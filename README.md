@@ -32,7 +32,7 @@
 - [x] Basic HTML
 - body, div, hr, html, h1, h2, h3, h4, h5, h6, p, span
 - [x] Text Formatting
-- a, b, code, del, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
+- a, b, blockquote, code, del, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
 - [x] Interactive elements
 - dialog
 - [x] Lists
@@ -47,7 +47,7 @@
 - iframe, object
 - [x] Scripting
 canvas, noscript
-- [ ] Forms
+- [x] Forms
 - button, datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
 - [ ] External lib
 - ion-icon
@@ -62,7 +62,7 @@ canvas, noscript
 - [x] Audio and Video
 - [x] Embedded
 - [x] Scripting
-- [ ] Forms
+- [x] Forms
 - [ ] External lib
 
 ### Components - UI Classes, designed components, chunks of UI

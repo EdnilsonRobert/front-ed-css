@@ -553,6 +553,195 @@
         </div>
     </div>
 
+    <!-- Forms -->
+    <div class="container" id="forms">
+        <div class="wrapper">
+            <form>
+                <fieldset>
+                    <legend>&lt;button&gt; Botões</legend>
+                    <button type="button">type button</button>
+                    <button type="reset">type reset</button>
+                    <button type="submit">type submit</button>
+                    <button type="button" disabled="disabled">disabled</button>
+                    <button type="button"><img src="./assets/send.svg" alt="Send form"> type image</button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Inputs do tipo texto</legend>
+                    <label for="text1">
+                        <span>Input com placeholder</span>
+                        <input type="text" name="text1" id="text1" placeholder="Placeholder">
+                    </label>
+                    <label for="text2">
+                        <span>Input com valor preenchido</span>
+                        <input type="text" name="text2" id="text2" value="Preenchido com texto">
+                    </label>
+                    <label for="text3">
+                        <span>Campo desabilitado</span>
+                        <input type="text" name="text3" id="text3" value="Desabilitado" disabled="disabled">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Outros inputs de texto</legend>
+                    <label for="email">
+                        <span>E-mail</span>
+                        <input type="email" name="email" id="email" value="user@email.com">
+                    </label>
+                    <label for="password">
+                        <span>Senha</span>
+                        <input type="password" name="password" id="password" placeholder="password">
+                    </label>
+                    <label for="search">
+                        <span>Busca</span>
+                        <input type="search" name="search" id="search" placeholder="Buscar...">
+                    </label>
+                    <label for="tel">
+                        <span>Telefone</span>
+                        <input type="tel" name="tel" id="tel" value="99 12345 6789">
+                    </label>
+                    <label for="url">
+                        <span>URL</span>
+                        <input type="url" name="url" id="url" value="https://valid.url">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Caixa para entrada de texto</legend>
+                    <label for="textarea">
+                        <span>Mensagem</span>
+                        <textarea name="textarea" id="textarea" rows="5" cols="25">Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Inputs para seleção de valores</legend>
+                    <div>
+                        <label for="checkbox1">
+                            <span>Normal</span>
+                            <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
+                        </label>
+                        <label for="checkbox2">
+                            <span>Checado</span>
+                            <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2" checked="checked">
+                        </label>
+                        <label for="checkbox3">
+                            <span>Desabilitado</span>
+                            <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox4" disabled="disabled">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="radio1">
+                            <span>Normal</span>
+                            <input type="radio" name="radio" id="radio1" value="radio1">
+                        </label>
+                        <label for="radio2">
+                            <span>Checado</span>
+                            <input type="radio" name="radio" id="radio2" value="radio2" checked="checked">
+                        </label>
+                        <label for="radio3">
+                            <span>Desabilitado</span>
+                            <input type="radio" name="radio" id="radio3" value="radio3" disabled="disabled">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Campos de seleção</legend>
+                    <label for="select1">
+                        <span>Seleção (sem optgroup)</span>
+                        <select name="select1" id="select1">
+                            <option disabled selected hidden>Selecione...</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                        </select>
+                    </label>
+
+                    <label for="select2">
+                        <span>Seleção (com optgroup)</span>
+                        <select name="select2" id="select2">
+                            <option disabled selected hidden>Selecione...</option>
+                            <optgroup label="HTML">
+                                <option value="HTML Tags">HTML Tags</option>
+                                <option value="HTML Attributes">HTML Attributes</option>
+                            </optgroup>
+                            <optgroup label="CSS">
+                                <option value="CSS level 1.0">CSS level 1.0</option>
+                                <option value="CSS level 2.1">CSS level 2.1</option>
+                                <option value="CSS level 3.0">CSS level 3.0</option>
+                            </optgroup>
+                            <optgroup label="JavaScript">
+                                <option value="JS Functions">JS Vanilla</option>
+                                <option value="JS Objects">JS Frameworks</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Outros tipos de input</legend>
+                    <label for="color">
+                        <span>Cor</span>
+                        <input type="color" name="color" id="color" value="#424242">
+                    </label>
+                    <label for="number">
+                        <span>Número [0-9]</span>
+                        <input type="number" name="number" id="number" min="0" max="9" step="1" value="3">
+                    </label>
+
+                    <label for="range">
+                        <span>Range [0-100]</span>
+                        <input type="range" name="range" id="range" min="0" max="100" step="20" list="markers">
+                        <datalist id="markers">
+                            <option value="0"></option>
+                            <option value="20"></option>
+                            <option value="40"></option>
+                            <option value="60"></option>
+                            <option value="80"></option>
+                            <option value="100"></option>
+                        </datalist>
+                    </label>
+                </fieldset>
+
+                <fieldset oninput="output.value=parseInt(a.value)+parseInt(b.value)">
+                    <legend>Saída [output]</legend>
+                    <span>[0-9]</span>
+                    <input type="number" name="a" id="a" min="0" max="9" value="0">
+                    <span>+ [0-9]</span>
+                    <input type="number" name="b" id="b" min="0" max="9" value="0">
+                    <span>=</span>
+                    <label for="output">
+                        <span>Output:</span>
+                        <output name="output" id="output" for="a b">0</output>
+                    </label>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!-- Deprecated -->
+    <div class="container" id="deprecated">
+        <div class="wrapper">
+            <hgroup>A tag &lt;hgroup&gt; para agrupar cabeçalhos foi descontinuada</hgroup>
+
+            <p>Esta linha contém <acronym>texto marcado</acronym> com a tag descontinuada <b>&lt;acronym&gt;</b></p>
+            <p>Esta linha contém <big>texto marcado</big> com a tag descontinuada <b>&lt;big&gt;</b></p>
+            <p>Esta linha contém <blink>texto marcado</blink> com a tag descontinuada <b>&lt;blink&gt;</b></p>
+            <p><center>Esta linha contém texto marcado com a tag descontinuada <b>&lt;center&gt;</b></center></p>
+            <p>Esta linha contém <font>texto marcado</font> com a tag descontinuada <b>&lt;font&gt;</b></p>
+            <p><marquee>Esta linha contém texto marcado com a tag descontinuada <b>&lt;marquee&gt;</b></marquee></p>
+            <p>Esta linha contém <strike>texto marcado</strike> com a tag descontinuada <b>&lt;strike&gt;</b></p>
+            <p>Esta linha contém <tt>texto marcado</tt> com a tag descontinuada <b>&lt;tt&gt;</b></p>
+
+            <dir compact="compact">
+                <li>&lt;dir&gt; Lista de diretórios</li>
+                <li>&lt;li&gt; Item da lista</li>
+                <li>&lt;li&gt; Item da lista</li>
+            </dir>
+        </div>
+    </div>
+
 </body>
 
 </html>
