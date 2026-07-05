@@ -4,6 +4,7 @@
   File: Linter
 ============================================================================= */
 
+// Atributos obrigatórios e recomendados
 img:not([alt]) {
   padding: .6rem;
   border: .6rem solid var(--red-5);
@@ -36,20 +37,37 @@ video:not([controls]) {
   font-size: 1.4rem;
 }
 
-/*
 // DEPRECATED ------------------------------------------------------------------
-hgroup::after, center::after, dir::after,
-:has(> acronym)::after, :has(> big)::after, :has(> blink)::after,
-:has(> font)::after, :has(> marquee)::after, :has(> strike)::after,
-:has(> tt)::after {
-  content: 'Não utilize esta tag';
-  display: inline-block;
-  margin-left: 1.2rem;
-  padding: .3rem .6rem;
-  border-radius: .6rem;
-  background-color: crimson;
-  color: white;
-  font-size: 1.4rem;
+acronym, applet, big, blink, center, dir, embed, font, hgroup, marquee, menuitem, plaintext, strike, tt, xmp
+{
+  background-color: var(--red-2);
+  color: var(--red-8);
 }
+
+applet, dir, embed, hgroup, xmp,
+:has(> acronym), :has(> big), :has(> blink), :has(> center), :has(> font), :has(> marquee), :has(> menuitem), :has(> plaintext), :has(> strike), :has(> tt) {
+  &::after {
+    content: 'Há tag descontinuada na marcação do HTML, utilize outra tag.';
+    display: block;
+    padding: .6rem 1.2rem;
+    background-color: var(--red-5);
+    color: var(--ui-color-0);
+    font-size: 1.4rem;
+  }
+}
+
+[align], [background], [bgcolor], [border], [color], [compact], [language], [nowrap] {
+  &::after {
+    content: 'Há atributos descontinuados na marcação do HTML.';
+    display: block;
+    padding: .6rem 1.2rem;
+    background-color: var(--red-5);
+    color: var(--ui-color-0);
+    font-size: 1.4rem;
+  }
+}
+
+/*
+u { text-decoration: red wavy underline; }
 
 /* END OF FILE ============================================================== */

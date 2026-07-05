@@ -49,7 +49,7 @@
 canvas, noscript
 - [x] Forms
 - button, datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
-- [ ] External lib
+- [x] External lib
 - ion-icon
 
 ### Objects - Layout classes, cosmetic-free design patterns
@@ -81,6 +81,8 @@ canvas, noscript
 ### Utilities - IDs and !important, helpers and overrides
 - [X] Text utils
 - [X] CSS linter
+- atributos obrigatórios ou recomendados em tags
+- tags e atributos marcados com status deprecated
 
 
 ---
