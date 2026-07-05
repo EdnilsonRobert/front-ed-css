@@ -5,6 +5,25 @@
 ============================================================================= */
 
 // Atributos obrigatórios e recomendados
+html:not([lang])::before {
+  content: 'html requer um atributo lang';
+}
+html:not(:has(meta[charset]))::before {
+  content: 'html requer uma meta tag charset';
+}
+html:not(:has(meta[name="viewport"]))::before {
+  content: 'html requer uma meta tag viewport';
+}
+html:not([lang])::before,
+html:not(:has(meta[charset]))::before,
+html:not(:has(meta[name="viewport"]))::before {
+  display: block;
+  padding: .6rem 1.2rem;
+  background-color: var(--red-5);
+  color: var(--ui-color-0);
+  font-size: 1.4rem;
+}
+
 img:not([alt]) {
   padding: .6rem;
   border: .6rem solid var(--red-5);
@@ -66,8 +85,5 @@ applet, dir, embed, hgroup, xmp,
     font-size: 1.4rem;
   }
 }
-
-/*
-u { text-decoration: red wavy underline; }
 
 /* END OF FILE ============================================================== */
