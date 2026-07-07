@@ -1,18 +1,11 @@
 /* =============================================================================
-  ITCSS layer: Elements
-  Bundle: Bare elements (unclassed HTML / type selectors)
-  File: Embedded
+  ITCSS layer: Utilities
+  Bundle: IDs and !important, helpers and overrides
+  File: Color utilities
 ============================================================================= */
 
-object {
-  display: block;
-  min-width: 100%;
-}
+[data-bg] { background-color: attr(data-bg type(<color>)); }
 
-iframe {
-  display: block;
-  min-width: 100%;
-  border: unset;
-}
+[data-color] { color: attr(data-color type(<color>)); }
 
 /* END OF FILE ============================================================== */

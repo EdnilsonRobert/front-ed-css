@@ -4,26 +4,24 @@
   File: Lists
 ============================================================================= */
 
-.ol-list { padding: var(--list-spacing); }
-// .ol-list-item {}
-
+// .ol-list {}
 // .ol-inner-list {}
-// .ol-inner-list-item {}
 
-.ul-list { padding: var(--list-spacing); }
-// .ul-list-item {}
-
+// .ul-list {}
 // .ul-inner-list {}
-// .ul-inner-list-item {}
 
-.menu { padding: var(--list-spacing); }
-// .menu-item {}
+// .menu {}
 
-// .inner-menu {}
-// .inner-menu-item {}
-
-.dl-list { padding: var(--list-spacing); }
+// .dl-list {}
 // .dl-list-dt {}
-// .dl-list-dd {}
+
+.ol-list-item,
+.ol-inner-list-item,
+.ul-list-item,
+.ul-inner-list-item,
+.menu-item,
+.dl-list-dd {
+  padding-block: var(--list-spacing);
+}
 
 /* END OF FILE ============================================================== */

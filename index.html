@@ -38,143 +38,205 @@
 <body class="body">
 
     <header class="toolbar" data-bg="var(--ui-color-1)">
-        <div class="toolbar-wrapper">
+        <div class="flex-row row-lb gap-md">
             <img src="./favicon.svg" alt="favicon">
-            <h1 class="font-semibold" data-color="var(--ui-color-5)">
+            <h1 class="heading-1 font-semibold" data-color="var(--ui-color-5)">
                 .front-<span data-color="var(--ui-color-9)">ed</span>.css
             </h1>
         </div>
     </header>
 
-    <div class="container" id="color-palette">
-        <div class="wrapper">
-            <div class="palette-grid">
-                <span style="background-color: hsl(220, 24%, 44%);">ui-color</span>
-                <span style="background-color: hsl(220, 24%, 90%);">1</span>
-                <span style="background-color: hsl(220, 24%, 78%);">2</span>
-                <span style="background-color: hsl(220, 24%, 67%);">3</span>
-                <span style="background-color: hsl(220, 24%, 55%);">4</span>
-                <span style="background-color: hsl(220, 24%, 44%);">5</span>
-                <span style="background-color: hsl(220, 24%, 39%);">6</span>
-                <span style="background-color: hsl(220, 24%, 34%);">7</span>
-                <span style="background-color: hsl(220, 24%, 29%);">8</span>
-                <span style="background-color: hsl(220, 24%, 25%);">9</span>
+    <!-- Color palette -->
+    <div class="container-fluid" id="color-palette">
+         <p class="section-title">Color palette</p>
+         <p class="section-subtitle">UI Color + 10 colors</p>
 
-                <span style="background-color: hsl(348, 83%, 47%);">red</span>
-                <span style="background-color: hsl(348, 83%, 90%);">1</span>
-                <span style="background-color: hsl(348, 83%, 80%);">2</span>
-                <span style="background-color: hsl(348, 83%, 69%);">3</span>
-                <span style="background-color: hsl(348, 83%, 58%);">4</span>
-                <span style="background-color: hsl(348, 83%, 47%);">5</span>
-                <span style="background-color: hsl(348, 83%, 41%);">6</span>
-                <span style="background-color: hsl(348, 83%, 36%);">7</span>
-                <span style="background-color: hsl(348, 83%, 30%);">8</span>
-                <span style="background-color: hsl(348, 83%, 25%);">9</span>
+         <div class="palette-grid">
+            <span style="background-color: hsl(220, 24%, 44%);">ui-color</span>
+            <span style="background-color: hsl(220, 24%, 90%);">1</span>
+            <span style="background-color: hsl(220, 24%, 78%);">2</span>
+            <span style="background-color: hsl(220, 24%, 67%);">3</span>
+            <span style="background-color: hsl(220, 24%, 55%);">4</span>
+            <span style="background-color: hsl(220, 24%, 44%);">5</span>
+            <span style="background-color: hsl(220, 24%, 39%);">6</span>
+            <span style="background-color: hsl(220, 24%, 34%);">7</span>
+            <span style="background-color: hsl(220, 24%, 29%);">8</span>
+            <span style="background-color: hsl(220, 24%, 25%);">9</span>
 
-                <span style="background-color: hsl(33, 100%, 50%);">orange</span>
-                <span style="background-color: hsl(33, 100%, 90%);">1</span>
-                <span style="background-color: hsl(33, 100%, 80%);">2</span>
-                <span style="background-color: hsl(33, 100%, 70%);">3</span>
-                <span style="background-color: hsl(33, 100%, 60%);">4</span>
-                <span style="background-color: hsl(33, 100%, 50%);">5</span>
-                <span style="background-color: hsl(33, 100%, 44%);">6</span>
-                <span style="background-color: hsl(33, 100%, 38%);">7</span>
-                <span style="background-color: hsl(33, 100%, 32%);">8</span>
-                <span style="background-color: hsl(33, 100%, 25%);">9</span>
+            <span style="background-color: hsl(348, 83%, 47%);">red</span>
+            <span style="background-color: hsl(348, 83%, 90%);">1</span>
+            <span style="background-color: hsl(348, 83%, 80%);">2</span>
+            <span style="background-color: hsl(348, 83%, 69%);">3</span>
+            <span style="background-color: hsl(348, 83%, 58%);">4</span>
+            <span style="background-color: hsl(348, 83%, 47%);">5</span>
+            <span style="background-color: hsl(348, 83%, 41%);">6</span>
+            <span style="background-color: hsl(348, 83%, 36%);">7</span>
+            <span style="background-color: hsl(348, 83%, 30%);">8</span>
+            <span style="background-color: hsl(348, 83%, 25%);">9</span>
 
-                <span style="background-color: hsl(51, 100%, 50%);">gold</span>
-                <span style="background-color: hsl(51, 100%, 90%);">1</span>
-                <span style="background-color: hsl(51, 100%, 80%);">2</span>
-                <span style="background-color: hsl(51, 100%, 70%);">3</span>
-                <span style="background-color: hsl(51, 100%, 60%);">4</span>
-                <span style="background-color: hsl(51, 100%, 50%);">5</span>
-                <span style="background-color: hsl(51, 100%, 44%);">6</span>
-                <span style="background-color: hsl(51, 100%, 38%);">7</span>
-                <span style="background-color: hsl(51, 100%, 32%);">8</span>
-                <span style="background-color: hsl(51, 100%, 25%);">9</span>
+            <span style="background-color: hsl(33, 100%, 50%);">orange</span>
+            <span style="background-color: hsl(33, 100%, 90%);">1</span>
+            <span style="background-color: hsl(33, 100%, 80%);">2</span>
+            <span style="background-color: hsl(33, 100%, 70%);">3</span>
+            <span style="background-color: hsl(33, 100%, 60%);">4</span>
+            <span style="background-color: hsl(33, 100%, 50%);">5</span>
+            <span style="background-color: hsl(33, 100%, 44%);">6</span>
+            <span style="background-color: hsl(33, 100%, 38%);">7</span>
+            <span style="background-color: hsl(33, 100%, 32%);">8</span>
+            <span style="background-color: hsl(33, 100%, 25%);">9</span>
 
-                <span style="background-color: hsl(90, 100%, 50%);">lime</span>
-                <span style="background-color: hsl(90, 100%, 90%);">1</span>
-                <span style="background-color: hsl(90, 100%, 80%);">2</span>
-                <span style="background-color: hsl(90, 100%, 70%);">3</span>
-                <span style="background-color: hsl(90, 100%, 60%);">4</span>
-                <span style="background-color: hsl(90, 100%, 50%);">5</span>
-                <span style="background-color: hsl(90, 100%, 44%);">6</span>
-                <span style="background-color: hsl(90, 100%, 38%);">7</span>
-                <span style="background-color: hsl(90, 100%, 32%);">8</span>
-                <span style="background-color: hsl(90, 100%, 25%);">9</span>
+            <span style="background-color: hsl(51, 100%, 50%);">gold</span>
+            <span style="background-color: hsl(51, 100%, 90%);">1</span>
+            <span style="background-color: hsl(51, 100%, 80%);">2</span>
+            <span style="background-color: hsl(51, 100%, 70%);">3</span>
+            <span style="background-color: hsl(51, 100%, 60%);">4</span>
+            <span style="background-color: hsl(51, 100%, 50%);">5</span>
+            <span style="background-color: hsl(51, 100%, 44%);">6</span>
+            <span style="background-color: hsl(51, 100%, 38%);">7</span>
+            <span style="background-color: hsl(51, 100%, 32%);">8</span>
+            <span style="background-color: hsl(51, 100%, 25%);">9</span>
 
-                <span style="background-color: hsl(120, 61%, 50%);">green</span>
-                <span style="background-color: hsl(120, 61%, 90%);">1</span>
-                <span style="background-color: hsl(120, 61%, 80%);">2</span>
-                <span style="background-color: hsl(120, 61%, 70%);">3</span>
-                <span style="background-color: hsl(120, 61%, 60%);">4</span>
-                <span style="background-color: hsl(120, 61%, 50%);">5</span>
-                <span style="background-color: hsl(120, 61%, 44%);">6</span>
-                <span style="background-color: hsl(120, 61%, 38%);">7</span>
-                <span style="background-color: hsl(120, 61%, 32%);">8</span>
-                <span style="background-color: hsl(120, 61%, 25%);">9</span>
+            <span style="background-color: hsl(90, 100%, 50%);">lime</span>
+            <span style="background-color: hsl(90, 100%, 90%);">1</span>
+            <span style="background-color: hsl(90, 100%, 80%);">2</span>
+            <span style="background-color: hsl(90, 100%, 70%);">3</span>
+            <span style="background-color: hsl(90, 100%, 60%);">4</span>
+            <span style="background-color: hsl(90, 100%, 50%);">5</span>
+            <span style="background-color: hsl(90, 100%, 44%);">6</span>
+            <span style="background-color: hsl(90, 100%, 38%);">7</span>
+            <span style="background-color: hsl(90, 100%, 32%);">8</span>
+            <span style="background-color: hsl(90, 100%, 25%);">9</span>
 
-                <span style="background-color: hsl(174, 72%, 56%);">tiffany</span>
-                <span style="background-color: hsl(174, 72%, 90%);">1</span>
-                <span style="background-color: hsl(174, 72%, 81%);">2</span>
-                <span style="background-color: hsl(174, 72%, 73%);">3</span>
-                <span style="background-color: hsl(174, 72%, 64%);">4</span>
-                <span style="background-color: hsl(174, 72%, 56%);">5</span>
-                <span style="background-color: hsl(174, 72%, 48%);">6</span>
-                <span style="background-color: hsl(174, 72%, 40%);">7</span>
-                <span style="background-color: hsl(174, 72%, 32%);">8</span>
-                <span style="background-color: hsl(174, 72%, 25%);">9</span>
+            <span style="background-color: hsl(120, 61%, 50%);">green</span>
+            <span style="background-color: hsl(120, 61%, 90%);">1</span>
+            <span style="background-color: hsl(120, 61%, 80%);">2</span>
+            <span style="background-color: hsl(120, 61%, 70%);">3</span>
+            <span style="background-color: hsl(120, 61%, 60%);">4</span>
+            <span style="background-color: hsl(120, 61%, 50%);">5</span>
+            <span style="background-color: hsl(120, 61%, 44%);">6</span>
+            <span style="background-color: hsl(120, 61%, 38%);">7</span>
+            <span style="background-color: hsl(120, 61%, 32%);">8</span>
+            <span style="background-color: hsl(120, 61%, 25%);">9</span>
 
-                <span style="background-color: hsl(210, 100%, 56%);">blue</span>
-                <span style="background-color: hsl(210, 100%, 90%);">1</span>
-                <span style="background-color: hsl(210, 100%, 81%);">2</span>
-                <span style="background-color: hsl(210, 100%, 73%);">3</span>
-                <span style="background-color: hsl(210, 100%, 64%);">4</span>
-                <span style="background-color: hsl(210, 100%, 56%);">5</span>
-                <span style="background-color: hsl(210, 100%, 48%);">6</span>
-                <span style="background-color: hsl(210, 100%, 40%);">7</span>
-                <span style="background-color: hsl(210, 100%, 32%);">8</span>
-                <span style="background-color: hsl(210, 100%, 25%);">9</span>
+            <span style="background-color: hsl(174, 72%, 56%);">tiffany</span>
+            <span style="background-color: hsl(174, 72%, 90%);">1</span>
+            <span style="background-color: hsl(174, 72%, 81%);">2</span>
+            <span style="background-color: hsl(174, 72%, 73%);">3</span>
+            <span style="background-color: hsl(174, 72%, 64%);">4</span>
+            <span style="background-color: hsl(174, 72%, 56%);">5</span>
+            <span style="background-color: hsl(174, 72%, 48%);">6</span>
+            <span style="background-color: hsl(174, 72%, 40%);">7</span>
+            <span style="background-color: hsl(174, 72%, 32%);">8</span>
+            <span style="background-color: hsl(174, 72%, 25%);">9</span>
 
-                <span style="background-color: hsl(225, 73%, 56%);">royalblue</span>
-                <span style="background-color: hsl(225, 73%, 90%);">1</span>
-                <span style="background-color: hsl(225, 73%, 81%);">2</span>
-                <span style="background-color: hsl(225, 73%, 73%);">3</span>
-                <span style="background-color: hsl(225, 73%, 64%);">4</span>
-                <span style="background-color: hsl(225, 73%, 56%);">5</span>
-                <span style="background-color: hsl(225, 73%, 48%);">6</span>
-                <span style="background-color: hsl(225, 73%, 40%);">7</span>
-                <span style="background-color: hsl(225, 73%, 32%);">8</span>
-                <span style="background-color: hsl(225, 73%, 25%);">9</span>
+            <span style="background-color: hsl(210, 100%, 56%);">blue</span>
+            <span style="background-color: hsl(210, 100%, 90%);">1</span>
+            <span style="background-color: hsl(210, 100%, 81%);">2</span>
+            <span style="background-color: hsl(210, 100%, 73%);">3</span>
+            <span style="background-color: hsl(210, 100%, 64%);">4</span>
+            <span style="background-color: hsl(210, 100%, 56%);">5</span>
+            <span style="background-color: hsl(210, 100%, 48%);">6</span>
+            <span style="background-color: hsl(210, 100%, 40%);">7</span>
+            <span style="background-color: hsl(210, 100%, 32%);">8</span>
+            <span style="background-color: hsl(210, 100%, 25%);">9</span>
 
-                <span style="background-color: hsl(280, 61%, 50%);">purple</span>
-                <span style="background-color: hsl(280, 61%, 90%);">1</span>
-                <span style="background-color: hsl(280, 61%, 80%);">2</span>
-                <span style="background-color: hsl(280, 61%, 70%);">3</span>
-                <span style="background-color: hsl(280, 61%, 60%);">4</span>
-                <span style="background-color: hsl(280, 61%, 50%);">5</span>
-                <span style="background-color: hsl(280, 61%, 44%);">6</span>
-                <span style="background-color: hsl(280, 61%, 38%);">7</span>
-                <span style="background-color: hsl(280, 61%, 32%);">8</span>
-                <span style="background-color: hsl(280, 61%, 25%);">9</span>
+            <span style="background-color: hsl(225, 73%, 56%);">royalblue</span>
+            <span style="background-color: hsl(225, 73%, 90%);">1</span>
+            <span style="background-color: hsl(225, 73%, 81%);">2</span>
+            <span style="background-color: hsl(225, 73%, 73%);">3</span>
+            <span style="background-color: hsl(225, 73%, 64%);">4</span>
+            <span style="background-color: hsl(225, 73%, 56%);">5</span>
+            <span style="background-color: hsl(225, 73%, 48%);">6</span>
+            <span style="background-color: hsl(225, 73%, 40%);">7</span>
+            <span style="background-color: hsl(225, 73%, 32%);">8</span>
+            <span style="background-color: hsl(225, 73%, 25%);">9</span>
 
-                <span style="background-color: hsl(19, 56%, 40%);">brown</span>
-                <span style="background-color: hsl(19, 56%, 90%);">1</span>
-                <span style="background-color: hsl(19, 56%, 77%);">2</span>
-                <span style="background-color: hsl(19, 56%, 65%);">3</span>
-                <span style="background-color: hsl(19, 56%, 52%);">4</span>
-                <span style="background-color: hsl(19, 56%, 40%);">5</span>
-                <span style="background-color: hsl(19, 56%, 36%);">6</span>
-                <span style="background-color: hsl(19, 56%, 32%);">7</span>
-                <span style="background-color: hsl(19, 56%, 28%);">8</span>
-                <span style="background-color: hsl(19, 56%, 25%);">9</span>
-            </div>
+            <span style="background-color: hsl(280, 61%, 50%);">purple</span>
+            <span style="background-color: hsl(280, 61%, 90%);">1</span>
+            <span style="background-color: hsl(280, 61%, 80%);">2</span>
+            <span style="background-color: hsl(280, 61%, 70%);">3</span>
+            <span style="background-color: hsl(280, 61%, 60%);">4</span>
+            <span style="background-color: hsl(280, 61%, 50%);">5</span>
+            <span style="background-color: hsl(280, 61%, 44%);">6</span>
+            <span style="background-color: hsl(280, 61%, 38%);">7</span>
+            <span style="background-color: hsl(280, 61%, 32%);">8</span>
+            <span style="background-color: hsl(280, 61%, 25%);">9</span>
+
+            <span style="background-color: hsl(19, 56%, 40%);">brown</span>
+            <span style="background-color: hsl(19, 56%, 90%);">1</span>
+            <span style="background-color: hsl(19, 56%, 77%);">2</span>
+            <span style="background-color: hsl(19, 56%, 65%);">3</span>
+            <span style="background-color: hsl(19, 56%, 52%);">4</span>
+            <span style="background-color: hsl(19, 56%, 40%);">5</span>
+            <span style="background-color: hsl(19, 56%, 36%);">6</span>
+            <span style="background-color: hsl(19, 56%, 32%);">7</span>
+            <span style="background-color: hsl(19, 56%, 28%);">8</span>
+            <span style="background-color: hsl(19, 56%, 25%);">9</span>
         </div>
     </div>
 
+    <!-- Basic HTML -->
+    <div class="container-fluid" id="basic-html">
+        <p class="section-title">Basic HTML</p>
+        <p class="section-subtitle">Bare elements</p>
+
+        <h1>Alien, o oitavo passageiro</h1>
+        <p>Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
+        <h2>O reconhecimento da obra</h2>
+        <p>Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
+        <h3>O sucesso de franquia Alien</h3>
+        <p>O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
+        <h4>Sinopse da obra</h4>
+        <p>Uma nave espacial, ao retornar para Terra, recebe estranhos sinais vindos de um asteróide. Ao investigarem o local, um dos tripulantes é atacado por um estranho ser. O que parecia ser um ataque isolado se transforma em um terror constante, pois o tripulante atacado levou para dentro da nave o embrião de um alienígena, que não para de crescer e tem como meta matar toda a tripulação.</p>
+        <h5>Elenco do filme</h5>
+        <p>Tom Skerritt (Capitão Dallas), Sigourney Weaver (Tenente Ellen L. Ripley), Veronica Cartwright (Lambert), John Hurt (Kane), Harry Dean Stanton (Brett), Yaphet Kotto (Parker), Ian Holm (Ash), Bolaji Badejo (Xenomorfo).</p>
+        <h6>Outros filmes da franquia</h6>
+        <p>Aliens (1986), Alien 3 (1992) e Alien Resurrection (1997), Prometheus (2012) e Alien: Covenant (2017).</p>
+
+        <blockquote>
+            <p>Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</p>
+        </blockquote>
+
+        <hr class="ruler">
+
+        <p class="section-subtitle">Formatted</p>
+
+        <p class="overline">Filme em destaque</p>
+        <h1 class="heading-1">Alien, o oitavo passageiro</h1>
+        <p class="caption">Data de lançamento: 1979</p>
+        <p class="paragraph">Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
+
+        <h2 class="heading-2">O reconhecimento da obra</h2>
+        <p class="paragraph">Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
+
+        <h3 class="heading-3">O sucesso de franquia Alien</h3>
+        <p class="paragraph">O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
+
+        <h4 class="heading-4">Sinopse da obra</h4>
+        <p class="paragraph">Uma nave espacial, ao retornar para Terra, recebe estranhos sinais vindos de um asteróide. Ao investigarem o local, um dos tripulantes é atacado por um estranho ser. O que parecia ser um ataque isolado se transforma em um terror constante, pois o tripulante atacado levou para dentro da nave o embrião de um alienígena, que não para de crescer e tem como meta matar toda a tripulação.</p>
+
+        <h5 class="heading-5">Elenco do filme</h5>
+        <p class="paragraph">Tom Skerritt (Capitão Dallas), Sigourney Weaver (Tenente Ellen L. Ripley), Veronica Cartwright (Lambert), John Hurt (Kane), Harry Dean Stanton (Brett), Yaphet Kotto (Parker), Ian Holm (Ash), Bolaji Badejo (Xenomorfo).</p>
+
+        <h6 class="heading-6">Outros filmes da franquia</h6>
+        <p class="paragraph">Aliens (1986), Alien 3 (1992) e Alien Resurrection (1997), Prometheus (2012) e Alien: Covenant (2017).</p>
+
+        <hr class="ruler">
+        <hr class="ruler-66">
+        <hr class="ruler-50">
+        <hr class="ruler-33">
+
+        <blockquote class="blockquote">
+            <p class="quotation">Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</p>
+            <p class="caption text-right">Ash (Alien, o oitavo passageiro - 1979)</p>
+        </blockquote>
+    </div>
+
     <!-- Semantic sectioning -->
-    <div class="container" id="semantig-sectioning">
+    <div class="container-fluid" id="semantig-sectioning">
+        <p class="section-title">Semantic sectioning</p>
+        <p class="section-subtitle">Bare elements</p>
+
         <main>&lt;main&gt; Este conteúdo está dentro de um main content.</main>
         <header>&lt;header&gt; Este conteúdo está dentro de um header.</header>
         <article>&lt;article&gt; Este conteúdo está dentro de um article.</article>
@@ -186,538 +248,464 @@
         <address>&lt;address&gt; Este conteúdo está dentro de um address.</address>
     </div>
 
-    <!-- Basic HTML -->
-    <div class="container" id="basic-html">
-        <div class="wrapper">
-            <h1>Alien, o oitavo passageiro</h1>
-            <p>Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
-            <h2>O reconhecimento da obra</h2>
-            <p>Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
-            <h3>O sucesso de franquia Alien</h3>
-            <p>O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
-            <h4>Sinopse da obra</h4>
-            <p>Uma nave espacial, ao retornar para Terra, recebe estranhos sinais vindos de um asteróide. Ao investigarem o local, um dos tripulantes é atacado por um estranho ser. O que parecia ser um ataque isolado se transforma em um terror constante, pois o tripulante atacado levou para dentro da nave o embrião de um alienígena, que não para de crescer e tem como meta matar toda a tripulação.</p>
-            <h5>Elenco do filme</h5>
-            <p>Tom Skerritt (Capitão Dallas), Sigourney Weaver (Tenente Ellen L. Ripley), Veronica Cartwright (Lambert), John Hurt (Kane), Harry Dean Stanton (Brett), Yaphet Kotto (Parker), Ian Holm (Ash), Bolaji Badejo (Xenomorfo).</p>
-            <h6>Outros filmes da franquia</h6>
-            <p>Aliens (1986), Alien 3 (1992) e Alien Resurrection (1997), Prometheus (2012) e Alien: Covenant (2017).</p>
-            <blockquote>
-                <p>Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</p>
-            </blockquote>
-        </div>
-
-        <hr>
-
-        <div class="wrapper">
-            <p class="overline">Filme em destaque</p>
-            <h1 class="heading-1">Alien, o oitavo passageiro</h1>
-            <p class="caption">Data de lançamento: 1979</p>
-            <p class="paragraph">Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
-            <h2 class="heading-2">O reconhecimento da obra</h2>
-            <p class="paragraph">Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
-            <h3 class="heading-3">O sucesso de franquia Alien</h3>
-            <p class="paragraph">O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
-            <h4 class="heading-4">Sinopse da obra</h4>
-            <p class="paragraph">Uma nave espacial, ao retornar para Terra, recebe estranhos sinais vindos de um asteróide. Ao investigarem o local, um dos tripulantes é atacado por um estranho ser. O que parecia ser um ataque isolado se transforma em um terror constante, pois o tripulante atacado levou para dentro da nave o embrião de um alienígena, que não para de crescer e tem como meta matar toda a tripulação.</p>
-            <h5 class="heading-5">Elenco do filme</h5>
-            <p class="paragraph">Tom Skerritt (Capitão Dallas), Sigourney Weaver (Tenente Ellen L. Ripley), Veronica Cartwright (Lambert), John Hurt (Kane), Harry Dean Stanton (Brett), Yaphet Kotto (Parker), Ian Holm (Ash), Bolaji Badejo (Xenomorfo).</p>
-            <h6 class="heading-6">Outros filmes da franquia</h6>
-            <p class="paragraph">Aliens (1986), Alien 3 (1992) e Alien Resurrection (1997), Prometheus (2012) e Alien: Covenant (2017).</p>
-            <blockquote class="blockquote">
-                <p class="quotation">Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</p>
-                <p class="caption text-right">Ash (Alien, o oitavo passageiro - 1979)</p>
-            </blockquote>
-
-        </div>
-    </div>
-
-    <hr class="ruler">
-    <hr class="ruler-66">
-    <hr class="ruler-50">
-    <hr class="ruler-33">
-
     <!-- Text Formatting -->
-    <div class="container" id="text-formatting">
-        <div class="wrapper">
-            <div>&lt;div&gt; Este conteúdo está dentro de uma block division.</div>
-            <p>&lt;span&gt; <span>Este é um exemplo de span (inline division) em um parágrafo</span>.</p>
+    <div class="container-fluid" id="text-formatting">
+        <p class="section-title">Text formatting</p>
+        <p class="section-subtitle">Bare elements</p>
 
-            <p>&lt;a&gt; <a href="./">Este é um exemplo de link em um págrafo</a>.</p>
+        <div>&lt;div&gt; Este conteúdo está dentro de uma block division.</div>
+        <p>&lt;span&gt; <span>Este é um exemplo de span (inline division) em um parágrafo</span>.</p>
 
-            <p>&lt;b&gt; <b>Este é um exemplo de texto grafado em negrito em um parágrafo</b>.</p>
-            <p>&lt;strong&gt; <strong>Este é um exemplo de texto marcado como importante em um parágrafo</strong>.</p>
-            <p>&lt;i&gt; <i>Este é um exemplo de texto itálico em um parágrafo</i>.</p>
-            <p>&lt;em&gt; <em>Este é um exemplo de ênfase de texto em um parágrafo</em>.</p>
-            <p>&lt;mark&gt; <mark>Este é um exemplo de marca texto em um parágrafo</mark>.</p>
+        <p>&lt;a&gt; <a href="./">Este é um exemplo de link em um págrafo</a>.</p>
 
-            <p>&lt;del&gt; <del cite="why-deleted.html" datetime="2012-07-04">Este é um exemplo de texto deletado em um parágrafo</del>.</p>
-            <p>&lt;ins&gt; <ins cite="why-inserted.html" datetime="2012-07-04">Este é um exemplo de texto inserido em um parágrafo</ins>.</p>
-            <p>&lt;s&gt; <s>Este é um exemplo de texto tachado em um parágrafo</s>.</p>
-            <p>&lt;u&gt; <u>Este é um exemplo de texto sublinhado em um parágrafo</u>.</p>
+        <p>&lt;b&gt; <b>Este é um exemplo de texto grafado em negrito em um parágrafo</b>.</p>
+        <p>&lt;strong&gt; <strong>Este é um exemplo de texto marcado como importante em um parágrafo</strong>.</p>
+        <p>&lt;i&gt; <i>Este é um exemplo de texto itálico em um parágrafo</i>.</p>
+        <p>&lt;em&gt; <em>Este é um exemplo de ênfase de texto em um parágrafo</em>.</p>
+        <p>&lt;mark&gt; <mark>Este é um exemplo de marca texto em um parágrafo</mark>.</p>
 
-            <p>&lt;small&gt; Este é um exemplo de <small>texto com tipo menor em um parágrafo</small>.</p>
-            <p>&lt;sub&gt; Este é um exemplo de <sub>texto subescrito em um parágrafo</sub>.</p>
-            <p>&lt;sup&gt; Este é um exemplo de <sup>texto sobrescrito em um parágrafo</sup>.</p>
+        <p>&lt;del&gt; <del cite="why-deleted.html" datetime="2012-07-04">Este é um exemplo de texto deletado em um parágrafo</del>.</p>
+        <p>&lt;ins&gt; <ins cite="why-inserted.html" datetime="2012-07-04">Este é um exemplo de texto inserido em um parágrafo</ins>.</p>
+        <p>&lt;s&gt; <s>Este é um exemplo de texto tachado em um parágrafo</s>.</p>
+        <p>&lt;u&gt; <u>Este é um exemplo de texto sublinhado em um parágrafo</u>.</p>
 
-            <p>&lt;code&gt; Este é exemplo de <code>pedaço de código de programação</code> em um parágrafo.</p>
-            <p>&lt;kbd&gt; Este é um exemplo de entrada de teclado <kbd>Enter</kbd> em um parágrafo.</p>
+        <p>&lt;small&gt; Este é um exemplo de <small>texto com tipo menor em um parágrafo</small>.</p>
+        <p>&lt;sub&gt; Este é um exemplo de <sub>texto subescrito em um parágrafo</sub>.</p>
+        <p>&lt;sup&gt; Este é um exemplo de <sup>texto sobrescrito em um parágrafo</sup>.</p>
 
-            <dialog open="open">&lt;dialog&gt; Este conteúdo está dentro de um dialog.</dialog>
-        </div>
-        <div class="wrapper">
-            <div>&lt;div&gt; Este conteúdo está dentro de uma block division.</div>
-            <p>&lt;span&gt; <span>Este é um exemplo de span (inline division) em um parágrafo</span>.</p>
+        <p>&lt;code&gt; Este é exemplo de <code>pedaço de código de programação</code> em um parágrafo.</p>
+        <p>&lt;kbd&gt; Este é um exemplo de entrada de teclado <kbd>Enter</kbd> em um parágrafo.</p>
 
-            <p>&lt;a&gt; <a class="anchor" href="./">Este é um exemplo de link em um págrafo</a>.</p>
+        <dialog open="open">&lt;dialog&gt; Este conteúdo está dentro de um dialog.</dialog>
 
-            <p>&lt;b&gt; <b class="font-bold">Este é um exemplo de texto grafado em negrito em um parágrafo</b>.</p>
-            <p>&lt;strong&gt; <strong class="font-semibold">Este é um exemplo de texto marcado como importante em um parágrafo</strong>.</p>
-            <p>&lt;i&gt; <i class="font-italic">Este é um exemplo de texto itálico em um parágrafo</i>.</p>
-            <p>&lt;em&gt; <em class="font-italic">Este é um exemplo de ênfase de texto em um parágrafo</em>.</p>
-            <p>&lt;mark&gt; <mark class="mark-green">Este é um exemplo de marca texto em um parágrafo</mark>.</p>
+        <hr class="ruler">
 
-            <p>&lt;del&gt; <del class="text-del" cite="why-deleted.html" datetime="2012-07-04">Este é um exemplo de texto deletado em um parágrafo</del>.</p>
-            <p>&lt;ins&gt; <ins class="text-ins" cite="why-inserted.html" datetime="2012-07-04">Este é um exemplo de texto inserido em um parágrafo</ins>.</p>
-            <p>&lt;s&gt; <s class="text-s">Este é um exemplo de texto tachado em um parágrafo</s>.</p>
-            <p>&lt;u&gt; <u class="text-u">Este é um exemplo de texto sublinhado em um parágrafo</u>.</p>
+        <p class="section-subtitle">Formatted</p>
 
-            <p>&lt;small&gt; Este é um exemplo de <small class="font-small">texto com tipo menor em um parágrafo</small>.</p>
-            <p>&lt;sub&gt; Este é um exemplo de <sub class="text-sub">texto subescrito em um parágrafo</sub>.</p>
-            <p>&lt;sup&gt; Este é um exemplo de <sup class="text-sup">texto sobrescrito em um parágrafo</sup>.</p>
+        <div>&lt;div&gt; Este conteúdo está dentro de uma block division.</div>
+        <p>&lt;span&gt; <span>Este é um exemplo de span (inline division) em um parágrafo</span>.</p>
 
-            <p>&lt;code&gt; Este é exemplo de <code class="code">pedaço de código de programação</code> em um parágrafo.</p>
-            <p>&lt;kbd&gt; Este é um exemplo de entrada de teclado <kbd class="kbd">Enter</kbd> em um parágrafo.</p>
+        <p>&lt;a&gt; <a class="anchor" href="./">Este é um exemplo de link em um págrafo</a>.</p>
 
-            <dialog open="open">&lt;dialog&gt; Este conteúdo está dentro de um dialog.</dialog>
-        </div>
+        <p>&lt;b&gt; <b class="font-bold">Este é um exemplo de texto grafado em negrito em um parágrafo</b>.</p>
+        <p>&lt;strong&gt; <strong class="font-semibold">Este é um exemplo de texto marcado como importante em um parágrafo</strong>.</p>
+        <p>&lt;i&gt; <i class="font-italic">Este é um exemplo de texto itálico em um parágrafo</i>.</p>
+        <p>&lt;em&gt; <em class="font-italic">Este é um exemplo de ênfase de texto em um parágrafo</em>.</p>
+        <p>&lt;mark&gt; <mark class="mark-lime">Este é um exemplo de marca texto em um parágrafo</mark>.</p>
+
+        <p>&lt;del&gt; <del class="text-del" cite="why-deleted.html" datetime="2012-07-04">Este é um exemplo de texto deletado em um parágrafo</del>.</p>
+        <p>&lt;ins&gt; <ins class="text-ins" cite="why-inserted.html" datetime="2012-07-04">Este é um exemplo de texto inserido em um parágrafo</ins>.</p>
+        <p>&lt;s&gt; <s class="text-s">Este é um exemplo de texto tachado em um parágrafo</s>.</p>
+        <p>&lt;u&gt; <u class="text-u">Este é um exemplo de texto sublinhado em um parágrafo</u>.</p>
+
+        <p>&lt;small&gt; Este é um exemplo de <small class="font-small">texto com tipo menor em um parágrafo</small>.</p>
+        <p>&lt;sub&gt; Este é um exemplo de <sub class="text-sub">texto subescrito em um parágrafo</sub>.</p>
+        <p>&lt;sup&gt; Este é um exemplo de <sup class="text-sup">texto sobrescrito em um parágrafo</sup>.</p>
+
+        <p>&lt;code&gt; Este é exemplo de <code class="code">pedaço de código de programação</code> em um parágrafo.</p>
+        <p>&lt;kbd&gt; Este é um exemplo de entrada de teclado <kbd class="kbd">Enter</kbd> em um parágrafo.</p>
+
+        <dialog open="open">&lt;dialog&gt; Este conteúdo está dentro de um dialog.</dialog>
     </div>
 
     <!-- Lists -->
-    <div class="container" id="lists">
-        <div class="wrapper">
-            <ol>
-                <li>Item de lista ordenada: nível 1</li>
-                <li>Item de lista ordenada: nível 1</li>
-                <li>Item com lista aninhada
-                    <ol>
-                        <li>Item de lista ordenada: nível 2</li>
-                        <li>Item de lista ordenada: nível 2</li>
-                    </ol>
-                </li>
-            </ol>
+    <div class="container-fluid" id="lists">
+        <p class="section-title">Lists</p>
+        <p class="section-subtitle">Bare elements</p>
 
-            <ul>
-                <li>Item de lista não ordenada: nível 1</li>
-                <li>Item de lista não ordenada: nível 1</li>
-                <li>Item com lista aninhada
-                    <ul>
-                        <li>Item de lista não ordenada: nível 2</li>
-                        <li>Item de lista não ordenada: nível 2</li>
-                    </ul>
-                </li>
-            </ul>
+        <ol class="ol-list">
+            <li class="ol-list-item">Item de lista ordenada: nível 1</li>
+            <li class="ol-list-item">Item de lista ordenada: nível 1</li>
+            <li class="ol-list-item">Item com lista aninhada
+                <ol class="ol-inner-list">
+                    <li class="ol-inner-list-item">Item de lista ordenada: nível 2</li>
+                    <li class="ol-inner-list-item">Item de lista ordenada: nível 2</li>
+                </ol>
+            </li>
+        </ol>
 
-            <menu>
-                <li>Item da lista de menu</li>
-                <li>Item da lista de menu</li>
-                <li>Item com menu aninhado
-                    <menu>
-                        <li>Item de menu: nível 2</li>
-                        <li>Item de menu: nível 2</li>
-                    </menu>
-                </li>
-            </menu>
+        <ul class="ul-list">
+            <li class="ul-list-item">Item de lista não ordenada: nível 1</li>
+            <li class="ul-list-item">Item de lista não ordenada: nível 1</li>
+            <li class="ul-list-item">Item com lista aninhada
+                <ul class="ul-inner-list">
+                    <li class="ul-inner-list-item">Item de lista não ordenada: nível 2</li>
+                    <li class="ul-inner-list-item">Item de lista não ordenada: nível 2</li>
+                </ul>
+            </li>
+        </ul>
 
-            <dl>
-                <dt>Termo da lista de definição</dt>
-                <dd>Definição de termo</dd>
-                <dd>Definição de termo</dd>
-                <dt>Termo da lista de definição</dt>
-                <dd>Definição de termo</dd>
-                <dd>Definição de termo</dd>
-            </dl>
-        </div>
-        <div class="wrapper">
-            <ol class="ol-list">
-                <li class="ol-list-item">Item de lista ordenada: nível 1</li>
-                <li class="ol-list-item">Item de lista ordenada: nível 1</li>
-                <li class="ol-list-item">Item com lista aninhada
-                    <ol class="ol-inner-list">
-                        <li class="ol-inner-list-item">Item de lista ordenada: nível 2</li>
-                        <li class="ol-inner-list-item">Item de lista ordenada: nível 2</li>
-                    </ol>
-                </li>
-            </ol>
+        <p>&lt;menu&gt; Menu</p>
+        <menu class="menu">
+            <li class="menu-item"><button>Copiar</button></li>
+            <li class="menu-item"><button>Recortar</button></li>
+            <li class="menu-item"><button>Colar</button></li>
+        </menu>
 
-            <ul class="ul-list">
-                <li class="ul-list-item">Item de lista não ordenada: nível 1</li>
-                <li class="ul-list-item">Item de lista não ordenada: nível 1</li>
-                <li class="ul-list-item">Item com lista aninhada
-                    <ul class="ul-inner-list">
-                        <li class="ul-inner-list-item">Item de lista não ordenada: nível 2</li>
-                        <li class="ul-inner-list-item">Item de lista não ordenada: nível 2</li>
-                    </ul>
-                </li>
-            </ul>
+        <dl class="dl-list">
+            <dt class="dl-list-dt">Termo da lista de definição</dt>
+            <dd class="dl-list-dd">Definição de termo</dd>
+            <dd class="dl-list-dd">Definição de termo</dd>
+            <dt class="dl-list-dt">Termo da lista de definição</dt>
+            <dd class="dl-list-dd">Definição de termo</dd>
+            <dd class="dl-list-dd">Definição de termo</dd>
+        </dl>
 
-            <menu class="menu">
-                <li class="menu-item">Item da lista de menu</li>
-                <li class="menu-item">Item da lista de menu</li>
-                <li class="menu-item">Item com menu aninhado
-                    <menu class="inner-menu">
-                        <li class="inner-menu-item">Item de menu: nível 2</li>
-                        <li class="inner-menu-item">Item de menu: nível 2</li>
-                    </menu>
-                </li>
-            </menu>
+        <hr class="ruler">
 
-            <dl class="dl-list">
-                <dt class="dl-list-dt">Termo da lista de definição</dt>
-                <dd class="dl-list-dd">Definição de termo</dd>
-                <dd class="dl-list-dd">Definição de termo</dd>
-                <dt class="dl-list-dt">Termo da lista de definição</dt>
-                <dd class="dl-list-dd">Definição de termo</dd>
-                <dd class="dl-list-dd">Definição de termo</dd>
-            </dl>
-        </div>
+        <p class="section-subtitle">Formatted</p>
     </div>
 
     <!-- Tables -->
-    <div class="container" id="tables">
-        <div class="wrapper">
-            <table>
-                <caption>&lt;caption&gt; Este é um exemplo de título de tabela</caption>
+    <div class="container-fluid" id="tables">
+        <p class="section-title">Text formatting</p>
+        <p class="section-subtitle">Bare elements</p>
 
-                <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col class="colgroup-highlight">
-                </colgroup>
+        <table>
+            <caption>&lt;caption&gt; Este é um exemplo de título de tabela</caption>
 
-                <thead>
-                    <tr>
-                        <th id="th-heading" colspan="2" scope="colgroup">Cabeçalho 1</th>
-                        <th scope="col">Cabeçalho 2</th>
-                        <th scope="col">Cabeçalho 3</th>
-                    </tr>
-                    <tr>
-                        <th headers="th-heading">Sub cabeçalho 1-A</th>
-                        <th headers="th-heading">Sub cabeçalho 1-B</th>
-                        <th>Sub cabeçalho 2</th>
-                        <th>Sub cabeçalho 3</th>
-                    </tr>
-                </thead>
+            <colgroup>
+                <col> <col> <col> <col class="colgroup-highlight">
+            </colgroup>
 
-                <tfoot>
-                    <tr>
-                        <td>Rodapé 1</td> <td>Rodapé 2</td> <td>Rodapé 3</td> <td>Rodapé 4</td>
-                    </tr>
-                </tfoot>
+            <thead>
+                <tr>
+                    <th>Cabeçalho 1</th> <th>Cabeçalho 2</th> <th>Cabeçalho 3</th> <th>Cabeçalho 4</th>
+                </tr>
+            </thead>
 
-                <tbody>
-                    <tr>
-                        <td>L1 Célula 1</td> <td>L1 Célula 2</td> <td>L1 Célula 3</td> <td>L1 Célula 4</td>
-                    </tr>
-                    <tr>
-                        <td>L2 Célula 1</td> <td>L2 Célula 2</td> <td>L2 Célula 3</td> <td>L2 Célula 4</td>
-                    </tr>
-                    <tr>
-                        <td>L3 Célula 1</td> <td>L3 Célula 2</td> <td>L3 Célula 3</td> <td>L3 Célula 4</td>
-                    </tr>
-                    <tr>
-                        <td>L4 Célula 1</td>
-                        <td>L4 Célula 2</td> <td>Célula vazia &rsaquo;</td> <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <tfoot>
+                <tr>
+                    <td>Rodapé 1</td> <td>Rodapé 2</td> <td>Rodapé 3</td> <td>Rodapé 4</td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <td>L1 Célula 1</td> <td>L1 Célula 2</td> <td>L1 Célula 3</td> <td>L1 Célula 4</td>
+                </tr>
+                <tr>
+                    <td>L2 Célula 1</td> <td>L2 Célula 2</td> <td>L2 Célula 3</td> <td>L2 Célula 4</td>
+                </tr>
+                <tr>
+                    <td>L3 Célula 1</td> <td>L3 Célula 2</td> <td>L3 Célula 3</td> <td>L3 Célula 4</td>
+                </tr>
+                <tr>
+                    <td>L4 Célula 1</td> <td>L4 Célula 2</td> <td>Célula vazia &rsaquo;</td> <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="ruler">
+
+        <p class="section-subtitle">Formatted</p>
     </div>
 
     <!-- Images -->
-    <div class="container" id="images">
-        <div class="wrapper">
-            <figure>&lt;figure&gt; Este conteúdo está dentro de uma figure</figure>
-            <figure>
-                <figcaption>&lt;figcaption&gt; Este conteúdo está dentro de uma figure caption</figcaption>
-            </figure>
+    <div class="container-fluid" id="images">
+        <p class="section-title">Text formatting</p>
+        <p class="section-subtitle">Bare elements</p>
 
-            <figure>
-                <img src="./assets/html.webp" alt="HTML 5 Badge">
-                <!-- <img src="./assets/html.webp"> -->
-                <figcaption>&lt;img&gt; Imagem (format: .webp)</figcaption>
-            </figure>
+        <figure>&lt;figure&gt; Este conteúdo está dentro de uma figure</figure>
+        <figure>
+            <figcaption>&lt;figcaption&gt; Este conteúdo está dentro de uma figure caption</figcaption>
+        </figure>
 
-            <picture>
-                <source media="(min-width: 1200px)" srcset="./assets/picture-1200.svg">
-                <source media="(min-width: 800px)" srcset="./assets/picture-960.svg">
-                <source media="(min-width: 360px)" srcset="./assets/picture-560.svg">
-                <img src="./assets/picture-fallback.svg" alt="Picture fallback">
-                <!-- <img src="./assets/picture-fallback.svg"> -->
-            </picture>
-            <p>&lt;picture&gt; Container para responsividade de imagens</p>
+        <figure>
+            <img src="./assets/image-html.webp" alt="HTML 5 Badge">
+            <!-- <img src="./assets/image-html.webp"> -->
+            <figcaption>&lt;img&gt; Imagem (format: .webp)</figcaption>
+        </figure>
 
-            <figure>
-                <svg width="128" height="128">
-                    <circle cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 78%)" stroke-width="9"/>
-                    <circle class="arc" cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 44%)" stroke-width="9" stroke-dasharray="301" stroke-dashoffset="70"/>
-                </svg>
-                <figcaption>&lt;svg&gt; Inline SVG</figcaption>
-            </figure>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="./assets/picture-1200.svg">
+            <source media="(min-width: 800px)" srcset="./assets/picture-960.svg">
+            <source media="(min-width: 360px)" srcset="./assets/picture-560.svg">
+            <img src="./assets/picture-fallback.svg" alt="Picture fallback">
+            <!-- <img src="./assets/picture-fallback.svg"> -->
+        </picture>
+        <p>&lt;picture&gt; Container para responsividade de imagens</p>
 
-            <figure>
-                <meter value="5" min="0" max="10">5 out of 10</meter>
-                <meter value="0.75">75%</meter>
-                <figcaption>&lt;meter&gt; define uma escala de medidas</figcaption>
-            </figure>
-            <figure>
-                <progress value="50" max="100"></progress>
-                <progress value="75" max="100"></progress>
-                <figcaption>&lt;progress&gt; define uma barra de progresso de uma tarefa</figcaption>
-            </figure>
-        </div>
+        <figure>
+            <svg width="128" height="128">
+                <circle cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 78%)" stroke-width="9"/>
+                <circle class="arc" cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 44%)" stroke-width="9" stroke-dasharray="301" stroke-dashoffset="70"/>
+            </svg>
+            <figcaption>&lt;svg&gt; Inline SVG</figcaption>
+        </figure>
+
+        <figure>
+            <meter value="5" min="0" max="10">5 out of 10</meter>
+            <figcaption>&lt;meter&gt; define uma escala de medidas</figcaption>
+        </figure>
+        <figure>
+            <progress value="50" max="100"></progress>
+            <figcaption>&lt;progress&gt; define uma barra de progresso de uma tarefa</figcaption>
+        </figure>
+
+        <hr class="ruler">
+
+        <p class="section-subtitle">Formatted</p>
     </div>
 
     <!-- Audio and Video -->
-    <div class="container" id="multimedia">
-        <div class="wrapper">
-            <figure>
-                <audio controls>
-                    <source src="./assets/tank-the-seatbelts.mp3" type="audio/mpeg">
-                </audio>
-                <figcaption>Tank! - The Seatbelts</figcaption>
-                <figcaption>&lt;audio&gt; Áudio</figcaption>
-            </figure>
+    <div class="container-fluid" id="multimedia">
+        <p class="section-title">Text formatting</p>
+        <p class="section-subtitle">Bare elements</p>
 
-            <figure>
-                <video poster="./assets/korn.webp" controls>
-                    <source src="./assets/korn-falling-away-from-me.mp4" type="video/mp4">
-                    <!-- TRACK: https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API -->
-                </video>
-                <figcaption>Falling Away from Me - Korn</figcaption>
-                <figcaption>&lt;video&gt; Vídeo</figcaption>
-            </figure>
-        </div>
+        <figure>
+            <figcaption>Tank! - The Seatbelts</figcaption>
+            <audio controls>
+                <source src="./assets/audio-tank-the-seatbelts.mp3" type="audio/mpeg">
+            </audio>
+            <figcaption>&lt;audio&gt; Áudio</figcaption>
+        </figure>
+
+        <figure>
+            <figcaption>Falling Away from Me - Korn</figcaption>
+            <video poster="./assets/video-poster-korn.webp" controls>
+                <source src="./assets/video-falling-away-from-me-korn.mp4" type="video/mp4">
+                <!-- TRACK: https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API -->
+            </video>
+            <figcaption>&lt;video&gt; Vídeo</figcaption>
+        </figure>
+
+        <hr class="ruler">
+
+        <p class="section-subtitle">Formatted</p>
     </div>
 
     <!-- Embedded -->
-    <div class="container" id="embedded">
-        <div class="wrapper">
-            <object data="./assets/document.pdf" type="application/pdf"></object>
-            <p>&lt;object&gt; Objeto integrado</p>
+    <div class="container-fluid" id="embedded">
+        <p class="section-title">Text formatting</p>
+        <p class="section-subtitle">Bare elements</p>
 
-            <iframe src="./assets/iframe.html"></iframe>
-            <p>&lt;iframe&gt; Frame inline</p>
-        </div>
+        <object class="ratio-4-3" data="./assets/doc-recipes.pdf#view=Fit" type="application/pdf"></object>
+        <p>&lt;object&gt; Objeto integrado</p>
+
+        <iframe class="ratio-16-9" src="./assets/iframe.html"></iframe>
+        <p>&lt;iframe&gt; Frame inline</p>
+
+        <hr class="ruler">
+
+        <p class="section-subtitle">Formatted</p>
     </div>
 
     <!-- Scripting -->
-    <div class="container" id="scripting">
-        <div class="wrapper">
-            <noscript>&lt;noscript&gt; Este conteúdo está dentro de um noscript</noscript>
+    <div class="container-fluid" id="scripting">
+        <p class="section-title">Text formatting</p>
+        <p class="section-subtitle">Bare elements</p>
 
-            <figure>
-                <canvas id="js-canvas1" width="128" height="128"></canvas>
-                <canvas id="js-canvas2" width="128" height="128"></canvas>
-                <canvas id="js-canvas3" width="128" height="128"></canvas>
+        <noscript>&lt;noscript&gt; Este conteúdo está dentro de um noscript</noscript>
 
-                <script>
-                    // CANVAS #1
-                    const canvas1 = document.querySelector('#js-canvas1');
-                    let ctx1 = canvas1.getContext('2d');
-                    ctx1.fillStyle = 'hsl(220, 24%, 44%)';
-                    ctx1.fillRect(20,20,88,88);
+        <figure>
+            <canvas id="js-canvas1" width="128" height="128"></canvas>
+            <canvas id="js-canvas2" width="128" height="128"></canvas>
+            <canvas id="js-canvas3" width="128" height="128"></canvas>
 
-                    // CANVAS #2
-                    const canvas2 = document.querySelector('#js-canvas2');
-                    let ctx2 = canvas2.getContext('2d');
-                    ctx2.beginPath();
-                    ctx2.arc(64,64,50,0,2*Math.PI);
-                    ctx2.lineWidth = 6;
-                    ctx2.strokeStyle = 'hsl(220, 24%, 44%)';
-                    ctx2.stroke();
+            <script>
+                // CANVAS #1
+                const canvas1 = document.querySelector('#js-canvas1');
+                let ctx1 = canvas1.getContext('2d');
+                ctx1.fillStyle = 'hsl(220, 24%, 44%)';
+                ctx1.fillRect(20,20,88,88);
 
-                    // CANVAS #3
-                    const canvas3 = document.querySelector('#js-canvas3');
-                    let ctx3 = canvas3.getContext('2d');
-                    ctx3.fillStyle = 'hsl(220, 24%, 90%)';
-                    ctx3.strokeStyle = 'hsl(220, 24%, 44%)';
-                    ctx3.lineWidth = 6;
-                    ctx3.font = 'bold 24px sans-serif';
-                    ctx3.fillRect(0,0,128,128);
-                    ctx3.strokeText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
-                    ctx3.fillText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
-                </script>
-                <figcaption>&lt;canvas&gt; Canvas [gráficos via script]</figcaption>
-            </figure>
-        </div>
+                // CANVAS #2
+                const canvas2 = document.querySelector('#js-canvas2');
+                let ctx2 = canvas2.getContext('2d');
+                ctx2.beginPath();
+                ctx2.arc(64,64,50,0,2*Math.PI);
+                ctx2.lineWidth = 6;
+                ctx2.strokeStyle = 'hsl(220, 24%, 44%)';
+                ctx2.stroke();
+
+                // CANVAS #3
+                const canvas3 = document.querySelector('#js-canvas3');
+                let ctx3 = canvas3.getContext('2d');
+                ctx3.fillStyle = 'hsl(220, 24%, 90%)';
+                ctx3.strokeStyle = 'hsl(220, 24%, 44%)';
+                ctx3.lineWidth = 6;
+                ctx3.font = 'bold 24px sans-serif';
+                ctx3.fillRect(0,0,128,128);
+                ctx3.strokeText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
+                ctx3.fillText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
+            </script>
+            <figcaption>&lt;canvas&gt; Canvas [gráficos via script]</figcaption>
+        </figure>
+
+        <hr class="ruler">
+
+        <p class="section-subtitle">Formatted</p>
     </div>
 
     <!-- Forms -->
-    <div class="container" id="forms">
-        <div class="wrapper">
-            <form>
-                <fieldset>
-                    <legend>&lt;button&gt; Botões</legend>
-                    <button type="button">type button</button>
-                    <button type="reset">type reset</button>
-                    <button type="submit">type submit</button>
-                    <button type="button" disabled="disabled">disabled</button>
-                    <button type="button"><img src="./assets/send.svg" alt="Send form"> type image</button>
-                </fieldset>
+    <div class="container-fluid" id="forms">
+        <p class="section-title">Text formatting</p>
+        <p class="section-subtitle">Bare elements</p>
 
-                <fieldset>
-                    <legend>Inputs do tipo texto</legend>
-                    <label for="text1">
-                        <span>Input com placeholder</span>
-                        <input type="text" name="text1" id="text1" placeholder="Placeholder">
-                    </label>
-                    <label for="text2">
-                        <span>Input com valor preenchido</span>
-                        <input type="text" name="text2" id="text2" value="Preenchido com texto">
-                    </label>
-                    <label for="text3">
-                        <span>Campo desabilitado</span>
-                        <input type="text" name="text3" id="text3" value="Desabilitado" disabled="disabled">
-                    </label>
-                </fieldset>
+        <form>
+            <fieldset>
+                <legend>&lt;button&gt; Botões</legend>
+                <button type="button">type button</button>
+                <button type="reset">type reset</button>
+                <button type="submit">type submit</button>
+                <button type="button" disabled="disabled">disabled</button>
+                <button type="button"><img src="./assets/send.svg" alt="Send form"> type image</button>
+            </fieldset>
 
-                <fieldset>
-                    <legend>Outros inputs de texto</legend>
-                    <label for="email">
-                        <span>E-mail</span>
-                        <input type="email" name="email" id="email" value="user@email.com">
-                    </label>
-                    <label for="password">
-                        <span>Senha</span>
-                        <input type="password" name="password" id="password" placeholder="password">
-                    </label>
-                    <label for="search">
-                        <span>Busca</span>
-                        <input type="search" name="search" id="search" placeholder="Buscar...">
-                    </label>
-                    <label for="tel">
-                        <span>Telefone</span>
-                        <input type="tel" name="tel" id="tel" value="99 12345 6789">
-                    </label>
-                    <label for="url">
-                        <span>URL</span>
-                        <input type="url" name="url" id="url" value="https://valid.url">
-                    </label>
-                </fieldset>
+            <fieldset>
+                <legend>Inputs do tipo texto</legend>
+                <label for="text1">
+                    <span>Input com placeholder</span>
+                    <input type="text" name="text1" id="text1" placeholder="Placeholder">
+                </label>
+                <label for="text2">
+                    <span>Input com valor preenchido</span>
+                    <input type="text" name="text2" id="text2" value="Preenchido com texto">
+                </label>
+                <label for="text3">
+                    <span>Campo desabilitado</span>
+                    <input type="text" name="text3" id="text3" value="Desabilitado" disabled="disabled">
+                </label>
+            </fieldset>
 
-                <fieldset>
-                    <legend>Caixa para entrada de texto</legend>
-                    <label for="textarea">
-                        <span>Mensagem</span>
-                        <textarea name="textarea" id="textarea" rows="5" cols="25">Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</textarea>
-                    </label>
-                </fieldset>
+            <fieldset>
+                <legend>Outros inputs de texto</legend>
+                <label for="email">
+                    <span>E-mail</span>
+                    <input type="email" name="email" id="email" value="user@email.com">
+                </label>
+                <label for="password">
+                    <span>Senha</span>
+                    <input type="password" name="password" id="password" placeholder="password">
+                </label>
+                <label for="search">
+                    <span>Busca</span>
+                    <input type="search" name="search" id="search" placeholder="Buscar...">
+                </label>
+                <label for="tel">
+                    <span>Telefone</span>
+                    <input type="tel" name="tel" id="tel" value="99 12345 6789">
+                </label>
+                <label for="url">
+                    <span>URL</span>
+                    <input type="url" name="url" id="url" value="https://valid.url">
+                </label>
+            </fieldset>
 
-                <fieldset>
-                    <legend>Inputs para seleção de valores</legend>
-                    <div>
-                        <label for="checkbox1">
-                            <span>Normal</span>
-                            <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
-                        </label>
-                        <label for="checkbox2">
-                            <span>Checado</span>
-                            <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2" checked="checked">
-                        </label>
-                        <label for="checkbox3">
-                            <span>Desabilitado</span>
-                            <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox4" disabled="disabled">
-                        </label>
-                    </div>
-                    <div>
-                        <label for="radio1">
-                            <span>Normal</span>
-                            <input type="radio" name="radio" id="radio1" value="radio1">
-                        </label>
-                        <label for="radio2">
-                            <span>Checado</span>
-                            <input type="radio" name="radio" id="radio2" value="radio2" checked="checked">
-                        </label>
-                        <label for="radio3">
-                            <span>Desabilitado</span>
-                            <input type="radio" name="radio" id="radio3" value="radio3" disabled="disabled">
-                        </label>
-                    </div>
-                </fieldset>
+            <fieldset>
+                <legend>Caixa para entrada de texto</legend>
+                <label for="textarea">
+                    <span>Mensagem</span>
+                    <textarea name="textarea" id="textarea" rows="5" cols="25">Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</textarea>
+                </label>
+            </fieldset>
 
-                <fieldset>
-                    <legend>Campos de seleção</legend>
-                    <label for="select1">
-                        <span>Seleção (sem optgroup)</span>
-                        <select name="select1" id="select1">
-                            <option disabled selected hidden>Selecione...</option>
-                            <option value="HTML">HTML</option>
-                            <option value="CSS">CSS</option>
-                            <option value="JavaScript">JavaScript</option>
-                        </select>
+            <fieldset>
+                <legend>Inputs para seleção de valores</legend>
+                <div>
+                    <label for="checkbox1">
+                        <span>Normal</span>
+                        <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
                     </label>
+                    <label for="checkbox2">
+                        <span>Checado</span>
+                        <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2" checked="checked">
+                    </label>
+                    <label for="checkbox3">
+                        <span>Desabilitado</span>
+                        <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox4" disabled="disabled">
+                    </label>
+                </div>
+                <div>
+                    <label for="radio1">
+                        <span>Normal</span>
+                        <input type="radio" name="radio" id="radio1" value="radio1">
+                    </label>
+                    <label for="radio2">
+                        <span>Checado</span>
+                        <input type="radio" name="radio" id="radio2" value="radio2" checked="checked">
+                    </label>
+                    <label for="radio3">
+                        <span>Desabilitado</span>
+                        <input type="radio" name="radio" id="radio3" value="radio3" disabled="disabled">
+                    </label>
+                </div>
+            </fieldset>
 
-                    <label for="select2">
-                        <span>Seleção (com optgroup)</span>
-                        <select name="select2" id="select2">
-                            <option disabled selected hidden>Selecione...</option>
-                            <optgroup label="HTML">
-                                <option value="HTML Tags">HTML Tags</option>
-                                <option value="HTML Attributes">HTML Attributes</option>
-                            </optgroup>
-                            <optgroup label="CSS">
-                                <option value="CSS level 1.0">CSS level 1.0</option>
-                                <option value="CSS level 2.1">CSS level 2.1</option>
-                                <option value="CSS level 3.0">CSS level 3.0</option>
-                            </optgroup>
-                            <optgroup label="JavaScript">
-                                <option value="JS Functions">JS Vanilla</option>
-                                <option value="JS Objects">JS Frameworks</option>
-                            </optgroup>
-                        </select>
-                    </label>
-                </fieldset>
+            <fieldset>
+                <legend>Campos de seleção</legend>
+                <label for="select1">
+                    <span>Seleção (sem optgroup)</span>
+                    <select name="select1" id="select1">
+                        <option disabled selected hidden>Selecione...</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                    </select>
+                </label>
+                <label for="select2">
+                    <span>Seleção (com optgroup)</span>
+                    <select name="select2" id="select2">
+                        <option disabled selected hidden>Selecione...</option>
+                        <optgroup label="HTML">
+                            <option value="HTML Tags">HTML Tags</option>
+                            <option value="HTML Attributes">HTML Attributes</option>
+                        </optgroup>
+                        <optgroup label="CSS">
+                            <option value="CSS level 1.0">CSS level 1.0</option>
+                            <option value="CSS level 2.1">CSS level 2.1</option>
+                            <option value="CSS level 3.0">CSS level 3.0</option>
+                        </optgroup>
+                        <optgroup label="JavaScript">
+                            <option value="JS Functions">JS Vanilla</option>
+                            <option value="JS Objects">JS Frameworks</option>
+                        </optgroup>
+                    </select>
+                </label>
+            </fieldset>
 
-                <fieldset>
-                    <legend>Outros tipos de input</legend>
-                    <label for="color">
-                        <span>Cor</span>
-                        <input type="color" name="color" id="color" value="#424242">
-                    </label>
-                    <label for="number">
-                        <span>Número [0-9]</span>
-                        <input type="number" name="number" id="number" min="0" max="9" step="1" value="3">
-                    </label>
+            <fieldset>
+                <legend>Outros tipos de input</legend>
+                <label for="color">
+                    <span>Cor</span>
+                    <input type="color" name="color" id="color" value="#424242">
+                </label>
+                <label for="number">
+                    <span>Número [0-9]</span>
+                    <input type="number" name="number" id="number" min="0" max="9" step="1" value="3">
+                </label>
+                <label for="range">
+                    <span>Range [0-100]</span>
+                    <input type="range" name="range" id="range" min="0" max="100" step="20" list="markers">
+                    <datalist id="markers">
+                        <option value="0"></option>
+                        <option value="20"></option>
+                        <option value="40"></option>
+                        <option value="60"></option>
+                        <option value="80"></option>
+                        <option value="100"></option>
+                    </datalist>
+                </label>
+            </fieldset>
 
-                    <label for="range">
-                        <span>Range [0-100]</span>
-                        <input type="range" name="range" id="range" min="0" max="100" step="20" list="markers">
-                        <datalist id="markers">
-                            <option value="0"></option>
-                            <option value="20"></option>
-                            <option value="40"></option>
-                            <option value="60"></option>
-                            <option value="80"></option>
-                            <option value="100"></option>
-                        </datalist>
-                    </label>
-                </fieldset>
+            <fieldset oninput="output.value=parseInt(a.value)+parseInt(b.value)">
+                <legend>Saída [output]</legend>
+                <span>[0-9]</span>
+                <input type="number" name="a" id="a" min="0" max="9" value="0">
+                <span>+ [0-9]</span>
+                <input type="number" name="b" id="b" min="0" max="9" value="0">
+                <span>=</span>
+                <label for="output">
+                    <span>Output:</span>
+                    <output name="output" id="output" for="a b">0</output>
+                </label>
+            </fieldset>
 
-                <fieldset oninput="output.value=parseInt(a.value)+parseInt(b.value)">
-                    <legend>Saída [output]</legend>
-                    <span>[0-9]</span>
-                    <input type="number" name="a" id="a" min="0" max="9" value="0">
-                    <span>+ [0-9]</span>
-                    <input type="number" name="b" id="b" min="0" max="9" value="0">
-                    <span>=</span>
-                    <label for="output">
-                        <span>Output:</span>
-                        <output name="output" id="output" for="a b">0</output>
-                    </label>
-                </fieldset>
-            </form>
-        </div>
+            <hr class="ruler">
+
+            <p class="section-subtitle">Formatted</p>
+        </form>
     </div>
 
 </body>

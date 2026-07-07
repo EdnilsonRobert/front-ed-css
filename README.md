@@ -49,37 +49,67 @@
 canvas, noscript
 - [x] Forms
 - button, datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
-- [x] External lib
+- [] Icons (Ionicon - external lib)
 - ion-icon
 
 ### Objects - Layout classes, cosmetic-free design patterns
 - [x] Semantic sectioning
 - [x] Basic HTML
-- [x] Text Formatting
+- [x] Text formatting
 - [x] Lists
 - [x] Tables
 - [x] Images
-- [x] Audio and Video
+- [x] Audio and video
 - [x] Embedded
 - [x] Scripting
+- [x] Buttons
 - [x] Forms
-- [ ] External lib
+- [ ] Form components (toggle, button toggle, slider, range)
+- [ ] Icons (Ionicon - external lib)
 
 ### Components - UI Classes, designed components, chunks of UI
 - [ ] Wireframe
 - [ ] Containers
 - [ ] Flexbox
 - [ ] Grid layout
+- [ ] Toolbars (header and footer)
+- [ ] Avatars (brand and personal avatar)
+- [ ] Banner (hero)
+- [ ] Menus and navigation (menu h, menu v, dropdown, breadcrumbs, pagination)
+- [ ] Messages (alerts, toasts and notify)
+- [ ] Text columns
+- [ ] Sticky
+- [ ] Tooltips
+- [ ] Badges
 - [ ] Cards
-- [ ] Menus
-- [ ] Messages
-- [ ] Modals
-- [ ] Toolbars
-- [ ] Dashboards [bars, donuts, lines, piechart]
-- [ ] [outros ...]
+- [ ] Loaders and spinners
+- [ ] Rating
+- [ ] Audio and video displays
+- [ ] Collapse
+- [ ] Accordion
+- [ ] Drawer
+- [ ] Modals and popovers
+- [ ] Tabs and tab panels
+- [ ] Gallery
+- [ ] Carousel
+- [ ] Stepper
+- [ ] Timeline
+- [ ] Parallax
+- [ ] Dashboards [bars, donuts, lines, piechart, ...]
 
 ### Utilities - IDs and !important, helpers and overrides
+- [ ] Breakpoints and responsive design
+- [ ] Spacing
+- [ ] Borders (radius and lines)
+- [ ] Color palette (borders, backgrounds and colors, gradients)
+- [ ] Shadows (box and text)
+- [ ] Opacity
+- [ ] Filters
 - [X] Text utils
+- [ ] Helper classes
+- [ ] Hover, focus, and other states
+- [ ] Animations and transitions
+- [ ] Dark mode
 - [X] CSS linter
 - atributos obrigatórios ou recomendados em tags
 - tags e atributos marcados com status deprecated

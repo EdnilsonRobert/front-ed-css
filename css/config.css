@@ -22,47 +22,56 @@
 /* font-family: 'Source Code Pro', monospace; */
 
 :root {
-  /* TYPOGRAPHY ------------------------------------------------------------- */
+  /* Typography ------------------------------------------------------------- */
   --font-sans-display: 'Libre Franklin', sans-serif;
   --font-sans-text: 'Open Sans', sans-serif;
   --font-serif-display: 'Young Serif', serif;
   --font-serif-text: 'Libre Baskerville', serif;
   --font-monospace: 'Source Code Pro', monospace;
 
-  /* BASIC HTML ------------------------------------------------------------- */
+  --pad-x-toolbar-header: 2.4rem;
+  --pad-y-toolbar-header: .6rem;
+
+  --pad-x-container: 2.4rem;
+  --pad-y-container: 3.6rem;
+
+  /* Basic HTML ------------------------------------------------------------- */
   --body-background: var(--ui-color-0);
-  --body-text: var(--ui-color-9);
+  --body-color: var(--ui-color-9);
   --body-font: var(--font-sans-text);
 
   --heading-color: var(--ui-color-6);
   --heading-weight: 600;
   --heading-font: var(--font-sans-display);
-  --heading-1-size: 176%; /* 160% * 1.1 */
-  --heading-2-size: 160%; /* 146% * 1.1 */
-  --heading-3-size: 146%; /* 133% * 1.1 */
-  --heading-4-size: 133%; /* 121% * 1.1 */
-  --heading-5-size: 121%; /* 110% * 1.1 */
-  --heading-6-size: 110%; /* 100% * 1.1 */
-
+  --heading-1-size: 176%;
+  --heading-2-size: 160%;
+  --heading-3-size: 146%;
+  --heading-4-size: 133%;
+  --heading-5-size: 121%;
+  --heading-6-size: 110%;
   --heading-color-overline: var(--ui-color-6);
   --heading-color-caption: var(--ui-color-6);
 
-  --ruler-height: .1rem;
-  --ruler-margin: 1.2rem auto;
-  --ruler-color: var(--ui-color-2);
-
-  --paragraph-spacing: .3rem 0;
+  --paragraph-spacing-y: .6rem;
   --paragraph-indent: 2em;
+
+  --ruler-height: .1rem;
+  --ruler-margin-y: 1.2rem;
+  --ruler-color: var(--ui-color-2);
 
   --blockquote-border: var(--ui-color-4);
   --blockquote-background: var(--ui-color-1);
   --blockquote-color: var(--ui-color-8);
   --blockquote-font: var(--font-serif-text);
+  --blockquote-indent: 2em;
   --blockquote-font-size: 1.6rem;
 
-  /* TEXT FORMATTING -------------------------------------------------------- */
+  /* Text formatting -------------------------------------------------------- */
+  --font-weight-bolder: 600;
+
   --lh-150: 1.5;
   --lh-125: 1.25;
+  --lh-100: 1;
 
   --anchor-color-link: var(--ui-color-7);
   --anchor-color-visited: var(--ui-color-7);
@@ -71,20 +80,32 @@
   --anchor-color-focus: var(--ui-color-9);
 
   /* Lists ------------------------------------------------------------------ */
-  --list-spacing: .3rem 0;
   --list-indent: 1em;
+  --list-spacing: .3rem;
   --list-marker-color: var(--ui-color-5);
 
   /* Tables ----------------------------------------------------------------- */
+  --table-layout: auto;
+  --table-width: auto;
+  --table-caption-side: top;
+  --table-caption-color: inherit;
+  --table-caption-size: 1.6rem;
+  --table-border-th-width: .2rem;
+  --table-border-td-width: .1rem;
   --table-border-color: var(--ui-color-2);
   --table-header-font: 600;
   --table-cell-padding: .3rem 1.2rem;
   --table-colgroup-highlight: var(--ui-color-1);
 
-  /* Embedded --------------------------------------------------------------- */
-  --embed-aspect-ratio: 16 / 9;
+  /* Images ----------------------------------------------------------------- */
+  --figcaption-color: var(--ui-color-7);
+  --figcaption-size: 1.4rem
 
-  /* COLOR PALETTE ---------------------------------------------------------- */
+  /* Embedded --------------------------------------------------------------- */
+  --aspect-ratio-object: 4 / 4;
+  --aspect-ratio-iframe: 16 / 9;
+
+  /* Color palette ---------------------------------------------------------- */
   --ui-color:  hsl(220, 24%, 44%);
   --red:       hsl(348, 83%, 47%);
   --orange:    hsl(33, 100%, 50%);

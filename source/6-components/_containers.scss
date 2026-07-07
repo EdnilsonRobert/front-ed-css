@@ -1,18 +1,12 @@
 /* =============================================================================
-  ITCSS layer: Elements
-  Bundle: Bare elements (unclassed HTML / type selectors)
-  File: Embedded
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Containers
 ============================================================================= */
 
-object {
-  display: block;
-  min-width: 100%;
-}
-
-iframe {
-  display: block;
-  min-width: 100%;
-  border: unset;
+.container-fluid {
+  padding-inline: var(--pad-x-container);
+  padding-block: var(--pad-y-container);
 }
 
 /* END OF FILE ============================================================== */

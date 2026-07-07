@@ -25,4 +25,10 @@
 .text-center { text-align: center; }
 .text-right  { text-align: right; }
 
+.to-lowercase { text-transform: lowercase; }
+.to-uppercase { text-transform: uppercase; }
+
+.text-s { text-decoration: line-through var(--ui-color-5); }
+.text-u { text-decoration: underline var(--ui-color-5); }
+
 /* END OF FILE ============================================================== */

@@ -17,14 +17,11 @@ ul ul {
 }
 
 menu { list-style-type: none; }
-menu menu { padding-left: var(--list-indent); }
 
 li { list-style-position: inside; }
 
 // dl {}
 dt { font-weight: unset; }
-
-
 dd {
   display: list-item;
   padding-left: var(--list-indent);

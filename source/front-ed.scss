@@ -38,9 +38,11 @@
 @use './5-objects/forms';
 
 // COMPONENTS - UI Classes, designed components, chunks of UI
-// @use './6-components/';
+@use './6-components/containers';
+@use './6-components/toolbars';
 
 // UTILITIES - IDs and !important, helpers and overrides
+@use './7-utilities/color-utils';
 @use './7-utilities/text-utils';
 @use './7-utilities/linter';
 

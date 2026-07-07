@@ -5,37 +5,38 @@
 ============================================================================= */
 
 table {
-  margin-left: auto;
-  margin-right: auto;
+  table-layout: var(--table-layout);
+  width: var(--table-width);
+  margin-inline: auto;
   border-collapse: collapse;
 }
 
 caption {
-  margin-bottom: .6rem;
-  font-size: 1.6rem;
+  caption-side: var(--table-caption-side);
+  font-size: var(--table-caption-size);
+  color: var(--table-caption-color);
 }
 
 thead {
-  border-top: .1rem solid var(--table-border-color);
-  border-bottom: .1rem solid var(--table-border-color);
+  border-block: var(--table-border-th-width) solid var(--table-border-color);
 }
 
 // tbody {}
 // tfoot {}
 
 tbody tr, tfoot tr {
-  border-bottom: .1rem solid var(--table-border-color);
+  border-bottom: var(--table-border-td-width) solid var(--table-border-color);
 }
 
 th {
   padding: var(--table-cell-padding);
   font-weight: var(--table-header-font);
-  line-height: 1.5;
+  line-height: var(--lh-150);
 }
 
 td {
   padding: var(--table-cell-padding);
-  line-height: 1.5;
+  line-height: var(--lh-150);
 }
 
 /* END OF FILE ============================================================== */

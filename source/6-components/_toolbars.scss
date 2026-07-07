@@ -1,18 +1,12 @@
 /* =============================================================================
-  ITCSS layer: Elements
-  Bundle: Bare elements (unclassed HTML / type selectors)
-  File: Embedded
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Toolbars
 ============================================================================= */
 
-object {
-  display: block;
-  min-width: 100%;
-}
-
-iframe {
-  display: block;
-  min-width: 100%;
-  border: unset;
+.toolbar {
+  padding-inline: var(--pad-x-toolbar-header);
+  padding-block: var(--pad-y-toolbar-header);
 }
 
 /* END OF FILE ============================================================== */

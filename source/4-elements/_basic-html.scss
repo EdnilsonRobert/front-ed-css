@@ -13,7 +13,7 @@ html {
 body {
   min-height: 100dvh;
   background-color: var(--body-background);
-  color: var(--body-text);
+  color: var(--body-color);
   font-weight: 400;
   font-size: 1.6rem;
   font-family: var(--body-font);
@@ -22,32 +22,6 @@ body {
   font-kerning: auto;
 }
 
-hr {
-  height: var(--ruler-height);
-  border-style: unset;
-  background-color: var(--ruler-color);
-}
-
-p { overflow-wrap: break-word; }
-
-blockquote {
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-// Semantic sectioning ---------------------------------------------------------
-// main {}
-// header {}
-// article {}
-// section {}
-// aside {}
-// footer {}
-// nav {}
-// search {}
-
-address { font-style: unset; }
-
-// Headings --------------------------------------------------------------------
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading-color);
   font-weight: var(--heading-weight);
@@ -62,6 +36,29 @@ h4 { font-size: var(--heading-4-size); }
 h5 { font-size: var(--heading-5-size); }
 h6 { font-size: var(--heading-6-size); }
 
+p { overflow-wrap: break-word; }
+
+hr {
+  height: var(--ruler-height);
+  margin-inline: auto;
+  border-style: unset;
+  background-color: var(--ruler-color);
+}
+
+blockquote { margin-inline: 1em; }
+
+// Semantic sectioning ---------------------------------------------------------
+// article {}
+// aside {}
+// footer {}
+// header {}
+// main {}
+// nav {}
+// section {}
+// search {}
+
+address { font-style: unset; }
+
 // Text formatting -------------------------------------------------------------
 a {
   color: inherit;
@@ -75,7 +72,7 @@ i, em { font-style: italic; }
 
 mark {
   display: inline-block;
-  padding: 0 .6rem;
+  padding-inline: .6rem;
   border-radius: .6rem;
   background-color: var(--ui-color-2);
   color: inherit;
@@ -91,10 +88,9 @@ ins, u {
 }
 
 small { font-size: 1.4rem; }
-
 sub, sup {
   font-size: 1.2rem;
-  line-height: 1;
+  line-height: var(--lh-100);
 }
 sub { vertical-align: sub; }
 sup { vertical-align: super; }
@@ -112,6 +108,8 @@ dialog {
   position: unset;
   border: unset;
   background-color: unset;
+  color: inherit;
+  font-size: inherit;
 }
 
 /* END OF FILE ============================================================== */
