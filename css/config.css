@@ -67,6 +67,26 @@
   --list-spacing-y: .3rem;
   --list-marker-color: var(--ui-color-3);
 
+  /* Tables ----------------------------------------------------------------- */
+  --table-layout: auto;
+  --table-width: auto;
+  --table-caption-side: top;
+  --table-caption-color: inherit;
+  --table-caption-size: inherit;
+  --table-thead-background: transparent;
+  --table-tfoot-background: transparent;
+  --table-tbody-background: transparent;
+  --table-cell-padding: .3rem 1.2rem;
+  --table-border-color: var(--ui-color-2);
+  --table-th-border-width: .2rem;
+  --table-th-weight: 600;
+  --table-th-font-size: inherit;
+  --table-td-border-width: .1rem;
+  --table-td-font-size: inherit;
+  /* --table-colgroup-highlight: var(--ui-color-1); */
+
+  /* ------------------------------------------------------------------------ */
+
   /* --pad-x-toolbar-header: 2.4rem; */
   /* --pad-y-toolbar-header: .6rem; */
 
@@ -88,19 +108,6 @@
   /* --anchor-color-hover: var(--ui-color-9); */
   /* --anchor-color-active: var(--ui-color-9); */
   /* --anchor-color-focus: var(--ui-color-9); */
-
-  /* Tables ----------------------------------------------------------------- */
-  /* --table-layout: auto; */
-  /* --table-width: auto; */
-  /* --table-caption-side: top; */
-  /* --table-caption-color: inherit; */
-  /* --table-caption-size: 1.6rem; */
-  /* --table-border-th-width: .2rem; */
-  /* --table-border-td-width: .1rem; */
-  /* --table-border-color: var(--ui-color-2); */
-  /* --table-header-font: 600; */
-  /* --table-cell-padding: .3rem 1.2rem; */
-  /* --table-colgroup-highlight: var(--ui-color-1); */
 
   /* Images ----------------------------------------------------------------- */
   /* --figcaption-color: var(--ui-color-7); */

@@ -13,29 +13,33 @@ table {
 
 caption {
   caption-side: var(--table-caption-side);
-  font-size: var(--table-caption-size);
   color: var(--table-caption-color);
+  font-size: var(--table-caption-size);
 }
 
 thead {
-  border-block: var(--table-border-th-width) solid var(--table-border-color);
+  border-block: var(--table-th-border-width) solid var(--table-border-color);
+  background-color: var(--table-thead-background);
 }
 
-// tbody {}
-// tfoot {}
+tfoot { background-color: var(--table-tfoot-background); }
+
+tbody { background-color: var(--table-tbody-background); }
 
 tbody tr, tfoot tr {
-  border-bottom: var(--table-border-td-width) solid var(--table-border-color);
+  border-bottom: var(--table-td-border-width) solid var(--table-border-color);
 }
 
 th {
   padding: var(--table-cell-padding);
-  font-weight: var(--table-header-font);
+  font-weight: var(--table-th-weight);
+  font-size: var(--table-th-font-size);
   line-height: var(--lh-150);
 }
 
 td {
   padding: var(--table-cell-padding);
+  font-size: var(--table-td-font-size);
   line-height: var(--lh-150);
 }
 
