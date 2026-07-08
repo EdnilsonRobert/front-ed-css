@@ -20,11 +20,16 @@ menu { list-style-type: none; }
 
 li { list-style-position: inside; }
 
+ol li, ul li {
+  padding-block: var(--list-spacing-y);
+}
+
 // dl {}
 dt { font-weight: unset; }
 dd {
   display: list-item;
   padding-left: var(--list-indent);
+  padding-block: var(--list-spacing-y);
   list-style-type: square;
   list-style-position: inside;
 }

@@ -62,6 +62,11 @@
   /* Text formatting -------------------------------------------------------- */
   --blockquote-margin-x: 1em;
 
+  /* Lists ------------------------------------------------------------------ */
+  --list-indent: 1em;
+  --list-spacing-y: .3rem;
+  --list-marker-color: var(--ui-color-3);
+
   /* --pad-x-toolbar-header: 2.4rem; */
   /* --pad-y-toolbar-header: .6rem; */
 
@@ -78,17 +83,11 @@
   /* --blockquote-color: var(--ui-color-7); */
   /* --blockquote-indent: 2em; */
 
-
   /* --anchor-color-link: var(--ui-color-6); */
   /* --anchor-color-visited: var(--ui-color-6); */
   /* --anchor-color-hover: var(--ui-color-9); */
   /* --anchor-color-active: var(--ui-color-9); */
   /* --anchor-color-focus: var(--ui-color-9); */
-
-  /* Lists ------------------------------------------------------------------ */
-  /* --list-indent: 1em; */
-  /* --list-spacing: .3rem; */
-  /* --list-marker-color: var(--ui-color-5); */
 
   /* Tables ----------------------------------------------------------------- */
   /* --table-layout: auto; */
