@@ -29,81 +29,87 @@
   --font-serif-text: 'Libre Baskerville', serif;
   --font-monospace: 'Source Code Pro', monospace;
 
-  --pad-x-toolbar-header: 2.4rem;
-  --pad-y-toolbar-header: .6rem;
-
-  --pad-x-container: 2.4rem;
-  --pad-y-container: 3.6rem;
-
   /* Basic HTML ------------------------------------------------------------- */
   --body-background: var(--ui-color-0);
   --body-color: var(--ui-color-9);
   --body-font: var(--font-sans-text);
 
-  --heading-color: var(--ui-color-6);
-  --heading-weight: 600;
-  --heading-font: var(--font-sans-display);
-  --heading-1-size: 176%;
-  --heading-2-size: 160%;
-  --heading-3-size: 146%;
-  --heading-4-size: 133%;
-  --heading-5-size: 121%;
-  --heading-6-size: 110%;
-  --heading-color-overline: var(--ui-color-6);
-  --heading-color-caption: var(--ui-color-6);
-
-  --paragraph-spacing-y: .6rem;
-  --paragraph-indent: 2em;
-
-  --ruler-height: .1rem;
-  --ruler-margin-y: 1.2rem;
-  --ruler-color: var(--ui-color-2);
-
-  --blockquote-border: var(--ui-color-4);
-  --blockquote-background: var(--ui-color-1);
-  --blockquote-color: var(--ui-color-8);
-  --blockquote-font: var(--font-serif-text);
-  --blockquote-indent: 2em;
-  --blockquote-font-size: 1.6rem;
-
-  /* Text formatting -------------------------------------------------------- */
   --font-weight-bolder: 600;
+  --font-size-base: 1.6rem;
+  --font-size-small: 1.4rem;
 
   --lh-150: 1.5;
   --lh-125: 1.25;
   --lh-100: 1;
 
-  --anchor-color-link: var(--ui-color-7);
-  --anchor-color-visited: var(--ui-color-7);
-  --anchor-color-hover: var(--ui-color-9);
-  --anchor-color-active: var(--ui-color-9);
-  --anchor-color-focus: var(--ui-color-9);
+  --heading-pad-y: .3rem;
+  --heading-color: var(--ui-color-6);
+  --heading-weight: 600;
+  --heading-font: var(--font-sans-display);
+  --heading-6-size: 110%;
+  --heading-5-size: 121%;
+  --heading-4-size: 133%;
+  --heading-3-size: 146%;
+  --heading-2-size: 160%;
+  --heading-1-size: 176%;
+  --heading-color-overline: var(--ui-color-6);
+  --heading-color-caption: var(--ui-color-6);
+
+  --ruler-height: .2rem;
+  --ruler-margin-y: 1.2rem;
+  --ruler-color: var(--ui-color-2);
+
+  /* Text formatting -------------------------------------------------------- */
+  --blockquote-margin-x: 1em;
+
+  /* --pad-x-toolbar-header: 2.4rem; */
+  /* --pad-y-toolbar-header: .6rem; */
+
+  /* --pad-x-container: 2.4rem; */
+  /* --pad-y-container: 3.6rem; */
+
+  /* --paragraph-spacing-y: .6rem; */
+  /* --paragraph-indent: 2em; */
+
+  /* --blockquote-font-size: 1.6rem; */
+  /* --blockquote-font: var(--font-serif-text); */
+  /* --blockquote-border: var(--ui-color-2); */
+  /* --blockquote-background: var(--ui-color-1); */
+  /* --blockquote-color: var(--ui-color-7); */
+  /* --blockquote-indent: 2em; */
+
+
+  /* --anchor-color-link: var(--ui-color-6); */
+  /* --anchor-color-visited: var(--ui-color-6); */
+  /* --anchor-color-hover: var(--ui-color-9); */
+  /* --anchor-color-active: var(--ui-color-9); */
+  /* --anchor-color-focus: var(--ui-color-9); */
 
   /* Lists ------------------------------------------------------------------ */
-  --list-indent: 1em;
-  --list-spacing: .3rem;
-  --list-marker-color: var(--ui-color-5);
+  /* --list-indent: 1em; */
+  /* --list-spacing: .3rem; */
+  /* --list-marker-color: var(--ui-color-5); */
 
   /* Tables ----------------------------------------------------------------- */
-  --table-layout: auto;
-  --table-width: auto;
-  --table-caption-side: top;
-  --table-caption-color: inherit;
-  --table-caption-size: 1.6rem;
-  --table-border-th-width: .2rem;
-  --table-border-td-width: .1rem;
-  --table-border-color: var(--ui-color-2);
-  --table-header-font: 600;
-  --table-cell-padding: .3rem 1.2rem;
-  --table-colgroup-highlight: var(--ui-color-1);
+  /* --table-layout: auto; */
+  /* --table-width: auto; */
+  /* --table-caption-side: top; */
+  /* --table-caption-color: inherit; */
+  /* --table-caption-size: 1.6rem; */
+  /* --table-border-th-width: .2rem; */
+  /* --table-border-td-width: .1rem; */
+  /* --table-border-color: var(--ui-color-2); */
+  /* --table-header-font: 600; */
+  /* --table-cell-padding: .3rem 1.2rem; */
+  /* --table-colgroup-highlight: var(--ui-color-1); */
 
   /* Images ----------------------------------------------------------------- */
-  --figcaption-color: var(--ui-color-7);
-  --figcaption-size: 1.4rem
+  /* --figcaption-color: var(--ui-color-7); */
+  /* --figcaption-size: 1.4rem */
 
   /* Embedded --------------------------------------------------------------- */
-  --aspect-ratio-object: 4 / 4;
-  --aspect-ratio-iframe: 16 / 9;
+  /* --aspect-ratio-object: 4 / 4; */
+  /* --aspect-ratio-iframe: 16 / 9; */
 
   /* Color palette ---------------------------------------------------------- */
   --ui-color:  hsl(220, 24%, 44%);

@@ -37,14 +37,14 @@
 
 <body class="body">
 
-    <header class="toolbar" data-bg="var(--ui-color-1)">
+    <!-- <header class="toolbar" data-bg="var(--ui-color-1)">
         <div class="flex-row row-lb gap-md">
             <img src="./favicon.svg" alt="favicon">
             <h1 class="heading-1 font-semibold" data-color="var(--ui-color-5)">
                 .front-<span data-color="var(--ui-color-9)">ed</span>.css
             </h1>
         </div>
-    </header>
+    </header> -->
 
     <!-- Color palette -->
     <div class="container-fluid" id="color-palette">
@@ -178,28 +178,7 @@
     <!-- Basic HTML -->
     <div class="container-fluid" id="basic-html">
         <p class="section-title">Basic HTML</p>
-        <p class="section-subtitle">Bare elements</p>
-
-        <h1>Alien, o oitavo passageiro</h1>
-        <p>Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
-        <h2>O reconhecimento da obra</h2>
-        <p>Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
-        <h3>O sucesso de franquia Alien</h3>
-        <p>O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
-        <h4>Sinopse da obra</h4>
-        <p>Uma nave espacial, ao retornar para Terra, recebe estranhos sinais vindos de um asteróide. Ao investigarem o local, um dos tripulantes é atacado por um estranho ser. O que parecia ser um ataque isolado se transforma em um terror constante, pois o tripulante atacado levou para dentro da nave o embrião de um alienígena, que não para de crescer e tem como meta matar toda a tripulação.</p>
-        <h5>Elenco do filme</h5>
-        <p>Tom Skerritt (Capitão Dallas), Sigourney Weaver (Tenente Ellen L. Ripley), Veronica Cartwright (Lambert), John Hurt (Kane), Harry Dean Stanton (Brett), Yaphet Kotto (Parker), Ian Holm (Ash), Bolaji Badejo (Xenomorfo).</p>
-        <h6>Outros filmes da franquia</h6>
-        <p>Aliens (1986), Alien 3 (1992) e Alien Resurrection (1997), Prometheus (2012) e Alien: Covenant (2017).</p>
-
-        <blockquote>
-            <p>Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</p>
-        </blockquote>
-
-        <hr class="ruler">
-
-        <p class="section-subtitle">Formatted</p>
+        <p class="section-subtitle">Exemplo de bloco de texto</p>
 
         <p class="overline">Filme em destaque</p>
         <h1 class="heading-1">Alien, o oitavo passageiro</h1>
@@ -221,10 +200,7 @@
         <h6 class="heading-6">Outros filmes da franquia</h6>
         <p class="paragraph">Aliens (1986), Alien 3 (1992) e Alien Resurrection (1997), Prometheus (2012) e Alien: Covenant (2017).</p>
 
-        <hr class="ruler">
-        <hr class="ruler-66">
         <hr class="ruler-50">
-        <hr class="ruler-33">
 
         <blockquote class="blockquote">
             <p class="quotation">Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</p>
@@ -232,80 +208,95 @@
         </blockquote>
     </div>
 
+    <div class="container-fluid" id="headings">
+        <p class="section-title">Headings</p>
+        <p class="section-subtitle">Bare elements</p>
+
+        <h6><code>&lt;h6&gt;</code> heading 6 = 110% (--font-base-size &times; 1.1)</h6>
+        <h5><code>&lt;h5&gt;</code> heading 5 = 121% (--heading-6-size &times; 1.1)</h5>
+        <h4><code>&lt;h4&gt;</code> heading 4 = 133% (--heading-5-size &times; 1.1)</h4>
+        <h3><code>&lt;h3&gt;</code> heading 3 = 146% (--heading-4-size &times; 1.1)</h3>
+        <h2><code>&lt;h2&gt;</code> heading 2 = 160% (--heading-3-size &times; 1.1)</h2>
+        <h1><code>&lt;h1&gt;</code> heading 1 = 176% (--heading-2-size &times; 1.1)</h1>
+    </div>
+
+    <div class="container-fluid" id="paragraphs">
+        <p class="section-title">Paragraphs</p>
+        <p class="section-subtitle">Bare element <code>&lt;p&gt;</code></p>
+
+        <p>Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
+        <p>Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
+        <p>O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
+        <p>Uma nave espacial, ao retornar para Terra, recebe estranhos sinais vindos de um asteróide. Ao investigarem o local, um dos tripulantes é atacado por um estranho ser. O que parecia ser um ataque isolado se transforma em um terror constante, pois o tripulante atacado levou para dentro da nave o embrião de um alienígena, que não para de crescer e tem como meta matar toda a tripulação.</p>
+        <p>Tom Skerritt (Capitão Dallas), Sigourney Weaver (Tenente Ellen L. Ripley), Veronica Cartwright (Lambert), John Hurt (Kane), Harry Dean Stanton (Brett), Yaphet Kotto (Parker), Ian Holm (Ash), Bolaji Badejo (Xenomorfo).</p>
+        <p>Aliens (1986), Alien 3 (1992) e Alien Resurrection (1997), Prometheus (2012) e Alien: Covenant (2017).</p>
+    </div>
+
+    <div class="container-fluid" id="rulers">
+        <p class="section-title">Ruler</p>
+        <p class="section-subtitle">Bare element <code>&lt;hr&gt;</code></p>
+
+        <hr>
+    </div>
+
     <!-- Semantic sectioning -->
     <div class="container-fluid" id="semantig-sectioning">
         <p class="section-title">Semantic sectioning</p>
         <p class="section-subtitle">Bare elements</p>
 
-        <main>&lt;main&gt; Este conteúdo está dentro de um main content.</main>
-        <header>&lt;header&gt; Este conteúdo está dentro de um header.</header>
-        <article>&lt;article&gt; Este conteúdo está dentro de um article.</article>
-        <section>&lt;section&gt; Este conteúdo está dentro de uma section.</section>
-        <aside>&lt;aside&gt; Este conteúdo está dentro de um content aside.</aside>
-        <footer>&lt;footer&gt; Este conteúdo está dentro de um footer.</footer>
-        <nav>&lt;nav&gt; Este conteúdo está dentro de um navigation.</nav>
-        <search>&lt;search&gt; Este conteúdo está dentro de uma search section.</search>
-        <address>&lt;address&gt; Este conteúdo está dentro de um address.</address>
+        <main><code>&lt;main&gt;</code> Este conteúdo está dentro de um main content.</main>
+        <header><code>&lt;header&gt;</code> Este conteúdo está dentro de um header.</header>
+        <article><code>&lt;article&gt;</code> Este conteúdo está dentro de um article.</article>
+        <section><code>&lt;section&gt;</code> Este conteúdo está dentro de uma section.</section>
+        <aside><code>&lt;aside&gt;</code> Este conteúdo está dentro de um content aside.</aside>
+        <nav><code>&lt;nav&gt;</code> Este conteúdo está dentro de um navigation.</nav>
+        <search><code>&lt;search&gt;</code> Este conteúdo está dentro de uma search section.</search>
+        <footer><code>&lt;footer&gt;</code> Este conteúdo está dentro de um footer.</footer>
+        <address><code>&lt;address&gt;</code> Este conteúdo está dentro de um address.</address>
     </div>
 
     <!-- Text Formatting -->
     <div class="container-fluid" id="text-formatting">
         <p class="section-title">Text formatting</p>
-        <p class="section-subtitle">Bare elements</p>
 
-        <div>&lt;div&gt; Este conteúdo está dentro de uma block division.</div>
-        <p>&lt;span&gt; <span>Este é um exemplo de span (inline division) em um parágrafo</span>.</p>
+        <p class="section-subtitle">Division</p>
+        <div><code>&lt;div&gt;</code> Este conteúdo está dentro de uma block division.</div>
+        <p><code>&lt;span&gt;</code> <span>Este é um exemplo de span (inline division) em um parágrafo</span>.</p>
 
-        <p>&lt;a&gt; <a href="./">Este é um exemplo de link em um págrafo</a>.</p>
+        <p class="section-subtitle">Quotation</p>
+        <p><code>&lt;blockquote&gt; &lt;p&gt;</code></p>
+        <blockquote>
+            <p>Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</p>
+            <p>Ash (Alien, o oitavo passageiro - 1979)</p>
+        </blockquote>
 
-        <p>&lt;b&gt; <b>Este é um exemplo de texto grafado em negrito em um parágrafo</b>.</p>
-        <p>&lt;strong&gt; <strong>Este é um exemplo de texto marcado como importante em um parágrafo</strong>.</p>
-        <p>&lt;i&gt; <i>Este é um exemplo de texto itálico em um parágrafo</i>.</p>
-        <p>&lt;em&gt; <em>Este é um exemplo de ênfase de texto em um parágrafo</em>.</p>
-        <p>&lt;mark&gt; <mark>Este é um exemplo de marca texto em um parágrafo</mark>.</p>
+        <p class="section-subtitle">Anchor</p>
+        <p><code>&lt;a&gt;</code> <a href="./">Este é um exemplo de link em um págrafo</a>.</p>
 
-        <p>&lt;del&gt; <del cite="why-deleted.html" datetime="2012-07-04">Este é um exemplo de texto deletado em um parágrafo</del>.</p>
-        <p>&lt;ins&gt; <ins cite="why-inserted.html" datetime="2012-07-04">Este é um exemplo de texto inserido em um parágrafo</ins>.</p>
-        <p>&lt;s&gt; <s>Este é um exemplo de texto tachado em um parágrafo</s>.</p>
-        <p>&lt;u&gt; <u>Este é um exemplo de texto sublinhado em um parágrafo</u>.</p>
+        <p class="section-subtitle">Text bold and italic</p>
+        <p><code>&lt;b&gt;</code> <b>Este é um exemplo de texto grafado em negrito em um parágrafo</b>.</p>
+        <p><code>&lt;strong&gt;</code> <strong>Este é um exemplo de texto marcado como importante em um parágrafo</strong>.</p>
+        <p><code>&lt;i&gt;</code> <i>Este é um exemplo de texto itálico em um parágrafo</i>.</p>
+        <p><code>&lt;em&gt;</code> <em>Este é um exemplo de ênfase de texto em um parágrafo</em>.</p>
 
-        <p>&lt;small&gt; Este é um exemplo de <small>texto com tipo menor em um parágrafo</small>.</p>
-        <p>&lt;sub&gt; Este é um exemplo de <sub>texto subescrito em um parágrafo</sub>.</p>
-        <p>&lt;sup&gt; Este é um exemplo de <sup>texto sobrescrito em um parágrafo</sup>.</p>
+        <p class="section-subtitle">Marked</p>
+        <p><code>&lt;mark&gt;</code> <mark>Este é um exemplo de marca texto em um parágrafo</mark>.</p>
 
-        <p>&lt;code&gt; Este é exemplo de <code>pedaço de código de programação</code> em um parágrafo.</p>
-        <p>&lt;kbd&gt; Este é um exemplo de entrada de teclado <kbd>Enter</kbd> em um parágrafo.</p>
+        <p class="section-subtitle">Text deletion/insertion</p>
+        <p><code>&lt;del&gt;</code> <del cite="why-deleted.html" datetime="2012-07-04">Este é um exemplo de texto deletado em um parágrafo</del>.</p>
+        <p><code>&lt;ins&gt;</code> <ins cite="why-inserted.html" datetime="2012-07-04">Este é um exemplo de texto inserido em um parágrafo</ins>.</p>
 
-        <dialog open="open">&lt;dialog&gt; Este conteúdo está dentro de um dialog.</dialog>
+        <p class="section-subtitle">Small texts</p>
+        <p><code>&lt;small&gt;</code> Este é um exemplo de <small>texto com tipo menor em um parágrafo</small>.</p>
+        <p><code>&lt;sub&gt;</code> Este é um exemplo de <sub>texto subescrito em um parágrafo</sub>.</p>
+        <p><code>&lt;sup&gt;</code> Este é um exemplo de <sup>texto sobrescrito em um parágrafo</sup>.</p>
 
-        <hr class="ruler">
+        <p class="section-subtitle">Code format</p>
+        <p><code>&lt;code&gt;</code> Este é exemplo de <code>pedaço de código de programação</code> em um parágrafo.</p>
+        <p><code>&lt;kbd&gt;</code> Este é um exemplo de entrada de teclado <kbd>Enter</kbd> em um parágrafo.</p>
 
-        <p class="section-subtitle">Formatted</p>
-
-        <div>&lt;div&gt; Este conteúdo está dentro de uma block division.</div>
-        <p>&lt;span&gt; <span>Este é um exemplo de span (inline division) em um parágrafo</span>.</p>
-
-        <p>&lt;a&gt; <a class="anchor" href="./">Este é um exemplo de link em um págrafo</a>.</p>
-
-        <p>&lt;b&gt; <b class="font-bold">Este é um exemplo de texto grafado em negrito em um parágrafo</b>.</p>
-        <p>&lt;strong&gt; <strong class="font-semibold">Este é um exemplo de texto marcado como importante em um parágrafo</strong>.</p>
-        <p>&lt;i&gt; <i class="font-italic">Este é um exemplo de texto itálico em um parágrafo</i>.</p>
-        <p>&lt;em&gt; <em class="font-italic">Este é um exemplo de ênfase de texto em um parágrafo</em>.</p>
-        <p>&lt;mark&gt; <mark class="mark-lime">Este é um exemplo de marca texto em um parágrafo</mark>.</p>
-
-        <p>&lt;del&gt; <del class="text-del" cite="why-deleted.html" datetime="2012-07-04">Este é um exemplo de texto deletado em um parágrafo</del>.</p>
-        <p>&lt;ins&gt; <ins class="text-ins" cite="why-inserted.html" datetime="2012-07-04">Este é um exemplo de texto inserido em um parágrafo</ins>.</p>
-        <p>&lt;s&gt; <s class="text-s">Este é um exemplo de texto tachado em um parágrafo</s>.</p>
-        <p>&lt;u&gt; <u class="text-u">Este é um exemplo de texto sublinhado em um parágrafo</u>.</p>
-
-        <p>&lt;small&gt; Este é um exemplo de <small class="font-small">texto com tipo menor em um parágrafo</small>.</p>
-        <p>&lt;sub&gt; Este é um exemplo de <sub class="text-sub">texto subescrito em um parágrafo</sub>.</p>
-        <p>&lt;sup&gt; Este é um exemplo de <sup class="text-sup">texto sobrescrito em um parágrafo</sup>.</p>
-
-        <p>&lt;code&gt; Este é exemplo de <code class="code">pedaço de código de programação</code> em um parágrafo.</p>
-        <p>&lt;kbd&gt; Este é um exemplo de entrada de teclado <kbd class="kbd">Enter</kbd> em um parágrafo.</p>
-
-        <dialog open="open">&lt;dialog&gt; Este conteúdo está dentro de um dialog.</dialog>
+        <p class="section-subtitle">Dialog</p>
+        <dialog open="open"><code>&lt;dialog&gt;</code> Este conteúdo está dentro de um dialog.</dialog>
     </div>
 
     <!-- Lists -->

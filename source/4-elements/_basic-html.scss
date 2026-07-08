@@ -15,7 +15,7 @@ body {
   background-color: var(--body-background);
   color: var(--body-color);
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: var(--font-size-base);
   font-family: var(--body-font);
   line-height: var(--lh-150);
   font-optical-sizing: auto;
@@ -23,6 +23,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  padding-block: var(--heading-pad-y);
   color: var(--heading-color);
   font-weight: var(--heading-weight);
   font-style: normal;
@@ -36,16 +37,18 @@ h4 { font-size: var(--heading-4-size); }
 h5 { font-size: var(--heading-5-size); }
 h6 { font-size: var(--heading-6-size); }
 
-p { overflow-wrap: break-word; }
+p {
+  overflow-wrap: break-word;
+  padding-block: .3rem;
+}
 
 hr {
   height: var(--ruler-height);
   margin-inline: auto;
+  margin-block: var(--ruler-margin-y);
   border-style: unset;
   background-color: var(--ruler-color);
 }
-
-blockquote { margin-inline: 1em; }
 
 // Semantic sectioning ---------------------------------------------------------
 // article {}
@@ -54,19 +57,36 @@ blockquote { margin-inline: 1em; }
 // header {}
 // main {}
 // nav {}
-// section {}
 // search {}
+// section {}
 
 address { font-style: unset; }
 
 // Text formatting -------------------------------------------------------------
+blockquote {
+  margin-inline: var(--blockquote-margin-x);
+  padding-block: .3rem;
+
+  :first-child {
+    margin-bottom: .6rem;
+    quotes: auto;
+    &::before { content: open-quote; }
+    &::after  { content: close-quote; }
+  }
+
+  :last-child {
+    font-size: 1.4rem;
+    text-align: right;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: unset;
   cursor: default;
 }
 
-b, strong { font-weight: bolder; }
+b, strong { font-weight: var(--font-weight-bolder); }
 
 i, em { font-style: italic; }
 
@@ -79,15 +99,26 @@ mark {
   line-height: inherit;
 }
 
-del, s {
+del, ins {
+  display: inline-block;
+  padding-inline: .6rem;
+  border-radius: .6rem;
+  line-height: inherit;
+}
+del {
+  background-color: var(--red-1);
+  color: var(--red-8);
   text-decoration: line-through;
 }
-
-ins, u {
-  text-decoration: underline;
+ins {
+  text-decoration: unset;
+  background-color: var(--green-1);
+  color: var(--green-8);
+  text-decoration: unset;
 }
 
-small { font-size: 1.4rem; }
+small { font-size: var(--font-size-small); }
+
 sub, sup {
   font-size: 1.2rem;
   line-height: var(--lh-100);
@@ -96,13 +127,26 @@ sub { vertical-align: sub; }
 sup { vertical-align: super; }
 
 code, kbd {
-  font-weight: 400;
+  display: inline-block;
+  padding-inline: 1.2rem;
+  border-radius: .6rem;
   font-style: normal;
-  font-size: 1.6rem;
+  font-size: inherit;
   line-height: inherit;
 }
-code { font-family: var(--font-monospace); }
-kbd { font-family: var(--font-sans-text); }
+code {
+  background-color: var(--ui-color-7);
+  color: var(--green-3);
+  font-weight: 400;
+  font-family: var(--font-monospace);
+}
+kbd {
+  border: .1rem solid var(--ui-color-3);
+  background-color: var(--ui-color-1);
+  color: var(--ui-color-6);
+  font-weight: var(--font-weight-bolder);
+  font-family: var(--font-sans-text);
+}
 
 dialog {
   position: unset;

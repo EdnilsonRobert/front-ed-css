@@ -17,33 +17,33 @@
 
 // ELEMENTS - Bare elements (unclassed HTML / type selectors)
 @use './4-elements/basic-html';
-@use './4-elements/bare-lists';
-@use './4-elements/bare-tables';
-@use './4-elements/bare-images';
-@use './4-elements/bare-multimedia';
-@use './4-elements/bare-embedded';
-@use './4-elements/bare-scripting';
-@use './4-elements/bare-forms';
+// @use './4-elements/bare-lists';
+// @use './4-elements/bare-tables';
+// @use './4-elements/bare-images';
+// @use './4-elements/bare-multimedia';
+// @use './4-elements/bare-embedded';
+// @use './4-elements/bare-scripting';
+// @use './4-elements/bare-forms';
 
 // OBJECTS - Layout classes, cosmetic-free design patterns
-@use './5-objects/headings';
-@use './5-objects/text-formatting';
-@use './5-objects/lists';
-@use './5-objects/tables';
-@use './5-objects/images';
-@use './5-objects/multimedia';
-@use './5-objects/embedded';
-@use './5-objects/scripting';
-@use './5-objects/buttons';
-@use './5-objects/forms';
+// @use './5-objects/headings';
+// @use './5-objects/text-formatting';
+// @use './5-objects/lists';
+// @use './5-objects/tables';
+// @use './5-objects/images';
+// @use './5-objects/multimedia';
+// @use './5-objects/embedded';
+// @use './5-objects/scripting';
+// @use './5-objects/buttons';
+// @use './5-objects/forms';
 
 // COMPONENTS - UI Classes, designed components, chunks of UI
-@use './6-components/containers';
-@use './6-components/toolbars';
+// @use './6-components/containers';
+// @use './6-components/toolbars';
 
 // UTILITIES - IDs and !important, helpers and overrides
 @use './7-utilities/color-utils';
-@use './7-utilities/text-utils';
+// @use './7-utilities/text-utils';
 @use './7-utilities/linter';
 
 /* END OF FILE ============================================================== */

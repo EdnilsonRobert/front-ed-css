@@ -4,6 +4,22 @@
   File: Headings
 ============================================================================= */
 
+/*
+h1, h2, h3, h4, h5, h6 {
+  padding-block: var(--heading-pad-y);
+  color: var(--heading-color);
+  font-weight: var(--heading-weight);
+  font-style: normal;
+  font-family: var(--heading-font);
+  line-height: var(--lh-125);
+}
+h1 { font-size: var(--heading-1-size); }
+h2 { font-size: var(--heading-2-size); }
+h3 { font-size: var(--heading-3-size); }
+h4 { font-size: var(--heading-4-size); }
+h5 { font-size: var(--heading-5-size); }
+h6 { font-size: var(--heading-6-size); }
+
 .heading-1 { font-size: var(--heading-1-size); }
 .heading-2 { font-size: var(--heading-2-size); }
 .heading-3 { font-size: var(--heading-3-size); }
