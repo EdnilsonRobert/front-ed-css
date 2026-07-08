@@ -85,6 +85,10 @@
   --table-td-font-size: inherit;
   /* --table-colgroup-highlight: var(--ui-color-1); */
 
+  /* Images ----------------------------------------------------------------- */
+  --figcaption-color: var(--ui-color-6);
+  --figcaption-size: 1.4rem;
+
   /* ------------------------------------------------------------------------ */
 
   /* --pad-x-toolbar-header: 2.4rem; */
@@ -109,9 +113,6 @@
   /* --anchor-color-active: var(--ui-color-9); */
   /* --anchor-color-focus: var(--ui-color-9); */
 
-  /* Images ----------------------------------------------------------------- */
-  /* --figcaption-color: var(--ui-color-7); */
-  /* --figcaption-size: 1.4rem */
 
   /* Embedded --------------------------------------------------------------- */
   /* --aspect-ratio-object: 4 / 4; */

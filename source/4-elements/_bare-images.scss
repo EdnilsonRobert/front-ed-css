@@ -4,10 +4,17 @@
   File: Images
 ============================================================================= */
 
-// picture {}
-// figure {}
+picture {
+  display: inline-block;
+  padding-block: .3rem;
+}
 
-figcaption { font-size: 1.4rem; }
+figure { padding-block: .3rem; }
+
+figcaption {
+  color: var(--figcaption-color);
+  font-size: var(--figcaption-size);
+}
 
 img, svg {
   display: block;
@@ -16,6 +23,7 @@ img, svg {
 }
 
 meter, progress {
+  // appearance: unset;
   display: block;
   width: 100%;
 }
