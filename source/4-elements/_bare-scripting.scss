@@ -12,6 +12,10 @@ noscript {
   font-size: 1.4rem;
 }
 
-canvas { background-color: var(--ui-color-1); }
+canvas {
+  border-radius: .6rem;
+  border: .1rem solid var(--ui-color-2);
+  background-color: var(--ui-color-1);
+}
 
 /* END OF FILE ============================================================== */

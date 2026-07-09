@@ -454,7 +454,7 @@
 
     <!-- Scripting -->
     <div class="container-fluid" id="scripting">
-        <p class="section-title">Text formatting</p>
+        <p class="section-title">Scripting</p>
         <p class="section-subtitle">Bare elements</p>
 
         <noscript>&lt;noscript&gt; Este conteúdo está dentro de um noscript</noscript>
@@ -475,9 +475,22 @@
                 const canvas2 = document.querySelector('#js-canvas2');
                 let ctx2 = canvas2.getContext('2d');
                 ctx2.beginPath();
-                ctx2.arc(64,64,50,0,2*Math.PI);
-                ctx2.lineWidth = 6;
+                ctx2.arc(64, 64, 50, 0, 2 * Math.PI);
+                ctx2.lineWidth = 9;
+                ctx2.strokeStyle = 'hsl(220, 24%, 67%)';
+                ctx2.stroke();
+
+                const x = 64;      // largura / 2
+                const y = 64;      // altura / 2;
+                const radius = 50; // raio do círculo
+                const startAngle = 1.5 * Math.PI;
+                const endAngle = .75 * Math.PI;
+                const counterclockwise = false;
+                ctx2.beginPath();
+                ctx2.lineCap = 'butt'; // butt, square, round
+                ctx2.arc(x, y, radius, startAngle, endAngle, counterclockwise);
                 ctx2.strokeStyle = 'hsl(220, 24%, 44%)';
+                ctx2.lineWidth = 9;
                 ctx2.stroke();
 
                 // CANVAS #3
@@ -486,17 +499,14 @@
                 ctx3.fillStyle = 'hsl(220, 24%, 90%)';
                 ctx3.strokeStyle = 'hsl(220, 24%, 44%)';
                 ctx3.lineWidth = 6;
+                ctx3.lineCap = 'round';
                 ctx3.font = 'bold 24px sans-serif';
                 ctx3.fillRect(0,0,128,128);
                 ctx3.strokeText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
                 ctx3.fillText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
             </script>
-            <figcaption>&lt;canvas&gt; Canvas [gráficos via script]</figcaption>
+            <figcaption><code>&lt;canvas&gt;</code> Canvas [gráficos via script]</figcaption>
         </figure>
-
-        <hr class="ruler">
-
-        <p class="section-subtitle">Formatted</p>
     </div>
 
     <!-- Forms -->
