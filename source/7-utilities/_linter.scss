@@ -6,13 +6,13 @@
 
 // Atributos obrigatórios e recomendados
 html:not([lang])::before {
-  content: 'html requer um atributo lang';
+  content: '<html> requer um atributo lang';
 }
 html:not(:has(meta[charset]))::before {
-  content: 'html requer uma meta tag charset';
+  content: '<html> requer uma meta tag charset';
 }
 html:not(:has(meta[name="viewport"]))::before {
-  content: 'html requer uma meta tag viewport';
+  content: '<html> requer uma meta tag viewport';
 }
 html:not([lang])::before,
 html:not(:has(meta[charset]))::before,
@@ -38,12 +38,12 @@ video:not([controls]) {
   background-color: var(--red-1);
 }
 
-:has( > img:not([alt]))::before { content: 'img requer um atributo alt'; }
+:has( > img:not([alt]))::before { content: '<img> requer um atributo alt'; }
 :has( > audio:not([controls]))::before {
-  content: 'audio requer um atributo controls';
+  content: '<audio> requer um atributo controls';
 }
 :has( > video:not([controls]))::before {
-  content: 'video requer um atributo controls';
+  content: '<video> requer um atributo controls';
 }
 
 :has( > img:not([alt]))::before,
@@ -57,14 +57,15 @@ video:not([controls]) {
 }
 
 // DEPRECATED ------------------------------------------------------------------
-acronym, applet, big, blink, center, dir, embed, font, hgroup, marquee, menuitem, plaintext, strike, tt, xmp
-{
+acronym, applet, big, blink, center, dir, embed, font, hgroup, marquee, menuitem, plaintext, rb, rtc, strike, tt, xmp {
   background-color: var(--red-2);
   color: var(--red-8);
 }
 
 applet, dir, embed, hgroup, xmp,
-:has(> acronym), :has(> big), :has(> blink), :has(> center), :has(> font), :has(> marquee), :has(> menuitem), :has(> plaintext), :has(> strike), :has(> tt) {
+:has(> acronym), :has(> big), :has(> blink), :has(> center), :has(> font),
+:has(> marquee), :has(> menuitem), :has(> plaintext), :has(> rb), :has(> rtc),
+:has(> strike), :has(> tt) {
   &::after {
     content: 'Há tag descontinuada na marcação do HTML, utilize outra tag.';
     display: block;

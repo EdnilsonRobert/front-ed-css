@@ -6,17 +6,17 @@
 
 // ALL HTML TAGS ---------------------------------------------------------------
 
+// Basic HTML --------------------------
+body, div, hr, html, h1, h2, h3, h4, h5, h6, p, span,
 // Semantic sectioning -----------------
 address, article, aside, footer, header, main, nav, search, section,
-// Basic HTML --------------------------
-body, br, div, hr, html, h1, h2, h3, h4, h5, h6, p, span,
 // Text Formatting ---------------------
-a, abbr, b, blockquote, cite, code, del, dfn, em, i, ins, kbd, mark, pre, q, s, samp, small, strong, sub, sup, time, u, var, wbr,
+a, abbr, b, blockquote, br, cite, code, del, dfn, em, i, ins, kbd, mark, pre, q, s, samp, small, strong, sub, sup, time, u, var, wbr,
 bdi, bdo, rp, rt, ruby,
 // Lists -------------------------------
 dd, dl, dt, li, menu, ol, ul,
 // Tables ------------------------------
-caption, table, tbody, td, tfoot, th, thead, tr,
+caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr,
 // Images ------------------------------
 figcaption, figure, img, meter, picture, progress, svg,
 // Audio and Video ---------------------
@@ -41,7 +41,6 @@ ion-icon,
 /* =============================================================================
 NOT APPLICABLE -----------------------------------------------------------------
   Metadata:       base, head, link, meta, style, title
-  Tables:         col, colgroup
   Images:         map, area
   Embedded:       source
   Scripting:      script
