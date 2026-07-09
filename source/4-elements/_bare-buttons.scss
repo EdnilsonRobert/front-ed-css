@@ -1,0 +1,37 @@
+/* =============================================================================
+  ITCSS layer: Elements
+  Bundle: Bare elements (unclassed HTML / type selectors)
+  File: Buttons
+============================================================================= */
+
+// Buttons ---------------------------------------------------------------------
+button {
+  appearance: unset;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  height: 4.8rem;
+  padding: .3rem 1.2rem;
+  border-radius: .6rem;
+  border: .1rem solid var(--ui-color-2);
+  background-color: var(--ui-color-1);
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: inherit;
+  line-height: var(--lh-125);
+  transition: all 200ms linear;
+  cursor: default;
+
+  &:hover:not(:disabled),
+  &:active:not(:disabled),
+  &:focus:not(:disabled) {
+    border-color: var(--ui-color-5);
+    outline: unset;
+  }
+
+  &:disabled { opacity: .5; }
+}
+
+/* END OF FILE ============================================================== */
