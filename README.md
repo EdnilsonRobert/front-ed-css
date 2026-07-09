@@ -9,6 +9,7 @@
 - Organização de arquivos: ITCSS
 - Metodologia para classes: OOCSS
 - Estratégia de desenvolvimento: Atomic Design
+- Foco: Mobile first
 
 ## Build
 
@@ -27,49 +28,52 @@
 - [x] Reset
 
 ### Elements - Bare elements (unclassed HTML / type selectors)
-- [x] Semantic sectioning
-- address, article, aside, footer, header, main, nav, search, section
 - [x] Basic HTML
 - body, div, hr, html, h1, h2, h3, h4, h5, h6, p, span
+- [x] Semantic sectioning
+- address, article, aside, footer, header, main, nav, search, section
 - [x] Text Formatting
-- a, b, blockquote, code, del, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
-- [x] Interactive elements
-- dialog
+- a, b, blockquote, code, del, dialog, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
 - [x] Lists
 - dd, dl, dt, li, menu, ol, ul
 - [x] Tables
-- caption, table, tbody, td, tfoot, th, thead, tr
+- caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr
 - [x] Images
-- figcaption, figure, img, meter, picture, progress, svg
+- figcaption, figure, img, picture, svg
 - [x] Audio and Video
 - audio, video
 - [x] Embedded
 - iframe, object
 - [x] Scripting
 canvas, noscript
+- [x] Buttons
+- button
 - [x] Forms
-- button, datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
-- [] Icons (Ionicon - external lib)
+- datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
+
+- [ ] Icons (Ionicon - external lib)
 - ion-icon
 
 ### Objects - Layout classes, cosmetic-free design patterns
-- [x] Semantic sectioning
-- [x] Basic HTML
-- [x] Text formatting
-- [x] Lists
-- [x] Tables
-- [x] Images
-- [x] Audio and video
-- [x] Embedded
-- [x] Scripting
-- [x] Buttons
-- [x] Forms
+
+- [ ] Basic HTML
+- [ ] Semantic sectioning
+- [ ] Text formatting
+- [ ] Lists
+- [ ] Tables
+- [ ] Images
+- [ ] Audio and video
+- [ ] Embedded
+- [ ] Scripting
+- [ ] Buttons
+- [ ] Forms
 - [ ] Form components (toggle, button toggle, slider, range)
 - [ ] Icons (Ionicon - external lib)
 
 ### Components - UI Classes, designed components, chunks of UI
+- [x] Containers
+
 - [ ] Wireframe
-- [ ] Containers
 - [ ] Flexbox
 - [ ] Grid layout
 - [ ] Toolbars (header and footer)
@@ -98,6 +102,11 @@ canvas, noscript
 - [ ] Dashboards [bars, donuts, lines, piechart, ...]
 
 ### Utilities - IDs and !important, helpers and overrides
+- [ ] Text utils
+- [ ] CSS linter
+- atributos obrigatórios ou recomendados em tags
+- tags e atributos marcados com status deprecated
+
 - [ ] Breakpoints and responsive design
 - [ ] Spacing
 - [ ] Borders (radius and lines)
@@ -105,14 +114,10 @@ canvas, noscript
 - [ ] Shadows (box and text)
 - [ ] Opacity
 - [ ] Filters
-- [X] Text utils
 - [ ] Helper classes
 - [ ] Hover, focus, and other states
 - [ ] Animations and transitions
 - [ ] Dark mode
-- [X] CSS linter
-- atributos obrigatórios ou recomendados em tags
-- tags e atributos marcados com status deprecated
 
 
 ---

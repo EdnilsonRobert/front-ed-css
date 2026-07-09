@@ -29,6 +29,14 @@
   --font-serif-text: 'Libre Baskerville', serif;
   --font-monospace: 'Source Code Pro', monospace;
 
+  /* Spacing ---------------------------------------------------------------- */
+  --container-fixed-max-width: 96rem;
+  --container-fixed-pad-x: 2.4rem;
+  --container-fixed-pad-y: 3.6rem;
+
+  --container-fluid-pad-x: 2.4rem;
+  --container-fluid-pad-y: 3.6rem;
+
   /* Basic HTML ------------------------------------------------------------- */
   --body-background: var(--ui-color-0);
   --body-color: var(--ui-color-9);
@@ -94,9 +102,6 @@
   /* --pad-x-toolbar-header: 2.4rem; */
   /* --pad-y-toolbar-header: .6rem; */
 
-  /* --pad-x-container: 2.4rem; */
-  /* --pad-y-container: 3.6rem; */
-
   /* --paragraph-spacing-y: .6rem; */
   /* --paragraph-indent: 2em; */
 
@@ -112,7 +117,6 @@
   /* --anchor-color-hover: var(--ui-color-9); */
   /* --anchor-color-active: var(--ui-color-9); */
   /* --anchor-color-focus: var(--ui-color-9); */
-
 
   /* Embedded --------------------------------------------------------------- */
   /* --aspect-ratio-object: 4 / 4; */

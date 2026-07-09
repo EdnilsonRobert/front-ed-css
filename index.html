@@ -176,7 +176,7 @@
     </div>
 
     <!-- Basic HTML -->
-    <div class="container-fluid" id="basic-html">
+    <div class="container-fixed" id="basic-html">
         <p class="section-title">Basic HTML</p>
         <p class="section-subtitle">Exemplo de bloco de texto</p>
 
@@ -399,6 +399,14 @@
             <figcaption><code>&lt;img&gt;</code> Imagem (format: .webp)</figcaption>
         </figure>
 
+        <figure>
+            <svg width="128" height="128">
+                <circle cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 78%)" stroke-width="9"/>
+                <circle class="arc" cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 44%)" stroke-width="9" stroke-dasharray="301" stroke-dashoffset="70"/>
+            </svg>
+            <figcaption><code>&lt;svg&gt;</code> Inline SVG</figcaption>
+        </figure>
+
         <picture>
             <source media="(min-width: 1200px)" srcset="./assets/picture-1200.svg">
             <source media="(min-width: 800px)" srcset="./assets/picture-960.svg">
@@ -407,14 +415,6 @@
             <!-- <img src="./assets/picture-fallback.svg"> -->
         </picture>
         <p><code>&lt;picture&gt;</code> Container para responsividade de imagens</p>
-
-        <figure>
-            <svg width="128" height="128">
-                <circle cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 78%)" stroke-width="9"/>
-                <circle class="arc" cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 44%)" stroke-width="9" stroke-dasharray="301" stroke-dashoffset="70"/>
-            </svg>
-            <figcaption><code>&lt;svg&gt;</code> Inline SVG</figcaption>
-        </figure>
     </div>
 
     <!-- Audio and Video -->

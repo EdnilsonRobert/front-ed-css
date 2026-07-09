@@ -4,4 +4,20 @@
   File: Containers
 ============================================================================= */
 
+.container-fixed {
+  max-width: var(--container-fixed-max-width, 96rem);
+  margin-inline: auto;
+  padding-inline: var(--container-fixed-pad-x, 2.4rem);
+  padding-block: var(--container-fixed-pad-y, 2.4rem);
+}
+
+.container-fluid {
+  padding-inline: var(--container-fluid-pad-x, 2.4rem);
+  padding-block: var(--container-fluid-pad-y, 2.4rem);
+}
+
+// .group {}
+
+// .wrapper {}
+
 /* END OF FILE ============================================================== */
