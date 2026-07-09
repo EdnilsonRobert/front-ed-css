@@ -4,21 +4,28 @@
   File: Forms
 ============================================================================= */
 
-/*
 // Forms -----------------------------------------------------------------------
 form {
   :focus { outline: unset; }
+
+  :disabled { opacity: .5; }
+  :has(> :disabled),
+  :has(> :disabled) {
+    span { opacity: .5; }
+  }
 }
 
 fieldset {
   padding: 2.4rem;
-  border: .1rem solid;
+  border: .1rem solid var(--ui-color-2);
 }
 
 legend {
-  padding: 0 1.2rem;
-  color: inherit;
-  text-align: left;
+  padding-inline: 1.2rem;
+  color: var(--ui-color-5);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 label {
@@ -29,39 +36,46 @@ label {
 }
 
 // Input fields ----------------------------------------------------------------
-[type="email"],
-[type="password"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="url"]
+::placeholder { color: var(--ui-color-4); }
+
+[type='email'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='url'],
+output,
+select,
+textarea
 {
   appearance: unset;
-  overflow: visible;
-  padding: .3rem 1.2rem;
-  border: .1rem solid;
+  border-radius: .6rem;
+  border: .1rem solid var(--ui-color-2);
   background-color: unset;
   color: inherit;
   font-size: inherit;
   font-family: inherit;
-  line-height: var(--lh-150);
+}
 
-  &:disabled { opacity: .5; }
+[type='email'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='url']
+{
+  height: 4.8rem;
+  padding-inline: 1.2rem .6rem;
+
   &:invalid { border-color: var(--red-5); }
 }
 
 textarea {
-  appearance: unset;
   flex-grow: 1;
   overflow-y: auto;
   resize: unset;
-  padding: .3rem 1.2rem;
-  border: .1rem solid;
-  background-color: unset;
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: var(--lh-150);
+  padding: .6rem 1.2rem;
   scrollbar-width: thin;
 }
 label:has(textarea) {
@@ -69,38 +83,24 @@ label:has(textarea) {
   align-items: flex-start;
 }
 
-::placeholder { color: var(--ui-color-4); }
-
 // Selection fields ------------------------------------------------------------
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   appearance: unset;
   aspect-ratio: 1 / 1;
   width: 1.6rem;
-  border: .1rem solid;
+  border: .1rem solid var(--ui-color-2);
   background-color: unset;
 
   &:checked { background-color: var(--ui-color-3); }
-  &:disabled { opacity: .5; }
 }
-[type="checkbox"] { border-radius: .3rem; }
-[type="radio"] { border-radius: 50%; }
-
-:has(> [type="checkbox"]:disabled),
-:has(> [type="radio"]:disabled) {
-  span { opacity: .5; }
-}
+[type='checkbox'] { border-radius: .3rem; }
+[type='radio'] { border-radius: 50%; }
 
 select {
   position: relative;
-  appearance: unset;
-  padding: .3rem 3.2rem .3rem 1.2rem;
-  border: .1rem solid;
-  background-color: unset;
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: var(--lh-150);
+  height: 4.8rem;
+  padding-inline: 1.2rem 3.2rem;
 }
 :has(> select) {
   position: relative;
@@ -109,12 +109,12 @@ select {
     content: '';
     position: absolute;
     right: 1.2rem;
-    top: 20%;
+    top: 42%;
     aspect-ratio: 1 / 1;
     width: 1.2rem;
     border-left: .2rem solid var(--ui-color-3);
     border-bottom: .2rem solid var(--ui-color-3);
-    transform: rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
     pointer-events: none;
   }
 }
@@ -123,60 +123,32 @@ select {
 // option {}
 
 // Miscellaneous fields --------------------------------------------------------
-[type="color"] {
+[type='color'] {
   appearance: unset;
-  height: 3.2rem;
+  width: 6.4rem;
+  height: 4.8rem;
   border: unset;
   background-color: unset;
 }
 
-[type="number"] {
-  appearance: unset;
-  padding: .3rem 1.2rem;
-  border: .1rem solid;
-  background-color: unset;
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: var(--lh-150);
+[type='number'] {
+  height: 4.8rem;
+  padding-inline: 1.2rem .3rem;
 
-  &:disabled { opacity: .5; }
-  &:invalid { border-color: var(--red-5); }
-  &:out-of-range { border-color: var(--red-5); }
+  &:invalid, &:out-of-range {
+    border-color: var(--red-5);
+  }
 }
 
-// [type="range"] {
+// [type='range'] {
 //   appearance: unset;
 // }
 
-[type="file"] {
-  appearance: unset;
-  font-size: inherit;
-  font-family: inherit;
-  cursor: pointer;
-}
-::file-selector-button {
-  appearance: unset;
-  margin-right: 1.2rem;
-  padding: .3rem 1.2rem;
-  border-radius: .6rem;
-  border: .1rem solid;
-  background-color: unset;
-  color: inherit;
-  line-height: var(--lh-125);
-}
-
 output {
-  appearance: unset;
-  padding: .3rem 1.2rem;
-  border: .1rem solid;
-  background-color: unset;
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: var(--lh-150);
+  height: 4.8rem;
+  padding-inline: 1.2rem;
+  line-height: 4.6rem;
 
-  &:disabled { opacity: .5; }
   &:invalid { border-color: var(--red-5); }
 }
 
