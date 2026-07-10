@@ -4,32 +4,28 @@
   File: Text formatting
 ============================================================================= */
 
-/*
 .paragraph {
   padding-block: var(--paragraph-spacing-y);
   text-indent: var(--paragraph-indent);
 }
 
-.ruler    { margin-block: var(--ruler-margin-y); }
-.ruler-33 { max-width: 33%; margin-block: var(--ruler-margin-y); }
-.ruler-50 { max-width: 50%; margin-block: var(--ruler-margin-y); }
-.ruler-66 { max-width: 66%; margin-block: var(--ruler-margin-y); }
+// .h-rule {}
+.h-rule-66 { max-width: 66%; }
+.h-rule-50 { max-width: 50%; }
+.h-rule-33 { max-width: 33%; }
 
 .blockquote {
-  padding: 1.2rem 1em 1.2rem 2rem;
+  padding-inline: 2em 1em;
+  padding-block: 1.2rem;
   border-radius: 0 .6rem .6rem 0;
   border-left: .3rem solid var(--blockquote-border);
   background-color: var(--blockquote-background);
   color: var(--blockquote-color);
-}
-.quotation {
-  margin-bottom: .6rem;
-  font-family: var(--blockquote-font);
-  text-indent: var(--blockquote-indent);
-  font-size: var(--blockquote-font-size);
-  quotes: auto;
-  &::before { content: open-quote; }
-  &::after  { content: close-quote; }
+
+  :first-child {
+    margin-bottom: .6rem;
+    font-family: var(--blockquote-font);
+  }
 }
 
 // a:hover MUST come after a:link and a:visited
@@ -58,38 +54,41 @@
 .mark-purple    { background-color: var(--purple-2); }
 .mark-brown     { background-color: var(--brown-2); }
 
-.text-del, .text-ins {
+.deleted, .inserted {
   display: inline-block;
   padding-inline: .6rem;
   border-radius: .6rem;
   line-height: inherit;
 }
-.text-del {
+.deleted {
   background-color: var(--red-1);
   color: var(--red-8);
+  text-decoration: line-through;
 }
-.text-ins {
+.inserted {
   text-decoration: unset;
   background-color: var(--green-1);
   color: var(--green-8);
+  text-decoration: unset;
 }
 
 .font-small { font-size: var(--font-size-small); }
 
-.text-sub, .text-sup {
-  font-size: 1.2rem;
-  line-height: var(--lh-100);
-}
-.text-sub { vertical-align: sub; }
-.text-sup { vertical-align: super; }
-
 .code {
-  background-color: var(--ui-color-8);
-  color: var(--lime-3);
+  display: inline-block;
+  padding-inline: .6rem;
+  border-radius: .6rem;
+  background-color: var(--ui-color-7);
+  color: var(--green-3);
+  font-weight: 400;
+  font-style: normal;
+  font-size: inherit;
+  font-family: var(--font-monospace);
+  line-height: var(--lh-150);
 }
 
-// .kbd {}
+// kbd {}
 
-// .dialog {}
+// dialog {}
 
 /* END OF FILE ============================================================== */

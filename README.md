@@ -29,36 +29,36 @@
 
 ### Elements - Bare elements (unclassed HTML / type selectors)
 - [x] Basic HTML
-- body, div, hr, html, h1, h2, h3, h4, h5, h6, p, span
+  - body, div, hr, html, h1, h2, h3, h4, h5, h6, p, span
 - [x] Semantic sectioning
-- address, article, aside, footer, header, main, nav, search, section
+  - address, article, aside, footer, header, main, nav, search, section
 - [x] Text Formatting
-- a, b, blockquote, code, del, dialog, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
+  - a, b, blockquote, code, del, dialog, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
 - [x] Lists
-- dd, dl, dt, li, menu, ol, ul
+  - dd, dl, dt, li, menu, ol, ul
 - [x] Tables
-- caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr
+  - caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr
 - [x] Images
-- figcaption, figure, img, picture, svg
+  - figcaption, figure, img, picture, svg
 - [x] Audio and Video
-- audio, video
+  - audio, video
 - [x] Embedded
-- iframe, object
+  - iframe, object
 - [x] Scripting
-canvas, noscript
+  - canvas, noscript
 - [x] Buttons
-- button
+  - button
 - [x] Forms
-- datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
+  - datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
 
 - [ ] Icons (Ionicon - external lib)
-- ion-icon
+  - ion-icon
 
 ### Objects - Layout classes, cosmetic-free design patterns
+- [x] Basic HTML
+- [x] Semantic sectioning
+- [x] Text formatting
 
-- [ ] Basic HTML
-- [ ] Semantic sectioning
-- [ ] Text formatting
 - [ ] Lists
 - [ ] Tables
 - [ ] Images
@@ -103,9 +103,9 @@ canvas, noscript
 
 ### Utilities - IDs and !important, helpers and overrides
 - [ ] Text utils
-- [ ] CSS linter
-- atributos obrigatórios ou recomendados em tags
-- tags e atributos marcados com status deprecated
+- [x] CSS linter
+  - atributos obrigatórios ou recomendados em tags
+  - tags e atributos marcados com status deprecated
 
 - [ ] Breakpoints and responsive design
 - [ ] Spacing

@@ -27,8 +27,9 @@
 @use './4-elements/bare-forms';
 
 // OBJECTS - Layout classes, cosmetic-free design patterns
-// @use './5-objects/headings';
-// @use './5-objects/text-formatting';
+@use './5-objects/headings';
+@use './5-objects/text-formatting';
+
 // @use './5-objects/lists';
 // @use './5-objects/tables';
 // @use './5-objects/images';
@@ -40,11 +41,13 @@
 
 // COMPONENTS - UI Classes, designed components, chunks of UI
 @use './6-components/containers';
+
 // @use './6-components/toolbars';
 
 // UTILITIES - IDs and !important, helpers and overrides
 @use './7-utilities/color-utils';
-// @use './7-utilities/text-utils';
 @use './7-utilities/linter';
+
+// @use './7-utilities/text-utils';
 
 /* END OF FILE ============================================================== */

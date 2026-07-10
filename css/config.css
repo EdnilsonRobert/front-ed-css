@@ -32,10 +32,10 @@
   /* Spacing ---------------------------------------------------------------- */
   --container-fixed-max-width: 96rem;
   --container-fixed-pad-x: 2.4rem;
-  --container-fixed-pad-y: 3.6rem;
+  --container-fixed-pad-y: 2.4rem;
 
   --container-fluid-pad-x: 2.4rem;
-  --container-fluid-pad-y: 3.6rem;
+  --container-fluid-pad-y: 2.4rem;
 
   /* Basic HTML ------------------------------------------------------------- */
   --body-background: var(--ui-color-0);
@@ -51,17 +51,28 @@
   --lh-100: 1;
 
   --heading-pad-y: .3rem;
-  --heading-color: var(--ui-color-6);
+  --heading-color: var(--ui-color-5);
   --heading-weight: 600;
   --heading-font: var(--font-sans-display);
-  --heading-6-size: 110%;
-  --heading-5-size: 121%;
-  --heading-4-size: 133%;
-  --heading-3-size: 146%;
-  --heading-2-size: 160%;
-  --heading-1-size: 176%;
-  --heading-color-overline: var(--ui-color-6);
-  --heading-color-caption: var(--ui-color-6);
+  --heading-6-size: 1.8rem;
+  --heading-5-size: 2.0rem;
+  --heading-4-size: 2.2rem;
+  --heading-3-size: 2.5rem;
+  --heading-2-size: 2.8rem;
+  --heading-1-size: 3.2rem;
+  --heading-color-overline: var(--ui-color-5);
+  --heading-color-caption: var(--ui-color-5);
+
+  --heading-large-color: var(--ui-color-5);
+  --heading-large-weight: 300;
+  --heading-large-font: var(--font-sans-display);
+  --heading-large-4-size: 3.2rem;
+  --heading-large-3-size: 3.6rem;
+  --heading-large-2-size: 4.2rem;
+  --heading-large-1-size: 4.8rem;
+
+  --paragraph-spacing-y: .3rem;
+  --paragraph-indent: 2em;
 
   --ruler-height: .2rem;
   --ruler-margin-y: 1.2rem;
@@ -69,13 +80,23 @@
 
   /* Text formatting -------------------------------------------------------- */
   --blockquote-margin-x: 1em;
+  --blockquote-font-size: 1.6rem;
+  --blockquote-indent: 2em;
+  --blockquote-border: var(--ui-color-2);
+  --blockquote-background: var(--ui-color-1);
+  --blockquote-color: var(--ui-color-7);
+  --blockquote-font: var(--font-serif-text);
 
   /* Lists ------------------------------------------------------------------ */
+
+  /*
   --list-indent: 1em;
   --list-spacing-y: .3rem;
   --list-marker-color: var(--ui-color-3);
 
   /* Tables ----------------------------------------------------------------- */
+
+  /*
   --table-layout: auto;
   --table-width: auto;
   --table-caption-side: top;
@@ -94,6 +115,8 @@
   /* --table-colgroup-highlight: var(--ui-color-1); */
 
   /* Images ----------------------------------------------------------------- */
+
+  /*
   --figcaption-color: var(--ui-color-6);
   --figcaption-size: 1.4rem;
 
@@ -101,16 +124,6 @@
 
   /* --pad-x-toolbar-header: 2.4rem; */
   /* --pad-y-toolbar-header: .6rem; */
-
-  /* --paragraph-spacing-y: .6rem; */
-  /* --paragraph-indent: 2em; */
-
-  /* --blockquote-font-size: 1.6rem; */
-  /* --blockquote-font: var(--font-serif-text); */
-  /* --blockquote-border: var(--ui-color-2); */
-  /* --blockquote-background: var(--ui-color-1); */
-  /* --blockquote-color: var(--ui-color-7); */
-  /* --blockquote-indent: 2em; */
 
   /* --anchor-color-link: var(--ui-color-6); */
   /* --anchor-color-visited: var(--ui-color-6); */

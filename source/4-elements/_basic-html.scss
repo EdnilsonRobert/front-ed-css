@@ -25,17 +25,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
   padding-block: var(--heading-pad-y);
   color: var(--heading-color);
-  font-weight: var(--heading-weight);
-  font-style: normal;
+  font-weight: unset;
+  font-style: unset;
   font-family: var(--heading-font);
   line-height: var(--lh-125);
 }
-h1 { font-size: var(--heading-1-size); }
-h2 { font-size: var(--heading-2-size); }
-h3 { font-size: var(--heading-3-size); }
-h4 { font-size: var(--heading-4-size); }
-h5 { font-size: var(--heading-5-size); }
 h6 { font-size: var(--heading-6-size); }
+h5 { font-size: var(--heading-5-size); }
+h4 { font-size: var(--heading-4-size); }
+h3 { font-size: var(--heading-3-size); }
+h2 { font-size: var(--heading-2-size); }
+h1 { font-size: var(--heading-1-size); }
 
 p {
   overflow-wrap: break-word;
@@ -65,11 +65,13 @@ address { font-style: unset; }
 // Text formatting -------------------------------------------------------------
 blockquote {
   margin-inline: var(--blockquote-margin-x);
-  padding-block: .3rem;
+  padding-block: .6rem;
 
   :first-child {
-    margin-bottom: .6rem;
+    font-size: var(--blockquote-font-size);
+    text-indent: var(--blockquote-indent);
     quotes: auto;
+
     &::before { content: open-quote; }
     &::after  { content: close-quote; }
   }
@@ -128,11 +130,11 @@ sup { vertical-align: super; }
 
 code, kbd {
   display: inline-block;
-  padding-inline: 1.2rem;
+  padding-inline: .6rem;
   border-radius: .6rem;
   font-style: normal;
   font-size: inherit;
-  line-height: inherit;
+  line-height: var(--lh-150);
 }
 code {
   background-color: var(--ui-color-7);
