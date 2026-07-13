@@ -220,13 +220,13 @@
         <hr>
 
         <p class="section-subtitle">Formatted</p>
-        <p>.h-rule (width = 100%)</p>
+        <p><code>.h-rule</code> (width = 100%)</p>
         <hr class="h-rule">
-        <p>.h-rule-66 (width = 66%)</p>
+        <p><code>.h-rule-66</code> (width = 66%)</p>
         <hr class="h-rule-66">
-        <p>.h-rule-50 (width = 50%)</p>
+        <p><code>.h-rule-50</code> (width = 50%)</p>
         <hr class="h-rule-50">
-        <p>.h-rule-33 (width = 33%)</p>
+        <p><code>.h-rule-33</code> (width = 33%)</p>
         <hr class="h-rule-33">
     </div>
 
@@ -328,6 +328,7 @@
         <p class="section-title">Lists</p>
         <p class="section-subtitle">Bare lists</p>
 
+        <p><code>ol</code></p>
         <ol>
             <li>Item de lista ordenada: nível 1</li>
             <li>Item de lista ordenada: nível 1</li>
@@ -339,6 +340,7 @@
             </li>
         </ol>
 
+        <p><code>ul</code></p>
         <ul>
             <li>Item de lista não ordenada: nível 1</li>
             <li>Item de lista não ordenada: nível 1</li>
@@ -350,20 +352,36 @@
             </li>
         </ul>
 
+        <p><code>menu</code></p>
         <menu>
             <li><small>Item de menu:</small> <button>Copiar</button></li>
             <li><small>Item de menu:</small> <button>Recortar</button></li>
             <li><small>Item de menu:</small> <button>Colar</button></li>
         </menu>
 
+        <p><code>dl</code></p>
         <dl>
-            <dt>Termo da lista de definição</dt>
-            <dd>Definição de termo</dd>
-            <dd>Definição de termo</dd>
-            <dt>Termo da lista de definição</dt>
-            <dd>Definição de termo</dd>
-            <dd>Definição de termo</dd>
+            <dt>Termo 1 da lista de definição</dt>
+            <dd>Definição de termo 1a</dd>
+            <dd>Definição de termo 1b</dd>
+            <dt>Termo 2 da lista de definição</dt>
+            <dd>Definição de termo 2a</dd>
+            <dd>Definição de termo 2b</dd>
         </dl>
+
+        <p class="section-subtitle">Formatted</p>
+
+        <p><code>.markers-none</code></p>
+        <ul class="markers-none">
+            <li>Item de lista sem marcadores</li>
+            <li>Item de lista sem marcadores</li>
+            <li>
+                <ul>
+                    <li>Item de lista aninhada sem marcadores</li>
+                    <li>Item de lista aninhada sem marcadores</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <!-- Tables -->

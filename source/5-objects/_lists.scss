@@ -4,25 +4,6 @@
   File: Lists
 ============================================================================= */
 
-/*
-// .ol-list {}
-// .ol-inner-list {}
-
-// .ul-list {}
-// .ul-inner-list {}
-
-// .menu {}
-
-// .dl-list {}
-// .dl-list-dt {}
-
-.ol-list-item,
-.ol-inner-list-item,
-.ul-list-item,
-.ul-inner-list-item,
-.menu-item,
-.dl-list-dd {
-  padding-block: var(--list-spacing);
-}
+.markers-none li { list-style-type: none; }
 
 /* END OF FILE ============================================================== */

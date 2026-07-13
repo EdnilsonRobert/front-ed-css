@@ -88,10 +88,8 @@
   --blockquote-font: var(--font-serif-text);
 
   /* Lists ------------------------------------------------------------------ */
-
-  /*
-  --list-indent: 1em;
-  --list-spacing-y: .3rem;
+  --list-indent: 1.5em;
+  --list-item-pad-y: .3rem;
   --list-marker-color: var(--ui-color-3);
 
   /* Tables ----------------------------------------------------------------- */
