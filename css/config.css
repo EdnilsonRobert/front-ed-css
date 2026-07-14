@@ -93,24 +93,23 @@
   --list-marker-color: var(--ui-color-3);
 
   /* Tables ----------------------------------------------------------------- */
-
-  /*
   --table-layout: auto;
-  --table-width: auto;
+  --table-width: 100%;
+  --table-cell-padding: .3rem 1.2rem;
+  --table-border-width: .1rem;
+  --table-border-color: var(--ui-color-2);
   --table-caption-side: top;
   --table-caption-color: inherit;
   --table-caption-size: inherit;
-  --table-thead-background: transparent;
-  --table-tfoot-background: transparent;
-  --table-tbody-background: transparent;
-  --table-cell-padding: .3rem 1.2rem;
-  --table-border-color: var(--ui-color-2);
-  --table-th-border-width: .2rem;
-  --table-th-weight: 600;
-  --table-th-font-size: inherit;
-  --table-td-border-width: .1rem;
-  --table-td-font-size: inherit;
-  /* --table-colgroup-highlight: var(--ui-color-1); */
+  --thead-border: .2rem;
+  --thead-background: transparent;
+  --tfoot-background: transparent;
+  --tbody-background: transparent;
+  --tbody-stripes: brightness(1.1);
+  --th-color: inherit;
+  --th-weight: 600;
+  --th-size: inherit;
+  --td-size: inherit;
 
   /* Images ----------------------------------------------------------------- */
 

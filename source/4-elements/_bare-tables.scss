@@ -18,28 +18,29 @@ caption {
 }
 
 thead {
-  border-block: var(--table-th-border-width) solid var(--table-border-color);
-  background-color: var(--table-thead-background);
+  border-block: var(--thead-border) solid var(--table-border-color);
+  background-color: var(--thead-background);
 }
 
-tfoot { background-color: var(--table-tfoot-background); }
+tfoot { background-color: var(--tfoot-background); }
 
-tbody { background-color: var(--table-tbody-background); }
+tbody { background-color: var(--tbody-background); }
 
 tbody tr, tfoot tr {
-  border-bottom: var(--table-td-border-width) solid var(--table-border-color);
+  border-bottom: var(--table-border-width) solid var(--table-border-color);
 }
 
 th {
   padding: var(--table-cell-padding);
-  font-weight: var(--table-th-weight);
-  font-size: var(--table-th-font-size);
+  color: var(--th-color);
+  font-weight: var(--th-weight);
+  font-size: var(--th-size);
   line-height: var(--lh-150);
 }
 
 td {
   padding: var(--table-cell-padding);
-  font-size: var(--table-td-font-size);
+  font-size: var(--td-size);
   line-height: var(--lh-150);
 }
 
