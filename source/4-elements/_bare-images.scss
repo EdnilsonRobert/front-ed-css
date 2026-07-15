@@ -9,12 +9,8 @@ picture {
   padding-block: .3rem;
 }
 
-figure { padding-block: .3rem; }
-
-figcaption {
-  color: var(--figcaption-color);
-  font-size: var(--figcaption-size);
-}
+// figure {}
+// figcaption {}
 
 img, svg {
   display: block;
@@ -27,5 +23,13 @@ meter, progress {
   display: block;
   width: 100%;
 }
+
+/*
+
+
+color: var(--figcaption-color);
+  font-size: var(--figcaption-size);
+
+
 
 /* END OF FILE ============================================================== */

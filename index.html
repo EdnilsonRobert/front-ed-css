@@ -453,25 +453,30 @@
         <p class="section-title">Images</p>
         <p class="section-subtitle">Bare elements</p>
 
-        <figure><code>&lt;figure&gt;</code> Este conteúdo está dentro de uma figure</figure>
+        <figure><code>figure</code> não possui formatação</figure>
+
+        <p><code>figcaption</code></p>
         <figure>
-            <figcaption><code>&lt;figcaption&gt;</code> Este conteúdo está dentro de uma figure caption</figcaption>
+            <figcaption>Este conteúdo está dentro de uma figure caption</figcaption>
         </figure>
 
+        <p><code>figure > img + figcaption</code></p>
         <figure>
-            <img src="./assets/image-html.webp" alt="HTML 5 Badge">
-            <!-- <img src="./assets/image-html.webp"> -->
-            <figcaption><code>&lt;img&gt;</code> Imagem (format: .webp)</figcaption>
+            <img src="./assets/image-svg.svg" alt="SVG Badge">
+            <!-- <img src="./assets/image-svg.svg"> -->
+            <figcaption>Imagem (format: .webp)</figcaption>
         </figure>
 
+        <p><code>figure > svg + figcaption</code></p>
         <figure>
             <svg width="128" height="128">
                 <circle cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 78%)" stroke-width="9"/>
                 <circle class="arc" cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 44%)" stroke-width="9" stroke-dasharray="301" stroke-dashoffset="70"/>
             </svg>
-            <figcaption><code>&lt;svg&gt;</code> Inline SVG</figcaption>
+            <figcaption>SVG inline</figcaption>
         </figure>
 
+        <p><code>picture</code> não possui formatação</p>
         <picture>
             <source media="(min-width: 1200px)" srcset="./assets/picture-1200.svg">
             <source media="(min-width: 800px)" srcset="./assets/picture-960.svg">
@@ -479,13 +484,19 @@
             <img src="./assets/picture-fallback.svg" alt="Picture fallback">
             <!-- <img src="./assets/picture-fallback.svg"> -->
         </picture>
-        <p><code>&lt;picture&gt;</code> Container para responsividade de imagens</p>
+
+        <p class="section-subtitle">Formatted</p>
+
+        <p><code>figure > .media-caption</code></p>
+        <figure>
+            <img src="./assets/image-svg.svg" alt="SVG Badge">
+            <figcaption class="media-caption">.media-caption (figcaption formatado)</figcaption>
+        </figure>
     </div>
 
     <!-- Audio and Video -->
     <div class="container-fluid" id="multimedia">
         <p class="section-title">Multimedia (audio and video)</p>
-        <p class="section-subtitle">Bare elements</p>
 
         <p>Tank! - The Seatbelts</p>
         <figure>

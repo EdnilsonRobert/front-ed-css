@@ -4,4 +4,10 @@
   File: Images
 ============================================================================= */
 
+.media-caption {
+  margin-top: var(--caption-spacing);
+  color: var(--caption-color);
+  font-size: var(--caption-size);
+}
+
 /* END OF FILE ============================================================== */
