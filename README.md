@@ -64,10 +64,9 @@
 - [x] Audio and video
 - [x] Embedded
 - [x] Scripting
+- [x] Buttons
 
-- [ ] Buttons
 - [ ] Forms
-- [ ] Form components (toggle, button toggle, slider, range)
 - [ ] Icons (Ionicon - external lib)
 
 ### Components - UI Classes, designed components, chunks of UI
@@ -90,7 +89,7 @@
 - [ ] Loaders and spinners
 - [ ] Rating
 - [ ] Audio and video displays
-- [ ] Collapse
+- [ ] Collapsible
 - [ ] Accordion
 - [ ] Drawer
 - [ ] Modals and popovers
@@ -100,10 +99,12 @@
 - [ ] Stepper
 - [ ] Timeline
 - [ ] Parallax
+- [ ] Form components (toggle, button toggle, slider, range)
 - [ ] Dashboards [bars, donuts, lines, piechart, ...]
 
 ### Utilities - IDs and !important, helpers and overrides
-- [ ] Color utils
+- [x] Color utils
+- Color palette (borders, backgrounds and colors, gradients)
 - [ ] Text utils
 - [x] CSS linter
   - atributos obrigatórios ou recomendados em tags
@@ -112,7 +113,6 @@
 - [ ] Breakpoints and responsive design
 - [ ] Spacing
 - [ ] Borders (radius and lines)
-- [ ] Color palette (borders, backgrounds and colors, gradients)
 - [ ] Shadows (box and text)
 - [ ] Opacity
 - [ ] Filters

@@ -141,6 +141,13 @@
   --canvas-border: var(--ui-color-2);
   --canvas-background: var(--ui-color-1);
 
+  /* Buttons ---------------------------------------------------------------- */
+  --button-border: var(--ui-color-2);
+  --button-background: var(--ui-color-1);
+  --button-color: inherit;
+  --button-weight: 600;
+  --button-size: 1.4rem;
+
   /* ------------------------------------------------------------------------ */
 
   /* --pad-x-toolbar-header: 2.4rem; */
