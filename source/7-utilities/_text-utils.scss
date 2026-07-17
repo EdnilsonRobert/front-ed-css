@@ -15,6 +15,8 @@
 .font-normal { font-style: normal; }
 .font-italic { font-style: italic; }
 
+.font-small { font-size: var(--font-size-small); }
+
 .font-sans-display  { font-family: var(--font-sans-display); }
 .font-sans          { font-family: var(--font-sans-text); }
 .font-serif-display { font-family: var(--font-serif-display); }
@@ -28,7 +30,22 @@
 .to-lowercase { text-transform: lowercase; }
 .to-uppercase { text-transform: uppercase; }
 
-.text-s { text-decoration: line-through var(--ui-color-5); }
-.text-u { text-decoration: underline var(--ui-color-5); }
+.deleted, .inserted {
+  display: inline-block;
+  padding-inline: .6rem;
+  border-radius: .6rem;
+  line-height: inherit;
+}
+.deleted {
+  background-color: var(--red-1);
+  color: var(--red-8);
+  text-decoration: line-through;
+}
+.inserted {
+  text-decoration: unset;
+  background-color: var(--green-1);
+  color: var(--green-8);
+  text-decoration: unset;
+}
 
 /* END OF FILE ============================================================== */

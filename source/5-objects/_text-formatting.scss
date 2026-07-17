@@ -54,25 +54,9 @@
 .mark-purple    { background-color: var(--purple-2); }
 .mark-brown     { background-color: var(--brown-2); }
 
-.deleted, .inserted {
-  display: inline-block;
-  padding-inline: .6rem;
-  border-radius: .6rem;
-  line-height: inherit;
-}
-.deleted {
-  background-color: var(--red-1);
-  color: var(--red-8);
-  text-decoration: line-through;
-}
-.inserted {
-  text-decoration: unset;
-  background-color: var(--green-1);
-  color: var(--green-8);
-  text-decoration: unset;
-}
+// del, ins {}
 
-.font-small { font-size: var(--font-size-small); }
+// small {}
 
 .code {
   display: inline-block;

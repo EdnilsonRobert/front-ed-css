@@ -106,7 +106,8 @@
 ### Utilities - IDs and !important, helpers and overrides
 - [x] Color utils
   - Color palette (borders, backgrounds and colors, gradients)
-- [ ] Text utils
+- [x] Text utils
+  - Modificadores de texto padrão
 - [x] CSS linter
   - atributos obrigatórios ou recomendados em tags
   - tags e atributos marcados com status deprecated
