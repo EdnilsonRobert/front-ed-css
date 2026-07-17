@@ -576,8 +576,11 @@
         <p class="section-title">Scripting</p>
         <p class="section-subtitle">Bare elements</p>
 
-        <noscript>&lt;noscript&gt; Este conteúdo está dentro de um noscript</noscript>
+        <p><code>noscript</code></p>
+        <noscript>Este conteúdo está dentro de um noscript</noscript>
+        <p>Conteúdo exibido dentro de um noscript</p>
 
+        <figcaption><code>canvas</code> Canvas (gráficos via script)</figcaption>
         <figure>
             <canvas id="js-canvas1" width="128" height="128"></canvas>
             <canvas id="js-canvas2" width="128" height="128"></canvas>
@@ -624,8 +627,11 @@
                 ctx3.strokeText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
                 ctx3.fillText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
             </script>
-            <figcaption><code>&lt;canvas&gt;</code> Canvas [gráficos via script]</figcaption>
         </figure>
+
+        <p class="section-subtitle">Formatted</p>
+        <p><code>.noscript</code></p>
+        <p class="noscript">Conteúdo exibido dentro de uma classe .noscript</p>
     </div>
 
     <!-- Buttons -->

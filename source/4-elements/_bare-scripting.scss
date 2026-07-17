@@ -7,15 +7,18 @@
 noscript {
   display: block;
   padding: .6rem 1.2rem;
-  background-color: var(--red-5);
-  color: var(--ui-color-0);
+  border-radius: .6rem;
+  background-color: var(--red-1);
+  color: var(--red-8);
   font-size: 1.4rem;
+  line-height: var(--lh-150);
 }
 
 canvas {
+  display: var(--canvas-display);
   border-radius: .6rem;
-  border: .1rem solid var(--ui-color-2);
-  background-color: var(--ui-color-1);
+  border: .1rem solid var(--canvas-border);
+  background-color: var(--canvas-background);
 }
 
 /* END OF FILE ============================================================== */

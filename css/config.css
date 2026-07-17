@@ -136,6 +136,11 @@
   --object-max-width: 64rem;
   --iframe-max-width: 64rem;
 
+  /* Scripting -------------------------------------------------------------- */
+  --canvas-display: inline-block;
+  --canvas-border: var(--ui-color-2);
+  --canvas-background: var(--ui-color-1);
+
   /* ------------------------------------------------------------------------ */
 
   /* --pad-x-toolbar-header: 2.4rem; */

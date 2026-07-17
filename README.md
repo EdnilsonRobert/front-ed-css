@@ -63,8 +63,8 @@
 - [x] Images
 - [x] Audio and video
 - [x] Embedded
+- [x] Scripting
 
-- [ ] Scripting
 - [ ] Buttons
 - [ ] Forms
 - [ ] Form components (toggle, button toggle, slider, range)
