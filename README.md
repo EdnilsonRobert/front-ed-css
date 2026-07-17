@@ -62,8 +62,8 @@
 - [x] Tables
 - [x] Images
 - [x] Audio and video
+- [x] Embedded
 
-- [ ] Embedded
 - [ ] Scripting
 - [ ] Buttons
 - [ ] Forms

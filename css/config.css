@@ -132,14 +132,14 @@
   --video-widget-info-track-color: var(--ui-color-8);
   --video-widget-info-author-color: var(--ui-color-6);
 
+  /* Embedded --------------------------------------------------------------- */
+  --object-max-width: 64rem;
+  --iframe-max-width: 64rem;
+
   /* ------------------------------------------------------------------------ */
 
   /* --pad-x-toolbar-header: 2.4rem; */
   /* --pad-y-toolbar-header: .6rem; */
-
-  /* Embedded --------------------------------------------------------------- */
-  /* --aspect-ratio-object: 4 / 4; */
-  /* --aspect-ratio-iframe: 16 / 9; */
 
   /* Color palette ---------------------------------------------------------- */
   --ui-color:  hsl(220, 24%, 44%);

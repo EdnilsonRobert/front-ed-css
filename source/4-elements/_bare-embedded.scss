@@ -6,13 +6,17 @@
 
 object {
   display: block;
-  min-width: 100%;
+  width: 100%;
+  max-width: var(--object-max-width);
+  margin-inline: auto;
   border-radius: .6rem;
 }
 
 iframe {
   display: block;
-  min-width: 100%;
+  width: 100%;
+  max-width: var(--iframe-max-width);
+  margin-inline: auto;
   border-radius: .6rem;
   border: unset;
 }
