@@ -49,7 +49,7 @@
 - [x] Buttons
   - button
 - [x] Forms
-  - datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
+  - datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea
 
 - [ ] Icons (Ionicon - external lib)
   - ion-icon
@@ -65,8 +65,9 @@
 - [x] Embedded
 - [x] Scripting
 - [x] Buttons
+- [x] Forms
+  - Sem formatação adicional (apenas formatação de bare elements)
 
-- [ ] Forms
 - [ ] Icons (Ionicon - external lib)
 
 ### Components - UI Classes, designed components, chunks of UI
@@ -104,7 +105,7 @@
 
 ### Utilities - IDs and !important, helpers and overrides
 - [x] Color utils
-- Color palette (borders, backgrounds and colors, gradients)
+  - Color palette (borders, backgrounds and colors, gradients)
 - [ ] Text utils
 - [x] CSS linter
   - atributos obrigatórios ou recomendados em tags

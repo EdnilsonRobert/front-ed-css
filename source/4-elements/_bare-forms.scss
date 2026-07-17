@@ -65,6 +65,7 @@ textarea
 [type='text'],
 [type='url']
 {
+  flex-grow: 1;
   height: 4.8rem;
   padding-inline: 1.2rem .6rem;
 
@@ -92,7 +93,10 @@ label:has(textarea) {
   border: .1rem solid var(--ui-color-2);
   background-color: unset;
 
-  &:checked { background-color: var(--ui-color-3); }
+  &:checked {
+    border-color: var(--ui-color-5);
+    background-color: var(--ui-color-3);
+  }
 }
 [type='checkbox'] { border-radius: .3rem; }
 [type='radio'] { border-radius: 50%; }
