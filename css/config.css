@@ -122,6 +122,16 @@
   --caption-color: var(--ui-color-6);
   --caption-size: 1.4rem;
 
+  /* Multimedia ------------------------------------------------------------- */
+  --audio-panel-color: var(--ui-color-1);
+  --audio-widget-border: var(--ui-color-4);
+  --audio-widget-background: var(--ui-color-2);
+  --audio-widget-caption-track-color: var(--ui-color-8);
+  --audio-widget-caption-author-color: var(--ui-color-6);
+  --video-widget-background: var(--ui-color-2);
+  --video-widget-info-track-color: var(--ui-color-8);
+  --video-widget-info-author-color: var(--ui-color-6);
+
   /* ------------------------------------------------------------------------ */
 
   /* --pad-x-toolbar-header: 2.4rem; */

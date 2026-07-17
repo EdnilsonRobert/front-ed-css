@@ -58,11 +58,11 @@
 - [x] Basic HTML
 - [x] Semantic sectioning
 - [x] Text formatting
+- [x] Lists
+- [x] Tables
+- [x] Images
+- [x] Audio and video
 
-- [ ] Lists
-- [ ] Tables
-- [ ] Images
-- [ ] Audio and video
 - [ ] Embedded
 - [ ] Scripting
 - [ ] Buttons
@@ -76,6 +76,7 @@
 - [ ] Wireframe
 - [ ] Flexbox
 - [ ] Grid layout
+
 - [ ] Toolbars (header and footer)
 - [ ] Avatars (brand and personal avatar)
 - [ ] Banner (hero)
@@ -102,6 +103,7 @@
 - [ ] Dashboards [bars, donuts, lines, piechart, ...]
 
 ### Utilities - IDs and !important, helpers and overrides
+- [ ] Color utils
 - [ ] Text utils
 - [x] CSS linter
   - atributos obrigatórios ou recomendados em tags

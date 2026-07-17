@@ -497,22 +497,57 @@
     <!-- Audio and Video -->
     <div class="container-fluid" id="multimedia">
         <p class="section-title">Multimedia (audio and video)</p>
+        <p class="section-subtitle">Bare elements</p>
 
-        <p>Tank! - The Seatbelts</p>
+        <p><code>audio</code></p>
         <figure>
             <audio controls>
                 <source src="./assets/audio-tank-the-seatbelts.mp3" type="audio/mpeg">
             </audio>
-            <figcaption><code>&lt;audio&gt;</code> Áudio</figcaption>
+            <figcaption>Tank! - The Seatbelts</figcaption>
         </figure>
 
-        <p>Falling Away from Me - Korn</p>
+        <p><code>video</code></p>
         <figure>
             <video poster="./assets/video-poster-korn.webp" controls>
                 <source src="./assets/video-falling-away-from-me-korn.mp4" type="video/mp4">
                 <!-- TRACK: https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API -->
             </video>
-            <figcaption><code>&lt;video&gt;</code> Vídeo</figcaption>
+            <figcaption>Falling Away from Me - Korn</figcaption>
+        </figure>
+
+        <p class="section-subtitle">Formatted</p>
+
+        <p><code>.audio-player</code></p>
+        <figure>
+            <audio class="audio-player" controls>
+                <source src="./assets/audio-tank-the-seatbelts.mp3" type="audio/mpeg">
+            </audio>
+        </figure>
+
+        <p><code>.audio-widget</code></p>
+        <figure class="audio-widget">
+            <div class="audio-widget-display">
+                <img class="audio-widget-cover" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
+                <figcaption class="audio-widget-info">
+                    <p class="audio-widget-info-track">Tank!</p>
+                    <p class="audio-widget-info-author">The Seatbelts</p>
+                </figcaption>
+            </div>
+            <audio class="audio-player" controls>
+                <source src="./assets/audio-tank-the-seatbelts.mp3" type="audio/mpeg">
+            </audio>
+        </figure>
+
+        <p><code>.video-widget</code></p>
+        <figure class="video-widget">
+            <video poster="./assets/video-poster-korn.webp" controls>
+                <source src="./assets/video-falling-away-from-me-korn.mp4" type="video/mp4">
+            </video>
+            <figcaption class="video-widget-info">
+                <p class="video-widget-info-track">Falling Away from Me</p>
+                <p class="video-widget-info-author">Korn</p>
+            </figcaption>
         </figure>
     </div>
 

@@ -4,4 +4,68 @@
   File: Multimedia (audio and video)
 ============================================================================= */
 
+// https://chromium.googlesource.com/chromium/blink/+/72fef91ac1ef679207f51def8133b336a6f6588f/Source/core/css/mediaControls.css
+
+.audio-player {
+  background-color: var(--audio-panel-color);
+}
+.audio-player::-webkit-media-controls-panel {
+  // Cor de fundo do painel de controle
+  background-color: var(--audio-panel-color);
+}
+
+.audio-widget {
+  max-width: 64rem;
+  margin-inline: auto;
+  padding: .6rem;
+  border-radius: 1.2rem;
+  border: .1rem solid var(--audio-widget-border);
+  background-color: var(--audio-widget-background);
+}
+.audio-widget-display {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1.2rem;
+  margin-bottom: .6rem;
+}
+.audio-widget-cover {
+  width: 25%;
+  border-radius: .6rem;
+}
+// .audio-widget-info {}
+.audio-widget-info-track {
+  color: var(--audio-widget-caption-track-color);
+  font-weight: var(--font-weight-bolder);
+  font-size: 1.8rem;
+  line-height: var(--lh-125);
+}
+.audio-widget-info-author {
+  color: var(--audio-widget-caption-author-color);
+  font-size: 1.4rem;
+  line-height: var(--lh-100);
+}
+
+.video-widget {
+  max-width: 64rem;
+  margin-inline: auto;
+  padding: .6rem;
+  border-radius: 1.2rem;
+  background-color: var(--video-widget-background);
+}
+.video-widget-info {
+  padding: .6rem;
+}
+.video-widget-info-track {
+  color: var(--video-widget-info-track-color);
+  font-weight: var(--font-weight-bolder);
+  font-size: 1.8rem;
+  line-height: var(--lh-125);
+}
+.video-widget-info-author {
+  color: var(--video-widget-info-author-color);
+  font-size: 1.4rem;
+  line-height: var(--lh-100);
+}
+
 /* END OF FILE ============================================================== */
