@@ -4,7 +4,9 @@
   File: Color utilities
 ============================================================================= */
 
-[data-bg] { background-color: attr(data-bg type(<color>)); }
+[data-border] { border-color: attr(data-border type(<color>)); }
+
+[data-bg-color] { background-color: attr(data-bg-color type(<color>)); }
 
 [data-color] { color: attr(data-color type(<color>)); }
 
