@@ -72,10 +72,10 @@
 
 ### Components - UI Classes, designed components, chunks of UI
 - [x] Containers
+- [x] Grid layout
 
 - [ ] Wireframe
 - [ ] Flexbox
-- [ ] Grid layout
 
 - [ ] Toolbars (header and footer)
 - [ ] Avatars (brand and personal avatar)

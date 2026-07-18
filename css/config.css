@@ -29,16 +29,6 @@
   --font-serif-text: 'Libre Baskerville', serif;
   --font-monospace: 'Source Code Pro', monospace;
 
-  /* Spacing ---------------------------------------------------------------- */
-  --container-fixed-max-width: 96rem;
-  --container-fixed-pad-x: 2.4rem;
-  --container-fixed-pad-y: 2.4rem;
-  --container-fixed-margin-y: 0;
-
-  --container-fluid-pad-x: 2.4rem;
-  --container-fluid-pad-y: 2.4rem;
-  --container-fluid-margin-y: 0;
-
   /* Basic HTML ------------------------------------------------------------- */
   --body-background: var(--ui-color-0);
   --body-color: var(--ui-color-9);
@@ -152,6 +142,16 @@
   --button-color: inherit;
   --button-weight: 600;
   --button-size: 1.4rem;
+
+  /* Spacing ---------------------------------------------------------------- */
+  --container-fixed-max-width: 96rem;
+  --container-fixed-pad-x: 2.4rem;
+  --container-fixed-pad-y: 2.4rem;
+  --container-fixed-margin-y: 0;
+
+  --container-fluid-pad-x: 2.4rem;
+  --container-fluid-pad-y: 2.4rem;
+  --container-fluid-margin-y: 0;
 
   /* ------------------------------------------------------------------------ */
 
