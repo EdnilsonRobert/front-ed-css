@@ -8,12 +8,14 @@
 
 .container-fixed {
   max-width: var(--container-fixed-max-width, 96rem);
+  margin-block: var(--container-fixed-margin-y);
   margin-inline: auto;
   padding-inline: var(--container-fixed-pad-x, 2.4rem);
   padding-block: var(--container-fixed-pad-y, 2.4rem);
 }
 
 .container-fluid {
+  margin-block: var(--container-fluid-margin-y);
   padding-inline: var(--container-fluid-pad-x, 2.4rem);
   padding-block: var(--container-fluid-pad-y, 2.4rem);
 }

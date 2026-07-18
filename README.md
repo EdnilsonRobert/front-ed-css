@@ -112,7 +112,6 @@
   - atributos obrigatórios ou recomendados em tags
   - tags e atributos marcados com status deprecated
 
-- [ ] Breakpoints and responsive design
 - [ ] Spacing
 - [ ] Borders (radius and lines)
 - [ ] Shadows (box and text)
@@ -121,7 +120,8 @@
 - [ ] Helper classes
 - [ ] Hover, focus, and other states
 - [ ] Animations and transitions
-- [ ] Dark mode
+- [ ] Breakpoints and responsive design
+- [ ] Light/Dark mode
 
 
 ---

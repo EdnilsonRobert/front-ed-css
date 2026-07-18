@@ -33,9 +33,11 @@
   --container-fixed-max-width: 96rem;
   --container-fixed-pad-x: 2.4rem;
   --container-fixed-pad-y: 2.4rem;
+  --container-fixed-margin-y: 0;
 
   --container-fluid-pad-x: 2.4rem;
   --container-fluid-pad-y: 2.4rem;
+  --container-fluid-margin-y: 0;
 
   /* Basic HTML ------------------------------------------------------------- */
   --body-background: var(--ui-color-0);
