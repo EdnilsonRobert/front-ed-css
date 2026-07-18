@@ -93,6 +93,9 @@
   --anchor-color-active: var(--ui-color-9);
   --anchor-color-focus: var(--ui-color-9);
 
+  /* Icons ------------------------------------------------------------------ */
+  --icon-color: var(--ui-color-3);
+
   /* Lists ------------------------------------------------------------------ */
   --list-indent: 1.5em;
   --list-item-pad-y: .3rem;

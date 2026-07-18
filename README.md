@@ -34,6 +34,8 @@
   - address, article, aside, footer, header, main, nav, search, section
 - [x] Text Formatting
   - a, b, blockquote, code, del, dialog, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
+- [x] Icons (Ionicon - external lib)
+  - ion-icon
 - [x] Lists
   - dd, dl, dt, li, menu, ol, ul
 - [x] Tables
@@ -51,13 +53,12 @@
 - [x] Forms
   - datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea
 
-- [ ] Icons (Ionicon - external lib)
-  - ion-icon
 
 ### Objects - Layout classes, cosmetic-free design patterns
 - [x] Basic HTML
 - [x] Semantic sectioning
 - [x] Text formatting
+- [x] Icons (Ionicon - external lib)
 - [x] Lists
 - [x] Tables
 - [x] Images
@@ -68,7 +69,6 @@
 - [x] Forms
   - Sem formatação adicional (apenas formatação de bare elements)
 
-- [ ] Icons (Ionicon - external lib)
 
 ### Components - UI Classes, designed components, chunks of UI
 - [x] Containers

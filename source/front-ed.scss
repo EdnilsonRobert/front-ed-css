@@ -17,6 +17,7 @@
 
 // ELEMENTS - Bare elements (unclassed HTML / type selectors)
 @use './4-elements/basic-html';
+@use './4-elements/bare-icons';
 @use './4-elements/bare-lists';
 @use './4-elements/bare-tables';
 @use './4-elements/bare-images';
@@ -29,6 +30,7 @@
 // OBJECTS - Layout classes, cosmetic-free design patterns
 @use './5-objects/headings';
 @use './5-objects/text-formatting';
+@use './5-objects/icons';
 @use './5-objects/lists';
 @use './5-objects/tables';
 @use './5-objects/images';
