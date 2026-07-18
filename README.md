@@ -53,7 +53,6 @@
 - [x] Forms
   - datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea
 
-
 ### Objects - Layout classes, cosmetic-free design patterns
 - [x] Basic HTML
 - [x] Semantic sectioning
@@ -69,14 +68,12 @@
 - [x] Forms
   - Sem formatação adicional (apenas formatação de bare elements)
 
-
 ### Components - UI Classes, designed components, chunks of UI
 - [x] Containers
 - [x] Grid layout
+- [x] Flexbox
 
 - [ ] Wireframe
-- [ ] Flexbox
-
 - [ ] Toolbars (header and footer)
 - [ ] Avatars (brand and personal avatar)
 - [ ] Banner (hero)

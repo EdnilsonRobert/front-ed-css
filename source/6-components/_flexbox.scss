@@ -1,0 +1,53 @@
+/* =============================================================================
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Flexbox
+============================================================================= */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.row-lt { justify-content: left; }
+.row-lc { justify-content: left; align-items: center; }
+.row-lb { justify-content: left; align-items: end; }
+.row-ls { justify-content: left; align-items: stretch; }
+
+.row-ct { justify-content: center; }
+.row-cc { justify-content: center; align-items: center; }
+.row-cb { justify-content: center; align-items: end; }
+.row-cs { justify-content: center; align-items: stretch; }
+
+.row-rt { justify-content: end; }
+.row-rc { justify-content: end; align-items: center; }
+.row-rb { justify-content: end; align-items: end; }
+.row-rs { justify-content: end; align-items: stretch; }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.column-lt { justify-content: start; align-items: start; }
+.column-lc { justify-content: center; align-items: start; }
+.column-lb { justify-content: bottom; align-items: start; }
+.column-ls { justify-content: stretch; align-items: start; }
+
+.column-ct { justify-content: start; align-items: center; }
+.column-cc { justify-content: center; align-items: center; }
+.column-cb { justify-content: bottom; align-items: center; }
+.column-cs { justify-content: stretch; align-items: center; }
+
+.column-rt { justify-content: start; align-items: end; }
+.column-rc { justify-content: center; align-items: end; }
+.column-rb { justify-content: bottom; align-items: end; }
+.column-rs { justify-content: stretch; align-items: end; }
+
+.flex-grow { flex-grow: 1; }
+
+/* END OF FILE ============================================================== */
