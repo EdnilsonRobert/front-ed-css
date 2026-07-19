@@ -72,9 +72,10 @@
 - [x] Containers
 - [x] Grid layout
 - [x] Flexbox
+- [x] Toolbars
+  - Toolbars and branding
 
 - [ ] Wireframe
-- [ ] Toolbars (header and footer)
 - [ ] Avatars (brand and personal avatar)
 - [ ] Banner (hero)
 - [ ] Menus and navigation (menu h, menu v, dropdown, breadcrumbs, pagination)

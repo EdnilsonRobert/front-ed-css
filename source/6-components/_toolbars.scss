@@ -4,4 +4,57 @@
   File: Toolbars
 ============================================================================= */
 
+// Toolbars --------------------------------------------------------------------
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--toolbar-pad-x);
+  padding-block: var(--toolbar-pad-y);
+  background-color: var(--toolbar-background);
+}
+
+.toolbar-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--toolbar-max-width);
+  margin-inline: auto;
+}
+
+// Branding --------------------------------------------------------------------
+.brand-group {
+  display: flex;
+  gap: var(--brand-image-spacing-r);
+}
+
+.brand-image {
+  width: var(--brand-image-width);
+}
+
+// .brand {}
+
+.brand-overline,
+.brand-name,
+.brand-caption {
+  padding-block: unset;
+  line-height: var(--lh-125);
+}
+.brand-overline {
+  margin-bottom: var(--brand-overline-spacing-b);
+  color: var(--brand-overline-color);
+  font-size: var(--brand-overline-size);
+}
+.brand-name {
+  color: var(--brand-name-color);
+  font-weight: var(--brand-name-weight);
+  font-size: var(--brand-name-size);
+}
+.brand-caption {
+  margin-top: var(--brand-caption-spacing-t);
+  color: var(--brand-caption-color);
+  font-size: var(--brand-caption-size);
+}
+
 /* END OF FILE ============================================================== */

@@ -143,7 +143,7 @@
   --button-weight: 600;
   --button-size: 1.4rem;
 
-  /* Spacing ---------------------------------------------------------------- */
+  /* Containers ------------------------------------------------------------- */
   --container-fixed-max-width: 96rem;
   --container-fixed-pad-x: 2.4rem;
   --container-fixed-pad-y: 2.4rem;
@@ -153,10 +153,23 @@
   --container-fluid-pad-y: 2.4rem;
   --container-fluid-margin-y: 0;
 
-  /* ------------------------------------------------------------------------ */
+  /* Toolbars --------------------------------------------------------------- */
+  --toolbar-pad-x: 1.2rem;
+  --toolbar-pad-y: .6rem;
+  --toolbar-background: var(--ui-color-1);
+  --toolbar-max-width: 96rem;
 
-  /* --pad-x-toolbar-header: 2.4rem; */
-  /* --pad-y-toolbar-header: .6rem; */
+  --brand-name-color: var(--ui-color-5);
+  --brand-name-weight: 600;
+  --brand-name-size: 3.2rem;
+  --brand-overline-spacing-b: 0;
+  --brand-overline-color: var(--ui-color-4);
+  --brand-overline-size: 1.8rem;
+  --brand-caption-spacing-t: 0;
+  --brand-caption-color: var(--ui-color-4);
+  --brand-caption-size: 1.6rem;
+  --brand-image-spacing-r: 1.2rem;
+  --brand-image-width: 7.2rem;
 
   /* Color palette ---------------------------------------------------------- */
   --ui-color:  hsl(220, 24%, 44%);

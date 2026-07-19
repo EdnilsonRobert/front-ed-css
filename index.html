@@ -994,6 +994,60 @@
         </div>
     </div>
 
+    <!-- Toolbars -->
+    <div class="container-fluid" id="toolbars">
+        <p class="section-title">Toolbars</p>
+
+        <p><code>.toolbar</code></p>
+        <div class="toolbar">
+            <p>Conteúdo da esquerda</p>
+            <p>Conteúdo da direita</p>
+        </div>
+
+        <p><code>.toolbar</code> > <code>.toolbar-wrapper</code></p>
+        <div class="toolbar">
+            <div class="toolbar-wrapper">
+                <p>Conteúdo da esquerda</p>
+                <p>Conteúdo da direita</p>
+            </div>
+        </div>
+
+        <p><code>.toolbar data-bg-color data-color</code></p>
+        <div class="toolbar" data-bg-color="var(--ui-color-8)" data-color="var(--ui-color-1)">
+            <p>.front-ed.css</p>
+            <p>Desenvolvida por Ed Robert</p>
+        </div>
+
+        <p class="section-subtitle">Branding</p>
+        <p><code>.brand</code> > <code>.brand.name</code></p>
+        <div class="toolbar">
+            <div class="brand">
+                <p class="brand-name">.front-ed.css</p>
+            </div>
+        </div>
+
+        <p><code>.brand</code> > <code>.brand-overline + .brand.name + .brand-caption</code></p>
+        <div class="toolbar">
+            <div class="brand">
+                <p class="brand-overline">Brand overline</p>
+                <p class="brand-name">.front-ed.css</p>
+                <p class="brand-caption">Brand caption</p>
+            </div>
+        </div>
+
+        <p><code>.brand-group</code> > <code>.brand-image + .brand</code></p>
+        <div class="toolbar">
+            <div class="brand-group">
+                <img class="brand-image" src="./favicon.svg" alt=".front-ed.css">
+                <div class="brand">
+                    <p class="brand-overline">Brand overline</p>
+                    <p class="brand-name">.front-ed.css</p>
+                    <p class="brand-caption">Brand caption</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
 
 </body>
