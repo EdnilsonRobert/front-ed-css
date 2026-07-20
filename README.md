@@ -106,11 +106,11 @@
   - Color palette (borders, backgrounds and colors, gradients)
 - [x] Text utils
   - Modificadores de texto padrão
+- [x] Spacing
 - [x] CSS linter
   - atributos obrigatórios ou recomendados em tags
   - tags e atributos marcados com status deprecated
 
-- [ ] Spacing
 - [ ] Borders (radius and lines)
 - [ ] Shadows (box and text)
 - [ ] Opacity
