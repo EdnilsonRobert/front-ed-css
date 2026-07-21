@@ -108,6 +108,7 @@
   - Modificadores de texto padrão
 - [x] Spacing
 - [x] Borders (radius and lines)
+- [x] Animations (blink, pulse, rotate, spin)
 - [x] CSS linter
   - atributos obrigatórios ou recomendados em tags
   - tags e atributos marcados com status deprecated
@@ -117,7 +118,7 @@
 - [ ] Filters
 - [ ] Helper classes
 - [ ] Hover, focus, and other states
-- [ ] Animations and transitions
+- [ ] Transitions
 - [ ] Breakpoints and responsive design
 - [ ] Light/Dark mode
 
