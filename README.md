@@ -74,9 +74,9 @@
 - [x] Flexbox
 - [x] Toolbars
   - Toolbars and branding
+- [x] Avatars (personal avatar)
 
 - [ ] Wireframe
-- [ ] Avatars (brand and personal avatar)
 - [ ] Banner (hero)
 - [ ] Menus and navigation (menu h, menu v, dropdown, breadcrumbs, pagination)
 - [ ] Messages (alerts, toasts and notify)
