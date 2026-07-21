@@ -171,6 +171,13 @@
   --brand-image-spacing-r: 1.2rem;
   --brand-image-width: 7.2rem;
 
+  /* Borders ---------------------------------------------------------------- */
+  --border-radius-level-0: .6rem;
+  --border-radius-level-1: .9rem;
+  --border-radius-level-2: 1.2rem;
+  --border-width: .1rem;
+  --border-color: var(--ui-color-3);
+
   /* Color palette ---------------------------------------------------------- */
   --ui-color:  hsl(220, 24%, 44%);
   --red:       hsl(348, 83%, 47%);

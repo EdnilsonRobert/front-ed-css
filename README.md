@@ -107,11 +107,11 @@
 - [x] Text utils
   - Modificadores de texto padrão
 - [x] Spacing
+- [x] Borders (radius and lines)
 - [x] CSS linter
   - atributos obrigatórios ou recomendados em tags
   - tags e atributos marcados com status deprecated
 
-- [ ] Borders (radius and lines)
 - [ ] Shadows (box and text)
 - [ ] Opacity
 - [ ] Filters

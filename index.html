@@ -1101,6 +1101,36 @@
         <p><code>.remove-padding-y</code> - remove padding y (top/bottom)</p>
     </div>
 
+    <!-- Borders -->
+    <div class="container-fluid" id="borders">
+        <p class="section-title">Borders</p>
+
+        <p class="section-subtitle">Has border</p>
+        <p><code>.has-border</code></p>
+        <p class="has-border padding-6">Elemento com borda</p>
+
+        <p class="section-subtitle">Border radius</p>
+        <p><code>.has-border</code> <code>.corner-square</code></p>
+        <p class="has-border corner-square padding-6">Elemento com canto angular</p>
+
+        <p><code>.has-border</code> <code>.corner-circular</code></p>
+        <p>
+            <span class="has-border corner-circular"
+                style="display:inline-block; aspect-ratio:1/1; height:4.8rem;"></span>
+            Elemento circular
+        </p>
+
+        <p><code>.has-border</code> <code>.corner-rounded</code></p>
+        <p class="has-border corner-rounded padding-6">Elemento com canto arredondado</p>
+
+        <p><code>.corner-outer-2</code> > <code>.corner-outer-1</code> > <code>corner-rounded</code></p>
+        <div class="has-border corner-outer-2 padding-6">
+            <div class="has-border corner-outer-1 padding-6">
+                <p class="has-border corner-rounded padding-6">Cantos arredondados aninhados</p>
+            </div>
+        </div>
+    </div>
+
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
 
 </body>
