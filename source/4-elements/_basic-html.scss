@@ -23,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  padding-block: var(--heading-pad-y);
+  padding-block: var(--heading-space-y);
   color: var(--heading-color);
   font-weight: unset;
   font-style: unset;
@@ -109,7 +109,7 @@ del, ins {
 }
 del {
   background-color: var(--red-1);
-  color: var(--red-8);
+  color: var(--red-7);
   text-decoration: line-through;
 }
 ins {

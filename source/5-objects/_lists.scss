@@ -6,25 +6,24 @@
 
 .markers-none li { list-style-type: none; }
 
-.marker-arrow::before   { content: url('./assets/arrow-forward.svg'); }
-.marker-caret::before   { content: url('./assets/caret-forward.svg'); }
-.marker-check::before   { content: url('./assets/checkmark.svg'); }
-.marker-chevron::before { content: url('./assets/chevron-forward.svg'); }
-.marker-plus::before    { content: url('./assets/plus.svg'); }
-
-.marker-arrow,
-.marker-caret,
-.marker-check,
-.marker-chevron,
-.marker-plus {
-  list-style-type: none;
-
-  &::before {
-    display: inline-block;
-    width: 16px;
-    margin-right: .6em;
-    line-height: 1;
-  }
+.custom-counters { counter-reset: acc; }
+.custom-counters li { list-style-type: none; }
+.custom-counters li::before {
+  counter-increment: acc;
+  content: '[' counter(acc) ']';
+  display: inline-block;
+  margin-right: .6em;
+  color: var(--list-marker-color);
+  font-size: 1.4rem;
 }
+
+.has-icon li {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: .6em;
+}
+.has-icon ion-icon { color: var(--list-marker-color); }
 
 /* END OF FILE ============================================================== */

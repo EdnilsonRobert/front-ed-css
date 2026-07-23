@@ -4,9 +4,12 @@
   File: Color utilities
 ============================================================================= */
 
-[data-border] { border-color: attr(data-border type(<color>)); }
+[data-border] {
+  border-radius: .6rem;
+  border: .1rem solid attr(data-border type(<color>));
+}
 
-[data-bg-color] { background-color: attr(data-bg-color type(<color>)); }
+[data-background] { background-color: attr(data-background type(<color>)); }
 
 [data-color] { color: attr(data-color type(<color>)); }
 

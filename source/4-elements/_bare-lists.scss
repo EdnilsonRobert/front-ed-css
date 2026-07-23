@@ -20,22 +20,20 @@ ul ul {
 menu { list-style-type: none; }
 
 li {
-  padding-block: var(--list-item-pad-y);
+  padding-block: var(--list-item-space-y);
   list-style-position: inside;
 }
+li::marker { color: var(--list-marker-color); }
 
 // dl {}
 dt { font-weight: unset; }
 dd {
   display: list-item;
   padding-left: var(--list-indent);
-  padding-block: var(--list-item-pad-y);
+  padding-block: var(--list-item-space-y);
   list-style-type: square;
   list-style-position: inside;
 }
-
-li::marker, dd::marker {
-  color: var(--list-marker-color);
-}
+dd::marker { color: var(--list-marker-color); }
 
 /* END OF FILE ============================================================== */

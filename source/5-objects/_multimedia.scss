@@ -6,9 +6,7 @@
 
 // https://chromium.googlesource.com/chromium/blink/+/72fef91ac1ef679207f51def8133b336a6f6588f/Source/core/css/mediaControls.css
 
-.audio-player {
-  background-color: var(--audio-panel-color);
-}
+.audio-player { background-color: var(--audio-panel-color); }
 .audio-player::-webkit-media-controls-panel {
   // Cor de fundo do painel de controle
   background-color: var(--audio-panel-color);
@@ -29,19 +27,19 @@
   gap: 1.2rem;
   margin-bottom: .6rem;
 }
-.audio-widget-cover {
+.audio-widget-album {
   width: 25%;
   border-radius: .6rem;
 }
 // .audio-widget-info {}
 .audio-widget-info-track {
-  color: var(--audio-widget-caption-track-color);
+  color: var(--audio-widget-info-track-color);
   font-weight: var(--font-weight-bolder);
   font-size: 1.8rem;
   line-height: var(--lh-125);
 }
-.audio-widget-info-author {
-  color: var(--audio-widget-caption-author-color);
+.audio-widget-info-caption {
+  color: var(--audio-widget-info-caption-color);
   font-size: 1.4rem;
   line-height: var(--lh-100);
 }
@@ -62,8 +60,8 @@
   font-size: 1.8rem;
   line-height: var(--lh-125);
 }
-.video-widget-info-author {
-  color: var(--video-widget-info-author-color);
+.video-widget-info-caption {
+  color: var(--video-widget-info-caption-color);
   font-size: 1.4rem;
   line-height: var(--lh-100);
 }

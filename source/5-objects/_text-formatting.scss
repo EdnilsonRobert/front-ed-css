@@ -5,11 +5,10 @@
 ============================================================================= */
 
 .paragraph {
-  padding-block: var(--paragraph-spacing-y);
+  padding-block: var(--paragraph-space-y);
   text-indent: var(--paragraph-indent);
 }
 
-// .h-rule {}
 .h-rule-66 { max-width: 66%; }
 .h-rule-50 { max-width: 50%; }
 .h-rule-33 { max-width: 33%; }
@@ -17,7 +16,7 @@
 .blockquote {
   padding-inline: 2em 1em;
   padding-block: 1.2rem;
-  border-radius: 0 .6rem .6rem 0;
+  border-radius: 0 1.2rem 1.2rem 0;
   border-left: .3rem solid var(--blockquote-border);
   background-color: var(--blockquote-background);
   color: var(--blockquote-color);
@@ -55,24 +54,9 @@
 .mark-brown     { background-color: var(--brown-2); }
 
 // del, ins {}
-
 // small {}
-
-.code {
-  display: inline-block;
-  padding-inline: .6rem;
-  border-radius: .6rem;
-  background-color: var(--ui-color-7);
-  color: var(--green-3);
-  font-weight: 400;
-  font-style: normal;
-  font-size: inherit;
-  font-family: var(--font-monospace);
-  line-height: var(--lh-150);
-}
-
-// kbd {}
-
+// sub, sup {}
+// code, kbd {}
 // dialog {}
 
 /* END OF FILE ============================================================== */

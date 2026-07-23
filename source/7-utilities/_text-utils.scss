@@ -38,7 +38,7 @@
 }
 .deleted {
   background-color: var(--red-1);
-  color: var(--red-8);
+  color: var(--red-7);
   text-decoration: line-through;
 }
 .inserted {
@@ -47,5 +47,12 @@
   color: var(--green-8);
   text-decoration: unset;
 }
+
+.text-sub, .text-sup {
+  font-size: 1.2rem;
+  line-height: var(--lh-100);
+}
+.text-sub { vertical-align: sub; }
+.text-sup { vertical-align: super; }
 
 /* END OF FILE ============================================================== */

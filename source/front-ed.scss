@@ -41,12 +41,12 @@
 @use './5-objects/forms';
 
 // COMPONENTS - UI Classes, designed components, chunks of UI
-@use './6-components/containers';
+@use './6-components/messages';
 @use './6-components/grid-layout';
 @use './6-components/flexbox';
+@use './6-components/containers';
 @use './6-components/toolbars';
 @use './6-components/avatars';
-@use './6-components/messages';
 
 // Wireframe
 // Banner (hero)

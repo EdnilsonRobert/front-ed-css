@@ -11,13 +11,15 @@
   align-items: center;
 }
 
+.avatar { gap: 1.2rem; }
+
 .avatar-thumb {
   height: var(--avatar-height);
   border-radius: .6rem;
 }
 
 .avatar-id {
-  padding-left: 1.2rem;
+  font-size: var(--avatar-id-size);
   line-height: var(--lh-125);
 }
 
@@ -25,12 +27,12 @@
   .avatar-thumb { border-radius: .6rem 0 0 .6rem; }
 
   .avatar-id {
+    align-content: center;
     height: var(--avatar-height);
     padding-inline: 1.2rem;
     border-radius: 0 .6rem .6rem 0;
     background-color: var(--avatar-color);
     color: var(--avatar-text);
-    align-content: center;
   }
 }
 

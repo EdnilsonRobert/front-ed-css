@@ -69,9 +69,10 @@
   - Sem formatação adicional (apenas formatação de bare elements)
 
 ### Components - UI Classes, designed components, chunks of UI
-- [x] Containers
+- [x] Messages (text messages)
 - [x] Grid layout
 - [x] Flexbox
+- [x] Containers
 - [x] Toolbars
   - Toolbars and branding
 - [x] Avatars (personal avatar)
@@ -79,7 +80,7 @@
 - [ ] Wireframe
 - [ ] Banner (hero)
 - [ ] Menus and navigation (menu h, menu v, dropdown, breadcrumbs, pagination)
-- [ ] Messages (alerts, toasts and notify)
+- [ ] Messages (notice blocks, alerts, toasts and notify)
 - [ ] Text columns
 - [ ] Sticky
 - [ ] Tooltips

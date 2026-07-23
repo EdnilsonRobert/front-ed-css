@@ -6,11 +6,11 @@
 
 .has-border { border: var(--border-width) solid var(--border-color); }
 
-.corner-square   { border-radius: unset; }
+.corner-square   { border-radius: 0; }
 .corner-circular { border-radius: 50%; }
 
-.corner-rounded { border-radius: var(--border-radius-level-0); }
-.corner-outer-1 { border-radius: var(--border-radius-level-1); }
-.corner-outer-2 { border-radius: var(--border-radius-level-2); }
+.corner-rounded { border-radius: var(--border-radius-outer-0); }
+.corner-outer-1 { border-radius: var(--border-radius-outer-1); }
+.corner-outer-2 { border-radius: var(--border-radius-outer-2); }
 
 /* END OF FILE ============================================================== */

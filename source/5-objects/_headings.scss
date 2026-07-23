@@ -38,11 +38,11 @@
   line-height: var(--lh-125);
 }
 .heading-overline {
-  padding-block: .3rem;
+  padding-block: unset;
   color: var(--heading-color-overline);
 }
 .heading-caption {
-  padding-block: .3rem;
+  padding-block: unset;
   color: var(--heading-color-caption);
 }
 

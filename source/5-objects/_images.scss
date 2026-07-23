@@ -4,10 +4,16 @@
   File: Images
 ============================================================================= */
 
-.media-caption {
-  margin-top: var(--caption-spacing);
+.image {
+  place-items: center;
+  background-color: var(--image-background);
+}
+
+.image-caption {
+  padding-inline: 1.2rem;
+  padding-block: var(--caption-space-y);
   color: var(--caption-color);
-  font-size: var(--caption-size);
+  line-height: var(--lh-125);
 }
 
 /* END OF FILE ============================================================== */

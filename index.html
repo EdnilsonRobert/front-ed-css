@@ -175,11 +175,11 @@
         </div>
 
         <p class="section-subtitle">Color utilities</p>
-        <p><code>class="has-border" data-border="var(--green-7)"</code></p>
-        <p class="has-border" data-border="var(--green-7)">Aplicação de cor de borda</p>
-        <p><code>data-bg-color="var(--green-3)"</code></p>
-        <p data-bg-color="var(--green-3)">Aplicação de cor de fundo</p>
-        <p><code>data-color="var(--green-7)"</code></p>
+        <p><code>data-border="&lt;color&gt;"</code></p>
+        <p data-border="var(--green-7)">Aplicação de cor de borda</p>
+        <p><code>data-background="&lt;color&gt;"</code></p>
+        <p data-background="var(--green-3)">Aplicação de cor de fundo</p>
+        <p><code>data-color="&lt;color&gt;"</code></p>
         <p data-color="var(--green-7)">Aplicação de cor de texto</p>
     </div>
 
@@ -207,6 +207,11 @@
         <h6 class="heading-display-3">.heading-display-3</h6>
         <h6 class="heading-display-2">.heading-display-2</h6>
         <h6 class="heading-display-1">.heading-display-1</h6>
+
+        <p><code>.heading-overline</code> <code>.heading-caption</code></p>
+        <p class="heading-overline">Heading overline</p>
+        <h1 class="heading-1">Heading level 1</h1>
+        <p class="heading-caption">Heading caption</p>
     </div>
 
     <!-- Paragraphs -->
@@ -214,9 +219,16 @@
         <p class="section-title">Paragraphs</p>
 
         <p class="section-subtitle">Bare element</p>
+        <p><code>p</code></p>
         <p>Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
         <p>Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
         <p>O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
+
+        <p class="section-subtitle">Formatted</p>
+        <p><code>.paragraph</code></p>
+        <p class="paragraph">Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
+        <p class="paragraph">Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
+        <p class="paragraph">O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
     </div>
 
     <!-- Horizontal rules -->
@@ -224,11 +236,10 @@
         <p class="section-title">Horizontal rule</p>
 
         <p class="section-subtitle">Bare element</p>
+        <p><code>hr</code> (width = 100%)</p>
         <hr>
 
         <p class="section-subtitle">Formatted</p>
-        <p><code>.h-rule</code> (width = 100%)</p>
-        <hr class="h-rule">
         <p><code>.h-rule-66</code> (width = 66%)</p>
         <hr class="h-rule-66">
         <p><code>.h-rule-50</code> (width = 50%)</p>
@@ -327,47 +338,8 @@
         <p><code>kbd</code> Este é um exemplo de entrada de teclado <kbd>Enter</kbd> em um parágrafo.</p>
 
         <p class="section-subtitle">Dialog</p>
-        <dialog open="open"><code>dialog</code> Este conteúdo está dentro de um dialog.</dialog>
-    </div>
-
-    <!-- Text utilities -->
-    <div class="container-fluid" id="text-utils">
-        <p class="section-title">Text utilities</p>
-
-        <p class="section-subtitle">Font weight</p>
-        <p><code>.font-light</code> <span class="font-light">Este texto contém a classe .font-light (300)</span></p>
-        <p><code>.font-regular</code> <span class="font-regular">Este texto contém a classe .font-regular (400)</span></p>
-        <p><code>.font-medium</code> <span class="font-medium">Este texto contém a classe .font-medium (500)</span></p>
-        <p><code>.font-semibold</code> <span class="font-semibold">Este texto contém a classe .font-semibold (600)</span></p>
-        <p><code>.font-bold</code> <span class="font-bold">Este texto contém a classe .font-bold (700)</span></p>
-        <p><code>.font-heavy</code> <span class="font-heavy">Este texto contém a classe .font-heavy (800)</span></p>
-        <p><code>.font-black</code> <span class="font-black">Este texto contém a classe .font-black (900)</span></p>
-
-        <p class="section-subtitle">Font style</p>
-        <p><code>.font-normal</code> <span class="font-normal">Este texto contém a classe .font-normal</span></p>
-        <p><code>.font-italic</code> <span class="font-italic">Este texto contém a classe .font-italic</span></p>
-
-        <p class="section-subtitle">Font size</p>
-        <p><code>.font-small</code> <span class="font-small">Este texto contém a classe .font-small</span></p>
-
-        <p class="section-subtitle">Font family</p>
-        <p><code>.font-sans-display</code> <span class="font-sans-display"> Este texto contém a classe .font-sans-display</span></p>
-        <p><code>.font-sans</code> <span class="font-sans"> Este texto contém a classe .font-sans</span></p>
-        <p><code>.font-serif</code> <span class="font-serif"> Este texto contém a classe .font-serif</span></p>
-        <p><code>.font-monospace</code> <span class="font-monospace"> Este texto contém a classe .font-monospace</span></p>
-
-        <p class="section-subtitle">Text alignment</p>
-        <p class="text-left"><code>.text-left</code> Este texto contém a classe .text-left</p>
-        <p class="text-center"><code>.text-center</code> Este texto contém a classe .text-center</p>
-        <p class="text-right"><code>.text-right</code> Este texto contém a classe .text-right</p>
-
-        <p class="section-subtitle">Text transformation</p>
-        <p><code>.to-lowercase</code> <span class="to-lowercase"> Este texto contém a classe .to-lowercase</span></p>
-        <p><code>.to-uppercase</code> <span class="to-uppercase"> Este texto contém a classe .to-uppercase</span></p>
-
-        <p class="section-subtitle">Text insertion</p>
-        <p><code>.deleted</code> <span class="deleted"> Este texto contém a classe .deleted</span></p>
-        <p><code>.inserted</code> <span class="inserted"> Este texto contém a classe .inserted</span></p>
+        <p><code>dialog</code></p>
+        <dialog open="open">Este conteúdo está dentro de um dialog.</dialog>
     </div>
 
     <!-- Icons -->
@@ -383,6 +355,9 @@
         <p class="section-subtitle">Formatted</p>
         <p><code>.icon</code></p>
         <p><ion-icon class="icon" name="heart"></ion-icon> ion-icon name="heart"</p>
+
+        <p><code>.icon-bigger</code></p>
+        <p><ion-icon class="icon-bigger" name="heart"></ion-icon> ion-icon name="heart"</p>
     </div>
 
     <!-- Lists -->
@@ -444,13 +419,22 @@
             </li>
         </ul>
 
-        <p><code>li.marker-&lt;type&gt;</code></p>
-        <ul>
-            <li class="marker-arrow">Item de lista com classe <code>.marker-arrow</code></li>
-            <li class="marker-caret">Item de lista com classe <code>.marker-caret</code></li>
-            <li class="marker-check">Item de lista com classe <code>.marker-check</code></li>
-            <li class="marker-chevron">Item de lista com classe <code>.marker-chevron</code></li>
-            <li class="marker-plus">Item de lista com classe <code>.marker-plus</code></li>
+        <p><code>.custom-counters</code></p>
+        <ol class="custom-counters">
+            <li>Item de lista com contador personalizado</li>
+            <li>Item de lista com contador personalizado</li>
+            <li>Item de lista com contador personalizado</li>
+            <li>Item de lista com contador personalizado</li>
+            <li>Item de lista com contador personalizado</li>
+        </ol>
+
+        <p><code>.has-icon</code></p>
+        <ul class="has-icon">
+            <li><ion-icon name="arrow-forward"></ion-icon> Item de lista com ícone</li>
+            <li><ion-icon name="caret-forward"></ion-icon> Item de lista com ícone</li>
+            <li><ion-icon name="checkmark"></ion-icon> Item de lista com ícone</li>
+            <li><ion-icon name="chevron-forward"></ion-icon> Item de lista com ícone</li>
+            <li><ion-icon name="add"></ion-icon> Item de lista com ícone</li>
         </ul>
     </div>
 
@@ -529,14 +513,14 @@
             <figcaption>Este conteúdo está dentro de uma figure caption</figcaption>
         </figure>
 
-        <p><code>figure > img + figcaption</code></p>
+        <p><code>figure</code> > <code>img + figcaption</code></p>
         <figure>
             <img src="./assets/image-svg.svg" alt="SVG Badge">
             <!-- <img src="./assets/image-svg.svg"> -->
             <figcaption>Imagem (format: .webp)</figcaption>
         </figure>
 
-        <p><code>figure > svg + figcaption</code></p>
+        <p><code>figure</code> > <code>svg + figcaption</code></p>
         <figure>
             <svg width="128" height="128">
                 <circle cx="64" cy="64" r="48" fill="none" stroke="hsl(220, 24%, 78%)" stroke-width="9"/>
@@ -545,7 +529,7 @@
             <figcaption>SVG inline</figcaption>
         </figure>
 
-        <p><code>picture</code> não possui formatação</p>
+        <p><code>picture</code></p>
         <picture>
             <source media="(min-width: 1200px)" srcset="./assets/picture-1200.svg">
             <source media="(min-width: 800px)" srcset="./assets/picture-960.svg">
@@ -555,10 +539,10 @@
         </picture>
 
         <p class="section-subtitle">Formatted</p>
-        <p><code>figure > .media-caption</code></p>
-        <figure>
+        <p><code>.image</code> > <code>.image-caption</code></p>
+        <figure class="image">
             <img src="./assets/image-svg.svg" alt="SVG Badge">
-            <figcaption class="media-caption">.media-caption (figcaption formatado)</figcaption>
+            <figcaption class="image-caption">figcaption formatado</figcaption>
         </figure>
     </div>
 
@@ -595,10 +579,10 @@
         <p><code>.audio-widget</code></p>
         <figure class="audio-widget">
             <div class="audio-widget-display">
-                <img class="audio-widget-cover" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
+                <img class="audio-widget-album" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
                 <figcaption class="audio-widget-info">
                     <p class="audio-widget-info-track">Tank!</p>
-                    <p class="audio-widget-info-author">The Seatbelts</p>
+                    <p class="audio-widget-info-caption">The Seatbelts</p>
                 </figcaption>
             </div>
             <audio class="audio-player" controls>
@@ -613,7 +597,7 @@
             </video>
             <figcaption class="video-widget-info">
                 <p class="video-widget-info-track">Falling Away from Me</p>
-                <p class="video-widget-info-author">Korn</p>
+                <p class="video-widget-info-caption">Korn</p>
             </figcaption>
         </figure>
     </div>
@@ -724,12 +708,12 @@
         <button class="button-small" type="button">button small</button>
         <button type="button">type button</button>
 
-        <p><code>data-border</code> <code>data-bg-color</code> <code>data-color</code></p>
+        <p><code>data-border</code> <code>data-background</code> <code>data-color</code></p>
         <button type="button" data-border="var(--red-6)">data-border</button>
-        <button type="button" data-bg-color="var(--red-2)">data-bg-color</button>
+        <button type="button" data-background="var(--red-2)">data-background</button>
         <button type="button" data-color="var(--red-6)">data-color</button>
 
-        <button type="button" data-border="var(--red-5)" data-bg-color="var(--red-1)"
+        <button type="button" data-border="var(--red-5)" data-background="var(--red-1)"
             data-color="var(--red-7)">3 data attributes</button>
     </div>
 
@@ -791,30 +775,30 @@
                 <legend>Inputs para seleção de valores</legend>
                 <div>
                     <label for="checkbox1">
-                        <span>Normal</span>
                         <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
+                        <span>Normal</span>
                     </label>
                     <label for="checkbox2">
-                        <span>Checado</span>
                         <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2" checked="checked">
+                        <span>Checado</span>
                     </label>
                     <label for="checkbox3">
-                        <span>Desabilitado</span>
                         <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox4" disabled="disabled">
+                        <span>Desabilitado</span>
                     </label>
                 </div>
                 <div>
                     <label for="radio1">
-                        <span>Normal</span>
                         <input type="radio" name="radio" id="radio1" value="radio1">
+                        <span>Normal</span>
                     </label>
                     <label for="radio2">
-                        <span>Checado</span>
                         <input type="radio" name="radio" id="radio2" value="radio2" checked="checked">
+                        <span>Checado</span>
                     </label>
                     <label for="radio3">
-                        <span>Desabilitado</span>
                         <input type="radio" name="radio" id="radio3" value="radio3" disabled="disabled">
+                        <span>Desabilitado</span>
                     </label>
                 </div>
             </fieldset>
@@ -890,187 +874,48 @@
         </form>
     </div>
 
-    <!-- Containers -->
-    <div class="container-fluid" id="containers">
-        <p class="section-title">Containers</p>
+    <!-- Text utilities -->
+    <div class="container-fluid" id="text-utils">
+        <p class="section-title">Text utilities</p>
 
-        <p><code>.container-fixed</code></p>
-        <div class="container-fixed" data-bg-color="var(--ui-color-1)">
-            <ul>
-                <li>Max width: customizável</li>
-                <li>Margem eixo X: container centralizado</li>
-                <li>Margem eixo Y: customizável</li>
-                <li>Padding: customizável</li>
-            </ul>
-        </div>
+        <p class="section-subtitle">Font weight</p>
+        <p><span class="font-light">Este texto contém a classe</span> <code>.font-light</code> (300)</p>
+        <p><span class="font-regular">Este texto contém a classe</span> <code>.font-regular</code> (400)</p>
+        <p><span class="font-medium">Este texto contém a classe</span> <code>.font-medium</code> (500)</p>
+        <p><span class="font-semibold">Este texto contém a classe</span> <code>.font-semibold</code> (600)</p>
+        <p><span class="font-bold">Este texto contém a classe</span> <code>.font-bold</code> (700)</p>
+        <p><span class="font-heavy">Este texto contém a classe</span> <code>.font-heavy</code> (800)</p>
+        <p><span class="font-black">Este texto contém a classe</span> <code>.font-black</code> (900)</p>
 
-        <p><code>.container-fluid</code></p>
-        <div class="container-fluid" data-bg-color="var(--ui-color-1)">
-            <ul>
-                <li>Width: 100%</li>
-                <li>Margem eixo X: zero</li>
-                <li>Margem eixo Y: customizável</li>
-                <li>Padding: customizável</li>
-            </ul>
-        </div>
-    </div>
+        <p class="section-subtitle">Font style</p>
+        <p><span class="font-normal">Este texto contém a classe</span> <code>.font-normal</code></p>
+        <p><span class="font-italic">Este texto contém a classe</span> <code>.font-italic</code></p>
 
-    <!-- Grid layout -->
-    <div class="container-fluid" id="grid-layout">
-        <p class="section-title">Grid layout</p>
+        <p class="section-subtitle">Font size</p>
+        <p><span class="font-small">Este texto contém a classe</span> <code>.font-small</code></p>
 
-        <p><code>.grid-12 > .col-&lt;span&gt;</code></p>
-        <div class="grid-12 gap-6">
-            <p class="col-1" data-bg-color="var(--ui-color-2)">.col-1</p>
-            <p class="col-11" data-bg-color="var(--ui-color-2)">.col-11</p>
-            <p class="col-2" data-bg-color="var(--ui-color-2)">.col-2</p>
-            <p class="col-10" data-bg-color="var(--ui-color-2)">.col-10</p>
-            <p class="col-3" data-bg-color="var(--ui-color-2)">.col-3</p>
-            <p class="col-9" data-bg-color="var(--ui-color-2)">.col-9</p>
-            <p class="col-4" data-bg-color="var(--ui-color-2)">.col-4</p>
-            <p class="col-8" data-bg-color="var(--ui-color-2)">.col-8</p>
-            <p class="col-5" data-bg-color="var(--ui-color-2)">.col-5</p>
-            <p class="col-7" data-bg-color="var(--ui-color-2)">.col-7</p>
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-            <p class="col-12" data-bg-color="var(--ui-color-2)">.col-12</p>
-        </div>
+        <p class="section-subtitle">Font family</p>
+        <p><span class="font-sans-display">Este texto contém a classe</span> <code>.font-sans-display</code></p>
+        <p><span class="font-sans">Este texto contém a classe</span> <code>.font-sans</code></p>
+        <p><span class="font-serif">Este texto contém a classe</span> <code>.font-serif</code></p>
+        <p><span class="font-monospace">Este texto contém a classe</span> <code>.font-monospace</code></p>
 
-        <p><code>.grid-12</code> <code>.gap-3</code></p>
-        <div class="grid-12 gap-3">
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-        </div>
+        <p class="section-subtitle">Text alignment</p>
+        <p class="text-left">Este texto contém a classe <code>.text-left</code></p>
+        <p class="text-center">Este texto contém a classe <code>.text-center</code></p>
+        <p class="text-right">Este texto contém a classe <code>.text-right</code></p>
 
-        <p><code>.grid-12</code> <code>.gap-6</code></p>
-        <div class="grid-12 gap-6">
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-        </div>
+        <p class="section-subtitle">Text transformation</p>
+        <p><span class="to-lowercase">Este texto contém a classe</span> <code>.to-lowercase</code></p>
+        <p><span class="to-uppercase">Este texto contém a classe</span> <code>.to-uppercase</code></p>
 
-        <p><code>.grid-12</code> <code>.gap-12</code></p>
-        <div class="grid-12 gap-12">
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-        </div>
+        <p class="section-subtitle">Text insertion</p>
+        <p><span class="deleted">Este texto contém a classe</span> <code>.deleted</code></p>
+        <p><span class="inserted">Este texto contém a classe</span> <code>.inserted</code></p>
 
-        <p><code>.grid-12</code> <code>.gap-24</code></p>
-        <div class="grid-12 gap-24">
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-bg-color="var(--ui-color-2)">.col-6</p>
-        </div>
-    </div>
-
-    <!-- Flexbox -->
-    <div class="container-fluid" id="flexbox">
-        <p class="section-title">Flexbox</p>
-
-        <p class="section-subtitle">Flex row</p>
-        <p><code>.row</code> <code>.gap-12</code></p>
-        <div class="row gap-12" data-bg-color="var(--ui-color-1)">
-            <p data-bg-color="var(--ui-color-2)">Linha 1</p>
-            <p data-bg-color="var(--ui-color-2)">Linha 1 <br> Linha 2</p>
-            <p data-bg-color="var(--ui-color-2)">Linha 1 <br> Linha 2 <br> Linha 3</p>
-        </div>
-
-        <p class="section-subtitle">Flex column</p>
-        <p><code>.column</code> <code>.gap-12</code></p>
-        <div class="column gap-12" data-bg-color="var(--ui-color-1)">
-            <p data-bg-color="var(--ui-color-2)">Texto 1</p>
-            <p data-bg-color="var(--ui-color-2)">Texto 1, texto 2</p>
-            <p data-bg-color="var(--ui-color-2)">Texto 1, texto 2, texto 3</p>
-        </div>
-
-        <p class="section-subtitle">Flex alignment</p>
-        <p><code>.row-&lt;horizontal&gt;&lt;vertical&gt;</code></p>
-        <p><code>.column-&lt;horizontal&gt;&lt;vertical&gt;</code></p>
-
-        <p class="section-subtitle">Child behaviour</p>
-        <p><code>.row | .column</code> > <code>.flex-grow</code></p>
-        <div class="row gap-12" data-bg-color="var(--ui-color-1)">
-            <p class="flex-grow" data-bg-color="var(--ui-color-2)">Linha 1</p>
-            <p class="flex-grow" data-bg-color="var(--ui-color-2)">Linha 1 <br> Linha 2</p>
-            <p class="flex-grow" data-bg-color="var(--ui-color-2)">Linha 1 <br> Linha 2 <br> Linha 3</p>
-        </div>
-    </div>
-
-    <!-- Toolbars -->
-    <div class="container-fluid" id="toolbars">
-        <p class="section-title">Toolbars</p>
-
-        <p><code>.toolbar</code></p>
-        <div class="toolbar">
-            <p>Conteúdo da esquerda</p>
-            <p>Conteúdo da direita</p>
-        </div>
-
-        <p><code>.toolbar</code> > <code>.toolbar-wrapper</code></p>
-        <div class="toolbar">
-            <div class="toolbar-wrapper">
-                <p>Conteúdo da esquerda</p>
-                <p>Conteúdo da direita</p>
-            </div>
-        </div>
-
-        <p><code>.toolbar data-bg-color data-color</code></p>
-        <div class="toolbar" data-bg-color="var(--ui-color-8)" data-color="var(--ui-color-1)">
-            <p>.front-ed.css</p>
-            <p>Desenvolvida por Ed Robert</p>
-        </div>
-
-        <p class="section-subtitle">Branding</p>
-        <p><code>.brand</code> > <code>.brand.name</code></p>
-        <div class="toolbar">
-            <div class="brand">
-                <p class="brand-name">.front-ed.css</p>
-            </div>
-        </div>
-
-        <p><code>.brand</code> > <code>.brand-overline + .brand.name + .brand-caption</code></p>
-        <div class="toolbar">
-            <div class="brand">
-                <p class="brand-overline">Brand overline</p>
-                <p class="brand-name">.front-ed.css</p>
-                <p class="brand-caption">Brand caption</p>
-            </div>
-        </div>
-
-        <p><code>.brand-group</code> > <code>.brand-image + .brand</code></p>
-        <div class="toolbar">
-            <div class="brand-group">
-                <img class="brand-image" src="./favicon.svg" alt=".front-ed.css">
-                <div class="brand">
-                    <p class="brand-overline">Brand overline</p>
-                    <p class="brand-name">.front-ed.css</p>
-                    <p class="brand-caption">Brand caption</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Avatars -->
-    <div class="container-fluid" id="avatars">
-        <p class="section-title">Avatar</p>
-
-        <p><code>.avatar</code> > <code>.avatar-thumb + .avatar-id</code></p>
-        <div class="toolbar">
-            <p>Cowboy Bebop</p>
-
-            <div class="avatar">
-                <img class="avatar-thumb" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
-                <p class="avatar-id">Radical Ed (Edward)</p>
-            </div>
-        </div>
-
-        <p><code>.avatar-button</code> > <code>.avatar-thumb + .avatar-id</code></p>
-        <div class="toolbar">
-            <p>Cowboy Bebop</p>
-
-            <div class="avatar-button">
-                <img class="avatar-thumb" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
-                <p class="avatar-id">Radical Ed (Edward)</p>
-            </div>
-        </div>
+        <p class="section-subtitle">Text insertion</p>
+        <p>Este texto <span class="text-sub">contém a classe</span> <code>.text-sub</code></p>
+        <p>Este texto <span class="text-sup">contém a classe</span> <code>.text-sup</code></p>
     </div>
 
     <!-- Messages -->
@@ -1110,7 +955,7 @@
         <p class="section-title">Spacing</p>
 
         <p class="section-subtitle">Centering blocks</p>
-        <p><code>.margin-auto</code> - margin left/right: auto</p>
+        <p><code>.margin-auto</code> - margin inline (left/right): auto</p>
 
         <p class="section-subtitle">Margin top</p>
         <p><code>.margin-t-3</code> - margin top: .3rem</p>
@@ -1184,6 +1029,211 @@
         <div class="has-border corner-outer-2 padding-6">
             <div class="has-border corner-outer-1 padding-6">
                 <p class="has-border corner-rounded padding-6">Cantos arredondados aninhados</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid layout -->
+    <div class="container-fluid" id="grid-layout">
+        <p class="section-title">Grid layout</p>
+
+        <p class="section-subtitle">Grid com número de colunas indefinido</p>
+        <p><code>.grid-var</code></p>
+        <div class="grid-var gap-6">
+            <p data-background="var(--ui-color-2)">Célula com mais conteúdo</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+        </div>
+
+        <p class="section-subtitle">Grid de 12 colunas</p>
+        <p><code>.grid-12</code> > <code>.col-&lt;span&gt;</code></p>
+        <div class="grid-12 gap-6">
+            <p class="col-1" data-background="var(--ui-color-2)">.col-1</p>
+            <p class="col-11" data-background="var(--ui-color-2)">.col-11</p>
+            <p class="col-2" data-background="var(--ui-color-2)">.col-2</p>
+            <p class="col-10" data-background="var(--ui-color-2)">.col-10</p>
+            <p class="col-3" data-background="var(--ui-color-2)">.col-3</p>
+            <p class="col-9" data-background="var(--ui-color-2)">.col-9</p>
+            <p class="col-4" data-background="var(--ui-color-2)">.col-4</p>
+            <p class="col-8" data-background="var(--ui-color-2)">.col-8</p>
+            <p class="col-5" data-background="var(--ui-color-2)">.col-5</p>
+            <p class="col-7" data-background="var(--ui-color-2)">.col-7</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+            <p class="col-12" data-background="var(--ui-color-2)">.col-12</p>
+        </div>
+
+        <p class="section-subtitle">Grid gaps</p>
+        <p><code>.grid-12</code> <code>.gap-3</code></p>
+        <div class="grid-12 gap-3">
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+        </div>
+
+        <p><code>.grid-12</code> <code>.gap-6</code></p>
+        <div class="grid-12 gap-6">
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+        </div>
+
+        <p><code>.grid-12</code> <code>.gap-12</code></p>
+        <div class="grid-12 gap-12">
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+        </div>
+
+        <p><code>.grid-12</code> <code>.gap-24</code></p>
+        <div class="grid-12 gap-24">
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
+        </div>
+    </div>
+
+    <!-- Flexbox -->
+    <div class="container-fluid" id="flexbox">
+        <p class="section-title">Flexbox</p>
+
+        <p class="section-subtitle">Flex row</p>
+        <p><code>.row</code> <code>.gap-12</code></p>
+        <div class="row gap-12" data-background="var(--ui-color-1)">
+            <p data-background="var(--ui-color-2)">Linha 1</p>
+            <p data-background="var(--ui-color-2)">Linha 1 <br> Linha 2</p>
+            <p data-background="var(--ui-color-2)">Linha 1 <br> Linha 2 <br> Linha 3</p>
+        </div>
+
+        <p class="section-subtitle">Flex column</p>
+        <p><code>.column</code> <code>.gap-12</code></p>
+        <div class="column gap-12" data-background="var(--ui-color-1)">
+            <p data-background="var(--ui-color-2)">Texto 1</p>
+            <p data-background="var(--ui-color-2)">Texto 1, texto 2</p>
+            <p data-background="var(--ui-color-2)">Texto 1, texto 2, texto 3</p>
+        </div>
+
+        <p class="section-subtitle">Flex alignment</p>
+        <p><code>.row-&lt;horizontal&gt;&lt;vertical&gt;</code></p>
+        <p><code>.column-&lt;horizontal&gt;&lt;vertical&gt;</code></p>
+
+        <p class="section-subtitle">Child behaviour</p>
+        <p><code>.row | .column</code> > <code>.flex-grow</code></p>
+        <div class="row gap-12" data-background="var(--ui-color-1)">
+            <p class="flex-grow" data-background="var(--ui-color-2)">Linha 1</p>
+            <p class="flex-grow" data-background="var(--ui-color-2)">Linha 1 <br> Linha 2</p>
+            <p class="flex-grow" data-background="var(--ui-color-2)">Linha 1 <br> Linha 2 <br> Linha 3</p>
+        </div>
+    </div>
+
+    <!-- Containers -->
+    <div class="container-fluid" id="containers">
+        <p class="section-title">Containers</p>
+
+        <p><code>.container-fixed</code></p>
+        <div class="container-fixed" data-background="var(--ui-color-1)">
+            <ul>
+                <li>Max width: customizável</li>
+                <li>Margem eixo X: container centralizado</li>
+                <li>Margem eixo Y: customizável</li>
+                <li>Padding: customizável</li>
+            </ul>
+        </div>
+
+        <p><code>.container-fluid</code></p>
+        <div class="container-fluid" data-background="var(--ui-color-1)">
+            <ul>
+                <li>Width: 100%</li>
+                <li>Margem eixo X: zero</li>
+                <li>Margem eixo Y: customizável</li>
+                <li>Padding: customizável</li>
+            </ul>
+        </div>
+
+        <p class="section-subtitle">Aspect ratio</p>
+        <p><code>.ratio-1-1</code></p>
+        <div class="ratio-1-1" data-background="var(--ui-color-1)"></div>
+
+        <p><code>.ratio-4-3</code></p>
+        <div class="ratio-4-3" data-background="var(--ui-color-1)"></div>
+
+        <p><code>.ratio-16-9</code></p>
+        <div class="ratio-16-9" data-background="var(--ui-color-1)"></div>
+    </div>
+
+    <!-- Toolbars -->
+    <div class="container-fluid" id="toolbars">
+        <p class="section-title">Toolbars</p>
+
+        <p><code>.toolbar</code></p>
+        <div class="toolbar">
+            <p>Conteúdo da esquerda</p>
+            <p>Conteúdo da direita</p>
+        </div>
+
+        <p><code>.toolbar</code> > <code>.toolbar-wrapper</code></p>
+        <div class="toolbar">
+            <div class="toolbar-wrapper">
+                <p>Conteúdo da esquerda</p>
+                <p>Conteúdo da direita</p>
+            </div>
+        </div>
+
+        <p><code>.toolbar data-background data-color</code></p>
+        <div class="toolbar" data-background="var(--ui-color-8)" data-color="var(--ui-color-1)">
+            <p>.front-ed.css</p>
+            <p>Desenvolvida por Ed Robert</p>
+        </div>
+
+        <p class="section-subtitle">Branding</p>
+        <p><code>.brand</code> > <code>.brand.name</code></p>
+        <div class="toolbar">
+            <p class="brand-name">.front-ed.css</p>
+        </div>
+
+        <p><code>.brand</code> > <code>.brand-overline + .brand.name + .brand-caption</code></p>
+        <div class="toolbar">
+            <div class="brand">
+                <p class="brand-overline">Brand overline</p>
+                <p class="brand-name">.front-ed.css</p>
+                <p class="brand-caption">Brand caption</p>
+            </div>
+        </div>
+
+        <p><code>.brand-group</code> > <code>.brand-image + .brand</code></p>
+        <div class="toolbar">
+            <div class="brand-group">
+                <img class="brand-image" src="./favicon.svg" alt=".front-ed.css">
+                <div class="brand">
+                    <p class="brand-overline">Brand overline</p>
+                    <p class="brand-name">.front-ed.css</p>
+                    <p class="brand-caption">Brand caption</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Avatars -->
+    <div class="container-fluid" id="avatars">
+        <p class="section-title">Avatar</p>
+
+        <p><code>.avatar</code> > <code>.avatar-thumb + .avatar-id</code></p>
+        <div class="toolbar">
+            <p data-color="var(--ui-color-5)">Cowboy Bebop</p>
+
+            <div class="avatar">
+                <img class="avatar-thumb" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
+                <p class="avatar-id">Radical Ed (Edward)</p>
+            </div>
+        </div>
+
+        <p><code>.avatar-button</code> > <code>.avatar-thumb + .avatar-id</code></p>
+        <div class="toolbar">
+            <p data-color="var(--ui-color-5)">Cowboy Bebop</p>
+
+            <div class="avatar-button">
+                <img class="avatar-thumb" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
+                <p class="avatar-id">Radical Ed (Edward)</p>
             </div>
         </div>
     </div>

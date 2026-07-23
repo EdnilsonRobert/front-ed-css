@@ -31,7 +31,7 @@ tbody tr, tfoot tr {
 }
 
 th {
-  padding: var(--table-cell-padding);
+  padding: var(--table-cell-space);
   color: var(--th-color);
   font-weight: var(--th-weight);
   font-size: var(--th-size);
@@ -39,7 +39,7 @@ th {
 }
 
 td {
-  padding: var(--table-cell-padding);
+  padding: var(--table-cell-space);
   font-size: var(--td-size);
   line-height: var(--lh-150);
 }

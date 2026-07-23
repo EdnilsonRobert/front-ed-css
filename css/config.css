@@ -42,7 +42,7 @@
   --lh-125: 1.25;
   --lh-100: 1;
 
-  --heading-pad-y: .3rem;
+  --heading-space-y: .3rem;
   --heading-color: var(--ui-color-5);
   --heading-weight: 600;
   --heading-font: var(--font-sans-display);
@@ -63,7 +63,7 @@
   --heading-large-2-size: 4.2rem;
   --heading-large-1-size: 4.8rem;
 
-  --paragraph-spacing-y: .3rem;
+  --paragraph-space-y: .3rem;
   --paragraph-indent: 2em;
 
   --ruler-height: .2rem;
@@ -75,28 +75,29 @@
   --blockquote-font-size: 1.6rem;
   --blockquote-indent: 2em;
   --blockquote-border: var(--ui-color-2);
-  --blockquote-background: var(--ui-color-1);
+  --blockquote-background: var(--ui-color-);
   --blockquote-color: var(--ui-color-7);
   --blockquote-font: var(--font-serif-text);
 
-  --anchor-color-link: var(--ui-color-6);
-  --anchor-color-visited: var(--ui-color-6);
-  --anchor-color-hover: var(--ui-color-9);
-  --anchor-color-active: var(--ui-color-9);
-  --anchor-color-focus: var(--ui-color-9);
+  --anchor-color-link: var(--royalblue-7);
+  --anchor-color-visited: var(--royalblue-7);
+  --anchor-color-hover: var(--royalblue-9);
+  --anchor-color-active: var(--royalblue-9);
+  --anchor-color-focus: var(--royalblue-9);
 
   /* Icons ------------------------------------------------------------------ */
   --icon-color: var(--ui-color-3);
+  --icon-large: 3.2rem;
 
   /* Lists ------------------------------------------------------------------ */
   --list-indent: 1.5em;
-  --list-item-pad-y: .3rem;
+  --list-item-space-y: .3rem;
   --list-marker-color: var(--ui-color-3);
 
   /* Tables ----------------------------------------------------------------- */
   --table-layout: auto;
   --table-width: 100%;
-  --table-cell-padding: .3rem 1.2rem;
+  --table-cell-space: .3rem 1.2rem;
   --table-border-width: .1rem;
   --table-border-color: var(--ui-color-2);
   --table-caption-side: top;
@@ -113,19 +114,21 @@
   --td-size: inherit;
 
   /* Images ----------------------------------------------------------------- */
-  --caption-spacing: .6rem;
+  --image-background: var(--ui-color-1);
+  --caption-space-y: 1.2rem;
   --caption-color: var(--ui-color-6);
   --caption-size: 1.4rem;
 
   /* Multimedia ------------------------------------------------------------- */
   --audio-panel-color: var(--ui-color-1);
-  --audio-widget-border: var(--ui-color-4);
+  --audio-widget-border: var(--ui-color-3);
   --audio-widget-background: var(--ui-color-2);
-  --audio-widget-caption-track-color: var(--ui-color-8);
-  --audio-widget-caption-author-color: var(--ui-color-6);
-  --video-widget-background: var(--ui-color-2);
-  --video-widget-info-track-color: var(--ui-color-8);
-  --video-widget-info-author-color: var(--ui-color-6);
+  --audio-widget-info-track-color: var(--ui-color-8);
+  --audio-widget-info-caption-color: var(--ui-color-6);
+
+  --video-widget-background: var(--ui-color-8);
+  --video-widget-info-track-color: var(--ui-color-1);
+  --video-widget-info-caption-color: var(--ui-color-2);
 
   /* Embedded --------------------------------------------------------------- */
   --object-max-width: 64rem;
@@ -143,45 +146,49 @@
   --button-weight: 600;
   --button-size: 1.4rem;
 
+  /* Borders ---------------------------------------------------------------- */
+  --border-radius-outer-0: .6rem;
+  --border-radius-outer-1: .9rem;
+  --border-radius-outer-2: 1.2rem;
+  --border-width: .1rem;
+  --border-color: var(--ui-color-3);
+
+  /* Grid layout ------------------------------------------------------------ */
+  --grid-cell-width: 6rem;
+
   /* Containers ------------------------------------------------------------- */
   --container-fixed-max-width: 96rem;
-  --container-fixed-pad-x: 2.4rem;
-  --container-fixed-pad-y: 2.4rem;
   --container-fixed-margin-y: 0;
+  --container-fixed-space-x: 2.4rem;
+  --container-fixed-space-y: 2.4rem;
 
-  --container-fluid-pad-x: 2.4rem;
-  --container-fluid-pad-y: 2.4rem;
   --container-fluid-margin-y: 0;
+  --container-fluid-space-x: 2.4rem;
+  --container-fluid-space-y: 2.4rem;
 
   /* Toolbars --------------------------------------------------------------- */
-  --toolbar-pad-x: 1.2rem;
-  --toolbar-pad-y: .6rem;
+  --toolbar-space-x: 1.2rem;
+  --toolbar-space-y: .6rem;
   --toolbar-background: var(--ui-color-1);
   --toolbar-max-width: 96rem;
 
   --brand-name-color: var(--ui-color-5);
   --brand-name-weight: 600;
   --brand-name-size: 3.2rem;
-  --brand-overline-spacing-b: 0;
+  --brand-overline-space-b: 0;
   --brand-overline-color: var(--ui-color-4);
   --brand-overline-size: 1.8rem;
-  --brand-caption-spacing-t: 0;
+  --brand-caption-space-t: 0;
   --brand-caption-color: var(--ui-color-4);
   --brand-caption-size: 1.6rem;
-  --brand-image-spacing-r: 1.2rem;
+  --brand-image-space: 1.2rem;
   --brand-image-width: 7.2rem;
 
   /* Avatars ---------------------------------------------------------------- */
   --avatar-height: 4.8rem;
   --avatar-color: var(--red-6);
   --avatar-text: var(--red-1);
-
-  /* Borders ---------------------------------------------------------------- */
-  --border-radius-level-0: .6rem;
-  --border-radius-level-1: .9rem;
-  --border-radius-level-2: 1.2rem;
-  --border-width: .1rem;
-  --border-color: var(--ui-color-3);
+  --avatar-id-size: 1.6rem;
 
   /* Color palette ---------------------------------------------------------- */
   --ui-color:  hsl(220, 24%, 44%);

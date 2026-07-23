@@ -9,8 +9,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: var(--toolbar-pad-x);
-  padding-block: var(--toolbar-pad-y);
+  padding-inline: var(--toolbar-space-x);
+  padding-block: var(--toolbar-space-y);
   background-color: var(--toolbar-background);
 }
 
@@ -26,33 +26,33 @@
 // Branding --------------------------------------------------------------------
 .brand-group {
   display: flex;
-  gap: var(--brand-image-spacing-r);
+  gap: var(--brand-image-space);
 }
 
-.brand-image {
-  width: var(--brand-image-width);
-}
+.brand-image { width: var(--brand-image-width); }
 
 // .brand {}
 
-.brand-overline,
 .brand-name,
+.brand-overline,
 .brand-caption {
   padding-block: unset;
   line-height: var(--lh-125);
 }
-.brand-overline {
-  margin-bottom: var(--brand-overline-spacing-b);
-  color: var(--brand-overline-color);
-  font-size: var(--brand-overline-size);
-}
+
 .brand-name {
   color: var(--brand-name-color);
   font-weight: var(--brand-name-weight);
   font-size: var(--brand-name-size);
 }
+
+.brand-overline {
+  margin-bottom: var(--brand-overline-space-b);
+  color: var(--brand-overline-color);
+  font-size: var(--brand-overline-size);
+}
 .brand-caption {
-  margin-top: var(--brand-caption-spacing-t);
+  margin-top: var(--brand-caption-space-t);
   color: var(--brand-caption-color);
   font-size: var(--brand-caption-size);
 }
