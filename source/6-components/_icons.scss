@@ -1,9 +1,15 @@
 /* =============================================================================
-  ITCSS layer: Elements
-  Bundle: Bare elements (unclassed HTML / type selectors)
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
   File: Icons
 ============================================================================= */
 
 ion-icon { vertical-align: middle; }
+
+.icon { color: var(--icon-color); }
+
+.icon-md { font-size: var(--icon-md); }
+.icon-lg { font-size: var(--icon-lg); }
+.icon-xl { font-size: var(--icon-xl); }
 
 /* END OF FILE ============================================================== */
