@@ -10,14 +10,18 @@ object {
   max-width: var(--object-max-width);
   margin-inline: auto;
   border-radius: .6rem;
+  scrollbar-width: thin;
 }
 
 iframe {
   display: block;
+  overflow: auto;
   width: 100%;
   max-width: var(--iframe-max-width);
   margin-inline: auto;
-  border-radius: .6rem;
+  border-radius: .9rem;
+  border: unset;
+  scrollbar-width: thin;
 }
 
 /* END OF FILE ============================================================== */
