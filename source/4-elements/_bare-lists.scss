@@ -10,30 +10,31 @@ ol ol { list-style-type: lower-alpha; }
 ul    { list-style-type: square; }
 ul ul { list-style-type: disc; }
 
-ol ol,
-ol ul,
-ul ol,
-ul ul {
-  padding-left: var(--list-indent);
-}
-
 menu { list-style-type: none; }
 
-li {
+ol li, ul li {
   padding-block: var(--list-item-space-y);
-  list-style-position: inside;
 }
-li::marker { color: var(--list-marker-color); }
+
+li { list-style-position: inside; }
+
+li li { text-indent: var(--list-indent); }
+
+ol li::marker { color: var(--ol-list-marker-color); }
+ul li::marker { color: var(--ul-list-marker-color); }
 
 // dl {}
+
+dt, dd {
+  padding-block: var(--list-item-space-y);
+}
 dt { font-weight: unset; }
 dd {
   display: list-item;
-  padding-left: var(--list-indent);
-  padding-block: var(--list-item-space-y);
   list-style-type: square;
   list-style-position: inside;
+  text-indent: var(--list-indent);
 }
-dd::marker { color: var(--list-marker-color); }
+dd::marker { color: var(--dl-list-marker-color); }
 
 /* END OF FILE ============================================================== */
