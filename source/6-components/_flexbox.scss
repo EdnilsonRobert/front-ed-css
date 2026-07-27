@@ -11,7 +11,7 @@
   align-items: start;
 }
 
-.row-lt { justify-content: left; }
+.row-lt { justify-content: left; align-items: start; }
 .row-lc { justify-content: left; align-items: center; }
 .row-lb { justify-content: left; align-items: end; }
 .row-ls { justify-content: left; align-items: stretch; }
@@ -21,7 +21,7 @@
 .row-cb { justify-content: center; align-items: end; }
 .row-cs { justify-content: center; align-items: stretch; }
 
-.row-rt { justify-content: end; }
+.row-rt { justify-content: end; align-items: start; }
 .row-rc { justify-content: end; align-items: center; }
 .row-rb { justify-content: end; align-items: end; }
 .row-rs { justify-content: end; align-items: stretch; }
@@ -29,24 +29,24 @@
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
 }
 
-.column-lt { justify-content: start; align-items: start; }
-.column-lc { justify-content: center; align-items: start; }
-.column-lb { justify-content: bottom; align-items: start; }
-.column-ls { justify-content: stretch; align-items: start; }
+.column-tl { justify-content: start; align-items: start; }
+.column-tc { justify-content: start; align-items: center; }
+.column-tr { justify-content: start; align-items: end; }
+.column-ts { justify-content: start; align-items: stretch; }
 
-.column-ct { justify-content: start; align-items: center; }
+.column-cl { justify-content: center; align-items: start; }
 .column-cc { justify-content: center; align-items: center; }
-.column-cb { justify-content: bottom; align-items: center; }
-.column-cs { justify-content: stretch; align-items: center; }
+.column-cr { justify-content: center; align-items: end; }
+.column-cs { justify-content: center; align-items: stretch; }
 
-.column-rt { justify-content: start; align-items: end; }
-.column-rc { justify-content: center; align-items: end; }
-.column-rb { justify-content: bottom; align-items: end; }
-.column-rs { justify-content: stretch; align-items: end; }
+.column-bl { justify-content: end; align-items: start; }
+.column-bc { justify-content: end; align-items: center; }
+.column-br { justify-content: end; align-items: end; }
+.column-bs { justify-content: end; align-items: stretch; }
 
 .flex-grow { flex-grow: 1; }
 
