@@ -12,14 +12,15 @@
 .font-heavy    { font-weight: 800; }
 .font-black    { font-weight: 900; }
 
-.font-normal { font-style: normal; }
-.font-italic { font-style: italic; }
-
 .font-small { font-size: var(--font-size-small); }
+.font-large { font-size: var(--font-size-large); }
 
 .font-sans-display  { font-family: var(--font-sans-display); }
 .font-sans          { font-family: var(--font-sans-text); }
-.font-serif-display { font-family: var(--font-serif-display); }
+.font-serif-display {
+  font-family: var(--font-serif-display);
+  font-size-adjust: .525;
+}
 .font-serif         { font-family: var(--font-serif-text); }
 .font-monospace     { font-family: var(--font-monospace); }
 
@@ -31,7 +32,6 @@
 .to-uppercase { text-transform: uppercase; }
 
 .deleted, .inserted {
-  display: inline-block;
   padding-inline: .6rem;
   border-radius: .6rem;
   line-height: inherit;
