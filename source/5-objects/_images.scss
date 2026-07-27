@@ -4,9 +4,13 @@
   File: Images
 ============================================================================= */
 
-.image {
+.image-display {
+  overflow: hidden;
+  padding-inline: var(--image-display-space-x);
+  padding-block: var(--image-display-space-y);
+  border-radius: .9rem;
+  background-color: var(--image-display-background);
   place-items: center;
-  background-color: var(--image-background);
 }
 
 .image-caption {
