@@ -10,9 +10,9 @@ form {
 
   :focus { outline: unset; }
 
-  :disabled { opacity: .5; }
-  :has(> :disabled) {
-    span { opacity: .5; }
+  :disabled,
+  :has(> :disabled) span {
+    opacity: .5;
   }
 }
 
@@ -26,17 +26,22 @@ legend {
   color: var(--ui-color-5);
   text-align: center;
   font-weight: var(--font-weight-bolder);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 label {
-  display: inline-flex;
+  display: flex;
   justify-content: left;
   align-items: center;
   gap: 1.2rem;
+  padding-block: .3rem;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
 }
 
-// Input fields ----------------------------------------------------------------
+// Input and output fields -----------------------------------------------------
 ::placeholder { color: var(--ui-color-5); }
 
 [type='email'],
@@ -47,30 +52,53 @@ label {
 [type='text'],
 [type='url'],
 output,
-select,
-textarea
-{
+textarea {
   appearance: unset;
-  border-radius: .6rem;
-  border: .1rem solid var(--ui-color-2);
-  background-color: unset;
   color: inherit;
   font-size: inherit;
   font-family: inherit;
+  background-color: var(--ui-color-0);
 }
 
 [type='email'],
+[type='number'],
 [type='password'],
 [type='search'],
 [type='tel'],
 [type='text'],
-[type='url']
-{
-  flex-grow: 1;
+[type='url'],
+output {
   height: 4.8rem;
+  border: unset;
+  border-bottom: .3rem solid var(--ui-color-2);
+}
+
+[type='email'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='url'] {
+  flex-grow: 1;
   padding-inline: 1.2rem .6rem;
 
-  &:invalid { border-color: var(--red-5); }
+  &:invalid {
+    border-color: var(--red-5);
+    background-color: var(--red-1);
+  }
+}
+
+[type='number'] {
+  &:out-of-range {
+    border-color: var(--red-5);
+    background-color: var(--red-1);
+  }
+}
+
+output {
+  padding-inline: 1.2rem;
+  line-height: 4.5rem;
 }
 
 textarea {
@@ -78,11 +106,8 @@ textarea {
   overflow-y: auto;
   resize: unset;
   padding: .6rem 1.2rem;
+  border: .1rem solid var(--ui-color-2);
   scrollbar-width: thin;
-}
-label:has(textarea) {
-  display: flex;
-  align-items: start;
 }
 
 // Selection fields ------------------------------------------------------------
@@ -90,13 +115,10 @@ label:has(textarea) {
 [type='radio'] {
   appearance: unset;
   aspect-ratio: 1 / 1;
-  border: .1rem solid var(--ui-color-3);
-  background-color: unset;
+  border: unset;
+  background-color: var(--ui-color-2);
 
-  &:checked {
-    border-color: var(--ui-color-4);
-    background-color: var(--ui-color-4);
-  }
+  &:checked { background-color: var(--ui-color-5); }
 }
 [type='checkbox'] {
   width: 1.8rem;
@@ -108,29 +130,31 @@ label:has(textarea) {
 }
 
 select {
-  position: relative;
+  appearance: unset;
+  flex-grow: 1;
   height: 4.8rem;
-  padding-inline: 1.2rem 3.2rem;
+  padding-inline: 1.2rem;
+  border: unset;
+  border-bottom: .3rem solid var(--ui-color-2);
+  background-color: var(--ui-color-0);
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 :has(> select) {
-  position: relative;
-
   &::after {
     content: '';
-    position: absolute;
-    right: 1.2rem;
-    top: 42%;
     aspect-ratio: 1 / 1;
     width: 1.2rem;
     border-left: .2rem solid var(--ui-color-3);
     border-bottom: .2rem solid var(--ui-color-3);
-    transform: translateY(-50%) rotate(-45deg);
-    pointer-events: none;
+    transform: translateY(-25%) rotate(-45deg);
   }
 }
 
-// optgroup {}
-// option {}
+// optgroup, option {
+//   appearance: unset;
+// }
 
 // Miscellaneous fields --------------------------------------------------------
 [type='color'] {
@@ -141,23 +165,6 @@ select {
   background-color: unset;
 }
 
-[type='number'] {
-  height: 4.8rem;
-  padding-inline: 1.2rem .3rem;
-
-  &:invalid, &:out-of-range {
-    border-color: var(--red-5);
-  }
-}
-
 // [type='range'] { appearance: unset; }
-
-output {
-  height: 4.8rem;
-  padding-inline: 1.2rem;
-  line-height: 4.6rem;
-
-  &:invalid { border-color: var(--red-5); }
-}
 
 /* END OF FILE ============================================================== */
