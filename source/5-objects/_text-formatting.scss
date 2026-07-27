@@ -29,10 +29,7 @@
 
 // a:hover MUST come after a:link and a:visited
 // a:active MUST come after a:hover
-.anchor {
-  border-bottom: .1rem solid;
-  transition: all 200ms linear;
-}
+.anchor { border-bottom: .1rem solid; }
 .anchor:link    { color: var(--anchor-color-link); }
 .anchor:visited { color: var(--anchor-color-visited); }
 .anchor:hover   { color: var(--anchor-color-hover); }
