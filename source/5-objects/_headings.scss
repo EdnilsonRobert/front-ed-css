@@ -34,16 +34,11 @@
 
 .heading-overline,
 .heading-caption {
+  padding-block: unset;
   font-size: 1.4rem;
   line-height: var(--lh-125);
 }
-.heading-overline {
-  padding-block: unset;
-  color: var(--heading-color-overline);
-}
-.heading-caption {
-  padding-block: unset;
-  color: var(--heading-color-caption);
-}
+.heading-overline { color: var(--heading-color-overline); }
+.heading-caption  { color: var(--heading-color-caption); }
 
 /* END OF FILE ============================================================== */
