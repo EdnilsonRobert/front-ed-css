@@ -4,6 +4,15 @@
   File: Tables
 ============================================================================= */
 
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+  scrollbar-width: thin;
+  scroll-snap-type: x mandatory;
+
+  td { scroll-snap-align: start; }
+}
+
 .table-striped tr:nth-child(even) {
   backdrop-filter: var(--tbody-stripes);
 }

@@ -27,21 +27,26 @@ tfoot { background-color: var(--tfoot-background); }
 tbody { background-color: var(--tbody-background); }
 
 tbody tr, tfoot tr {
-  border-bottom: var(--table-border-width) solid var(--table-border-color);
+  border-bottom: var(--tbody-border) solid var(--table-border-color);
 }
 
 th {
-  padding: var(--table-cell-space);
-  color: var(--th-color);
-  font-weight: var(--th-weight);
-  font-size: var(--th-size);
-  line-height: var(--lh-150);
+  padding: var(--thead-cell-space);
+  color: var(--thead-color);
+  font-weight: var(--thead-weight);
+  font-size: var(--thead-size);
+  line-height: var(--lh-125);
+  text-align: var(--thead-align);
 }
 
 td {
-  padding: var(--table-cell-space);
-  font-size: var(--td-size);
-  line-height: var(--lh-150);
+  padding: var(--tbody-cell-space);
+  color: var(--tbody-color);
+  font-size: var(--tbody-size);
+  line-height: var(--lh-125);
+  white-space: nowrap;
 }
+
+tfoot td { font-size: var(--tfoot-size); }
 
 /* END OF FILE ============================================================== */
