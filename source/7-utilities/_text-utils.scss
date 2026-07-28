@@ -15,14 +15,14 @@
 .font-small { font-size: var(--font-size-small); }
 .font-large { font-size: var(--font-size-large); }
 
-.font-sans-display  { font-family: var(--font-sans-display); }
+.font-monospace     { font-family: var(--font-monospace); }
 .font-sans          { font-family: var(--font-sans-text); }
+.font-sans-display  { font-family: var(--font-sans-display); }
+.font-serif         { font-family: var(--font-serif-text); }
 .font-serif-display {
   font-family: var(--font-serif-display);
   font-size-adjust: .525;
 }
-.font-serif         { font-family: var(--font-serif-text); }
-.font-monospace     { font-family: var(--font-monospace); }
 
 .text-left   { text-align: left; }
 .text-center { text-align: center; }
@@ -33,7 +33,7 @@
 
 .deleted, .inserted {
   padding-inline: .6rem;
-  border-radius: .6rem;
+  border-radius: var(--radius-small);
   line-height: inherit;
 }
 .deleted {
@@ -42,7 +42,6 @@
   text-decoration: line-through;
 }
 .inserted {
-  text-decoration: unset;
   background-color: var(--green-1);
   color: var(--green-8);
   text-decoration: unset;
