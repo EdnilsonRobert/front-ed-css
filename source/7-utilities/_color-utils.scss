@@ -23,8 +23,9 @@
 }
 
 [data-border] {
-  border-radius: var(--radius-default);
-  border: .1rem solid attr(data-border type(<color>));
+  border-radius: var(--radius-base);
+  border: var(--border-base) solid;
+  border-color: attr(data-border type(<color>));
 }
 
 [data-background] { background-color: attr(data-background type(<color>)); }
