@@ -4,13 +4,14 @@
   File: Borders
 ============================================================================= */
 
-.has-border { border: var(--border-width) solid var(--border-color); }
+.has-border { border: var(--border-base) solid var(--border-color-base); }
 
 .corner-square   { border-radius: 0; }
 .corner-circular { border-radius: 50%; }
 
-.corner-rounded { border-radius: var(--radius-default); }
-.corner-outer-1 { border-radius: var(--radius-outer-1); }
-.corner-outer-2 { border-radius: var(--radius-outer-2); }
+.corner-rounded   { border-radius: var(--radius-base); }
+.corner-rounded-0 { border-radius: var(--radius-small); }
+.corner-rounded-1 { border-radius: var(--radius-medium); }
+.corner-rounded-2 { border-radius: var(--radius-large); }
 
 /* END OF FILE ============================================================== */
