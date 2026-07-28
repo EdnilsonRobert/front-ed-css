@@ -13,7 +13,7 @@
   content: var(--counter-start) counter(acc) var(--counter-end);
   display: inline-block;
   margin-right: .6em;
-  color: var(--list-marker-color);
+  color: var(--ol-list-marker-color);
   font-size: 1.4rem;
 }
 
@@ -31,27 +31,20 @@
 
 .list-outlined {
   li {
-    border-bottom: .1rem solid var(--list-border);
-
-    &:first-child { border-top: .1rem solid var(--list-border); }
+    padding-inline: .6em;
+    border-bottom: .1rem solid var(--list-border-color);
   }
+
+  li:first-child { border-top: .1rem solid var(--list-border-color); }
 }
 
 .list-splitted li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: .6em;
+
   span:first-of-type { flex-grow: 1; }
-}
-
-.menu-block {
-  min-width: var(--menu-block-min-width);
-  max-width: var(--menu-block-max-width);
-  padding: .6rem;
-  border-radius: .9rem;
-  background-color: var(--button-background);
-
-  button {
-    justify-content: left;
-    width: 100%;
-  }
 }
 
 .menu-bar {
