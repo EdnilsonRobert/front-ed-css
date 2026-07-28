@@ -12,12 +12,12 @@
   min-width: 4.8rem;
   height: 4.8rem;
   padding-inline: 1.2rem;
-  border-radius: .9rem;
+  outline: unset;
+  border-radius: var(--button-radius);
   background-color: var(--button-background);
   color: var(--button-color);
   font-weight: var(--button-weight);
-  font-size: var(--button-size);
-  font-family: inherit;
+  font-size: var(--button-text);
   line-height: var(--lh-125);
   vertical-align: bottom;
   cursor: default;
@@ -31,7 +31,7 @@
 }
 
 .button-outlined {
-  border: .2rem solid var(--button-border);
+  border: var(--button-border) solid var(--button-border-color);
   background-color: unset;
 }
 
