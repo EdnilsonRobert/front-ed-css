@@ -6,10 +6,10 @@
 
 // .body {}
 
-.container-fluid {
-  margin-block: var(--container-fluid-margin-y);
-  padding-inline: var(--container-fluid-space-x);
-  padding-block: var(--container-fluid-space-y);
+.section {
+  margin-block: var(--section-margin-y);
+  padding-inline: var(--section-space-x);
+  padding-block: var(--section-space-y);
 }
 
 .container-fixed {
