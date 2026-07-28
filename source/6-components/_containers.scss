@@ -8,16 +8,16 @@
 
 .section {
   margin-block: var(--section-margin-y);
-  padding-inline: var(--section-space-x);
-  padding-block: var(--section-space-y);
+  padding-inline: var(--section-padding-x);
+  padding-block: var(--section-padding-y);
 }
 
 .container-fixed {
   max-width: var(--container-fixed-max-width);
   margin-inline: auto;
   margin-block: var(--container-fixed-margin-y);
-  padding-inline: var(--container-fixed-space-x);
-  padding-block: var(--container-fixed-space-y);
+  padding-inline: var(--container-fixed-padding-x);
+  padding-block: var(--container-fixed-padding-y);
 }
 
 .ratio-1-1  { aspect-ratio: 1 / 1; }
