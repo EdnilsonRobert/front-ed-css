@@ -7,7 +7,7 @@
 // https://chromium.googlesource.com/chromium/blink/+/72fef91ac1ef679207f51def8133b336a6f6588f/Source/core/css/mediaControls.css
 
 .audio-player {
-  border-radius: .9rem;
+  border-radius: var(--radius-base);
   background-color: var(--audio-panel-color);
 
   &::-webkit-media-controls-panel {
@@ -17,10 +17,10 @@
 }
 
 .audio-display {
-  max-width: 64rem;
+  max-width: var(--audio-max-width);
   margin-inline: auto;
   padding: .6rem;
-  border-radius: 1.2rem;
+  border-radius: var(--radius-medium);
   border: .1rem solid var(--audio-display-border);
   background-color: var(--audio-display-background);
 
@@ -29,13 +29,13 @@
 
 .audio-display-track {
   display: grid;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 9.6rem 1fr;
   align-items: end;
   gap: 1.2rem;
   margin-bottom: .6rem;
 }
 
-.audio-display-cover { border-radius: .9rem; }
+.audio-display-cover { border-radius: var(--radius-base); }
 
 // .audio-display-info {}
 .audio-display-info-track {
@@ -51,10 +51,10 @@
 }
 
 .video-display {
-  max-width: var(--block-medium-max-width);
+  max-width: var(--video-max-width);
   margin-inline: auto;
   padding: .6rem;
-  border-radius: 1.2rem;
+  border-radius: var(--radius-medium);
   background-color: var(--video-display-background);
 }
 
