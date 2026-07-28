@@ -9,7 +9,7 @@ object {
   width: 100%;
   max-width: var(--object-max-width);
   margin-inline: auto;
-  border-radius: .6rem;
+  border-radius: var(--radius-small);
   scrollbar-width: thin;
 }
 
@@ -19,7 +19,7 @@ iframe {
   width: 100%;
   max-width: var(--iframe-max-width);
   margin-inline: auto;
-  border-radius: .9rem;
+  border-radius: var(--radius-base);
   border: unset;
   scrollbar-width: thin;
 }
