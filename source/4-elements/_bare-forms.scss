@@ -9,12 +9,8 @@ form {
   accent-color: var(--ui-color-4);
 
   :focus { outline: unset; }
-
-  :disabled,
-  :has(> :disabled) span {
-    opacity: .5;
-  }
 }
+
 
 fieldset {
   padding: 2.4rem;
@@ -82,18 +78,6 @@ output {
 [type='url'] {
   flex-grow: 1;
   padding-inline: 1.2rem .6rem;
-
-  &:invalid {
-    border-color: var(--red-5);
-    background-color: var(--red-1);
-  }
-}
-
-[type='number'] {
-  &:out-of-range {
-    border-color: var(--red-5);
-    background-color: var(--red-1);
-  }
 }
 
 output {
@@ -109,6 +93,7 @@ textarea {
   border: .1rem solid var(--ui-color-2);
   scrollbar-width: thin;
 }
+:has(> textarea) { align-items: start; }
 
 // Selection fields ------------------------------------------------------------
 [type='checkbox'],
