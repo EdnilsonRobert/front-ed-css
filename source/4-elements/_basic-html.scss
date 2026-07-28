@@ -23,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  padding-block: var(--heading-space-y);
+  padding-block: var(--heading-padding-y);
   color: var(--heading-color);
   font-weight: unset;
   font-style: unset;
@@ -82,6 +82,10 @@ blockquote {
   }
 }
 
+// cite, q {}
+
+// a:hover MUST come after a:link and a:visited
+// a:active MUST come after a:hover
 a {
   color: unset;
   text-decoration: unset;
@@ -99,15 +103,20 @@ i, em { font-style: unset; }
 
 mark {
   padding-inline: .6rem;
-  border-radius: .6rem;
+  border-radius: var(--radius-small);
   background-color: var(--ui-color-2);
   color: inherit;
   line-height: var(--lh-150);
 }
 
+// abbr {}
+// dfn {}
+// time {}
+// s, u {}
+
 del, ins {
   padding-inline: .6rem;
-  border-radius: .6rem;
+  border-radius: var(--radius-small);
   line-height: var(--lh-150);
 }
 del {
@@ -133,7 +142,7 @@ sup { vertical-align: super; }
 
 code, kbd {
   display: inline-block;
-  border-radius: .6rem;
+  border-radius: var(--radius-small);
   font-style: normal;
   font-size: inherit;
   line-height: var(--lh-150);
@@ -155,6 +164,11 @@ kbd {
   font-family: var(--font-sans-text);
 }
 
+// samp, var {}
+// pre {}
+
+// details, summary {}
+
 dialog {
   position: unset;
   border: unset;
@@ -163,5 +177,8 @@ dialog {
   font-size: inherit;
   line-height: inherit;
 }
+
+// bdi, bdo {}
+// ruby, rt {}
 
 /* END OF FILE ============================================================== */

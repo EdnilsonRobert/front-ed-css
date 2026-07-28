@@ -5,7 +5,7 @@
 ============================================================================= */
 
 .paragraph {
-  padding-block: var(--paragraph-space-y);
+  padding-block: var(--paragraph-padding-y);
   text-indent: var(--paragraph-indent);
 }
 
@@ -27,17 +27,12 @@
   }
 }
 
-// a:hover MUST come after a:link and a:visited
-// a:active MUST come after a:hover
 .anchor { border-bottom: .1rem solid; }
 .anchor:link    { color: var(--anchor-color-link); }
 .anchor:visited { color: var(--anchor-color-visited); }
 .anchor:hover   { color: var(--anchor-color-hover); }
 .anchor:active  { color: var(--anchor-color-active); }
 .anchor:focus   { color: var(--anchor-color-focus); }
-
-// b, strong {}
-// i, em {}
 
 .mark-red       { background-color: var(--red-2); }
 .mark-orange    { background-color: var(--orange-2); }
@@ -49,11 +44,5 @@
 .mark-royalblue { background-color: var(--royalblue-2); }
 .mark-purple    { background-color: var(--purple-2); }
 .mark-brown     { background-color: var(--brown-2); }
-
-// del, ins {}
-// small {}
-// sub, sup {}
-// code, kbd {}
-// dialog {}
 
 /* END OF FILE ============================================================== */
