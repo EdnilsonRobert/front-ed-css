@@ -13,17 +13,8 @@
   td { scroll-snap-align: start; }
 }
 
-.table-striped tr:nth-child(even) {
-  backdrop-filter: var(--tbody-stripes);
-}
-
-.table-caption-top {
-  caption-side: top;
-  margin-bottom: 1.2rem;
-}
-.table-caption-bottom {
-  caption-side: bottom;
-  margin-top: 1.2rem;
+.table-striped {
+  tr:nth-child(even) { backdrop-filter: var(--tbody-stripes); }
 }
 
 /* END OF FILE ============================================================== */

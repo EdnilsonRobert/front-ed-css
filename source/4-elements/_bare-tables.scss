@@ -12,7 +12,6 @@ table {
 }
 
 caption {
-  caption-side: var(--table-caption-side);
   color: var(--table-caption-color);
   font-size: var(--table-caption-size);
 }
@@ -31,7 +30,7 @@ tbody tr, tfoot tr {
 }
 
 th {
-  padding: var(--thead-cell-space);
+  padding: var(--thead-cell-padding);
   color: var(--thead-color);
   font-weight: var(--thead-weight);
   font-size: var(--thead-size);
@@ -40,7 +39,7 @@ th {
 }
 
 td {
-  padding: var(--tbody-cell-space);
+  padding: var(--tbody-cell-padding);
   color: var(--tbody-color);
   font-size: var(--tbody-size);
   line-height: var(--lh-125);
