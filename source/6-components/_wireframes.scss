@@ -1,0 +1,47 @@
+/* =============================================================================
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Wireframes
+============================================================================= */
+
+.wf-stacked {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+
+  #main { flex-grow: 1; }
+}
+
+.wf-2-cols {
+  display: grid;
+  grid-template-areas:
+    'header    header'
+    'left      main'
+    'footer    footer';
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  #header { grid-area: header; }
+  #left   { grid-area: left; }
+  #main   { grid-area: main; }
+  #footer { grid-area: footer; }
+}
+
+.wf-3-cols {
+  display: grid;
+  grid-template-areas:
+    'header    header    header'
+    'left      main      right'
+    'footer    footer    footer';
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+
+  #header { grid-area: header; }
+  #left   { grid-area: left; }
+  #main   { grid-area: main; }
+  #right  { grid-area: right; }
+  #footer { grid-area: footer; }
+}
+
+/* END OF FILE ============================================================== */
