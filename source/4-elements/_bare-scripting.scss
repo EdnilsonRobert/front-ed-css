@@ -7,7 +7,7 @@
 noscript {
   display: block;
   padding: .6rem 1.2rem;
-  border-radius: .6rem;
+  border-radius: var(--radius-small);
   background-color: var(--red-1);
   color: var(--red-7);
   font-size: 1.4rem;
@@ -16,7 +16,7 @@ noscript {
 
 canvas {
   display: var(--canvas-display);
-  border-radius: .6rem;
+  border-radius: var(--radius-small);
   border: .1rem solid var(--canvas-border);
   background-color: var(--canvas-background);
 }
