@@ -4,44 +4,91 @@
   File: Indicators
 ============================================================================= */
 
-.tag,
-.badge,
-.pill,
-.chips {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: .9rem;
-  font-size: 1.4rem;
-  line-height: 1;
-}
-
 .tag {
-  padding: .3rem 1.2rem;
-  border-radius: var(--radius-small);
-  background-color: var(--tags-background);
-  color: var(--tags-color);
+  display: inline-block;
+  padding-inline: .9rem;
+  border-radius: var(--radius-base);
+  background-color: var(--tags-color-primary);
+  color: var(--tags-color-secondary);
+  font-size: var(--tags-size);
+  line-height: var(--lh-150);
+}
+.tag-labeled {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: var(--radius-base);
+  border: .2rem solid var(--tags-labeled-color-primary);
+  font-size: var(--tags-labeled-size);
+  line-height: var(--lh-150);
+
+  span { padding-inline: .9rem; }
+
+  :first-child {
+    background-color: var(--tags-labeled-color-primary);
+    color: var(--tags-labeled-text-primary);
+  }
+
+  :last-child {
+    background-color: var(--tags-labeled-color-secondary);
+    color: var(--tags-labeled-text-secondary);
+  }
 }
 
 .badge {
-  padding: .3rem 1.2rem;
-  border-radius: var(--radius-medium);
-  background-color: var(--badges-background);
-  color: var(--badges-color);
+  display: inline-block;
+  padding-inline: .9rem;
+  border-radius: var(--radius-base);
+  background-color: var(--badges-color-primary);
+  color: var(--badges-color-secondary);
+  font-size: var(--badges-size);
+  line-height: var(--lh-150);
 }
 
+.pill, .pill-labeled {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: var(--radius-base);
+}
 .pill {
-  padding: .6rem 1.2rem;
-  border-radius: var(--radius-large);
-  background-color: var(--pills-background);
-  color: var(--pills-color);
+  gap: .6rem;
+  padding-inline: .9rem;
+  background-color: var(--pills-color-primary);
+  color: var(--pills-color-secondary);
+  font-size: var(--pills-size);
+  line-height: var(--lh-150);
+}
+.pill-labeled {
+  border: .2rem solid var(--pills-labeled-color-primary);
+  font-size: var(--pills-labeled-size);
+  line-height: var(--lh-150);
+
+  span { padding-inline: .9rem; }
+
+  :first-child {
+    background-color: var(--pills-labeled-color-primary);
+    color: var(--pills-labeled-text-primary);
+  }
+
+  :last-child {
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    background-color: var(--pills-labeled-color-secondary);
+    color: var(--pills-labeled-text-secondary);
+  }
 }
 
 .chips {
-  padding: .6rem 1.2rem;
-  border-radius: var(--radius-large);
-  background-color: var(--chips-background);
-  color: var(--chips-color);
+  display: inline-flex;
+  align-items: center;
+  gap: .9rem;
+  padding-inline: .9rem;
+  border-radius: var(--radius-base);
+  background-color: var(--chips-color-primary);
+  color: var(--chips-color-secondary);
+  font-size: var(--chips-size);
+  line-height: var(--lh-150);
 }
 
 /* END OF FILE ============================================================== */
