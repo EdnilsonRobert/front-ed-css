@@ -1,0 +1,47 @@
+/* =============================================================================
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Indicators
+============================================================================= */
+
+.tag,
+.badge,
+.pill,
+.chips {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .9rem;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.tag {
+  padding: .3rem 1.2rem;
+  border-radius: var(--radius-small);
+  background-color: var(--tags-background);
+  color: var(--tags-color);
+}
+
+.badge {
+  padding: .3rem 1.2rem;
+  border-radius: var(--radius-medium);
+  background-color: var(--badges-background);
+  color: var(--badges-color);
+}
+
+.pill {
+  padding: .6rem 1.2rem;
+  border-radius: var(--radius-large);
+  background-color: var(--pills-background);
+  color: var(--pills-color);
+}
+
+.chips {
+  padding: .6rem 1.2rem;
+  border-radius: var(--radius-large);
+  background-color: var(--chips-background);
+  color: var(--chips-color);
+}
+
+/* END OF FILE ============================================================== */
