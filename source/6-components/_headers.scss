@@ -1,0 +1,33 @@
+/* =============================================================================
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Headers and footers
+============================================================================= */
+
+// Headers ---------------------------------------------------------------------
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: var(--header-padding-x);
+  padding-block: var(--header-padding-y);
+  background-color: var(--header-background);
+}
+
+.header-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--header-max-width);
+  margin-inline: auto;
+  padding-inline: var(--header-padding-x);
+  padding-block: var(--header-padding-y);
+  background-color: var(--header-background);
+}
+:has(> .header-wrapper) {
+  padding: unset;
+  background-color: unset;
+}
+
+/* END OF FILE ============================================================== */
