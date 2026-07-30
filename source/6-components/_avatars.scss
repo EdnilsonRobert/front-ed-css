@@ -4,36 +4,25 @@
   File: Avatars
 ============================================================================= */
 
-.avatar,
-.avatar-button {
+.avatar {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: stretch;
+  border-radius: var(--avatar-radius);
+  background-color: var(--avatar-background);
 }
 
-.avatar { gap: 1.2rem; }
-
-.avatar-thumb {
-  height: var(--avatar-height);
-  border-radius: .6rem;
+.avatar-image {
+  height: var(--avatar-image-size);
+  border-radius: var(--avatar-image-radius);
 }
 
 .avatar-id {
+  padding-inline: var(--avatar-id-padding-x);
+  place-content: center;
+  color: var(--avatar-id-color);
   font-size: var(--avatar-id-size);
   line-height: var(--lh-125);
-}
-
-.avatar-button {
-  .avatar-thumb { border-radius: .6rem 0 0 .6rem; }
-
-  .avatar-id {
-    align-content: center;
-    height: var(--avatar-height);
-    padding-inline: 1.2rem;
-    border-radius: 0 .6rem .6rem 0;
-    background-color: var(--avatar-color);
-    color: var(--avatar-text);
-  }
 }
 
 /* END OF FILE ============================================================== */
