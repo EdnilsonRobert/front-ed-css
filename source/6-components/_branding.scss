@@ -1,0 +1,41 @@
+/* =============================================================================
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Branding
+============================================================================= */
+
+.brand:has(> .brand-image) {
+  display: flex;
+  justify-content: left;
+  align-items: var(--brand-image-align);
+  gap: var(--brand-image-margin);
+}
+
+.brand-image { width: var(--brand-image-width); }
+
+.brand-name,
+.brand-overline,
+.brand-caption {
+  padding-block: unset;
+  line-height: var(--lh-125);
+}
+
+.brand-name {
+  color: var(--brand-name-color);
+  font-weight: var(--brand-name-weight);
+  font-size: var(--brand-name-size);
+  font-family: var(--brand-name-font);
+}
+
+.brand-overline {
+  margin-bottom: var(--brand-overline-margin-b);
+  color: var(--brand-overline-color);
+  font-size: var(--brand-overline-size);
+}
+.brand-caption {
+  margin-top: var(--brand-caption-margin-t);
+  color: var(--brand-caption-color);
+  font-size: var(--brand-caption-size);
+}
+
+/* END OF FILE ============================================================== */
