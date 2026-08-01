@@ -9,17 +9,18 @@
   grid-auto-flow: column;
   grid-template-columns: repeat(var(--grid-colors-columns), 9.6rem);
   grid-template-rows: repeat(var(--grid-colors-rows), auto);
-}
 
-.grid-color-palette span {
-  padding-block: .6rem;
-  align-content: center;
-  font-weight: 400;
-  font-size: 1.4rem;
-  font-family: var(--font-monospace);
-  font-variation-settings: 'MONO' 1;
-  line-height: var(--lh-125);
-  text-align: center;
+  span {
+    display: grid;
+    place-items: center;
+    padding-block: .6rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: var(--font-monospace);
+    font-variation-settings: 'MONO' 1;
+    line-height: var(--lh-125);
+    text-align: center;
+  }
 }
 
 [data-border] {
