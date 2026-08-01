@@ -6,56 +6,62 @@
 
 // ALL HTML TAGS ---------------------------------------------------------------
 
-// Basic HTML --------------------------
-body, div, hr, html, h1, h2, h3, h4, h5, h6, p, span,
-// Semantic sectioning -----------------
-address, article, aside, footer, header, main, nav, search, section,
-// Text Formatting ---------------------
-a, abbr, b, blockquote, br, cite, code, del, dfn, em, i, ins, kbd, mark, pre, q, s, samp, small, strong, sub, sup, time, u, var, wbr,
-bdi, bdo, rp, rt, ruby,
-// Lists -------------------------------
-dd, dl, dt, li, menu, ol, ul,
-// Tables ------------------------------
-caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr,
-// Images ------------------------------
-figcaption, figure, img, meter, picture, progress, svg,
-// Audio and Video ---------------------
-audio, video,
-// Embedded ----------------------------
-iframe, object,
-// Interactive elements ----------------
+// Basic HTML
+body, h1, h2, h3, h4, h5, h6, hr, html, p,
+// Semantic sectioning
+address, article, aside, footer, header, hgroup, main, nav, search, section,
+// Text blocks
+blockquote, div, pre,
+// Interactive elements
 details, dialog, summary,
-// Scripting ---------------------------
+// Semantic inline text
+a, abbr, b, bdi, bdo, br, cite, code, data, del, dfn, em, i, ins, kbd, mark, q, rp, rt, ruby, s, samp, small, span, strong, sub, sup, time, u, var, wbr,
+// Lists
+dd, dl, dt, li, menu, ol, ul,
+// Tables
+caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr,
+// Images
+figcaption, figure, img, picture, svg,
+// Audio and Video
+audio, video,
+// Embedded
+embed, iframe, object,
+// Scripting
 canvas, noscript,
-// Forms -------------------------------
+// Progress bars
+meter, progress,
+// Forms
 button, datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
-// External lib ------------------------
+// External lib
 ion-icon,
-// Pseudo-elements ---------------------
+// Pseudo-elements
 ::before, ::after {
   box-sizing: border-box;
   margin: unset;
   padding: unset;
 }
-
 /* =============================================================================
+REFERENCES ---------------------------------------------------------------------
+    https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements
+    https://www.w3schools.com/TAgs/ref_byfunc.asp
+
 NOT APPLICABLE -----------------------------------------------------------------
-  Metadata:       base, head, link, meta, style, title
-  Images:         map, area
-  Embedded:       source
-  Scripting:      script
+    Metadata:       base, head, link, meta, style, title
+    Images:         map, area
+    Embedded:       source
+    Scripting:      script
 
 NOT TESTED ---------------------------------------------------------------------
-  Multimedia:     track
-  Embedded:       portal
-  Mathml:         math
-  Web components: template, slot
+    Multimedia:     track
+    Embedded:       portal
+    Mathml:         math
+    Web components: template, slot
 
 NOT SUPPORTED ------------------------------------------------------------------
-  keygen
+    keygen
 
 DEPRECATED ---------------------------------------------------------------------
-  acronym, applet, basefont, bgsound, big, blink, center, content, dir, embed, font, frame, frameset, hgroup, marquee, menuitem, nobr, noembed, noframes, param, plaintext, rb, rtc, shadow, spacer, strike, tt, xmp
+    acronym, applet, basefont, bgsound, big, blink, center, content, dir, font, frame, frameset, image, marquee, menuitem, nobr, noembed, noframes, param, plaintext, rb, rtc, shadow, spacer, strike, tt, xmp
 ============================================================================= */
 
 /* END OF FILE ============================================================== */
