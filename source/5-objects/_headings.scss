@@ -4,12 +4,12 @@
   File: Headings
 ============================================================================= */
 
-.heading-1,
-.heading-2,
-.heading-3,
-.heading-4,
+.heading-6,
 .heading-5,
-.heading-6 {
+.heading-4,
+.heading-3,
+.heading-2,
+.heading-1 {
   font-weight: var(--heading-weight);
 }
 .heading-6 { font-size: var(--heading-6-size); }
@@ -19,10 +19,10 @@
 .heading-2 { font-size: var(--heading-2-size); }
 .heading-1 { font-size: var(--heading-1-size); }
 
-.heading-display-1,
-.heading-display-2,
+.heading-display-4,
 .heading-display-3,
-.heading-display-4 {
+.heading-display-2,
+.heading-display-1 {
   color: var(--heading-large-color);
   font-weight: var(--heading-large-weight);
   font-family: var(--heading-large-font);
@@ -35,10 +35,15 @@
 .heading-overline,
 .heading-caption {
   padding-block: unset;
-  font-size: 1.4rem;
   line-height: var(--lh-125);
 }
-.heading-overline { color: var(--heading-color-overline); }
-.heading-caption  { color: var(--heading-color-caption); }
+.heading-overline {
+  color: var(--heading-overline-color);
+  font-size: var(--heading-overline-size);
+}
+.heading-caption {
+  color: var(--heading-caption-color);
+  font-size: var(--heading-caption-size);
+}
 
 /* END OF FILE ============================================================== */

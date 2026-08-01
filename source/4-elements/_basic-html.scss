@@ -43,11 +43,11 @@ p {
 }
 
 hr {
-  height: var(--ruler-height);
+  height: var(--rule-height);
   margin-inline: auto;
-  margin-block: var(--ruler-margin-y);
+  margin-block: var(--rule-margin-y);
   border-style: unset;
-  background-color: var(--ruler-color);
+  background-color: var(--rule-color);
 }
 
 // Semantic sectioning ---------------------------------------------------------
@@ -55,6 +55,7 @@ hr {
 // aside {}
 // footer {}
 // header {}
+// hgroup {}
 // main {}
 // nav {}
 // search {}
@@ -62,13 +63,13 @@ hr {
 
 address { font-style: unset; }
 
-// Text formatting -------------------------------------------------------------
+// Text blocks -----------------------------------------------------------------
 blockquote {
   margin-inline: var(--blockquote-margin-x);
   padding-block: .3rem;
 
   :first-child {
-    font-size: var(--blockquote-font-size);
+    font-size: inherit;
     text-indent: var(--blockquote-indent);
     quotes: auto;
 
@@ -82,7 +83,26 @@ blockquote {
   }
 }
 
-// cite, q {}
+// div {}
+// pre {}
+
+// Interactive elements --------------------------------------------------------
+dialog {
+  position: unset;
+  padding: 1.2rem;
+  border-radius: var(--radius-base);
+  border: var(--border-1) solid;
+  background-color: unset;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// details, summary {}
+
+// Semantic inline text ----------------------------------------------------
+// span {}
+// br, wbr {}
 
 // a:hover MUST come after a:link and a:visited
 // a:active MUST come after a:hover
@@ -101,35 +121,6 @@ b, strong { font-weight: var(--font-weight-bolder); }
 
 i, em { font-style: unset; }
 
-mark {
-  padding-inline: .6rem;
-  border-radius: var(--radius-small);
-  background-color: var(--ui-color-2);
-  color: inherit;
-  line-height: var(--lh-150);
-}
-
-// abbr {}
-// dfn {}
-// time {}
-// s, u {}
-
-del, ins {
-  padding-inline: .6rem;
-  border-radius: var(--radius-small);
-  line-height: var(--lh-150);
-}
-del {
-  background-color: var(--red-1);
-  color: var(--red-7);
-  text-decoration: line-through;
-}
-ins {
-  background-color: var(--green-1);
-  color: var(--green-8);
-  text-decoration: unset;
-}
-
 small { font-size: var(--font-size-small); }
 
 sub, sup {
@@ -139,45 +130,63 @@ sub, sup {
 sub { vertical-align: sub; }
 sup { vertical-align: super; }
 
+// cite, q {}
+// abbr {}
+// dfn {}
+// time {}
+// s, u {}
+
+mark {
+  padding-inline: .6rem;
+  border-radius: var(--radius-sm);
+  background-color: light-dark(var(--lime-2), var(--lime-9));
+  color: inherit;
+  line-height: var(--lh-150);
+}
+
+del, ins {
+  padding-inline: .6rem;
+  border-radius: var(--radius-sm);
+  line-height: var(--lh-150);
+}
+del {
+  background-color: light-dark(var(--red-1), var(--red-9));
+  color: light-dark(var(--red-7), var(--red-2));
+  text-decoration: line-through;
+}
+ins {
+  background-color: light-dark(var(--green-1), var(--green-9));
+  color: light-dark(var(--green-8), var(--green-2));
+  text-decoration: unset;
+}
+
 code, kbd {
   display: inline-block;
-  border-radius: var(--radius-small);
+  border-radius: var(--radius-sm);
   font-style: normal;
   font-size: inherit;
   line-height: var(--lh-150);
 }
 code {
   padding-inline: .6rem;
-  background-color: var(--ui-color-7);
-  color: var(--green-3);
+  background-color: light-dark(var(--ui-color-7), var(--ui-color-7));
+  color: light-dark(var(--green-3), var(--green-3));
   font-weight: 400;
   font-family: var(--font-monospace);
   font-variation-settings: 'MONO' 1;
 }
 kbd {
   padding-inline: 1.2rem;
-  border: .1rem solid var(--ui-color-3);
-  background-color: var(--ui-color-0);
-  color: var(--ui-color-6);
+  border: .1rem solid light-dark(var(--ui-color-3), var(--ui-color-5));
+  background-color: light-dark(var(--ui-color-0), var(--ui-color-8));
+  color: light-dark(var(--ui-color-6), var(--ui-color-0));
   font-weight: var(--font-weight-bolder);
   font-family: var(--font-sans-text);
 }
 
 // samp, var {}
-// pre {}
-
-// details, summary {}
-
-dialog {
-  position: unset;
-  border: unset;
-  background-color: unset;
-  color: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
+// data {}
 // bdi, bdo {}
-// ruby, rt {}
+// rp, rt, ruby {}
 
 /* END OF FILE ============================================================== */
