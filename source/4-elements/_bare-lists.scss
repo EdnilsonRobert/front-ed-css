@@ -16,12 +16,14 @@ ol li, ul li {
   padding-block: var(--list-item-padding-y);
 }
 
+menu li { padding-block: var(--menu-item-padding-y); }
+
 li { list-style-position: inside; }
 
 li li { text-indent: var(--list-indent); }
 
-ol li::marker { color: var(--ol-list-marker-color); }
-ul li::marker { color: var(--ul-list-marker-color); }
+ol li::marker { color: var(--ol-marker-color); }
+ul li::marker { color: var(--ul-marker-color); }
 
 // dl {}
 
@@ -35,6 +37,6 @@ dd {
   list-style-position: inside;
   text-indent: var(--list-indent);
 }
-dd::marker { color: var(--dl-list-marker-color); }
+dd::marker { color: var(--dl-marker-color); }
 
 /* END OF FILE ============================================================== */

@@ -13,20 +13,18 @@
   content: var(--counter-start) counter(acc) var(--counter-end);
   display: inline-block;
   margin-right: .6em;
-  color: var(--ol-list-marker-color);
-  font-size: 1.4rem;
+  color: var(--ol-marker-color);
+  font-size: var(--counter-size);
 }
 
 .custom-bullets {
   li {
-    list-style-type: none;
     display: flex;
     justify-content: left;
     align-items: center;
     gap: .6em;
   }
-
-  ion-icon { color: var(--ul-list-marker-color); }
+  ion-icon { color: var(--ul-icon-color); }
 }
 
 .list-outlined {
@@ -34,22 +32,22 @@
     padding-inline: .6em;
     border-bottom: .1rem solid var(--list-border-color);
   }
-
   li:first-child { border-top: .1rem solid var(--list-border-color); }
 }
 
-.list-splitted li {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: .6em;
-
+.list-splitted {
+  li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .6em;
+  }
   span:first-of-type { flex-grow: 1; }
 }
 
 .menu-bar {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--menu-bar-button), auto));
+  grid-template-columns: repeat(auto-fit, minmax(var(--menu-bar-cell), auto));
   gap: var(--menu-bar-gap);
 
   button { width: 100%; }
