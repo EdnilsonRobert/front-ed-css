@@ -9,15 +9,20 @@ table {
   width: var(--table-width);
   margin-inline: auto;
   border-collapse: collapse;
+  background-color: var(--table-background);
 }
 
 caption {
+  margin-bottom: var(--table-caption-margin);
   color: var(--table-caption-color);
   font-size: var(--table-caption-size);
+  text-align: var(--table-caption-align);
 }
 
+// col, colgroup {}
+
 thead {
-  border-block: var(--thead-border) solid var(--table-border-color);
+  border-block: .2rem solid var(--table-border);
   background-color: var(--thead-background);
 }
 
@@ -25,9 +30,7 @@ tfoot { background-color: var(--tfoot-background); }
 
 tbody { background-color: var(--tbody-background); }
 
-tbody tr, tfoot tr {
-  border-bottom: var(--tbody-border) solid var(--table-border-color);
-}
+// tr {}
 
 th {
   padding: var(--thead-cell-padding);
@@ -40,6 +43,7 @@ th {
 
 td {
   padding: var(--tbody-cell-padding);
+  border-bottom: .1rem solid var(--table-border);
   color: var(--tbody-color);
   font-size: var(--tbody-size);
   line-height: var(--lh-125);
