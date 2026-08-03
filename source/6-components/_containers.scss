@@ -20,6 +20,12 @@
   padding-block: var(--container-fixed-padding-y);
 }
 
+.block-large { max-width: var(--container-width-lg); }
+.block-medium { max-width: var(--container-width-md); }
+.block-small { max-width: var(--container-width-sm); }
+
+.margin-auto { margin-inline: auto; }
+
 .ratio-square     { aspect-ratio:     1/1; }
 .ratio-portrait   { aspect-ratio:     3/4; }
 .ratio-landscape  { aspect-ratio:     4/3; }

@@ -31,18 +31,18 @@
   --font-monospace: 'Google Sans Code', monospace;
 
   /* Utilities ============================================================== */
-  /* Fixed widths | scale: [96rem, 80rem, 64rem, 48rem] --------------------- */
-  --page-max-width: 96rem;
-  --block-width-lg: 80rem;
-  --block-width-md: 64rem;
-  --block-width-sm: 48rem;
-
   /* Containers ------------------------------------------------------------- */
+  /* Fixed widths | scale: [96rem, 80rem, 64rem, 48rem] */
+  --container-width-xl: 96rem;
+  --container-width-lg: 80rem;
+  --container-width-md: 64rem;
+  --container-width-sm: 48rem;
+
   --section-margin-y: 0;
   --section-padding-x: 1.2rem;
   --section-padding-y: 2.4rem;
 
-  --container-fixed-max-width: var(--page-max-width);
+  --container-fixed-max-width: var(--container-width-xl);
   --container-fixed-margin-y: 0;
   --container-fixed-padding-x: 1.2rem;
   --container-fixed-padding-y: 2.4rem;
@@ -50,8 +50,7 @@
   --scrollbar: light-dark(var(--ui-color-3), var(--ui-color-6)) transparent;
 
   /* Grid layout ------------------------------------------------------------ */
-  /*
-  --grid-cell-width: 9.6rem;
+  --cell-min-width: 6rem;
 
   /* Borders ---------------------------------------------------------------- */
   --radius-base: .9rem;
@@ -63,9 +62,7 @@
   --border-1: .1rem;
   --border-2: .2rem;
   --border-3: .3rem;
-
-  /*
-  --border-color-base: var(--ui-color-3);
+  --border-color-base: light-dark(var(--ui-color-3), var(--ui-color-6));
 
   /* Elements - Bare elements (unclassed HTML / type selectors) ============= */
   /* Objects - Layout classes, cosmetic-free design patterns ================ */
@@ -205,20 +202,20 @@
 
   /* Multimedia ------------------------------------------------------------- */
   --audio-panel-color: light-dark(var(--ui-color-0), var(--ui-color-7));
-  --audio-display-max-width: var(--block-width-sm);
+  --audio-display-max-width: var(--container-width-sm);
   --audio-display-border: light-dark(var(--ui-color-4), var(--ui-color-6));
   --audio-display-background: light-dark(var(--ui-color-2), var(--ui-color-8));
   --audio-display-track: light-dark(var(--ui-color-8), var(--ui-color-2));
   --audio-display-caption: light-dark(var(--ui-color-6), var(--ui-color-3));
 
-  --video-max-width: var(--block-width-lg);
+  --video-max-width: var(--container-width-lg);
   --video-display-background: light-dark(var(--ui-color-9), var(--ui-color-8));
   --video-display-track: light-dark(var(--ui-color-1), var(--ui-color-1));
   --video-display-caption: light-dark(var(--ui-color-2), var(--ui-color-2));
 
   /* Embedded --------------------------------------------------------------- */
-  --embedded-max-width: var(--block-width-md);
-  --iframe-max-width: var(--block-width-md);
+  --embedded-max-width: var(--container-width-md);
+  --iframe-max-width: var(--container-width-md);
 
   /* Scripting -------------------------------------------------------------- */
   --canvas-display: inline-block;
@@ -240,11 +237,12 @@
   /* Components ============================================================= */
 
   /* Icons ------------------------------------------------------------------ */
-  /*
   --icon-color: var(--red);
   --icon-md: 3.2rem;
   --icon-lg: 4.8rem;
   --icon-xl: 6.4rem;
+
+
 
   /* Messages --------------------------------------------------------------- */
   /*
@@ -315,7 +313,7 @@
 
   /* Headers and footers ---------------------------------------------------- */
   /*
-  --header-max-width: var(--page-max-width);
+  --header-max-width: var(--container-width-xl);
   --header-padding-x: 1.2rem;
   --header-padding-y: 1.2rem;
   --header-background: var(--ui-color-2);
@@ -336,6 +334,13 @@
   /* --toast-space: 1.2rem 2.4rem; */
   /* --toast-border: var(--ui-color-3); */
   /* --toast-background: var(--ui-color-0); */
+
+  /* Animations ============================================================= */
+  --anima-blink:    blink 700ms linear 100ms infinite;
+  --anima-pulse:    pulse 700ms linear infinite;
+  --anima-rotate:   rotate 1000ms linear infinite;
+  --anima-spin-cw:  spin-cw 2000ms linear infinite;
+  --anima-spin-ccw: spin-ccw 2000ms linear infinite;
 
   /* Color palette ========================================================== */
   --grid-colors-columns: 11;

@@ -899,7 +899,246 @@
         </form>
     </section>
 
-    <!-- Progress bars - meter, progress -->
+    <!-- Containers -->
+    <section class="section" id="containers">
+        <p class="section-title">Containers</p>
+
+        <p><code>.section</code></p>
+        <div class="section" data-background="var(--ui-color-0)">
+            <ul>
+                <li>Width: 100%</li>
+                <li>Margem eixo X: zero</li>
+                <li>Margem eixo Y: customizável</li>
+                <li>Padding: customizável</li>
+            </ul>
+        </div>
+
+        <p><code>.container-fixed</code></p>
+        <div class="container-fixed" data-background="var(--ui-color-0)">
+            <ul>
+                <li>Max width: customizável</li>
+                <li>Margem eixo X: container centralizado</li>
+                <li>Margem eixo Y: customizável</li>
+                <li>Padding: customizável</li>
+            </ul>
+        </div>
+
+        <p class="section-subtitle">Block sizing</p>
+        <p><code>.block-large</code></p>
+        <div class="block-large" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
+
+        <p><code>.block-medium</code></p>
+        <div class="block-medium" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
+
+        <p><code>.block-small</code></p>
+        <div class="block-small" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
+
+        <p><code>.margin-auto</code> Centraliza blocos de controle</p>
+        <div class="block-small margin-auto" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
+
+        <p class="section-subtitle">Aspect ratio</p>
+        <div class="grid-12 gap-12" style="max-width: 48rem;">
+            <div class="ratio-landscape col-6 padding-6" data-background="var(--ui-color-2)">
+                <code>.ratio-landscape</code>
+            </div>
+            <div class="ratio-portrait col-6 padding-6" data-background="var(--ui-color-2)">
+                <code>.ratio-portrait</code>
+            </div>
+            <div class="ratio-widescreen col-6 padding-6" data-background="var(--ui-color-2)">
+                <code>.ratio-widescreen</code>
+            </div>
+            <div class="ratio-ultrawide col-6 padding-6" data-background="var(--ui-color-2)">
+                <code>.ratio-ultrawide</code>
+            </div>
+            <div class="ratio-square col-6 padding-6" data-background="var(--ui-color-2)">
+                <code>.ratio-square</code>
+            </div>
+            <div class="ratio-golden col-6 padding-6" data-background="var(--ui-color-2)">
+                <code>.ratio-golden</code>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid layout -->
+    <section class="section" id="grid-layout">
+        <p class="section-title">Grid layout</p>
+
+        <p class="section-subtitle">Grid de 12 colunas</p>
+        <p><code>.grid-12</code></p>
+        <div class="grid-12 gap-3">
+            <p data-background="var(--ui-color-2)">01</p>
+            <p data-background="var(--ui-color-2)">02</p>
+            <p data-background="var(--ui-color-2)">03</p>
+            <p data-background="var(--ui-color-2)">04</p>
+            <p data-background="var(--ui-color-2)">05</p>
+            <p data-background="var(--ui-color-2)">06</p>
+            <p data-background="var(--ui-color-2)">07</p>
+            <p data-background="var(--ui-color-2)">08</p>
+            <p data-background="var(--ui-color-2)">09</p>
+            <p data-background="var(--ui-color-2)">10</p>
+            <p data-background="var(--ui-color-2)">11</p>
+            <p data-background="var(--ui-color-2)">12</p>
+        </div>
+
+        <p class="section-subtitle">Grid com número de colunas indefinido</p>
+        <p><code>.grid</code></p>
+        <div class="grid gap-3">
+            <p data-background="var(--ui-color-2)">Célula com mais conteúdo</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+        </div>
+
+        <p class="section-subtitle">Grid gaps</p>
+        <p><code>.gap-3</code></p>
+        <div class="grid-12 gap-3">
+            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
+        </div>
+        <p><code>.gap-6</code></p>
+        <div class="grid-12 gap-6">
+            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
+        </div>
+        <p><code>.gap-12</code></p>
+        <div class="grid-12 gap-12">
+            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
+        </div>
+        <p><code>.gap-24</code></p>
+        <div class="grid-12 gap-24">
+            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
+        </div>
+
+        <p class="section-subtitle">Grupo de colunas</p>
+        <p><code>.col-&lt;span&gt;</code></p>
+        <div class="grid-12 gap-3">
+            <p class="col-1" data-background="var(--ui-color-2)">col-1</p>
+            <p class="col-11" data-background="var(--ui-color-2)">col-11</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-10" data-background="var(--ui-color-2)">col-10</p>
+            <p class="col-3" data-background="var(--ui-color-2)">col-3</p>
+            <p class="col-9" data-background="var(--ui-color-2)">col-9</p>
+            <p class="col-4" data-background="var(--ui-color-2)">col-4</p>
+            <p class="col-8" data-background="var(--ui-color-2)">col-8</p>
+            <p class="col-5" data-background="var(--ui-color-2)">col-5</p>
+            <p class="col-7" data-background="var(--ui-color-2)">col-7</p>
+            <p class="col-6" data-background="var(--ui-color-2)">col-6</p>
+            <p class="col-6" data-background="var(--ui-color-2)">col-6</p>
+            <p class="col-12" data-background="var(--ui-color-2)">col-12</p>
+        </div>
+
+        <p class="section-subtitle">Grupo de linhas</p>
+        <p><code>.row-&lt;span&gt;</code></p>
+        <div class="grid-12 gap-3">
+            <p class="col-2 row-5" data-background="var(--ui-color-2)">col-2 row-5</p>
+            <p class="col-2 row-4" data-background="var(--ui-color-2)">col-2 row-4</p>
+            <p class="col-2 row-3" data-background="var(--ui-color-2)">col-2 row-3</p>
+            <p class="col-2 row-2" data-background="var(--ui-color-2)">col-2 row-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+        </div>
+    </section>
+
+    <!-- Flexbox -->
+    <section class="section" id="flexbox">
+        <p class="section-title">Flexbox</p>
+
+        <p class="section-subtitle">Flex row</p>
+        <p><code>.row</code> <code>.gap-6</code></p>
+        <div class="row gap-6" data-background="var(--ui-color-0)">
+            <p class="padding-6" data-background="var(--ui-color-2)">Elemento 1</p>
+            <p class="padding-6" data-background="var(--ui-color-2)">Elemento 2 <br> Elemento 2</p>
+            <p class="padding-6" data-background="var(--ui-color-2)">Elemento 3 <br> Elemento 3 <br> Elemento 3</p>
+        </div>
+
+        <p class="section-subtitle">Flex row alignment</p>
+        <p><code>.row-&lt;horizontal&gt;&lt;vertical&gt;</code></p>
+        <p><code>.row-lt</code> left top</p>
+        <p><code>.row-lc</code> left center</p>
+        <p><code>.row-lb</code> left bottom</p>
+        <p><code>.row-ls</code> left stretch</p>
+        <p><code>.row-ct</code> center top</p>
+        <p><code>.row-cc</code> center center</p>
+        <p><code>.row-cb</code> center bottom</p>
+        <p><code>.row-cs</code> center stretch</p>
+        <p><code>.row-rt</code> right top</p>
+        <p><code>.row-rc</code> right center</p>
+        <p><code>.row-rb</code> right bottom</p>
+        <p><code>.row-rs</code> right stretch</p>
+
+        <p class="section-subtitle">Flex column</p>
+        <p><code>.column</code> <code>.gap-6</code></p>
+        <div class="column gap-6" data-background="var(--ui-color-0)">
+            <p class="padding-6" data-background="var(--ui-color-2)">Elemento 1</p>
+            <p class="padding-6" data-background="var(--ui-color-2)">Elemento 2, elemento 2</p>
+            <p class="padding-6" data-background="var(--ui-color-2)">Elemento 3, elemento 3, elemento 3</p>
+        </div>
+
+        <p class="section-subtitle">Flex column alignment</p>
+        <p><code>.column-&lt;vertical&gt;&lt;horizontal&gt;</code></p>
+        <p><code>.column-tl</code> top left</p>
+        <p><code>.column-tc</code> top center</p>
+        <p><code>.column-tr</code> top right</p>
+        <p><code>.column-ts</code> top stretch</p>
+        <p><code>.column-cl</code> center left</p>
+        <p><code>.column-cc</code> center center</p>
+        <p><code>.column-cr</code> center right</p>
+        <p><code>.column-cs</code> center stretch</p>
+        <p><code>.column-bl</code> bottom left</p>
+        <p><code>.column-bc</code> bottom center</p>
+        <p><code>.column-br</code> bottom right</p>
+        <p><code>.column-bs</code> bottom stretch</p>
+
+        <p class="section-subtitle">Row child behaviour</p>
+        <p><code>.row</code> > <code>.flex-grow</code></p>
+        <div class="row gap-6" data-background="var(--ui-color-0)">
+            <p class="flex-grow padding-6" data-background="var(--ui-color-2)">Com flex-grow</p>
+            <p class="padding-6" data-background="var(--ui-color-2)">Sem flex-grow</p>
+            <p class="padding-6" data-background="var(--ui-color-2)">Maior <br> elemento <br> filho</p>
+        </div>
+
+        <p class="section-subtitle">Column child behaviour</p>
+        <p><code>.column</code> > <code>.flex-grow</code></p>
+        <div class="grid gap-3">
+            <div class="column gap-3" data-background="var(--ui-color-0)">
+                <p class="flex-grow padding-6" data-background="var(--ui-color-2)">Com flex-grow</p>
+                <p class="padding-6" data-background="var(--ui-color-2)">Sem flex-grow</p>
+            </div>
+            <div class="column gap-3" data-background="var(--ui-color-0)">
+                <p class="padding-6" data-background="var(--ui-color-2)">Sem flex-grow</p>
+                <p class="padding-6" data-background="var(--ui-color-2)">Sem flex-grow</p>
+                <p class="padding-6" data-background="var(--ui-color-2)">Sem flex-grow</p>
+                <p class="padding-6" data-background="var(--ui-color-2)">Sem flex-grow</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Icons -->
     <section class="section" id="icons">
@@ -916,6 +1155,10 @@
         <p><ion-icon class="icon icon-lg" name="heart"></ion-icon> <code>.icon-lg</code> tamanho customizável</p>
         <p><ion-icon class="icon icon-xl" name="heart"></ion-icon> <code>.icon-xl</code> tamanho customizável</p>
     </section>
+
+
+
+
 
     <!-- Messages -->
     <section class="section" id="messages">
@@ -1161,22 +1404,11 @@
         <p class="section-subtitle">Text transformation</p>
         <p><span class="to-lowercase">Este texto contém a classe</span> <code>.to-lowercase</code></p>
         <p><span class="to-uppercase">Este texto contém a classe</span> <code>.to-uppercase</code></p>
-
-        <p class="section-subtitle">Text insertion</p>
-        <p><span class="deleted">Este texto contém a classe</span> <code>.deleted</code></p>
-        <p><span class="inserted">Este texto contém a classe</span> <code>.inserted</code></p>
-
-        <p class="section-subtitle">Text sub / sup</p>
-        <p><span class="text-sub">Este texto</span> contém a classe <code>.text-sub</code></p>
-        <p><span class="text-sup">Este texto</span> contém a classe <code>.text-sup</code></p>
     </section>
 
     <!-- Spacing -->
     <section class="section" id="spacing">
         <p class="section-title">Spacing</p>
-
-        <p class="section-subtitle">Centering blocks</p>
-        <p><code>.margin-auto</code> - margin inline (left / right): auto</p>
 
         <p class="section-subtitle">Margin top</p>
         <p><code>.margin-t-3</code> - margin top: .3rem</p>
@@ -1228,32 +1460,36 @@
     <section class="section" id="borders">
         <p class="section-title">Borders</p>
 
+        <p class="section-subtitle">Adding border default</p>
         <p><code>.has-border</code></p>
         <p class="has-border padding-6">Elemento com borda</p>
 
+        <p class="section-subtitle">Adding border specific</p>
+        <p><code>.has-border-1</code></p>
+        <p class="has-border-1 padding-6">Elemento com borda .1rem</p>
+        <p><code>.has-border-2</code></p>
+        <p class="has-border-2 padding-6">Elemento com borda .2rem</p>
+        <p><code>.has-border-3</code></p>
+        <p class="has-border-3 padding-6">Elemento com borda .3rem</p>
+
         <p class="section-subtitle">Border radius</p>
-        <p><code>.has-border</code> <code>.corner-square</code></p>
-        <p class="has-border corner-square padding-6">Elemento com canto angular</p>
+        <p><code>.corner-square</code></p>
+        <div class="corner-square" style="height: 6rem;" data-background="var(--ui-color-5)"></div>
 
-        <p><code>.has-border</code> <code>.corner-circular</code></p>
-        <p>
-            <span class="has-border corner-circular"
-            style="display:inline-block; aspect-ratio:1/1; height:4.8rem;"></span>
-            Elemento circular
-        </p>
+        <p><code>.corner-circular</code></p>
+        <div class="corner-circular ratio-square" style="height: 6rem;" data-background="var(--ui-color-5)"></div>
 
-        <p><code>.has-border</code> <code>.corner-rounded</code></p>
-        <p class="has-border corner-rounded padding-6">Elemento com canto arredondado</p>
+        <p><code>.corner-rounded</code></p>
+        <div class="corner-rounded" style="height: 6rem;" data-background="var(--ui-color-5)"></div>
 
-        <p>
-            <code>.corner-rounded-2</code> > <code>.corner-rounded-1</code> >
-            <code>corner-rounded</code> > <code>.corner-rounded-0</code>
-        </p>
-
+        <p class="section-subtitle">Nested radius</p>
         <div class="has-border corner-rounded-2 padding-6">
-            <div class="has-border corner-rounded-1 padding-6">
-                <div class="has-border corner-rounded padding-6">
-                    <p class="has-border corner-rounded-0 padding-6">Cantos arredondados aninhados</p>
+            <code>.corner-rounded-2</code>
+            <div class="has-border corner-rounded-1 margin-t-6 padding-6">
+                <code>.corner-rounded-1</code>
+                <div class="has-border corner-rounded margin-t-6 padding-6">
+                    <code>corner-rounded</code>
+                    <p class="has-border corner-rounded-0 margin-t-6 padding-6"><code>.corner-rounded-0</code></p>
                 </div>
             </div>
         </div>
@@ -1264,13 +1500,25 @@
         <p class="section-title">Elevation</p>
 
         <p><code>.has-shadow-&lt;elevation&gt;</code></p>
-        <div class="grid-12 gap-24">
-            <p class="has-shadow   col-6">Elemento sem elevação</p>
-            <p class="has-shadow-1 col-6">.has-shadow-1</p>
-            <p class="has-shadow-2 col-6">.has-shadow-2</p>
-            <p class="has-shadow-3 col-6">.has-shadow-3</p>
-            <p class="has-shadow-4 col-6">.has-shadow-4</p>
-            <p class="has-shadow-5 col-6">.has-shadow-5</p>
+        <div class="grid-12 gap-24" style="grid-auto-rows: 12rem;">
+            <p class="has-shadow   col-6 padding-6 corner-rounded" data-background="var(--ui-color-0)">
+                Elemento sem elevação
+            </p>
+            <p class="has-shadow-1 col-6 padding-6 corner-rounded" data-background="var(--ui-color-0)">
+                <code>.has-shadow-1</code>
+            </p>
+            <p class="has-shadow-2 col-6 padding-6 corner-rounded" data-background="var(--ui-color-0)">
+                <code>.has-shadow-2</code>
+            </p>
+            <p class="has-shadow-3 col-6 padding-6 corner-rounded" data-background="var(--ui-color-0)">
+                <code>.has-shadow-3</code>
+            </p>
+            <p class="has-shadow-4 col-6 padding-6 corner-rounded" data-background="var(--ui-color-0)">
+                <code>.has-shadow-4</code>
+            </p>
+            <p class="has-shadow-5 col-6 padding-6 corner-rounded" data-background="var(--ui-color-0)">
+                <code>.has-shadow-5</code>
+            </p>
         </div>
     </section>
 
@@ -1280,19 +1528,20 @@
 
         <p class="section-subtitle">Blink</p>
         <p><code>.anima-blink</code></p>
-        <ion-icon class="anima-blink" name="heart" style="font-size:3.2rem;"></ion-icon>
+        <ion-icon class="icon-lg anima-blink" name="heart"></ion-icon>
 
         <p class="section-subtitle">Pulse</p>
         <p><code>.anima-pulse</code></p>
-        <ion-icon class="anima-pulse" name="heart" style="font-size:3.2rem;"></ion-icon>
+        <ion-icon class="icon-lg anima-pulse" name="heart"></ion-icon>
 
         <p class="section-subtitle">Rotate</p>
         <p><code>.anima-rotate</code></p>
-        <ion-icon class="anima-rotate" name="ellipse" style="font-size:3.2rem;"></ion-icon>
+        <ion-icon class="icon-lg anima-rotate" name="ellipse"></ion-icon>
 
         <p class="section-subtitle">Spin</p>
-        <p><code>.anima-spin</code></p>
-        <ion-icon class="anima-spin" name="ban" style="font-size:3.2rem;"></ion-icon>
+        <p><code>.anima-spin-cw</code> <code>.anima-spin-ccw</code></p>
+        <ion-icon class="icon-lg anima-spin-cw" name="ban"></ion-icon>
+        <ion-icon class="icon-lg anima-spin-ccw" name="ban"></ion-icon>
     </section>
 
     <!-- Wireframes -->
@@ -1326,222 +1575,7 @@
         </div>
     </section>
 
-    <!-- Containers -->
-    <section class="section" id="containers">
-        <p class="section-title">Containers</p>
-
-        <p><code>.section</code></p>
-        <div class="section" data-background="var(--ui-color-0)">
-            <ul>
-                <li>Width: 100%</li>
-                <li>Margem eixo X: zero</li>
-                <li>Margem eixo Y: customizável</li>
-                <li>Padding: customizável</li>
-            </ul>
-        </div>
-
-        <p><code>.container-fixed</code></p>
-        <div class="container-fixed" data-background="var(--ui-color-0)">
-            <ul>
-                <li>Max width: customizável</li>
-                <li>Margem eixo X: container centralizado</li>
-                <li>Margem eixo Y: customizável</li>
-                <li>Padding: customizável</li>
-            </ul>
-        </div>
-
-        <p class="section-subtitle">Aspect ratio</p>
-        <p><code>.ratio-1-1</code> <code>.ratio-4-3</code> <code>.ratio-16-9</code></p>
-        <div class="grid gap-12">
-            <div class="ratio-1-1" data-background="var(--ui-color-2)"></div>
-            <div class="ratio-4-3" data-background="var(--ui-color-2)"></div>
-            <div class="ratio-16-9" data-background="var(--ui-color-2)"></div>
-        </div>
-    </section>
-
-    <!-- Grid layout -->
-    <section class="section" id="grid-layout">
-        <p class="section-title">Grid layout</p>
-
-        <p class="section-subtitle">Grid de 12 colunas</p>
-        <p><code>.grid-12</code></p>
-        <div class="grid-12 gap-3">
-            <p data-background="var(--ui-color-2)">01</p>
-            <p data-background="var(--ui-color-2)">02</p>
-            <p data-background="var(--ui-color-2)">03</p>
-            <p data-background="var(--ui-color-2)">04</p>
-            <p data-background="var(--ui-color-2)">05</p>
-            <p data-background="var(--ui-color-2)">06</p>
-            <p data-background="var(--ui-color-2)">07</p>
-            <p data-background="var(--ui-color-2)">08</p>
-            <p data-background="var(--ui-color-2)">09</p>
-            <p data-background="var(--ui-color-2)">10</p>
-            <p data-background="var(--ui-color-2)">11</p>
-            <p data-background="var(--ui-color-2)">12</p>
-        </div>
-
-        <p class="section-subtitle">Grid com número de colunas indefinido</p>
-        <p><code>.grid</code></p>
-        <div class="grid gap-3">
-            <p data-background="var(--ui-color-2)">Célula com mais conteúdo</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-        </div>
-
-        <p class="section-subtitle">Grid gaps</p>
-        <p><code>.grid-12</code> <code>.gap-3</code></p>
-        <div class="grid-12 gap-3">
-            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
-        </div>
-
-        <p><code>.grid-12</code> <code>.gap-6</code></p>
-        <div class="grid-12 gap-6">
-            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
-        </div>
-
-        <p><code>.grid-12</code> <code>.gap-12</code></p>
-        <div class="grid-12 gap-12">
-            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
-        </div>
-
-        <p><code>.grid-12</code> <code>.gap-24</code></p>
-        <div class="grid-12 gap-24">
-            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
-            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
-        </div>
-
-        <p class="section-subtitle">Grupo de colunas</p>
-        <p><code>.col-&lt;span&gt;</code></p>
-        <div class="grid-12 gap-3">
-            <p class="col-1" data-background="var(--ui-color-2)">col-1</p>
-            <p class="col-11" data-background="var(--ui-color-2)">col-11</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-10" data-background="var(--ui-color-2)">col-10</p>
-            <p class="col-3" data-background="var(--ui-color-2)">col-3</p>
-            <p class="col-9" data-background="var(--ui-color-2)">col-9</p>
-            <p class="col-4" data-background="var(--ui-color-2)">col-4</p>
-            <p class="col-8" data-background="var(--ui-color-2)">col-8</p>
-            <p class="col-5" data-background="var(--ui-color-2)">col-5</p>
-            <p class="col-7" data-background="var(--ui-color-2)">col-7</p>
-            <p class="col-6" data-background="var(--ui-color-2)">col-6</p>
-            <p class="col-6" data-background="var(--ui-color-2)">col-6</p>
-            <p class="col-12" data-background="var(--ui-color-2)">col-12</p>
-        </div>
-
-        <p class="section-subtitle">Grupo de linhas</p>
-        <p><code>.row-&lt;span&gt;</code></p>
-        <div class="grid-12 gap-3">
-            <p class="col-2 row-5" data-background="var(--ui-color-2)">col-2 row-5</p>
-            <p class="col-2 row-4" data-background="var(--ui-color-2)">col-2 row-4</p>
-            <p class="col-2 row-3" data-background="var(--ui-color-2)">col-2 row-3</p>
-            <p class="col-2 row-2" data-background="var(--ui-color-2)">col-2 row-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
-        </div>
-    </section>
-
-    <!-- Flexbox -->
-    <section class="section" id="flexbox">
-        <p class="section-title">Flexbox</p>
-
-        <p class="section-subtitle">Flex row</p>
-        <p><code>.row</code> <code>.gap-6</code></p>
-        <div class="row gap-6" data-background="var(--ui-color-0)">
-            <p data-background="var(--ui-color-2)">Elemento 1</p>
-            <p data-background="var(--ui-color-2)">Elemento 2 <br> Elemento 2</p>
-            <p data-background="var(--ui-color-2)">Elemento 3 <br> Elemento 3 <br> Elemento 3</p>
-        </div>
-
-        <p class="section-subtitle">Flex row alignment</p>
-        <p><code>.row-&lt;horizontal&gt;&lt;vertical&gt;</code></p>
-        <p><code>.row-lt</code> left top</p>
-        <p><code>.row-lc</code> left center</p>
-        <p><code>.row-lb</code> left bottom</p>
-        <p><code>.row-ls</code> left stretch</p>
-        <p><code>.row-ct</code> center top</p>
-        <p><code>.row-cc</code> center center</p>
-        <p><code>.row-cb</code> center bottom</p>
-        <p><code>.row-cs</code> center stretch</p>
-        <p><code>.row-rt</code> right top</p>
-        <p><code>.row-rc</code> right center</p>
-        <p><code>.row-rb</code> right bottom</p>
-        <p><code>.row-rs</code> right stretch</p>
-
-        <p class="section-subtitle">Flex column</p>
-        <p><code>.column</code> <code>.gap-6</code></p>
-        <div class="column gap-6" data-background="var(--ui-color-0)">
-            <p data-background="var(--ui-color-2)">Elemento 1</p>
-            <p data-background="var(--ui-color-2)">Elemento 2, elemento 2</p>
-            <p data-background="var(--ui-color-2)">Elemento 3, elemento 3, elemento 3</p>
-        </div>
-
-        <p class="section-subtitle">Flex column alignment</p>
-        <p><code>.column-&lt;vertical&gt;&lt;horizontal&gt;</code></p>
-        <p><code>.column-tl</code> top left</p>
-        <p><code>.column-tc</code> top center</p>
-        <p><code>.column-tr</code> top right</p>
-        <p><code>.column-ts</code> top stretch</p>
-        <p><code>.column-cl</code> center left</p>
-        <p><code>.column-cc</code> center center</p>
-        <p><code>.column-cr</code> center right</p>
-        <p><code>.column-cs</code> center stretch</p>
-        <p><code>.column-bl</code> bottom left</p>
-        <p><code>.column-bc</code> bottom center</p>
-        <p><code>.column-br</code> bottom right</p>
-        <p><code>.column-bs</code> bottom stretch</p>
-
-        <p class="section-subtitle">Row child behaviour</p>
-        <p><code>.row</code> > <code>.flex-grow</code></p>
-        <div class="row gap-6" data-background="var(--ui-color-0)">
-            <p class="flex-grow" data-background="var(--ui-color-2)">Com flex-grow</p>
-            <p data-background="var(--ui-color-2)">Sem flex-grow</p>
-            <p data-background="var(--ui-color-2)">Maior <br> elemento <br> filho</p>
-        </div>
-
-        <p class="section-subtitle">Column child behaviour</p>
-        <p><code>.column</code> > <code>.flex-grow</code></p>
-        <div class="grid gap-3">
-            <div class="column gap-3" data-background="var(--ui-color-0)">
-                <p class="flex-grow" data-background="var(--ui-color-2)">Com flex-grow</p>
-                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
-            </div>
-            <div class="column gap-3" data-background="var(--ui-color-0)">
-                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
-                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
-                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
-                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
-            </div>
-        </div>
-    </section>
+    <!-- Progress bars - meter, progress -->
 
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <!-- Theme switcher -->

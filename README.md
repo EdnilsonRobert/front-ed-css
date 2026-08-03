@@ -81,10 +81,10 @@
 
 ### Components - UI Classes, designed components, chunks of UI
 - [ ] Wireframe
-- [ ] Containers
-- [ ] Grid layout
-- [ ] Flexbox
-- [ ] Icons (Ionicon - external lib)
+- [x] Containers
+- [x] Grid layout
+- [x] Flexbox
+- [x] Icons (Ionicon - external lib)
 - [ ] Messages (text messages, notice blocks)
 - [ ] Indicators (tags, badges, pills and chips)
 - [ ] Loaders and spinners
@@ -113,17 +113,17 @@
 
 ### Utilities - IDs and !important, helpers and overrides
 - [x] Color utils (color palette, borders, backgrounds and colors, gradients)
-- [ ] Text utils (modificadores de texto padrão)
+- [x] Text utils (modificadores de texto padrão)
 - [ ] Text utils (columns)
-- [ ] Spacing
-- [ ] Borders (radius and lines)
-- [ ] Elevation (box shadows)
+- [x] Spacing
+- [x] Borders (radius and lines)
+- [x] Elevation (box shadows)
 - [ ] Elevation (text shadows)
 - [ ] Opacity
 - [ ] Filters
 - [ ] Helper classes
 - [ ] Hover, focus, and other states
-- [ ] Animations (blink, pulse, rotate, spin)
+- [x] Animations (blink, pulse, rotate, spin)
 - [ ] Transitions
 - [ ] Theme (light / dark mode)
 - [ ] Breakpoints and responsive design
