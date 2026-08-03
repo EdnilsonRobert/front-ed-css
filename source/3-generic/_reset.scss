@@ -28,10 +28,10 @@ audio, video,
 embed, iframe, object,
 // Scripting
 canvas, noscript,
-// Progress bars
-meter, progress,
 // Forms
 button, datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea,
+// Progress bars
+meter, progress,
 // External lib
 ion-icon,
 // Pseudo-elements
@@ -40,27 +40,28 @@ ion-icon,
   margin: unset;
   padding: unset;
 }
+
 /* =============================================================================
-REFERENCES ---------------------------------------------------------------------
+  REFERENCES -------------------------------------------------------------------
     https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements
     https://www.w3schools.com/TAgs/ref_byfunc.asp
 
-NOT APPLICABLE -----------------------------------------------------------------
+  NOT APPLICABLE ---------------------------------------------------------------
     Metadata:       base, head, link, meta, style, title
     Images:         map, area
     Embedded:       source
     Scripting:      script
 
-NOT TESTED ---------------------------------------------------------------------
+  NOT TESTED -------------------------------------------------------------------
     Multimedia:     track
     Embedded:       portal
     Mathml:         math
     Web components: template, slot
 
-NOT SUPPORTED ------------------------------------------------------------------
+  NOT SUPPORTED ----------------------------------------------------------------
     keygen
 
-DEPRECATED ---------------------------------------------------------------------
+  DEPRECATED -------------------------------------------------------------------
     acronym, applet, basefont, bgsound, big, blink, center, content, dir, font, frame, frameset, image, marquee, menuitem, nobr, noembed, noframes, param, plaintext, rb, rtc, shadow, spacer, strike, tt, xmp
 ============================================================================= */
 
