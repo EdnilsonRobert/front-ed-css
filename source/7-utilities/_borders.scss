@@ -6,12 +6,17 @@
 
 .has-border { border: var(--border-base) solid var(--border-color-base); }
 
+.has-border-1 { border: var(--border-1) solid var(--border-color-base); }
+.has-border-2 { border: var(--border-2) solid var(--border-color-base); }
+.has-border-3 { border: var(--border-3) solid var(--border-color-base); }
+
 .corner-square   { border-radius: 0; }
 .corner-circular { border-radius: 50%; }
 
 .corner-rounded   { border-radius: var(--radius-base); }
-.corner-rounded-0 { border-radius: var(--radius-small); }
-.corner-rounded-1 { border-radius: var(--radius-medium); }
-.corner-rounded-2 { border-radius: var(--radius-large); }
+
+.corner-rounded-0 { border-radius: var(--radius-sm); }
+.corner-rounded-1 { border-radius: var(--radius-md); }
+.corner-rounded-2 { border-radius: var(--radius-lg); }
 
 /* END OF FILE ============================================================== */
