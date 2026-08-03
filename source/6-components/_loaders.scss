@@ -5,28 +5,22 @@
 ============================================================================= */
 
 .loader {
-  width: 4.8rem;
-  border: .6rem solid;
+  width: var(--loader-size);
+  border: var(--loader-stroke) solid;
 }
-.loader-sm {
-  width: 2.4rem;
-  border: .3rem solid;
-}
-.loader-md {
-  width: 7.2rem;
-  border: .9rem solid;
+
+.custom-loader {
+  width: var(--custom-loader-size);
+  border: var(--custom-loader-stroke) solid;
 }
 
 .loader,
-.loader-sm,
-.loader-md {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 1 / 1;
+.custom-loader {
+  display: block;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   border-color: var(--loader-t) var(--loader-lr) var(--loader-b);
-  animation: spin var(--loader-animation) infinite;
+  animation: var(--loader-animation);
 }
 
 /* END OF FILE ============================================================== */
