@@ -10,14 +10,17 @@
   padding-block: var(--image-display-padding-y);
   border-radius: var(--image-display-radius);
   background-color: var(--image-display-background);
-  place-items: center;
+  place-items: var(--image-display-align);
 }
 
 .image-caption {
+  width: 100%;
   padding-inline: 1.2rem;
-  padding-block: var(--caption-padding-y);
-  color: var(--caption-color);
+  padding-block: var(--image-caption-padding-y);
+  color: var(--image-caption-color);
+  font-size: var(--image-caption-size);
   line-height: var(--lh-125);
+  text-align: var(--image-caption-align);
 }
 
 /* END OF FILE ============================================================== */

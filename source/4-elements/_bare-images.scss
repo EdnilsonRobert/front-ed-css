@@ -4,9 +4,13 @@
   File: Images
 ============================================================================= */
 
-// figure { place-items: center; }
+// figure {}
 
-figcaption { font-size: var(--figcaption-size); }
+figcaption {
+  color: var(--figcaption-color);
+  font-size: var(--figcaption-size);
+  text-align: var(--figcaption-align);
+}
 
 img, svg {
   display: block;
@@ -16,14 +20,7 @@ img, svg {
 
 picture {
   display: block;
-  padding-block: .3rem;
   place-items: center;
-}
-
-meter, progress {
-  // appearance: unset;
-  display: block;
-  width: 100%;
 }
 
 /* END OF FILE ============================================================== */
