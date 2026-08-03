@@ -4,6 +4,7 @@
   File: Indicators
 ============================================================================= */
 
+// Tags ------------------------------------------------------------------------
 .tag {
   display: inline-block;
   padding-inline: .9rem;
@@ -13,27 +14,26 @@
   font-size: var(--tags-size);
   line-height: var(--lh-150);
 }
+
 .tag-labeled {
   display: inline-flex;
+  gap: .9rem;
   overflow: hidden;
+  padding-inline-end: .9rem;
   border-radius: var(--radius-base);
-  border: .2rem solid var(--tags-labeled-color-primary);
+  border: .2rem solid var(--tags-labeled-color);
+  color: var(--tags-text-primary);
   font-size: var(--tags-labeled-size);
   line-height: var(--lh-150);
 
-  span { padding-inline: .9rem; }
-
   :first-child {
-    background-color: var(--tags-labeled-color-primary);
-    color: var(--tags-labeled-text-primary);
-  }
-
-  :last-child {
-    background-color: var(--tags-labeled-color-secondary);
-    color: var(--tags-labeled-text-secondary);
+    padding-inline: .9rem;
+    background-color: var(--tags-labeled-color);
+    color: var(--tags-text-secondary);
   }
 }
 
+// Badges ----------------------------------------------------------------------
 .badge {
   display: inline-block;
   padding-inline: .9rem;
@@ -44,41 +44,26 @@
   line-height: var(--lh-150);
 }
 
-.pill, .pill-labeled {
-  display: inline-flex;
-  align-items: center;
-  overflow: hidden;
-  border-radius: var(--radius-base);
-}
+// Pills -----------------------------------------------------------------------
 .pill {
-  gap: .6rem;
-  padding-inline: .9rem;
-  background-color: var(--pills-color-primary);
-  color: var(--pills-color-secondary);
+  display: inline-flex;
+  gap: .9rem;
+  overflow: hidden;
+  padding-inline-end: .9rem;
+  border-radius: var(--radius-base);
+  border: .2rem solid var(--pills-color);
+  color: var(--pills-text-primary);
   font-size: var(--pills-size);
   line-height: var(--lh-150);
-}
-.pill-labeled {
-  border: .2rem solid var(--pills-labeled-color-primary);
-  font-size: var(--pills-labeled-size);
-  line-height: var(--lh-150);
-
-  span { padding-inline: .9rem; }
 
   :first-child {
-    background-color: var(--pills-labeled-color-primary);
-    color: var(--pills-labeled-text-primary);
-  }
-
-  :last-child {
-    display: inline-flex;
-    align-items: center;
-    gap: .3rem;
-    background-color: var(--pills-labeled-color-secondary);
-    color: var(--pills-labeled-text-secondary);
+    padding-inline: .9rem;
+    background-color: var(--pills-color);
+    color: var(--pills-text-secondary);
   }
 }
 
+// Chips -----------------------------------------------------------------------
 .chips {
   display: inline-flex;
   align-items: center;
