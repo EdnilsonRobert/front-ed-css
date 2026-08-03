@@ -19,6 +19,18 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./favicon.svg">
 
+    <!-- Theme switcher -->
+    <script>
+        const applyTheme = (theme) => {
+            document.documentElement.style.colorScheme = theme;
+            document.documentElement.setAttribute('data-theme', theme);
+        }
+        const savedTheme = localStorage.getItem('theme');
+        const prefersColor = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initialTheme = savedTheme || (prefersColor ? 'dark' : 'light');
+        applyTheme(initialTheme);
+    </script>
+
     <!-- Folhas de estilo -->
     <link rel="stylesheet" href="./css/config.css" media="screen">
     <link rel="stylesheet" href="./css/front-ed.css" media="screen">
@@ -37,154 +49,164 @@
 
 <body class="body">
 
-    <!-- <header class="toolbar" data-bg="var(--ui-color-1)">
-        <div class="flex-row row-lb gap-md">
-            <img src="./favicon.svg" alt="favicon">
-            <h1 class="heading-1 font-semibold" data-color="var(--ui-color-5)">
-                .front-<span data-color="var(--ui-color-9)">ed</span>.css
-            </h1>
-        </div>
-    </header> -->
+    <label class="theme-switcher" for="theme-switch">
+        <input type="checkbox" class="switcher-checkbox" name="theme-switch" id="theme-switch">
+        <span>Light</span> <span class="switcher-slider"></span> <span>Dark</span>
+    </label>
 
     <!-- Color palette -->
-    <div class="container-fluid" id="color-palette">
-         <p class="section-title">Color palette</p>
+    <section class="section" id="color-palette">
+        <p class="section-title">Color palette</p>
 
-         <p class="section-subtitle">UI Color + 10 colors</p>
-         <div class="palette-grid">
-            <span style="background-color: hsl(220, 24%, 44%);">ui-color</span>
-            <span style="background-color: hsl(220, 24%, 90%);">1</span>
-            <span style="background-color: hsl(220, 24%, 78%);">2</span>
-            <span style="background-color: hsl(220, 24%, 67%);">3</span>
-            <span style="background-color: hsl(220, 24%, 55%);">4</span>
-            <span style="background-color: hsl(220, 24%, 44%);">5</span>
-            <span style="background-color: hsl(220, 24%, 39%);">6</span>
-            <span style="background-color: hsl(220, 24%, 34%);">7</span>
-            <span style="background-color: hsl(220, 24%, 29%);">8</span>
-            <span style="background-color: hsl(220, 24%, 25%);">9</span>
+        <p class="section-subtitle">UI Color + 10 colors</p>
+        <p><code>.grid-container</code> > <code>.grid-color-palette</code></p>
+        <div class="grid-container">
+            <div class="grid-color-palette">
+                <span style="background-color: hsl(220, 24%, 44%);">ui-color</span>
+                <span style="background-color: hsl(220, 24%, 95%);">0</span>
+                <span style="background-color: hsl(220, 24%, 90%);">1</span>
+                <span style="background-color: hsl(220, 24%, 78%);">2</span>
+                <span style="background-color: hsl(220, 24%, 67%);">3</span>
+                <span style="background-color: hsl(220, 24%, 55%);">4</span>
+                <span style="background-color: hsl(220, 24%, 44%);">5</span>
+                <span style="background-color: hsl(220, 24%, 39%);">6</span>
+                <span style="background-color: hsl(220, 24%, 34%);">7</span>
+                <span style="background-color: hsl(220, 24%, 29%);">8</span>
+                <span style="background-color: hsl(220, 24%, 25%);">9</span>
 
-            <span style="background-color: hsl(348, 83%, 47%);">red</span>
-            <span style="background-color: hsl(348, 83%, 90%);">1</span>
-            <span style="background-color: hsl(348, 83%, 80%);">2</span>
-            <span style="background-color: hsl(348, 83%, 69%);">3</span>
-            <span style="background-color: hsl(348, 83%, 58%);">4</span>
-            <span style="background-color: hsl(348, 83%, 47%);">5</span>
-            <span style="background-color: hsl(348, 83%, 41%);">6</span>
-            <span style="background-color: hsl(348, 83%, 36%);">7</span>
-            <span style="background-color: hsl(348, 83%, 30%);">8</span>
-            <span style="background-color: hsl(348, 83%, 25%);">9</span>
+                <span style="background-color: hsl(348, 83%, 47%);">red</span>
+                <span style="background-color: hsl(348, 83%, 95%);">0</span>
+                <span style="background-color: hsl(348, 83%, 90%);">1</span>
+                <span style="background-color: hsl(348, 83%, 80%);">2</span>
+                <span style="background-color: hsl(348, 83%, 69%);">3</span>
+                <span style="background-color: hsl(348, 83%, 58%);">4</span>
+                <span style="background-color: hsl(348, 83%, 47%);">5</span>
+                <span style="background-color: hsl(348, 83%, 41%);">6</span>
+                <span style="background-color: hsl(348, 83%, 36%);">7</span>
+                <span style="background-color: hsl(348, 83%, 30%);">8</span>
+                <span style="background-color: hsl(348, 83%, 25%);">9</span>
 
-            <span style="background-color: hsl(33, 100%, 50%);">orange</span>
-            <span style="background-color: hsl(33, 100%, 90%);">1</span>
-            <span style="background-color: hsl(33, 100%, 80%);">2</span>
-            <span style="background-color: hsl(33, 100%, 70%);">3</span>
-            <span style="background-color: hsl(33, 100%, 60%);">4</span>
-            <span style="background-color: hsl(33, 100%, 50%);">5</span>
-            <span style="background-color: hsl(33, 100%, 44%);">6</span>
-            <span style="background-color: hsl(33, 100%, 38%);">7</span>
-            <span style="background-color: hsl(33, 100%, 32%);">8</span>
-            <span style="background-color: hsl(33, 100%, 25%);">9</span>
+                <span style="background-color: hsl(33, 100%, 50%);">orange</span>
+                <span style="background-color: hsl(33, 100%, 95%);">0</span>
+                <span style="background-color: hsl(33, 100%, 90%);">1</span>
+                <span style="background-color: hsl(33, 100%, 80%);">2</span>
+                <span style="background-color: hsl(33, 100%, 70%);">3</span>
+                <span style="background-color: hsl(33, 100%, 60%);">4</span>
+                <span style="background-color: hsl(33, 100%, 50%);">5</span>
+                <span style="background-color: hsl(33, 100%, 44%);">6</span>
+                <span style="background-color: hsl(33, 100%, 38%);">7</span>
+                <span style="background-color: hsl(33, 100%, 32%);">8</span>
+                <span style="background-color: hsl(33, 100%, 25%);">9</span>
 
-            <span style="background-color: hsl(51, 100%, 50%);">gold</span>
-            <span style="background-color: hsl(51, 100%, 90%);">1</span>
-            <span style="background-color: hsl(51, 100%, 80%);">2</span>
-            <span style="background-color: hsl(51, 100%, 70%);">3</span>
-            <span style="background-color: hsl(51, 100%, 60%);">4</span>
-            <span style="background-color: hsl(51, 100%, 50%);">5</span>
-            <span style="background-color: hsl(51, 100%, 44%);">6</span>
-            <span style="background-color: hsl(51, 100%, 38%);">7</span>
-            <span style="background-color: hsl(51, 100%, 32%);">8</span>
-            <span style="background-color: hsl(51, 100%, 25%);">9</span>
+                <span style="background-color: hsl(51, 100%, 50%);">gold</span>
+                <span style="background-color: hsl(51, 100%, 95%);">0</span>
+                <span style="background-color: hsl(51, 100%, 90%);">1</span>
+                <span style="background-color: hsl(51, 100%, 80%);">2</span>
+                <span style="background-color: hsl(51, 100%, 70%);">3</span>
+                <span style="background-color: hsl(51, 100%, 60%);">4</span>
+                <span style="background-color: hsl(51, 100%, 50%);">5</span>
+                <span style="background-color: hsl(51, 100%, 44%);">6</span>
+                <span style="background-color: hsl(51, 100%, 38%);">7</span>
+                <span style="background-color: hsl(51, 100%, 32%);">8</span>
+                <span style="background-color: hsl(51, 100%, 25%);">9</span>
 
-            <span style="background-color: hsl(90, 100%, 50%);">lime</span>
-            <span style="background-color: hsl(90, 100%, 90%);">1</span>
-            <span style="background-color: hsl(90, 100%, 80%);">2</span>
-            <span style="background-color: hsl(90, 100%, 70%);">3</span>
-            <span style="background-color: hsl(90, 100%, 60%);">4</span>
-            <span style="background-color: hsl(90, 100%, 50%);">5</span>
-            <span style="background-color: hsl(90, 100%, 44%);">6</span>
-            <span style="background-color: hsl(90, 100%, 38%);">7</span>
-            <span style="background-color: hsl(90, 100%, 32%);">8</span>
-            <span style="background-color: hsl(90, 100%, 25%);">9</span>
+                <span style="background-color: hsl(90, 100%, 50%);">lime</span>
+                <span style="background-color: hsl(90, 100%, 95%);">0</span>
+                <span style="background-color: hsl(90, 100%, 90%);">1</span>
+                <span style="background-color: hsl(90, 100%, 80%);">2</span>
+                <span style="background-color: hsl(90, 100%, 70%);">3</span>
+                <span style="background-color: hsl(90, 100%, 60%);">4</span>
+                <span style="background-color: hsl(90, 100%, 50%);">5</span>
+                <span style="background-color: hsl(90, 100%, 44%);">6</span>
+                <span style="background-color: hsl(90, 100%, 38%);">7</span>
+                <span style="background-color: hsl(90, 100%, 32%);">8</span>
+                <span style="background-color: hsl(90, 100%, 25%);">9</span>
 
-            <span style="background-color: hsl(120, 61%, 50%);">green</span>
-            <span style="background-color: hsl(120, 61%, 90%);">1</span>
-            <span style="background-color: hsl(120, 61%, 80%);">2</span>
-            <span style="background-color: hsl(120, 61%, 70%);">3</span>
-            <span style="background-color: hsl(120, 61%, 60%);">4</span>
-            <span style="background-color: hsl(120, 61%, 50%);">5</span>
-            <span style="background-color: hsl(120, 61%, 44%);">6</span>
-            <span style="background-color: hsl(120, 61%, 38%);">7</span>
-            <span style="background-color: hsl(120, 61%, 32%);">8</span>
-            <span style="background-color: hsl(120, 61%, 25%);">9</span>
+                <span style="background-color: hsl(120, 61%, 50%);">green</span>
+                <span style="background-color: hsl(120, 61%, 95%);">0</span>
+                <span style="background-color: hsl(120, 61%, 90%);">1</span>
+                <span style="background-color: hsl(120, 61%, 80%);">2</span>
+                <span style="background-color: hsl(120, 61%, 70%);">3</span>
+                <span style="background-color: hsl(120, 61%, 60%);">4</span>
+                <span style="background-color: hsl(120, 61%, 50%);">5</span>
+                <span style="background-color: hsl(120, 61%, 44%);">6</span>
+                <span style="background-color: hsl(120, 61%, 38%);">7</span>
+                <span style="background-color: hsl(120, 61%, 32%);">8</span>
+                <span style="background-color: hsl(120, 61%, 25%);">9</span>
 
-            <span style="background-color: hsl(174, 72%, 56%);">tiffany</span>
-            <span style="background-color: hsl(174, 72%, 90%);">1</span>
-            <span style="background-color: hsl(174, 72%, 81%);">2</span>
-            <span style="background-color: hsl(174, 72%, 73%);">3</span>
-            <span style="background-color: hsl(174, 72%, 64%);">4</span>
-            <span style="background-color: hsl(174, 72%, 56%);">5</span>
-            <span style="background-color: hsl(174, 72%, 48%);">6</span>
-            <span style="background-color: hsl(174, 72%, 40%);">7</span>
-            <span style="background-color: hsl(174, 72%, 32%);">8</span>
-            <span style="background-color: hsl(174, 72%, 25%);">9</span>
+                <span style="background-color: hsl(174, 72%, 56%);">tiffany</span>
+                <span style="background-color: hsl(174, 72%, 95%);">0</span>
+                <span style="background-color: hsl(174, 72%, 90%);">1</span>
+                <span style="background-color: hsl(174, 72%, 81%);">2</span>
+                <span style="background-color: hsl(174, 72%, 73%);">3</span>
+                <span style="background-color: hsl(174, 72%, 64%);">4</span>
+                <span style="background-color: hsl(174, 72%, 56%);">5</span>
+                <span style="background-color: hsl(174, 72%, 48%);">6</span>
+                <span style="background-color: hsl(174, 72%, 40%);">7</span>
+                <span style="background-color: hsl(174, 72%, 32%);">8</span>
+                <span style="background-color: hsl(174, 72%, 25%);">9</span>
 
-            <span style="background-color: hsl(210, 100%, 56%);">blue</span>
-            <span style="background-color: hsl(210, 100%, 90%);">1</span>
-            <span style="background-color: hsl(210, 100%, 81%);">2</span>
-            <span style="background-color: hsl(210, 100%, 73%);">3</span>
-            <span style="background-color: hsl(210, 100%, 64%);">4</span>
-            <span style="background-color: hsl(210, 100%, 56%);">5</span>
-            <span style="background-color: hsl(210, 100%, 48%);">6</span>
-            <span style="background-color: hsl(210, 100%, 40%);">7</span>
-            <span style="background-color: hsl(210, 100%, 32%);">8</span>
-            <span style="background-color: hsl(210, 100%, 25%);">9</span>
+                <span style="background-color: hsl(210, 100%, 56%);">blue</span>
+                <span style="background-color: hsl(210, 100%, 95%);">0</span>
+                <span style="background-color: hsl(210, 100%, 90%);">1</span>
+                <span style="background-color: hsl(210, 100%, 81%);">2</span>
+                <span style="background-color: hsl(210, 100%, 73%);">3</span>
+                <span style="background-color: hsl(210, 100%, 64%);">4</span>
+                <span style="background-color: hsl(210, 100%, 56%);">5</span>
+                <span style="background-color: hsl(210, 100%, 48%);">6</span>
+                <span style="background-color: hsl(210, 100%, 40%);">7</span>
+                <span style="background-color: hsl(210, 100%, 32%);">8</span>
+                <span style="background-color: hsl(210, 100%, 25%);">9</span>
 
-            <span style="background-color: hsl(225, 73%, 56%);">royalblue</span>
-            <span style="background-color: hsl(225, 73%, 90%);">1</span>
-            <span style="background-color: hsl(225, 73%, 81%);">2</span>
-            <span style="background-color: hsl(225, 73%, 73%);">3</span>
-            <span style="background-color: hsl(225, 73%, 64%);">4</span>
-            <span style="background-color: hsl(225, 73%, 56%);">5</span>
-            <span style="background-color: hsl(225, 73%, 48%);">6</span>
-            <span style="background-color: hsl(225, 73%, 40%);">7</span>
-            <span style="background-color: hsl(225, 73%, 32%);">8</span>
-            <span style="background-color: hsl(225, 73%, 25%);">9</span>
+                <span style="background-color: hsl(225, 73%, 56%);">royalblue</span>
+                <span style="background-color: hsl(225, 73%, 95%);">0</span>
+                <span style="background-color: hsl(225, 73%, 90%);">1</span>
+                <span style="background-color: hsl(225, 73%, 81%);">2</span>
+                <span style="background-color: hsl(225, 73%, 73%);">3</span>
+                <span style="background-color: hsl(225, 73%, 64%);">4</span>
+                <span style="background-color: hsl(225, 73%, 56%);">5</span>
+                <span style="background-color: hsl(225, 73%, 48%);">6</span>
+                <span style="background-color: hsl(225, 73%, 40%);">7</span>
+                <span style="background-color: hsl(225, 73%, 32%);">8</span>
+                <span style="background-color: hsl(225, 73%, 25%);">9</span>
 
-            <span style="background-color: hsl(280, 61%, 50%);">purple</span>
-            <span style="background-color: hsl(280, 61%, 90%);">1</span>
-            <span style="background-color: hsl(280, 61%, 80%);">2</span>
-            <span style="background-color: hsl(280, 61%, 70%);">3</span>
-            <span style="background-color: hsl(280, 61%, 60%);">4</span>
-            <span style="background-color: hsl(280, 61%, 50%);">5</span>
-            <span style="background-color: hsl(280, 61%, 44%);">6</span>
-            <span style="background-color: hsl(280, 61%, 38%);">7</span>
-            <span style="background-color: hsl(280, 61%, 32%);">8</span>
-            <span style="background-color: hsl(280, 61%, 25%);">9</span>
+                <span style="background-color: hsl(280, 61%, 50%);">purple</span>
+                <span style="background-color: hsl(280, 61%, 95%);">0</span>
+                <span style="background-color: hsl(280, 61%, 90%);">1</span>
+                <span style="background-color: hsl(280, 61%, 80%);">2</span>
+                <span style="background-color: hsl(280, 61%, 70%);">3</span>
+                <span style="background-color: hsl(280, 61%, 60%);">4</span>
+                <span style="background-color: hsl(280, 61%, 50%);">5</span>
+                <span style="background-color: hsl(280, 61%, 44%);">6</span>
+                <span style="background-color: hsl(280, 61%, 38%);">7</span>
+                <span style="background-color: hsl(280, 61%, 32%);">8</span>
+                <span style="background-color: hsl(280, 61%, 25%);">9</span>
 
-            <span style="background-color: hsl(19, 56%, 40%);">brown</span>
-            <span style="background-color: hsl(19, 56%, 90%);">1</span>
-            <span style="background-color: hsl(19, 56%, 77%);">2</span>
-            <span style="background-color: hsl(19, 56%, 65%);">3</span>
-            <span style="background-color: hsl(19, 56%, 52%);">4</span>
-            <span style="background-color: hsl(19, 56%, 40%);">5</span>
-            <span style="background-color: hsl(19, 56%, 36%);">6</span>
-            <span style="background-color: hsl(19, 56%, 32%);">7</span>
-            <span style="background-color: hsl(19, 56%, 28%);">8</span>
-            <span style="background-color: hsl(19, 56%, 25%);">9</span>
+                <span style="background-color: hsl(19, 56%, 40%);">brown</span>
+                <span style="background-color: hsl(19, 56%, 95%);">0</span>
+                <span style="background-color: hsl(19, 56%, 90%);">1</span>
+                <span style="background-color: hsl(19, 56%, 77%);">2</span>
+                <span style="background-color: hsl(19, 56%, 65%);">3</span>
+                <span style="background-color: hsl(19, 56%, 52%);">4</span>
+                <span style="background-color: hsl(19, 56%, 40%);">5</span>
+                <span style="background-color: hsl(19, 56%, 36%);">6</span>
+                <span style="background-color: hsl(19, 56%, 32%);">7</span>
+                <span style="background-color: hsl(19, 56%, 28%);">8</span>
+                <span style="background-color: hsl(19, 56%, 25%);">9</span>
+            </div>
         </div>
 
         <p class="section-subtitle">Color utilities</p>
         <p><code>data-border="&lt;color&gt;"</code></p>
-        <p data-border="var(--green-7)">Aplicação de cor de borda</p>
         <p><code>data-background="&lt;color&gt;"</code></p>
-        <p data-background="var(--green-3)">Aplicação de cor de fundo</p>
         <p><code>data-color="&lt;color&gt;"</code></p>
-        <p data-color="var(--green-7)">Aplicação de cor de texto</p>
-    </div>
+        <p data-border="var(--green-5)" data-background="var(--green-2)" data-color="var(--green-8)">
+            Todos os atributos aplicados
+        </p>
+    </section>
 
     <!-- Headings -->
-    <div class="container-fluid" id="headings">
+    <section class="section" id="headings">
         <p class="section-title">Headings</p>
 
         <p class="section-subtitle">Bare elements</p>
@@ -196,6 +218,7 @@
         <h1>Heading level 1</h1>
 
         <p class="section-subtitle">Formatted</p>
+        <p><code>.heading-&lt;level&gt;</code></p>
         <h6 class="heading-6">.heading-6</h6>
         <h6 class="heading-5">.heading-5</h6>
         <h6 class="heading-4">.heading-4</h6>
@@ -203,6 +226,7 @@
         <h6 class="heading-2">.heading-2</h6>
         <h6 class="heading-1">.heading-1</h6>
 
+        <p><code>.heading-display-&lt;level&gt;</code></p>
         <h6 class="heading-display-4">.heading-display-4</h6>
         <h6 class="heading-display-3">.heading-display-3</h6>
         <h6 class="heading-display-2">.heading-display-2</h6>
@@ -212,27 +236,30 @@
         <p class="heading-overline">Heading overline</p>
         <h1 class="heading-1">Heading level 1</h1>
         <p class="heading-caption">Heading caption</p>
-    </div>
+    </section>
 
     <!-- Paragraphs -->
-    <div class="container-fluid" id="paragraphs">
+    <section class="section" id="paragraphs">
         <p class="section-title">Paragraphs</p>
 
         <p class="section-subtitle">Bare element</p>
         <p><code>p</code></p>
-        <p>Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
-        <p>Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
-        <p>O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
+        <p>– Minha nossa – com um olhar sem brilho, Lambert encarou o andróide. – Você admira aquela coisa maldita.</p>
+        <p>– Como não admirar a simetria simples que ela apresenta? Um parasita de espécies de outros mundos, capaz de predar qualquer forma de vida que respira, independentemente da composição atmosférica envolvida. Capaz de jazer dormente por períodos indefinidos, sob as condições mais inóspitas, com o único propósito de reproduzir sua própria espécie, tarefa que persegue com eficiência suprema. Nada na experiência da humanidade se compara com isso. Os parasitas que os homens estão acostumados a combater são mosquitos, minúsculos artrópodes e quejandos. Essa criatura é tão mais selvagem e eficiente do que os parasitas terrestres quanto os homens são mais inteligentes do que os vermes. Vocês nem sequer podem começar a imaginar como lidar com isso.</p>
+        <p>(de Alien, por Alan Dean Foster)</p>
 
         <p class="section-subtitle">Formatted</p>
+        <p><code>.custom-p</code></p>
+        <p class="custom-p">In space no one can hear your scream.</p>
+
         <p><code>.paragraph</code></p>
-        <p class="paragraph">Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
-        <p class="paragraph">Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
-        <p class="paragraph">O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
-    </div>
+        <p class="paragraph">– Minha nossa – com um olhar sem brilho, Lambert encarou o andróide. – Você admira aquela coisa maldita.</p>
+        <p class="paragraph">– Como não admirar a simetria simples que ela apresenta? Um parasita de espécies de outros mundos, capaz de predar qualquer forma de vida que respira, independentemente da composição atmosférica envolvida. Capaz de jazer dormente por períodos indefinidos, sob as condições mais inóspitas, com o único propósito de reproduzir sua própria espécie, tarefa que persegue com eficiência suprema. Nada na experiência da humanidade se compara com isso. Os parasitas que os homens estão acostumados a combater são mosquitos, minúsculos artrópodes e quejandos. Essa criatura é tão mais selvagem e eficiente do que os parasitas terrestres quanto os homens são mais inteligentes do que os vermes. Vocês nem sequer podem começar a imaginar como lidar com isso.</p>
+        <p>(de Alien, por Alan Dean Foster)</p>
+    </section>
 
     <!-- Horizontal rules -->
-    <div class="container-fluid" id="rules">
+    <section class="section" id="rules">
         <p class="section-title">Horizontal rule</p>
 
         <p class="section-subtitle">Bare element</p>
@@ -242,20 +269,25 @@
         <p class="section-subtitle">Formatted</p>
         <p><code>.h-rule-66</code> (width = 66%)</p>
         <hr class="h-rule-66">
+
         <p><code>.h-rule-50</code> (width = 50%)</p>
         <hr class="h-rule-50">
+
         <p><code>.h-rule-33</code> (width = 33%)</p>
         <hr class="h-rule-33">
-    </div>
+    </section>
 
     <!-- Basic HTML -->
-    <div class="container-fixed" id="basic-html">
+    <section class="container-fixed" id="basic-html">
         <p class="section-title">Basic HTML</p>
         <p class="section-subtitle">Exemplo de bloco de texto</p>
 
         <p class="heading-overline">Filme em destaque</p>
         <h1 class="heading-1">Alien, o oitavo passageiro</h1>
         <p class="heading-caption">Data de lançamento: 1979</p>
+
+        <hr class="h-rule-50">
+        <p class="custom-p">In space no one can hear your scream.</p>
         <p class="paragraph">Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
 
         <h2 class="heading-2">O reconhecimento da obra</h2>
@@ -272,22 +304,11 @@
 
         <h6 class="heading-6">Outros filmes da franquia</h6>
         <p class="paragraph">Aliens (1986), Alien 3 (1992) e Alien Resurrection (1997), Prometheus (2012) e Alien: Covenant (2017).</p>
-
-        <hr class="h-rule-66">
-
-        <blockquote class="blockquote">
-            <p>Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</p>
-            <p>Ash (Alien, o oitavo passageiro - 1979)</p>
-        </blockquote>
-    </div>
+    </section>
 
     <!-- Text Formatting -->
-    <div class="container-fluid" id="text-formatting">
+    <section class="section" id="text-formatting">
         <p class="section-title">Text formatting</p>
-
-        <p class="section-subtitle">Division</p>
-        <div><code>div</code> Este conteúdo está dentro de uma block division</div>
-        <p><code>span</code> <span>Este é um exemplo de span (inline division) em um parágrafo</span></p>
 
         <p class="section-subtitle">Quotation</p>
         <p><code>blockquote</code></p>
@@ -301,67 +322,40 @@
             <p>Ash (Alien, o oitavo passageiro - 1979)</p>
         </blockquote>
 
+        <p class="section-subtitle">Dialog</p>
+        <p><code>dialog</code></p>
+        <dialog open="open">Este conteúdo está dentro de um dialog</dialog>
+
         <p class="section-subtitle">Anchor</p>
         <p><code>a</code> <a href="./">Este é um exemplo de link em um págrafo</a></p>
         <p><code>.anchor</code> <a class="anchor" href="./">Este é um exemplo de link em um págrafo</a></p>
 
-        <p class="section-subtitle">Text bold and italic</p>
+        <p class="section-subtitle">Text bold</p>
         <p><code>b</code> <b>Este é um exemplo de texto grafado em negrito em um parágrafo</b></p>
         <p><code>strong</code> <strong>Este é um exemplo de texto marcado como importante em um parágrafo</strong></p>
-        <p><code>i</code> <i>Este é um exemplo de texto itálico em um parágrafo</i></p>
-        <p><code>em</code> <em>Este é um exemplo de ênfase de texto em um parágrafo</em></p>
-
-        <p class="section-subtitle">Marked</p>
-        <p><code>mark</code> <mark>Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-red</code> <mark class="mark-red">Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-orange</code> <mark class="mark-orange">Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-gold</code> <mark class="mark-gold">Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-lime</code> <mark class="mark-lime">Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-green</code> <mark class="mark-green">Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-tiffany</code> <mark class="mark-tiffany">Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-blue</code> <mark class="mark-blue">Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-royalblue</code> <mark class="mark-royalblue">Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-purple</code> <mark class="mark-purple">Este é um exemplo de marca texto em um parágrafo</mark></p>
-        <p><code>.mark-brown</code> <mark class="mark-brown">Este é um exemplo de marca texto em um parágrafo</mark></p>
-
-        <p class="section-subtitle">Text deletion/insertion</p>
-        <p><code>del</code> <del>Este é um exemplo de texto deletado em um parágrafo</del></p>
-        <p><code>ins</code> <ins>Este é um exemplo de texto inserido em um parágrafo</ins></p>
 
         <p class="section-subtitle">Small texts</p>
         <p><code>small</code> Este é um exemplo de <small>texto com tipo menor em um parágrafo</small></p>
         <p><code>sub</code> Este é um exemplo de <sub>texto subescrito em um parágrafo</sub></p>
         <p><code>sup</code> Este é um exemplo de <sup>texto sobrescrito em um parágrafo</sup></p>
 
+        <p class="section-subtitle">Marked</p>
+        <p><code>mark</code> <mark>Este é um exemplo de marca texto em um parágrafo</mark></p>
+        <p><code>.mark-gold</code> <mark class="mark-gold">Este é um exemplo de marca texto em um parágrafo</mark></p>
+        <p><code>.mark-green</code> <mark class="mark-green">Este é um exemplo de marca texto em um parágrafo</mark></p>
+        <p><code>.mark-blue</code> <mark class="mark-blue">Este é um exemplo de marca texto em um parágrafo</mark></p>
+
+        <p class="section-subtitle">Text editing</p>
+        <p><code>del</code> <del>Este é um exemplo de texto deletado em um parágrafo</del></p>
+        <p><code>ins</code> <ins>Este é um exemplo de texto inserido em um parágrafo</ins></p>
+
         <p class="section-subtitle">Code format</p>
-        <p><code>code</code> Este é exemplo de <code>pedaço de código de programação</code> em um parágrafo.</p>
-        <p><code>kbd</code> Este é um exemplo de entrada de teclado <kbd>Enter</kbd> em um parágrafo.</p>
-
-        <p class="section-subtitle">Dialog</p>
-        <p><code>dialog</code></p>
-        <dialog open="open">Este conteúdo está dentro de um dialog.</dialog>
-    </div>
-
-    <!-- Icons -->
-    <div class="container-fluid" id="icons">
-        <p class="section-title">Icons</p>
-
-        <p class="section-subtitle">Bare icons</p>
-        <p><code>ion-icon name="&lt;icon_name&gt;"</code></p>
-        <p><ion-icon name="heart"></ion-icon> ion-icon name="heart"</p>
-        <p><ion-icon name="heart" size="small"></ion-icon> ion-icon name="heart" size="small"</p>
-        <p><ion-icon name="heart" size="large"></ion-icon> ion-icon name="heart" size="large"</p>
-
-        <p class="section-subtitle">Formatted</p>
-        <p><code>.icon</code></p>
-        <p><ion-icon class="icon" name="heart"></ion-icon> ion-icon name="heart"</p>
-
-        <p><code>.icon-bigger</code></p>
-        <p><ion-icon class="icon-bigger" name="heart"></ion-icon> ion-icon name="heart"</p>
-    </div>
+        <p><code>code</code> Este é exemplo de <code>pedaço de código de programação</code> em um parágrafo</p>
+        <p><code>kbd</code> Este é um exemplo de entrada de teclado <kbd>Enter</kbd> em um parágrafo</p>
+    </section>
 
     <!-- Lists -->
-    <div class="container-fluid" id="lists">
+    <section class="section" id="lists">
         <p class="section-title">Lists</p>
 
         <p class="section-subtitle">Bare lists</p>
@@ -391,9 +385,9 @@
 
         <p><code>menu</code></p>
         <menu>
-            <li><small>Item de menu:</small> <button>Copiar</button></li>
-            <li><small>Item de menu:</small> <button>Recortar</button></li>
-            <li><small>Item de menu:</small> <button>Colar</button></li>
+            <li><button type="button">Botão do menu</button></li>
+            <li><button type="button">Botão do menu</button></li>
+            <li><button type="button">Botão do menu</button></li>
         </menu>
 
         <p><code>dl</code></p>
@@ -425,84 +419,114 @@
             <li>Item de lista com contador personalizado</li>
             <li>Item de lista com contador personalizado</li>
             <li>Item de lista com contador personalizado</li>
-            <li>Item de lista com contador personalizado</li>
         </ol>
 
-        <p><code>.has-icon</code></p>
-        <ul class="has-icon">
-            <li><ion-icon name="arrow-forward"></ion-icon> Item de lista com ícone</li>
-            <li><ion-icon name="caret-forward"></ion-icon> Item de lista com ícone</li>
-            <li><ion-icon name="checkmark"></ion-icon> Item de lista com ícone</li>
-            <li><ion-icon name="chevron-forward"></ion-icon> Item de lista com ícone</li>
-            <li><ion-icon name="add"></ion-icon> Item de lista com ícone</li>
+        <p><code>.custom-bullets</code></p>
+        <ul class="custom-bullets">
+            <li><ion-icon name="arrow-forward"></ion-icon> Item de lista com ícone arrow</li>
+            <li><ion-icon name="caret-forward"></ion-icon> Item de lista com ícone caret</li>
+            <li><ion-icon name="checkmark"></ion-icon> Item de lista com ícone checkmark</li>
+            <li><ion-icon name="chevron-forward"></ion-icon> Item de lista com ícone chevron</li>
+            <li><ion-icon name="add"></ion-icon> Item de lista com ícone plus</li>
         </ul>
-    </div>
+
+        <p><code>.list-outlined</code></p>
+        <ul class="list-outlined">
+            <li>Item de lista outlined</li>
+            <li>Item de lista outlined</li>
+            <li>Item de lista outlined</li>
+            <li>Item de lista outlined</li>
+            <li>Item de lista outlined</li>
+        </ul>
+
+        <p><code>.list-splitted</code></p>
+        <ul class="list-splitted">
+            <li><ion-icon name="checkmark"></ion-icon> <span>Item de lista</span> <span>Complemento</span></li>
+            <li><ion-icon name="checkmark"></ion-icon> <span>Item de lista</span> <span>Complemento</span></li>
+            <li><ion-icon name="checkmark"></ion-icon> <span>Item de lista</span> <span>Complemento</span></li>
+            <li><ion-icon name="checkmark"></ion-icon> <span>Item de lista</span> <span>Complemento</span></li>
+            <li><ion-icon name="checkmark"></ion-icon> <span>Item de lista</span> <span>Complemento</span></li>
+        </ul>
+
+        <p><code>.menu-bar</code></p>
+        <menu class="menu-bar">
+            <li><button type="button">Botão do menu</button></li>
+            <li><button type="button">Botão do menu</button></li>
+            <li><button type="button">Botão do menu</button></li>
+        </menu>
+    </section>
 
     <!-- Tables -->
-    <div class="container-fluid" id="tables">
+    <section class="section" id="tables">
         <p class="section-title">Tables</p>
 
         <p class="section-subtitle">Bare tables</p>
         <table>
             <caption>Este é um exemplo de caption de tabela</caption>
             <thead>
-                <tr><th>Cabeçalho 1</th> <th>Cabeçalho 2</th> <th>Cabeçalho 3</th> <th>Cabeçalho 4</th></tr>
+                <tr><th>Cabeçalho 1</th> <th>Cabeçalho 2</th> <th>Cabeçalho 3</th></tr>
             </thead>
             <tfoot>
-                <tr><td>Rodapé 1</td> <td>Rodapé 2</td> <td>Rodapé 3</td> <td>Rodapé 4</td></tr>
+                <tr><td>Rodapé 1</td> <td>Rodapé 2</td> <td>Rodapé 3</td></tr>
             </tfoot>
             <tbody>
-                <tr><td>L1 Célula 1</td> <td>L1 Célula 2</td> <td>L1 Célula 3</td> <td>L1 Célula 4</td></tr>
-                <tr><td>L2 Célula 1</td> <td>L2 Célula 2</td> <td>L2 Célula 3</td> <td>L2 Célula 4</td></tr>
-                <tr><td>L3 Célula 1</td> <td>L3 Célula 2</td> <td>L3 Célula 3</td> <td>L3 Célula 4</td></tr>
-                <tr><td>L4 Célula 1</td> <td>L4 Célula 2</td> <td>Célula vazia &rsaquo;</td> <td></td></tr>
+                <tr><td>Dado L1 C1</td> <td>Dado L1 C2</td> <td>Dado L1 C3</td></tr>
+                <tr><td>Dado L2 C1</td> <td>Dado L2 C2</td> <td>Dado L2 C3</td></tr>
+                <tr><td>Dado L3 C1</td> <td>Dado L3 C2</td> <td>Dado L3 C3</td></tr>
+                <tr><td>Dado L4 C1</td> <td>Dado L4 C2</td> <td>Dado L4 C3</td></tr>
             </tbody>
         </table>
 
         <p class="section-subtitle">Formatted</p>
+        <p><code>.table-container</code> > <code>table</code></p>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cabeçalho 1</th> <th>Cabeçalho 2</th> <th>Cabeçalho 3</th>
+                        <th>Cabeçalho 4</th> <th>Cabeçalho 5</th> <th>Cabeçalho 6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dado Linha 1 Célula 1</td> <td>Dado Linha 1 Célula 2</td> <td>Dado Linha 1 Célula 3</td>
+                        <td>Dado Linha 1 Célula 4</td> <td>Dado Linha 1 Célula 5</td> <td>Dado Linha 1 Célula 6</td>
+                    </tr>
+                    <tr>
+                        <td>Dado Linha 2 Célula 1</td> <td>Dado Linha 2 Célula 2</td> <td>Dado Linha 2 Célula 3</td>
+                        <td>Dado Linha 2 Célula 4</td> <td>Dado Linha 2 Célula 5</td> <td>Dado Linha 2 Célula 6</td>
+                    </tr>
+                    <tr>
+                        <td>Dado Linha 3 Célula 1</td> <td>Dado Linha 3 Célula 2</td> <td>Dado Linha 3 Célula 3</td>
+                        <td>Dado Linha 3 Célula 4</td> <td>Dado Linha 3 Célula 5</td> <td>Dado Linha 3 Célula 6</td>
+                    </tr>
+                    <tr>
+                        <td>Dado Linha 4 Célula 1</td> <td>Dado Linha 4 Célula 2</td> <td>Dado Linha 4 Célula 3</td>
+                        <td>Dado Linha 4 Célula 4</td> <td>Dado Linha 4 Célula 5</td> <td>Dado Linha 4 Célula 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <p><code>.table-striped</code></p>
         <table class="table-striped">
             <thead>
-                <tr><th>Cabeçalho 1</th> <th>Cabeçalho 2</th> <th>Cabeçalho 3</th> <th>Cabeçalho 4</th></tr>
+                <tr><th>Cabeçalho 1</th> <th>Cabeçalho 2</th> <th>Cabeçalho 3</th></tr>
             </thead>
             <tfoot>
-                <tr><td>Rodapé 1</td> <td>Rodapé 2</td> <td>Rodapé 3</td> <td>Rodapé 4</td></tr>
+                <tr><td>Rodapé 1</td> <td>Rodapé 2</td> <td>Rodapé 3</td></tr>
             </tfoot>
             <tbody>
-                <tr><td>L1 Célula 1</td> <td>L1 Célula 2</td> <td>L1 Célula 3</td> <td>L1 Célula 4</td></tr>
-                <tr><td>L2 Célula 1</td> <td>L2 Célula 2</td> <td>L2 Célula 3</td> <td>L2 Célula 4</td></tr>
-                <tr><td>L3 Célula 1</td> <td>L3 Célula 2</td> <td>L3 Célula 3</td> <td>L3 Célula 4</td></tr>
-                <tr><td>L4 Célula 1</td> <td>L4 Célula 2</td> <td>Célula vazia &rsaquo;</td> <td></td></tr>
+                <tr><td>Dado L1 C1</td> <td>Dado L1 C2</td> <td>Dado L1 C3</td></tr>
+                <tr><td>Dado L2 C1</td> <td>Dado L2 C2</td> <td>Dado L2 C3</td></tr>
+                <tr><td>Dado L3 C1</td> <td>Dado L3 C2</td> <td>Dado L3 C3</td></tr>
+                <tr><td>Dado L4 C1</td> <td>Dado L4 C2</td> <td>Dado L4 C3</td></tr>
             </tbody>
         </table>
-
-        <p><code>.table-caption-top</code></p>
-        <table>
-            <caption class="table-caption-top">Este é um exemplo de caption no topo da tabela</caption>
-            <thead>
-                <tr><th>Cabeçalho 1</th> <th>Cabeçalho 2</th> <th>Cabeçalho 3</th> <th>Cabeçalho 4</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>L1 Célula 1</td> <td>L1 Célula 2</td> <td>L1 Célula 3</td> <td>L1 Célula 4</td></tr>
-                <tr><td>L2 Célula 1</td> <td>L2 Célula 2</td> <td>L2 Célula 3</td> <td>L2 Célula 4</td></tr>
-            </tbody>
-        </table>
-
-        <p><code>.table-caption-bottom</code></p>
-        <table>
-            <caption class="table-caption-bottom">Este é um exemplo de caption na base da tabela</caption>
-            <thead>
-                <tr><th>Cabeçalho 1</th> <th>Cabeçalho 2</th> <th>Cabeçalho 3</th> <th>Cabeçalho 4</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>L1 Célula 1</td> <td>L1 Célula 2</td> <td>L1 Célula 3</td> <td>L1 Célula 4</td></tr>
-                <tr><td>L2 Célula 1</td> <td>L2 Célula 2</td> <td>L2 Célula 3</td> <td>L2 Célula 4</td></tr>
-            </tbody>
-        </table>
-    </div>
+    </section>
 
     <!-- Images -->
-    <div class="container-fluid" id="images">
+    <section class="section" id="images">
         <p class="section-title">Images</p>
 
         <p class="section-subtitle">Bare elements</p>
@@ -531,23 +555,36 @@
 
         <p><code>picture</code></p>
         <picture>
-            <source media="(min-width: 1200px)" srcset="./assets/picture-1200.svg">
-            <source media="(min-width: 800px)" srcset="./assets/picture-960.svg">
+            <source media="(min-width: 1200px)" srcset="./assets/picture-original.svg">
+            <source media="(min-width: 800px)" srcset="./assets/picture-1200.svg">
+            <source media="(min-width: 560px)" srcset="./assets/picture-800.svg">
             <source media="(min-width: 360px)" srcset="./assets/picture-560.svg">
-            <img src="./assets/picture-fallback.svg" alt="Picture fallback">
-            <!-- <img src="./assets/picture-fallback.svg"> -->
+            <img src="./assets/picture-original.svg" alt="Picture original">
+            <!-- <img src="./assets/picture-original.svg"> -->
         </picture>
 
         <p class="section-subtitle">Formatted</p>
-        <p><code>.image</code> > <code>.image-caption</code></p>
-        <figure class="image">
-            <img src="./assets/image-svg.svg" alt="SVG Badge">
+        <p><code>.image-display</code> > <code>img + .image-caption</code></p>
+        <figure class="image-display">
+            <img src="./assets/video-poster-korn.webp" alt="Korn banner">
             <figcaption class="image-caption">figcaption formatado</figcaption>
         </figure>
-    </div>
+
+        <p><code>.image-display</code> > <code>picture + .image-caption</code></p>
+        <figure class="image-display">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./assets/picture-original.svg">
+                <source media="(min-width: 800px)" srcset="./assets/picture-1200.svg">
+                <source media="(min-width: 560px)" srcset="./assets/picture-800.svg">
+                <source media="(min-width: 360px)" srcset="./assets/picture-560.svg">
+                <img src="./assets/picture-original.svg" alt="Picture original">
+            </picture>
+            <figcaption class="image-caption">figcaption formatado</figcaption>
+        </figure>
+    </section>
 
     <!-- Audio and Video -->
-    <div class="container-fluid" id="multimedia">
+    <section class="section" id="multimedia">
         <p class="section-title">Multimedia (audio and video)</p>
 
         <p class="section-subtitle">Bare elements</p>
@@ -576,13 +613,14 @@
             </audio>
         </figure>
 
-        <p><code>.audio-widget</code></p>
-        <figure class="audio-widget">
-            <div class="audio-widget-display">
-                <img class="audio-widget-album" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
-                <figcaption class="audio-widget-info">
-                    <p class="audio-widget-info-track">Tank!</p>
-                    <p class="audio-widget-info-caption">The Seatbelts</p>
+        <p><code>.audio-display</code></p>
+        <figure class="audio-display">
+            <div class="audio-display-track">
+                <img class="audio-display-cover" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
+                <figcaption class="audio-display-info">
+                    <p class="audio-display-info-track">Tank!</p>
+                    <p class="audio-display-info-caption">The Seatbelts</p>
+                    <p class="audio-display-info-caption">Cowboy Bebop Original Soundtrack &bull; 1998</p>
                 </figcaption>
             </div>
             <audio class="audio-player" controls>
@@ -590,48 +628,53 @@
             </audio>
         </figure>
 
-        <p><code>.video-widget</code></p>
-        <figure class="video-widget">
+        <p><code>.video-display</code></p>
+        <figure class="video-display">
             <video poster="./assets/video-poster-korn.webp" controls>
                 <source src="./assets/video-falling-away-from-me-korn.mp4" type="video/mp4">
             </video>
-            <figcaption class="video-widget-info">
-                <p class="video-widget-info-track">Falling Away from Me</p>
-                <p class="video-widget-info-caption">Korn</p>
+            <figcaption class="video-display-info">
+                <p class="video-display-info-track">Falling Away from Me</p>
+                <p class="video-display-info-caption">Korn</p>
+                <p class="video-display-info-caption">Issues &bull; 1999</p>
             </figcaption>
         </figure>
-    </div>
+    </section>
 
     <!-- Embedded -->
-    <div class="container-fluid" id="embedded">
+    <section class="section" id="embedded">
         <p class="section-title">Embedded</p>
 
         <p class="section-subtitle">Bare elements</p>
-        <p><code>object</code></p>
-        <object data="./assets/doc-recipes.pdf#view=Fit" type="application/pdf"></object>
-
         <p><code>iframe</code></p>
         <iframe src="./assets/iframe.html"></iframe>
 
+        <p><code>embed</code></p>
+        <embed src="./assets/document.pdf#view=Fit" type="application/pdf"/>
+
+        <p><code>object</code></p>
+        <object data="./assets/document.pdf#view=Fit" type="application/pdf"></object>
+
         <p class="section-subtitle">Formatted</p>
+        <p><code>iframe</code> <code>.ratio-widescreen</code></p>
+        <iframe class="iframe ratio-widescreen" src="./assets/iframe.html"></iframe>
 
-        <p><code>.object</code> <code>.ratio-4-3</code></p>
-        <object class="object ratio-4-3" data="./assets/doc-recipes.pdf#view=Fit" type="application/pdf"></object>
+        <p><code>iframe</code> <code>.ratio-landscape</code></p>
+        <iframe class="iframe ratio-landscape" src="./assets/document.pdf"></iframe>
+    </section>
 
-        <p><code>.iframe</code> <code>.ratio-16-9</code></p>
-        <iframe class="iframe ratio-16-9" src="./assets/iframe.html"></iframe>
-    </div>
+
 
     <!-- Scripting -->
-    <div class="container-fluid" id="scripting">
+    <section class="section" id="scripting">
         <p class="section-title">Scripting</p>
 
         <p class="section-subtitle">Bare elements</p>
         <p><code>noscript</code></p>
         <noscript>Este conteúdo está dentro de um noscript</noscript>
-        <p>Conteúdo exibido dentro de um noscript</p>
+        <p>Mesma formatação da classe <code>.noscript</code></p>
 
-        <figcaption><code>canvas</code> Canvas (gráficos via script)</figcaption>
+        <p><code>canvas</code> Canvas (gráficos via script)</p>
         <figure>
             <canvas id="js-canvas1" width="128" height="128"></canvas>
             <canvas id="js-canvas2" width="128" height="128"></canvas>
@@ -650,7 +693,7 @@
                 ctx2.beginPath();
                 ctx2.arc(64, 64, 50, 0, 2 * Math.PI);
                 ctx2.lineWidth = 9;
-                ctx2.strokeStyle = 'hsl(220, 24%, 67%)';
+                ctx2.strokeStyle = 'hsl(220, 24%, 90%)';
                 ctx2.stroke();
 
                 const x = 64;      // largura / 2
@@ -669,12 +712,11 @@
                 // CANVAS #3
                 const canvas3 = document.querySelector('#js-canvas3');
                 let ctx3 = canvas3.getContext('2d');
-                ctx3.fillStyle = 'hsl(220, 24%, 90%)';
+                ctx3.fillStyle = 'hsl(220, 24%, 95%)';
                 ctx3.strokeStyle = 'hsl(220, 24%, 44%)';
                 ctx3.lineWidth = 6;
                 ctx3.lineCap = 'round';
                 ctx3.font = 'bold 24px sans-serif';
-                ctx3.fillRect(0,0,128,128);
                 ctx3.strokeText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
                 ctx3.fillText('Canvas', canvas3.width*0.1, canvas3.height*0.9);
             </script>
@@ -682,43 +724,54 @@
 
         <p class="section-subtitle">Formatted</p>
         <p><code>.noscript</code></p>
-        <p class="noscript">Conteúdo exibido dentro de uma classe .noscript</p>
-    </div>
+        <p class="noscript">Conteúdo exibido dentro de uma classe <code>.noscript</code></p>
+    </section>
 
     <!-- Buttons -->
-    <div class="container-fluid" id="buttons">
+    <section class="section" id="buttons">
         <p class="section-title">Buttons</p>
 
         <p class="section-subtitle">Bare buttons</p>
         <p><code>button</code></p>
-        <button type="button">Type button</button>
-        <button type="reset">Type reset</button>
-        <button type="submit">Type submit</button>
-        <button type="button" disabled="disabled">disabled</button>
+        <p>
+            <button type="button">Type button</button>
+            <button type="button" disabled="disabled">disabled</button>
+        </p>
+        <p>
+            <button type="button"><ion-icon name="grid"></ion-icon> Button</button>
+            <button type="button"><ion-icon name="grid"></ion-icon></button>
+        </p>
 
         <p class="section-subtitle">Formatted</p>
-        <p><code>.borderless</code></p>
-        <button class="borderless" type="button">borderless</button>
+        <p><code>.button</code></p>
+        <p>
+            <button type="button">Type button</button>
+            <button type="button" class="button">button.button</button>
+            <span class="button">span.button</span>
+            <a class="button" href="./">a.button</a>
+        </p>
+        <p>
+            <span class="button"><ion-icon name="grid"></ion-icon> span.button</span>
+            <span class="button"><ion-icon name="grid"></ion-icon></span>
+        </p>
 
-        <p><code>.outlined</code></p>
-        <button class="outlined" type="button">outlined</button>
+        <p><code>.button-outlined</code></p>
+        <p>
+            <button type="button">Normal button</button>
+            <button type="button" class="button-outlined">Type button</button>
+            <button type="button" class="button button-outlined">.button.button-outlined</button>
+        </p>
 
-        <p><code>.button-large</code> <code>.button-small</code></p>
-        <button class="button-large" type="button">button large</button>
-        <button class="button-small" type="button">button small</button>
-        <button type="button">type button</button>
-
-        <p><code>data-border</code> <code>data-background</code> <code>data-color</code></p>
-        <button type="button" data-border="var(--red-6)">data-border</button>
-        <button type="button" data-background="var(--red-2)">data-background</button>
-        <button type="button" data-color="var(--red-6)">data-color</button>
-
-        <button type="button" data-border="var(--red-5)" data-background="var(--red-1)"
-            data-color="var(--red-7)">3 data attributes</button>
-    </div>
+        <p><code>.button-ghost</code></p>
+        <p>
+            <button type="button">Normal button</button>
+            <button type="button" class="button-ghost">Type button</button>
+            <button type="button" class="button button-ghost">.button.button-ghost</button>
+        </p>
+    </section>
 
     <!-- Forms -->
-    <div class="container-fluid" id="forms">
+    <section class="section" id="forms">
         <p class="section-title">Forms</p>
 
         <p class="section-subtitle">Bare forms</p>
@@ -726,79 +779,87 @@
             <fieldset>
                 <legend>Inputs do tipo texto</legend>
                 <label for="text1">
-                    <span>Input com placeholder</span>
+                    <span>Type text com placeholder</span>
                     <input type="text" name="text1" id="text1" placeholder="Placeholder">
                 </label>
                 <label for="text2">
-                    <span>Input com valor preenchido</span>
+                    <span>Type text com valor preenchido</span>
                     <input type="text" name="text2" id="text2" value="Preenchido com texto">
-                </label>
-                <label for="text3">
-                    <span>Campo desabilitado</span>
-                    <input type="text" name="text3" id="text3" value="Desabilitado" disabled="disabled">
                 </label>
             </fieldset>
 
             <fieldset>
                 <legend>Outros inputs de texto</legend>
                 <label for="email">
-                    <span>E-mail</span>
+                    <span>Type email</span>
                     <input type="email" name="email" id="email" value="user@email.com">
                 </label>
                 <label for="password">
-                    <span>Senha</span>
+                    <span>Type password</span>
                     <input type="password" name="password" id="password" placeholder="password">
                 </label>
                 <label for="search">
-                    <span>Busca</span>
+                    <span>Type search</span>
                     <input type="search" name="search" id="search" placeholder="Buscar...">
                 </label>
                 <label for="tel">
-                    <span>Telefone</span>
+                    <span>Type tel</span>
                     <input type="tel" name="tel" id="tel" value="99 12345 6789">
                 </label>
                 <label for="url">
-                    <span>URL</span>
+                    <span>Type url</span>
                     <input type="url" name="url" id="url" value="https://valid.url">
+                </label>
+                <label for="number">
+                    <span>Type number</span>
+                    <input type="number" name="number" id="number" min="0" max="9" step="1" value="3">
+                </label>
+            </fieldset>
+
+            <fieldset oninput="output.value=parseInt(a.value)+parseInt(b.value)">
+                <legend>Saída [output]</legend>
+                <label>
+                    <span>[0-9]</span>
+                    <input type="number" name="a" id="a" min="0" max="9" value="0">
+                    <span>+ [0-9]</span>
+                    <input type="number" name="b" id="b" min="0" max="9" value="0">
+                    <span>=</span>
+                </label>
+                <label for="output">
+                    <span>Type output</span>
+                    <output name="output" id="output" for="a b">0</output>
                 </label>
             </fieldset>
 
             <fieldset>
                 <legend>Caixa para entrada de texto</legend>
                 <label for="textarea">
-                    <span>Mensagem</span>
-                    <textarea name="textarea" id="textarea" rows="5" cols="25">Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</textarea>
+                    <span>Textarea</span>
+                    <textarea name="textarea" id="textarea" rows="5" cols="25">Este conteúdo está dentro de um textarea
+                    </textarea>
                 </label>
             </fieldset>
-
             <fieldset>
                 <legend>Inputs para seleção de valores</legend>
                 <div>
                     <label for="checkbox1">
                         <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
-                        <span>Normal</span>
+                        <span>Type checkbox</span>
                     </label>
                     <label for="checkbox2">
-                        <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2" checked="checked">
-                        <span>Checado</span>
-                    </label>
-                    <label for="checkbox3">
-                        <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox4" disabled="disabled">
-                        <span>Desabilitado</span>
+                        <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2" checked>
+                        <span>Type checkbox checked</span>
                     </label>
                 </div>
+                <br>
                 <div>
                     <label for="radio1">
                         <input type="radio" name="radio" id="radio1" value="radio1">
-                        <span>Normal</span>
+                        <span>Type radio</span>
                     </label>
                     <label for="radio2">
-                        <input type="radio" name="radio" id="radio2" value="radio2" checked="checked">
-                        <span>Checado</span>
-                    </label>
-                    <label for="radio3">
-                        <input type="radio" name="radio" id="radio3" value="radio3" disabled="disabled">
-                        <span>Desabilitado</span>
+                        <input type="radio" name="radio" id="radio2" value="radio2" checked>
+                        <span>Type radio checked</span>
                     </label>
                 </div>
             </fieldset>
@@ -806,31 +867,12 @@
             <fieldset>
                 <legend>Campos de seleção</legend>
                 <label for="select1">
-                    <span>Seleção (sem optgroup)</span>
+                    <span>Select</span>
                     <select name="select1" id="select1">
                         <option disabled selected hidden>Selecione...</option>
                         <option value="HTML">HTML</option>
                         <option value="CSS">CSS</option>
                         <option value="JavaScript">JavaScript</option>
-                    </select>
-                </label>
-                <label for="select2">
-                    <span>Seleção (com optgroup)</span>
-                    <select name="select2" id="select2">
-                        <option disabled selected hidden>Selecione...</option>
-                        <optgroup label="HTML">
-                            <option value="HTML Tags">HTML Tags</option>
-                            <option value="HTML Attributes">HTML Attributes</option>
-                        </optgroup>
-                        <optgroup label="CSS">
-                            <option value="CSS level 1.0">CSS level 1.0</option>
-                            <option value="CSS level 2.1">CSS level 2.1</option>
-                            <option value="CSS level 3.0">CSS level 3.0</option>
-                        </optgroup>
-                        <optgroup label="JavaScript">
-                            <option value="JS Functions">JS Vanilla</option>
-                            <option value="JS Objects">JS Frameworks</option>
-                        </optgroup>
                     </select>
                 </label>
             </fieldset>
@@ -839,11 +881,7 @@
                 <legend>Outros tipos de input</legend>
                 <label for="color">
                     <span>Cor</span>
-                    <input type="color" name="color" id="color" value="#424242">
-                </label>
-                <label for="number">
-                    <span>Número [0-9]</span>
-                    <input type="number" name="number" id="number" min="0" max="9" step="1" value="3">
+                    <input type="color" name="color" id="color" value="hsl(220, 24%, 44%)">
                 </label>
                 <label for="range">
                     <span>Range [0-100]</span>
@@ -858,24 +896,241 @@
                     </datalist>
                 </label>
             </fieldset>
-
-            <fieldset oninput="output.value=parseInt(a.value)+parseInt(b.value)">
-                <legend>Saída [output]</legend>
-                <span>[0-9]</span>
-                <input type="number" name="a" id="a" min="0" max="9" value="0">
-                <span>+ [0-9]</span>
-                <input type="number" name="b" id="b" min="0" max="9" value="0">
-                <span>=</span>
-                <label for="output">
-                    <span>Output:</span>
-                    <output name="output" id="output" for="a b">0</output>
-                </label>
-            </fieldset>
         </form>
-    </div>
+    </section>
+
+    <!-- Progress bars - meter, progress -->
+
+    <!-- Icons -->
+    <section class="section" id="icons">
+        <p class="section-title">Icons</p>
+
+        <p class="section-subtitle">Bare icons</p>
+        <p><ion-icon name="heart"></ion-icon> <code>&lt;ion-icon name="heart"&gt;</code></p>
+        <p><ion-icon name="heart" size="small"></ion-icon> <code>size="small"</code></p>
+        <p><ion-icon name="heart" size="large"></ion-icon> <code>size="large"</code></p>
+
+        <p class="section-subtitle">Formatted</p>
+        <p><ion-icon class="icon" name="heart"></ion-icon> <code>.icon</code> cor customizável</p>
+        <p><ion-icon class="icon icon-md" name="heart"></ion-icon> <code>.icon-md</code> tamanho customizável</p>
+        <p><ion-icon class="icon icon-lg" name="heart"></ion-icon> <code>.icon-lg</code> tamanho customizável</p>
+        <p><ion-icon class="icon icon-xl" name="heart"></ion-icon> <code>.icon-xl</code> tamanho customizável</p>
+    </section>
+
+    <!-- Messages -->
+    <section class="section" id="messages">
+        <p class="section-title">Messages</p>
+
+        <p class="section-subtitle">Messages</p>
+        <p><code>.message</code></p>
+        <p class="message">Esta é uma mensagem padrão</p>
+
+        <p><code>.message</code> <code>.message-positive</code></p>
+        <p class="message message-positive">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <span>Esta é uma mensagem positiva</span>
+        </p>
+
+        <p><code>.message</code> <code>.message-negative</code></p>
+        <p class="message message-negative">
+            <ion-icon name="ban-outline"></ion-icon>
+            <span>Esta é uma mensagem negativa</span>
+        </p>
+
+        <p><code>.message</code> <code>.message-warning</code></p>
+        <p class="message message-warning">
+            <ion-icon name="warning-outline"></ion-icon>
+            <span>Esta é uma mensagem de alerta</span>
+        </p>
+
+        <p><code>.message</code> <code>.message-info</code></p>
+        <p class="message message-info">
+            <ion-icon name="information-circle-outline"></ion-icon>
+            <span>Esta é uma mensagem informativa</span>
+        </p>
+
+        <p class="section-subtitle">Notice blocks</p>
+        <p><code>.notice-block</code></p>
+        <div class="notice-block">
+            <p class="notice-block-title">
+                <ion-icon name="information-circle-outline"></ion-icon> Notice block title
+            </p>
+            <p class="notice-block-text">Esta é uma caixa de mensagem informativa</p>
+        </div>
+
+        <p><code>.notice-block</code> <code>.notice-block-positive</code></p>
+        <div class="notice-block notice-block-positive">
+            <p class="notice-block-title">
+                <ion-icon name="checkmark-circle-outline"></ion-icon> Notice block title
+            </p>
+            <p class="notice-block-text">Esta é uma caixa de mensagem positiva</p>
+        </div>
+
+        <p><code>.notice-block</code> <code>.notice-block-negative</code></p>
+        <div class="notice-block notice-block-negative">
+            <p class="notice-block-title">
+                <ion-icon name="ban-outline"></ion-icon> Notice block title
+            </p>
+            <p class="notice-block-text">Esta é uma caixa de mensagem negativa</p>
+        </div>
+
+        <p><code>.notice-block</code> <code>.notice-block-warning</code></p>
+        <div class="notice-block notice-block-warning">
+            <p class="notice-block-title">
+                <ion-icon name="warning-outline"></ion-icon> Notice block title
+            </p>
+            <p class="notice-block-text">Esta é uma caixa de mensagem de alerta</p>
+        </div>
+
+        <p><code>.notice-block</code> <code>.notice-block-info</code></p>
+        <div class="notice-block notice-block-info">
+            <p class="notice-block-title">
+                <ion-icon name="information-circle-outline"></ion-icon> Notice block title
+            </p>
+            <p class="notice-block-text">Esta é uma caixa de mensagem informativa</p>
+        </div>
+    </section>
+
+    <!-- Indicators -->
+    <section class="section" id="indicators">
+        <p class="section-title">Indicators</p>
+        <!-- https://namethatui.com/web/badge-chip-pill -->
+
+        <p class="section-subtitle">Tags</p>
+        <p><code>.tag</code></p>
+        <p class="heading-caption">Usado para rotular</p>
+        <p>
+            <span class="tag">html</span>
+            <span class="tag">css</span>
+            <span class="tag">javascript</span>
+        </p>
+        <p><code>.tag-labeled</code></p>
+        <p>
+            <span class="tag-labeled"><span>label</span> <span>value</span></span>
+            <span class="tag-labeled"><span>label</span> <span>value</span></span>
+        </p>
+
+        <p class="section-subtitle">Badges</p>
+        <p><code>.badge</code></p>
+        <p class="heading-caption">Usado como contador</p>
+        <p>
+            <span class="badge">9</span>
+            <span class="badge">99</span>
+            <span class="badge">999</span>
+        </p>
+
+        <p class="section-subtitle">Pills</p>
+        <p><code>.pill</code></p>
+        <p class="heading-caption">Usado para indicar status</p>
+        <p>
+            <span class="pill"><ion-icon name="checkmark"></ion-icon> Online</span>
+            <span class="pill"><ion-icon name="close"></ion-icon> Offline</span>
+        </p>
+        <p><code>.pill-labeled</code></p>
+        <p>
+            <span class="pill-labeled"><span>Status</span> <span>Online</span></span>
+            <span class="pill-labeled"><span>Status</span> <span>Offline</span></span>
+        </p>
+        <p>
+            <span class="pill-labeled">
+                <span>Status</span> <span><ion-icon name="checkmark"></ion-icon> Online</span>
+            </span>
+            <span class="pill-labeled">
+                <span>Status</span> <span><ion-icon name="close"></ion-icon> Offline</span>
+            </span>
+        </p>
+
+        <p class="section-subtitle">Chips</p>
+        <p><code>.chips</code></p>
+        <p class="heading-caption">Usado para interatividade</p>
+        <p>
+            <span class="chips">html <ion-icon name="close"></ion-icon></span>
+            <span class="chips">css <ion-icon name="close"></ion-icon></span>
+            <span class="chips">javascript <ion-icon name="close"></ion-icon></span>
+        </p>
+    </section>
+
+    <!-- Loaders -->
+    <section class="section" id="loaders">
+        <p class="section-title">Loaders</p>
+        <p><code>.loader</code></p>
+        <span class="loader"></span>
+
+        <p><code>.loader-sm</code> <code>.loader-md</code></p>
+        <span class="loader-sm"></span>
+        <span class="loader-md"></span>
+    </section>
+
+    <!-- Branding -->
+    <section class="section" id="branding">
+        <p class="section-title">Branding</p>
+
+        <p><code>.brand</code> > <code>.brand-name</code></p>
+        <div class="brand">
+            <p class="brand-name">.front-ed.css</p>
+        </div>
+
+        <p><code>.brand</code> > <code>.brand-overline</code> <code>.brand.name</code> <code>.brand-caption</code></p>
+        <div class="brand">
+            <p class="brand-overline">Brand overline</p>
+            <p class="brand-name">.front-ed.css</p>
+            <p class="brand-caption">Brand caption</p>
+        </div>
+
+        <p><code>.brand</code> > <code>.brand-image</code> <code>.brand-group</code></p>
+        <div class="brand">
+            <img class="brand-image" src="./favicon.svg" alt=".front-ed.css">
+            <div class="brand-group">
+                <p class="brand-name">.front-ed.css</p>
+                <p class="brand-caption">Brand caption</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avatars -->
+    <section class="section" id="avatars">
+        <p class="section-title">Avatar</p>
+
+        <p><code>.avatar</code> > <code>.avatar-image + .avatar-id</code></p>
+        <div class="header" data-background="var(--ui-color-0)">
+            <p data-color="var(--ui-color-5)">Cowboy Bebop</p>
+
+            <div class="avatar">
+                <img class="avatar-image" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
+                <p class="avatar-id">Radical Ed (Edward)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Headers and footers -->
+    <section class="section" id="headers">
+        <p class="section-title">Header and footers</p>
+
+        <p><code>.header</code></p>
+        <div class="header">
+            <p>Conteúdo da esquerda</p>
+            <p>Conteúdo da direita</p>
+        </div>
+
+        <p><code>.header</code> > <code>.header-wrapper</code></p>
+        <div class="header">
+            <div class="header-wrapper">
+                <p>Conteúdo da esquerda</p>
+                <p>Conteúdo da direita</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toolbars -->
+     <section class="section" id="toolbars">
+        <p class="section-title">Toolbars</p>
+
+        <p><code>.toolbar</code></p>
+        <div class="toolbar"></div>
+    </section>
 
     <!-- Text utilities -->
-    <div class="container-fluid" id="text-utils">
+    <section class="section" id="text-utils">
         <p class="section-title">Text utilities</p>
 
         <p class="section-subtitle">Font weight</p>
@@ -887,16 +1142,14 @@
         <p><span class="font-heavy">Este texto contém a classe</span> <code>.font-heavy</code> (800)</p>
         <p><span class="font-black">Este texto contém a classe</span> <code>.font-black</code> (900)</p>
 
-        <p class="section-subtitle">Font style</p>
-        <p><span class="font-normal">Este texto contém a classe</span> <code>.font-normal</code></p>
-        <p><span class="font-italic">Este texto contém a classe</span> <code>.font-italic</code></p>
-
         <p class="section-subtitle">Font size</p>
         <p><span class="font-small">Este texto contém a classe</span> <code>.font-small</code></p>
+        <p><span class="font-large">Este texto contém a classe</span> <code>.font-large</code></p>
 
         <p class="section-subtitle">Font family</p>
         <p><span class="font-sans-display">Este texto contém a classe</span> <code>.font-sans-display</code></p>
         <p><span class="font-sans">Este texto contém a classe</span> <code>.font-sans</code></p>
+        <p><span class="font-serif-display">Este texto contém a classe</span> <code>.font-serif-display</code></p>
         <p><span class="font-serif">Este texto contém a classe</span> <code>.font-serif</code></p>
         <p><span class="font-monospace">Este texto contém a classe</span> <code>.font-monospace</code></p>
 
@@ -913,49 +1166,17 @@
         <p><span class="deleted">Este texto contém a classe</span> <code>.deleted</code></p>
         <p><span class="inserted">Este texto contém a classe</span> <code>.inserted</code></p>
 
-        <p class="section-subtitle">Text insertion</p>
-        <p>Este texto <span class="text-sub">contém a classe</span> <code>.text-sub</code></p>
-        <p>Este texto <span class="text-sup">contém a classe</span> <code>.text-sup</code></p>
-    </div>
-
-    <!-- Messages -->
-    <div class="container-fluid" id="messages">
-        <p class="section-title">Messages</p>
-
-        <p><code>.message</code></p>
-        <p class="message">Esta é uma caixa de mensagem</p>
-
-        <p><code>.message</code> <code>.message-positive</code></p>
-        <p class="message message-positive">
-            <ion-icon name="checkmark-circle-outline"></ion-icon>
-            Esta é uma mensagem positiva
-        </p>
-
-        <p><code>.message</code> <code>.message-negative</code></p>
-        <p class="message message-negative">
-            <ion-icon name="ban-outline"></ion-icon>
-            Esta é uma mensagem negativa
-        </p>
-
-        <p><code>.message</code> <code>.message-warning</code></p>
-        <p class="message message-warning">
-            <ion-icon name="warning-outline"></ion-icon>
-            Esta é uma mensagem de alerta
-        </p>
-
-        <p><code>.message</code> <code>.message-info</code></p>
-        <p class="message message-info">
-            <ion-icon name="information-circle-outline"></ion-icon>
-            Esta é uma mensagem informativa
-        </p>
-    </div>
+        <p class="section-subtitle">Text sub / sup</p>
+        <p><span class="text-sub">Este texto</span> contém a classe <code>.text-sub</code></p>
+        <p><span class="text-sup">Este texto</span> contém a classe <code>.text-sup</code></p>
+    </section>
 
     <!-- Spacing -->
-    <div class="container-fluid" id="spacing">
+    <section class="section" id="spacing">
         <p class="section-title">Spacing</p>
 
         <p class="section-subtitle">Centering blocks</p>
-        <p><code>.margin-auto</code> - margin inline (left/right): auto</p>
+        <p><code>.margin-auto</code> - margin inline (left / right): auto</p>
 
         <p class="section-subtitle">Margin top</p>
         <p><code>.margin-t-3</code> - margin top: .3rem</p>
@@ -981,7 +1202,7 @@
         <p><code>.padding-48</code> - padding: 4.8rem</p>
         <p><code>.padding-60</code> - padding: 6rem</p>
 
-        <p class="section-subtitle">Padding X (left/right)</p>
+        <p class="section-subtitle">Padding X (left / right)</p>
         <p><code>.padding-x-3</code> - padding inline: .3rem</p>
         <p><code>.padding-x-6</code> - padding inline: .6rem</p>
         <p><code>.padding-x-12</code> - padding inline: 1.2rem</p>
@@ -989,7 +1210,7 @@
         <p><code>.padding-x-48</code> - padding inline: 4.8rem</p>
         <p><code>.padding-x-60</code> - padding inline: 6rem</p>
 
-        <p class="section-subtitle">Padding Y (top/bottom)</p>
+        <p class="section-subtitle">Padding Y (top / bottom)</p>
         <p><code>.padding-y-3</code> - padding block: .3rem</p>
         <p><code>.padding-y-6</code> - padding block: .6rem</p>
         <p><code>.padding-y-12</code> - padding block: 1.2rem</p>
@@ -998,16 +1219,15 @@
         <p><code>.padding-y-60</code> - padding block: 6rem</p>
 
         <p class="section-subtitle">Remove padding</p>
-        <p><code>.remove-padding</code> - remove all paddings (x,y)</p>
-        <p><code>.remove-padding-x</code> - remove padding x (left/right)</p>
-        <p><code>.remove-padding-y</code> - remove padding y (top/bottom)</p>
-    </div>
+        <p><code>.remove-padding</code> - remove all paddings (x, y)</p>
+        <p><code>.remove-padding-x</code> - remove padding x (left / right)</p>
+        <p><code>.remove-padding-y</code> - remove padding y (top / bottom)</p>
+    </section>
 
     <!-- Borders -->
-    <div class="container-fluid" id="borders">
+    <section class="section" id="borders">
         <p class="section-title">Borders</p>
 
-        <p class="section-subtitle">Has border</p>
         <p><code>.has-border</code></p>
         <p class="has-border padding-6">Elemento com borda</p>
 
@@ -1018,228 +1238,44 @@
         <p><code>.has-border</code> <code>.corner-circular</code></p>
         <p>
             <span class="has-border corner-circular"
-                style="display:inline-block; aspect-ratio:1/1; height:4.8rem;"></span>
+            style="display:inline-block; aspect-ratio:1/1; height:4.8rem;"></span>
             Elemento circular
         </p>
 
         <p><code>.has-border</code> <code>.corner-rounded</code></p>
         <p class="has-border corner-rounded padding-6">Elemento com canto arredondado</p>
 
-        <p><code>.corner-outer-2</code> > <code>.corner-outer-1</code> > <code>corner-rounded</code></p>
-        <div class="has-border corner-outer-2 padding-6">
-            <div class="has-border corner-outer-1 padding-6">
-                <p class="has-border corner-rounded padding-6">Cantos arredondados aninhados</p>
-            </div>
-        </div>
-    </div>
+        <p>
+            <code>.corner-rounded-2</code> > <code>.corner-rounded-1</code> >
+            <code>corner-rounded</code> > <code>.corner-rounded-0</code>
+        </p>
 
-    <!-- Grid layout -->
-    <div class="container-fluid" id="grid-layout">
-        <p class="section-title">Grid layout</p>
-
-        <p class="section-subtitle">Grid com número de colunas indefinido</p>
-        <p><code>.grid-var</code></p>
-        <div class="grid-var gap-6">
-            <p data-background="var(--ui-color-2)">Célula com mais conteúdo</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-            <p data-background="var(--ui-color-2)">Célula</p>
-        </div>
-
-        <p class="section-subtitle">Grid de 12 colunas</p>
-        <p><code>.grid-12</code> > <code>.col-&lt;span&gt;</code></p>
-        <div class="grid-12 gap-6">
-            <p class="col-1" data-background="var(--ui-color-2)">.col-1</p>
-            <p class="col-11" data-background="var(--ui-color-2)">.col-11</p>
-            <p class="col-2" data-background="var(--ui-color-2)">.col-2</p>
-            <p class="col-10" data-background="var(--ui-color-2)">.col-10</p>
-            <p class="col-3" data-background="var(--ui-color-2)">.col-3</p>
-            <p class="col-9" data-background="var(--ui-color-2)">.col-9</p>
-            <p class="col-4" data-background="var(--ui-color-2)">.col-4</p>
-            <p class="col-8" data-background="var(--ui-color-2)">.col-8</p>
-            <p class="col-5" data-background="var(--ui-color-2)">.col-5</p>
-            <p class="col-7" data-background="var(--ui-color-2)">.col-7</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-            <p class="col-12" data-background="var(--ui-color-2)">.col-12</p>
-        </div>
-
-        <p class="section-subtitle">Grid gaps</p>
-        <p><code>.grid-12</code> <code>.gap-3</code></p>
-        <div class="grid-12 gap-3">
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-        </div>
-
-        <p><code>.grid-12</code> <code>.gap-6</code></p>
-        <div class="grid-12 gap-6">
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-        </div>
-
-        <p><code>.grid-12</code> <code>.gap-12</code></p>
-        <div class="grid-12 gap-12">
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-        </div>
-
-        <p><code>.grid-12</code> <code>.gap-24</code></p>
-        <div class="grid-12 gap-24">
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-            <p class="col-6" data-background="var(--ui-color-2)">.col-6</p>
-        </div>
-    </div>
-
-    <!-- Flexbox -->
-    <div class="container-fluid" id="flexbox">
-        <p class="section-title">Flexbox</p>
-
-        <p class="section-subtitle">Flex row</p>
-        <p><code>.row</code> <code>.gap-12</code></p>
-        <div class="row gap-12" data-background="var(--ui-color-1)">
-            <p data-background="var(--ui-color-2)">Linha 1</p>
-            <p data-background="var(--ui-color-2)">Linha 1 <br> Linha 2</p>
-            <p data-background="var(--ui-color-2)">Linha 1 <br> Linha 2 <br> Linha 3</p>
-        </div>
-
-        <p class="section-subtitle">Flex column</p>
-        <p><code>.column</code> <code>.gap-12</code></p>
-        <div class="column gap-12" data-background="var(--ui-color-1)">
-            <p data-background="var(--ui-color-2)">Texto 1</p>
-            <p data-background="var(--ui-color-2)">Texto 1, texto 2</p>
-            <p data-background="var(--ui-color-2)">Texto 1, texto 2, texto 3</p>
-        </div>
-
-        <p class="section-subtitle">Flex alignment</p>
-        <p><code>.row-&lt;horizontal&gt;&lt;vertical&gt;</code></p>
-        <p><code>.column-&lt;horizontal&gt;&lt;vertical&gt;</code></p>
-
-        <p class="section-subtitle">Child behaviour</p>
-        <p><code>.row | .column</code> > <code>.flex-grow</code></p>
-        <div class="row gap-12" data-background="var(--ui-color-1)">
-            <p class="flex-grow" data-background="var(--ui-color-2)">Linha 1</p>
-            <p class="flex-grow" data-background="var(--ui-color-2)">Linha 1 <br> Linha 2</p>
-            <p class="flex-grow" data-background="var(--ui-color-2)">Linha 1 <br> Linha 2 <br> Linha 3</p>
-        </div>
-    </div>
-
-    <!-- Containers -->
-    <div class="container-fluid" id="containers">
-        <p class="section-title">Containers</p>
-
-        <p><code>.container-fixed</code></p>
-        <div class="container-fixed" data-background="var(--ui-color-1)">
-            <ul>
-                <li>Max width: customizável</li>
-                <li>Margem eixo X: container centralizado</li>
-                <li>Margem eixo Y: customizável</li>
-                <li>Padding: customizável</li>
-            </ul>
-        </div>
-
-        <p><code>.container-fluid</code></p>
-        <div class="container-fluid" data-background="var(--ui-color-1)">
-            <ul>
-                <li>Width: 100%</li>
-                <li>Margem eixo X: zero</li>
-                <li>Margem eixo Y: customizável</li>
-                <li>Padding: customizável</li>
-            </ul>
-        </div>
-
-        <p class="section-subtitle">Aspect ratio</p>
-        <p><code>.ratio-1-1</code></p>
-        <div class="ratio-1-1" data-background="var(--ui-color-1)"></div>
-
-        <p><code>.ratio-4-3</code></p>
-        <div class="ratio-4-3" data-background="var(--ui-color-1)"></div>
-
-        <p><code>.ratio-16-9</code></p>
-        <div class="ratio-16-9" data-background="var(--ui-color-1)"></div>
-    </div>
-
-    <!-- Toolbars -->
-    <div class="container-fluid" id="toolbars">
-        <p class="section-title">Toolbars</p>
-
-        <p><code>.toolbar</code></p>
-        <div class="toolbar">
-            <p>Conteúdo da esquerda</p>
-            <p>Conteúdo da direita</p>
-        </div>
-
-        <p><code>.toolbar</code> > <code>.toolbar-wrapper</code></p>
-        <div class="toolbar">
-            <div class="toolbar-wrapper">
-                <p>Conteúdo da esquerda</p>
-                <p>Conteúdo da direita</p>
-            </div>
-        </div>
-
-        <p><code>.toolbar data-background data-color</code></p>
-        <div class="toolbar" data-background="var(--ui-color-8)" data-color="var(--ui-color-1)">
-            <p>.front-ed.css</p>
-            <p>Desenvolvida por Ed Robert</p>
-        </div>
-
-        <p class="section-subtitle">Branding</p>
-        <p><code>.brand</code> > <code>.brand.name</code></p>
-        <div class="toolbar">
-            <p class="brand-name">.front-ed.css</p>
-        </div>
-
-        <p><code>.brand</code> > <code>.brand-overline + .brand.name + .brand-caption</code></p>
-        <div class="toolbar">
-            <div class="brand">
-                <p class="brand-overline">Brand overline</p>
-                <p class="brand-name">.front-ed.css</p>
-                <p class="brand-caption">Brand caption</p>
-            </div>
-        </div>
-
-        <p><code>.brand-group</code> > <code>.brand-image + .brand</code></p>
-        <div class="toolbar">
-            <div class="brand-group">
-                <img class="brand-image" src="./favicon.svg" alt=".front-ed.css">
-                <div class="brand">
-                    <p class="brand-overline">Brand overline</p>
-                    <p class="brand-name">.front-ed.css</p>
-                    <p class="brand-caption">Brand caption</p>
+        <div class="has-border corner-rounded-2 padding-6">
+            <div class="has-border corner-rounded-1 padding-6">
+                <div class="has-border corner-rounded padding-6">
+                    <p class="has-border corner-rounded-0 padding-6">Cantos arredondados aninhados</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Avatars -->
-    <div class="container-fluid" id="avatars">
-        <p class="section-title">Avatar</p>
+    <!-- Elevation -->
+    <section class="section" id="elevation">
+        <p class="section-title">Elevation</p>
 
-        <p><code>.avatar</code> > <code>.avatar-thumb + .avatar-id</code></p>
-        <div class="toolbar">
-            <p data-color="var(--ui-color-5)">Cowboy Bebop</p>
-
-            <div class="avatar">
-                <img class="avatar-thumb" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
-                <p class="avatar-id">Radical Ed (Edward)</p>
-            </div>
+        <p><code>.has-shadow-&lt;elevation&gt;</code></p>
+        <div class="grid-12 gap-24">
+            <p class="has-shadow   col-6">Elemento sem elevação</p>
+            <p class="has-shadow-1 col-6">.has-shadow-1</p>
+            <p class="has-shadow-2 col-6">.has-shadow-2</p>
+            <p class="has-shadow-3 col-6">.has-shadow-3</p>
+            <p class="has-shadow-4 col-6">.has-shadow-4</p>
+            <p class="has-shadow-5 col-6">.has-shadow-5</p>
         </div>
-
-        <p><code>.avatar-button</code> > <code>.avatar-thumb + .avatar-id</code></p>
-        <div class="toolbar">
-            <p data-color="var(--ui-color-5)">Cowboy Bebop</p>
-
-            <div class="avatar-button">
-                <img class="avatar-thumb" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
-                <p class="avatar-id">Radical Ed (Edward)</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Animations -->
-    <div class="container-fluid" id="animations">
+    <section class="section" id="animations">
         <p class="section-title">Animations</p>
 
         <p class="section-subtitle">Blink</p>
@@ -1257,9 +1293,268 @@
         <p class="section-subtitle">Spin</p>
         <p><code>.anima-spin</code></p>
         <ion-icon class="anima-spin" name="ban" style="font-size:3.2rem;"></ion-icon>
-    </div>
+    </section>
+
+    <!-- Wireframes -->
+    <section class="section" id="wireframes">
+        <p class="section-title">Wireframes</p>
+
+        <p><code>.wf-stacked</code></p>
+        <div class="wf-stacked ratio-4-3" data-background="var(--ui-color-0)">
+            <p id="header"><code>.header</code></p>
+            <p id="hero"><code>.hero</code></p>
+            <p id="main"><code>.main</code></p>
+            <p id="aside"><code>.aside</code></p>
+            <p id="footer"><code>.footer</code></p>
+        </div>
+
+        <p><code>.wf-2-cols</code></p>
+        <div class="wf-2-cols ratio-4-3" data-background="var(--ui-color-0)">
+            <p id="header"><code>#header</code></p>
+            <p id="left"><code>#left</code></p>
+            <p id="main"><code>#main</code></p>
+            <p id="footer"><code>#footer</code></p>
+        </div>
+
+        <p><code>.wf-3-cols</code></p>
+        <div class="wf-3-cols ratio-4-3" data-background="var(--ui-color-0)">
+            <p id="header"><code>#header</code></p>
+            <p id="left"><code>#left</code></p>
+            <p id="main"><code>#main</code></p>
+            <p id="right"><code>#right</code></p>
+            <p id="footer"><code>#footer</code></p>
+        </div>
+    </section>
+
+    <!-- Containers -->
+    <section class="section" id="containers">
+        <p class="section-title">Containers</p>
+
+        <p><code>.section</code></p>
+        <div class="section" data-background="var(--ui-color-0)">
+            <ul>
+                <li>Width: 100%</li>
+                <li>Margem eixo X: zero</li>
+                <li>Margem eixo Y: customizável</li>
+                <li>Padding: customizável</li>
+            </ul>
+        </div>
+
+        <p><code>.container-fixed</code></p>
+        <div class="container-fixed" data-background="var(--ui-color-0)">
+            <ul>
+                <li>Max width: customizável</li>
+                <li>Margem eixo X: container centralizado</li>
+                <li>Margem eixo Y: customizável</li>
+                <li>Padding: customizável</li>
+            </ul>
+        </div>
+
+        <p class="section-subtitle">Aspect ratio</p>
+        <p><code>.ratio-1-1</code> <code>.ratio-4-3</code> <code>.ratio-16-9</code></p>
+        <div class="grid gap-12">
+            <div class="ratio-1-1" data-background="var(--ui-color-2)"></div>
+            <div class="ratio-4-3" data-background="var(--ui-color-2)"></div>
+            <div class="ratio-16-9" data-background="var(--ui-color-2)"></div>
+        </div>
+    </section>
+
+    <!-- Grid layout -->
+    <section class="section" id="grid-layout">
+        <p class="section-title">Grid layout</p>
+
+        <p class="section-subtitle">Grid de 12 colunas</p>
+        <p><code>.grid-12</code></p>
+        <div class="grid-12 gap-3">
+            <p data-background="var(--ui-color-2)">01</p>
+            <p data-background="var(--ui-color-2)">02</p>
+            <p data-background="var(--ui-color-2)">03</p>
+            <p data-background="var(--ui-color-2)">04</p>
+            <p data-background="var(--ui-color-2)">05</p>
+            <p data-background="var(--ui-color-2)">06</p>
+            <p data-background="var(--ui-color-2)">07</p>
+            <p data-background="var(--ui-color-2)">08</p>
+            <p data-background="var(--ui-color-2)">09</p>
+            <p data-background="var(--ui-color-2)">10</p>
+            <p data-background="var(--ui-color-2)">11</p>
+            <p data-background="var(--ui-color-2)">12</p>
+        </div>
+
+        <p class="section-subtitle">Grid com número de colunas indefinido</p>
+        <p><code>.grid</code></p>
+        <div class="grid gap-3">
+            <p data-background="var(--ui-color-2)">Célula com mais conteúdo</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+            <p data-background="var(--ui-color-2)">Célula</p>
+        </div>
+
+        <p class="section-subtitle">Grid gaps</p>
+        <p><code>.grid-12</code> <code>.gap-3</code></p>
+        <div class="grid-12 gap-3">
+            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.3rem</p>
+        </div>
+
+        <p><code>.grid-12</code> <code>.gap-6</code></p>
+        <div class="grid-12 gap-6">
+            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">.6rem</p>
+        </div>
+
+        <p><code>.grid-12</code> <code>.gap-12</code></p>
+        <div class="grid-12 gap-12">
+            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">1.2rem</p>
+        </div>
+
+        <p><code>.grid-12</code> <code>.gap-24</code></p>
+        <div class="grid-12 gap-24">
+            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
+            <p class="col-6" data-background="var(--ui-color-2)">2.4rem</p>
+        </div>
+
+        <p class="section-subtitle">Grupo de colunas</p>
+        <p><code>.col-&lt;span&gt;</code></p>
+        <div class="grid-12 gap-3">
+            <p class="col-1" data-background="var(--ui-color-2)">col-1</p>
+            <p class="col-11" data-background="var(--ui-color-2)">col-11</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-10" data-background="var(--ui-color-2)">col-10</p>
+            <p class="col-3" data-background="var(--ui-color-2)">col-3</p>
+            <p class="col-9" data-background="var(--ui-color-2)">col-9</p>
+            <p class="col-4" data-background="var(--ui-color-2)">col-4</p>
+            <p class="col-8" data-background="var(--ui-color-2)">col-8</p>
+            <p class="col-5" data-background="var(--ui-color-2)">col-5</p>
+            <p class="col-7" data-background="var(--ui-color-2)">col-7</p>
+            <p class="col-6" data-background="var(--ui-color-2)">col-6</p>
+            <p class="col-6" data-background="var(--ui-color-2)">col-6</p>
+            <p class="col-12" data-background="var(--ui-color-2)">col-12</p>
+        </div>
+
+        <p class="section-subtitle">Grupo de linhas</p>
+        <p><code>.row-&lt;span&gt;</code></p>
+        <div class="grid-12 gap-3">
+            <p class="col-2 row-5" data-background="var(--ui-color-2)">col-2 row-5</p>
+            <p class="col-2 row-4" data-background="var(--ui-color-2)">col-2 row-4</p>
+            <p class="col-2 row-3" data-background="var(--ui-color-2)">col-2 row-3</p>
+            <p class="col-2 row-2" data-background="var(--ui-color-2)">col-2 row-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+            <p class="col-2" data-background="var(--ui-color-2)">col-2</p>
+        </div>
+    </section>
+
+    <!-- Flexbox -->
+    <section class="section" id="flexbox">
+        <p class="section-title">Flexbox</p>
+
+        <p class="section-subtitle">Flex row</p>
+        <p><code>.row</code> <code>.gap-6</code></p>
+        <div class="row gap-6" data-background="var(--ui-color-0)">
+            <p data-background="var(--ui-color-2)">Elemento 1</p>
+            <p data-background="var(--ui-color-2)">Elemento 2 <br> Elemento 2</p>
+            <p data-background="var(--ui-color-2)">Elemento 3 <br> Elemento 3 <br> Elemento 3</p>
+        </div>
+
+        <p class="section-subtitle">Flex row alignment</p>
+        <p><code>.row-&lt;horizontal&gt;&lt;vertical&gt;</code></p>
+        <p><code>.row-lt</code> left top</p>
+        <p><code>.row-lc</code> left center</p>
+        <p><code>.row-lb</code> left bottom</p>
+        <p><code>.row-ls</code> left stretch</p>
+        <p><code>.row-ct</code> center top</p>
+        <p><code>.row-cc</code> center center</p>
+        <p><code>.row-cb</code> center bottom</p>
+        <p><code>.row-cs</code> center stretch</p>
+        <p><code>.row-rt</code> right top</p>
+        <p><code>.row-rc</code> right center</p>
+        <p><code>.row-rb</code> right bottom</p>
+        <p><code>.row-rs</code> right stretch</p>
+
+        <p class="section-subtitle">Flex column</p>
+        <p><code>.column</code> <code>.gap-6</code></p>
+        <div class="column gap-6" data-background="var(--ui-color-0)">
+            <p data-background="var(--ui-color-2)">Elemento 1</p>
+            <p data-background="var(--ui-color-2)">Elemento 2, elemento 2</p>
+            <p data-background="var(--ui-color-2)">Elemento 3, elemento 3, elemento 3</p>
+        </div>
+
+        <p class="section-subtitle">Flex column alignment</p>
+        <p><code>.column-&lt;vertical&gt;&lt;horizontal&gt;</code></p>
+        <p><code>.column-tl</code> top left</p>
+        <p><code>.column-tc</code> top center</p>
+        <p><code>.column-tr</code> top right</p>
+        <p><code>.column-ts</code> top stretch</p>
+        <p><code>.column-cl</code> center left</p>
+        <p><code>.column-cc</code> center center</p>
+        <p><code>.column-cr</code> center right</p>
+        <p><code>.column-cs</code> center stretch</p>
+        <p><code>.column-bl</code> bottom left</p>
+        <p><code>.column-bc</code> bottom center</p>
+        <p><code>.column-br</code> bottom right</p>
+        <p><code>.column-bs</code> bottom stretch</p>
+
+        <p class="section-subtitle">Row child behaviour</p>
+        <p><code>.row</code> > <code>.flex-grow</code></p>
+        <div class="row gap-6" data-background="var(--ui-color-0)">
+            <p class="flex-grow" data-background="var(--ui-color-2)">Com flex-grow</p>
+            <p data-background="var(--ui-color-2)">Sem flex-grow</p>
+            <p data-background="var(--ui-color-2)">Maior <br> elemento <br> filho</p>
+        </div>
+
+        <p class="section-subtitle">Column child behaviour</p>
+        <p><code>.column</code> > <code>.flex-grow</code></p>
+        <div class="grid gap-3">
+            <div class="column gap-3" data-background="var(--ui-color-0)">
+                <p class="flex-grow" data-background="var(--ui-color-2)">Com flex-grow</p>
+                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
+            </div>
+            <div class="column gap-3" data-background="var(--ui-color-0)">
+                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
+                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
+                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
+                <p data-background="var(--ui-color-2)">Sem flex-grow</p>
+            </div>
+        </div>
+    </section>
 
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Theme switcher -->
+    <script>
+        const themeSwitcher = document.querySelector('#theme-switch');
+        const currentTheme = document.documentElement.style.colorScheme || 'light';
+        themeSwitcher.checked = currentTheme === 'dark';
+        themeSwitcher.addEventListener('change', (event) => {
+            const newTheme = event.target.checked ? 'dark' : 'light';
+            applyTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
 
 </body>
 

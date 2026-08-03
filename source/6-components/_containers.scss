@@ -20,8 +20,11 @@
   padding-block: var(--container-fixed-padding-y);
 }
 
-.ratio-1-1  { aspect-ratio: 1 / 1; }
-.ratio-4-3  { aspect-ratio: 4 / 3; }
-.ratio-16-9 { aspect-ratio: 16 / 9; }
+.ratio-square     { aspect-ratio:     1/1; }
+.ratio-portrait   { aspect-ratio:     3/4; }
+.ratio-landscape  { aspect-ratio:     4/3; }
+.ratio-widescreen { aspect-ratio:    16/9; }
+.ratio-ultrawide  { aspect-ratio:    18/5; }
+.ratio-golden     { aspect-ratio: 1.618/1; }
 
 /* END OF FILE ============================================================== */

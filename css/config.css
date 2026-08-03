@@ -9,17 +9,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&display=swap');
 /* font-family: 'Libre Franklin', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 /* font-family: 'Open Sans', sans-serif; */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 /* font-family: 'Young Serif', serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400..700&display=swap');
 /* font-family: 'Libre Baskerville', serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-/* font-family: 'Source Code Pro', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:MONO@1&display=swap');
+/* font-family: 'Google Sans Code', monospace; */
+/* font-variation-settings: 'MONO' 1; */
 
 :root {
   /* Typography ------------------------------------------------------------- */
@@ -27,170 +28,319 @@
   --font-sans-text: 'Open Sans', sans-serif;
   --font-serif-display: 'Young Serif', serif;
   --font-serif-text: 'Libre Baskerville', serif;
-  --font-monospace: 'Source Code Pro', monospace;
+  --font-monospace: 'Google Sans Code', monospace;
+
+  /* Utilities ============================================================== */
+  /* Fixed widths | scale: [96rem, 80rem, 64rem, 48rem] --------------------- */
+  --page-max-width: 96rem;
+  --block-width-lg: 80rem;
+  --block-width-md: 64rem;
+  --block-width-sm: 48rem;
+
+  /* Containers ------------------------------------------------------------- */
+  --section-margin-y: 0;
+  --section-padding-x: 1.2rem;
+  --section-padding-y: 2.4rem;
+
+  --container-fixed-max-width: var(--page-max-width);
+  --container-fixed-margin-y: 0;
+  --container-fixed-padding-x: 1.2rem;
+  --container-fixed-padding-y: 2.4rem;
+
+  --scrollbar: light-dark(var(--ui-color-3), var(--ui-color-6)) transparent;
+
+  /* Grid layout ------------------------------------------------------------ */
+  /*
+  --grid-cell-width: 9.6rem;
+
+  /* Borders ---------------------------------------------------------------- */
+  --radius-base: .9rem;
+  --radius-sm:  .6rem;
+  --radius-md: 1.2rem;
+  --radius-lg: 1.5rem;
+
+  --border-base: .2rem;
+  --border-1: .1rem;
+  --border-2: .2rem;
+  --border-3: .3rem;
+
+  /*
+  --border-color-base: var(--ui-color-3);
+
+  /* Elements - Bare elements (unclassed HTML / type selectors) ============= */
+  /* Objects - Layout classes, cosmetic-free design patterns ================ */
 
   /* Basic HTML ------------------------------------------------------------- */
-  --body-background: var(--ui-color-0);
-  --body-color: var(--ui-color-9);
+  color-scheme: light dark;
+
+  --body-background: light-dark(var(--ui-color-1), var(--ui-color-9));
+  --body-color: light-dark(var(--ui-color-9), var(--ui-color-1));
   --body-font: var(--font-sans-text);
 
   --font-weight-bolder: 600;
   --font-size-base: 1.6rem;
   --font-size-small: 1.4rem;
+  --font-size-large: 1.8rem;
 
   --lh-150: 1.5;
   --lh-125: 1.25;
   --lh-100: 1;
 
-  --heading-space-y: .3rem;
-  --heading-color: var(--ui-color-5);
+  --heading-padding-y: .3rem;
+  --heading-color: light-dark(var(--ui-color-6), var(--ui-color-3));
   --heading-weight: 600;
-  --heading-font: var(--font-sans-display);
   --heading-6-size: 1.8rem;
   --heading-5-size: 2.0rem;
   --heading-4-size: 2.2rem;
   --heading-3-size: 2.5rem;
   --heading-2-size: 2.8rem;
   --heading-1-size: 3.2rem;
-  --heading-color-overline: var(--ui-color-5);
-  --heading-color-caption: var(--ui-color-5);
+  --heading-font: var(--font-sans-display);
 
-  --heading-large-color: var(--ui-color-5);
+  --heading-large-color: light-dark(var(--ui-color-6), var(--ui-color-3));
   --heading-large-weight: 300;
-  --heading-large-font: var(--font-sans-display);
   --heading-large-4-size: 3.2rem;
   --heading-large-3-size: 3.6rem;
   --heading-large-2-size: 4.2rem;
   --heading-large-1-size: 4.8rem;
+  --heading-large-font: var(--font-sans-display);
 
-  --paragraph-space-y: .3rem;
+  --heading-overline-color: light-dark(var(--ui-color-6), var(--ui-color-3));
+  --heading-overline-size: 1.8rem;
+  --heading-caption-color: light-dark(var(--ui-color-6), var(--ui-color-3));
+  --heading-caption-size: 1.4rem;
+
+  --paragraph-padding-y: .6rem;
   --paragraph-indent: 2em;
 
-  --ruler-height: .2rem;
-  --ruler-margin-y: 1.2rem;
-  --ruler-color: var(--ui-color-2);
+  --custom-p-padding-y: .6rem;
+  --custom-p-color: light-dark(var(--ui-color-6), var(--ui-color-3));
+  --custom-p-font-weight: 300;
+  --custom-p-font-size: 2.4rem;
+  --custom-p-font: var(--font-sans-display);
+  --custom-p-align: center;
+  --custom-p-indent: 0;
+  --custom-p-open-quote: open-quote;
+  --custom-p-close-quote: close-quote;
 
-  /* Text formatting -------------------------------------------------------- */
+  --rule-height: .2rem;
+  --rule-margin-y: 1.2rem;
+  --rule-color: light-dark(var(--ui-color-2), var(--ui-color-7));
+
+  /* Text blocks ------------------------------------------------------------ */
   --blockquote-margin-x: 1em;
+  --blockquote-padding-x: 2em 1em;
+  --blockquote-padding-y: 1.2rem;
+  --blockquote-radius: var(--radius-md);
+  --blockquote-border: .6rem;
+  --blockquote-border-color: light-dark(var(--ui-color-2), var(--ui-color-6));
+  --blockquote-background: light-dark(var(--ui-color-0), var(--ui-color-8));
+  --blockquote-color: light-dark(var(--ui-color-7), var(--ui-color-2));
   --blockquote-font-size: 1.6rem;
-  --blockquote-indent: 2em;
-  --blockquote-border: var(--ui-color-2);
-  --blockquote-background: var(--ui-color-);
-  --blockquote-color: var(--ui-color-7);
   --blockquote-font: var(--font-serif-text);
+  --blockquote-indent: 2em;
+  --blockquote-caption-margin: .6rem
 
-  --anchor-color-link: var(--royalblue-7);
-  --anchor-color-visited: var(--royalblue-7);
-  --anchor-color-hover: var(--royalblue-9);
-  --anchor-color-active: var(--royalblue-9);
-  --anchor-color-focus: var(--royalblue-9);
-
-  /* Icons ------------------------------------------------------------------ */
-  --icon-color: var(--ui-color-3);
-  --icon-large: 3.2rem;
+  /* Semantic inline text --------------------------------------------------- */
+  --anchor-color-link: light-dark(var(--royalblue-7), var(--royalblue-3));
+  --anchor-color-visited: light-dark(var(--royalblue-7), var(--royalblue-3));
+  --anchor-color-hover: light-dark(var(--royalblue-9), var(--royalblue-1));
+  --anchor-color-active: light-dark(var(--royalblue-9), var(--royalblue-1));
+  --anchor-color-focus: light-dark(var(--royalblue-9), var(--royalblue-1));
+  --anchor-weight: 500;
 
   /* Lists ------------------------------------------------------------------ */
+  --list-item-padding-y: .3rem;
+  --list-border-color: light-dark(var(--ui-color-3), var(--ui-color-7));
   --list-indent: 1.5em;
-  --list-item-space-y: .3rem;
-  --list-marker-color: var(--ui-color-3);
+  --ol-marker-color: var(--ui-color-5);
+  --ul-marker-color: var(--ui-color-5);
+  --dl-marker-color: var(--ui-color-5);
+  --ul-icon-color: var(--ui-color-5);
+  --counter-start: '[';
+  --counter-end: ']';
+  --counter-size: 1.4rem;
+  --menu-item-padding-y: .1rem;
+  --menu-bar-cell: 9.6rem;
+  --menu-bar-gap: .6rem;
 
   /* Tables ----------------------------------------------------------------- */
+  --table-container-scrollbar: var(--scrollbar);
   --table-layout: auto;
   --table-width: 100%;
-  --table-cell-space: .3rem 1.2rem;
-  --table-border-width: .1rem;
-  --table-border-color: var(--ui-color-2);
-  --table-caption-side: top;
-  --table-caption-color: inherit;
-  --table-caption-size: inherit;
-  --thead-border: .2rem;
+  --table-border: light-dark(var(--ui-color-2), var(--ui-color-6));
+  --table-background: transparent;
+  --table-caption-margin: .6rem;
+  --table-caption-color: light-dark(var(--ui-color-5), var(--ui-color-2));
+  --table-caption-size: 1.6rem;
+  --table-caption-align: center;
+  --thead-cell-padding: .6rem 1.2rem;
   --thead-background: transparent;
-  --tfoot-background: transparent;
+  --thead-color: light-dark(var(--ui-color-5), var(--ui-color-2));
+  --thead-weight: var(--font-weight-bolder);
+  --thead-size: 1.4rem;
+  --thead-align: left;
+  --tbody-cell-padding: .3rem 1.2rem;
   --tbody-background: transparent;
-  --tbody-stripes: brightness(1.1);
-  --th-color: inherit;
-  --th-weight: 600;
-  --th-size: inherit;
-  --td-size: inherit;
+  --tbody-color: inherit;
+  --tbody-size: inherit;
+  --tbody-stripes: brightness(1.05);
+  --tfoot-background: transparent;
+  --tfoot-size: 1.4rem;
 
   /* Images ----------------------------------------------------------------- */
-  --image-background: var(--ui-color-1);
-  --caption-space-y: 1.2rem;
-  --caption-color: var(--ui-color-6);
-  --caption-size: 1.4rem;
+  --figcaption-color: inherit;
+  --figcaption-size: inherit;
+  --figcaption-align: left;
+
+  --image-display-padding-x: 0;
+  --image-display-padding-y: 0;
+  --image-display-radius: var(--radius-base);
+  --image-display-background: light-dark(var(--ui-color-9), var(--ui-color-7));
+  --image-display-align: center;
+  --image-caption-padding-y: 1.2rem;
+  --image-caption-color: light-dark(var(--ui-color-2), var(--ui-color-2));
+  --image-caption-size: 1.4rem;
+  --image-caption-align: center;
 
   /* Multimedia ------------------------------------------------------------- */
-  --audio-panel-color: var(--ui-color-1);
-  --audio-widget-border: var(--ui-color-3);
-  --audio-widget-background: var(--ui-color-2);
-  --audio-widget-info-track-color: var(--ui-color-8);
-  --audio-widget-info-caption-color: var(--ui-color-6);
+  --audio-panel-color: light-dark(var(--ui-color-0), var(--ui-color-7));
+  --audio-display-max-width: var(--block-width-sm);
+  --audio-display-border: light-dark(var(--ui-color-4), var(--ui-color-6));
+  --audio-display-background: light-dark(var(--ui-color-2), var(--ui-color-8));
+  --audio-display-track: light-dark(var(--ui-color-8), var(--ui-color-2));
+  --audio-display-caption: light-dark(var(--ui-color-6), var(--ui-color-3));
 
-  --video-widget-background: var(--ui-color-8);
-  --video-widget-info-track-color: var(--ui-color-1);
-  --video-widget-info-caption-color: var(--ui-color-2);
+  --video-max-width: var(--block-width-lg);
+  --video-display-background: light-dark(var(--ui-color-9), var(--ui-color-8));
+  --video-display-track: light-dark(var(--ui-color-1), var(--ui-color-1));
+  --video-display-caption: light-dark(var(--ui-color-2), var(--ui-color-2));
 
   /* Embedded --------------------------------------------------------------- */
-  --object-max-width: 64rem;
-  --iframe-max-width: 64rem;
+  --embedded-max-width: var(--block-width-md);
+  --iframe-max-width: var(--block-width-md);
 
   /* Scripting -------------------------------------------------------------- */
   --canvas-display: inline-block;
-  --canvas-border: var(--ui-color-2);
-  --canvas-background: var(--ui-color-1);
+  --canvas-border: light-dark(var(--ui-color-4), var(--ui-color-6));
+  --canvas-background: light-dark(var(--ui-color-3), var(--ui-color-8));
 
   /* Buttons ---------------------------------------------------------------- */
-  --button-border: var(--ui-color-2);
-  --button-background: var(--ui-color-1);
-  --button-color: inherit;
+  --button-radius: var(--radius-base);
+  --button-border: .2rem;
+  --button-border-color: light-dark(var(--ui-color-3), var(--ui-color-4));
+  --button-background: light-dark(var(--ui-color-0), var(--ui-color-7));
+  --button-color: light-dark(var(--ui-color-7), var(--ui-color-2));
   --button-weight: 600;
-  --button-size: 1.4rem;
+  --button-text: 1.4rem;
 
-  /* Borders ---------------------------------------------------------------- */
-  --border-radius-outer-0: .6rem;
-  --border-radius-outer-1: .9rem;
-  --border-radius-outer-2: 1.2rem;
-  --border-width: .1rem;
-  --border-color: var(--ui-color-3);
+  --button-icon-color: light-dark(var(--ui-color-5), var(--ui-color-4));
+  --button-icon-size: 1.6rem;
 
-  /* Grid layout ------------------------------------------------------------ */
-  --grid-cell-width: 6rem;
+  /* Components ============================================================= */
 
-  /* Containers ------------------------------------------------------------- */
-  --container-fixed-max-width: 96rem;
-  --container-fixed-margin-y: 0;
-  --container-fixed-space-x: 2.4rem;
-  --container-fixed-space-y: 2.4rem;
+  /* Icons ------------------------------------------------------------------ */
+  /*
+  --icon-color: var(--red);
+  --icon-md: 3.2rem;
+  --icon-lg: 4.8rem;
+  --icon-xl: 6.4rem;
 
-  --container-fluid-margin-y: 0;
-  --container-fluid-space-x: 2.4rem;
-  --container-fluid-space-y: 2.4rem;
+  /* Messages --------------------------------------------------------------- */
+  /*
+  --notice-block-max-width: 48rem;
 
-  /* Toolbars --------------------------------------------------------------- */
-  --toolbar-space-x: 1.2rem;
-  --toolbar-space-y: .6rem;
-  --toolbar-background: var(--ui-color-1);
-  --toolbar-max-width: 96rem;
+  /* Indicators ------------------------------------------------------------- */
+  /*
+  --tags-color-primary: var(--ui-color-5);
+  --tags-color-secondary: var(--ui-color-0);
+  --tags-size: 1.4rem;
 
+  --tags-labeled-color-primary: var(--ui-color-2);
+  --tags-labeled-color-secondary: var(--ui-color-1);
+  --tags-labeled-text-primary: var(--ui-color-7);
+  --tags-labeled-text-secondary: var(--ui-color-7);
+  --tags-labeled-size: 1.4rem;
+
+  --badges-color-primary: var(--ui-color-5);
+  --badges-color-secondary: var(--ui-color-0);
+  --badges-size: 1.4rem;
+
+  --pills-color-primary: var(--ui-color-5);
+  --pills-color-secondary: var(--ui-color-0);
+  --pills-size: 1.4rem;
+
+  --pills-labeled-color-primary: var(--ui-color-2);
+  --pills-labeled-color-secondary: var(--ui-color-1);
+  --pills-labeled-text-primary: var(--ui-color-7);
+  --pills-labeled-text-secondary: var(--ui-color-7);
+  --pills-labeled-size: 1.4rem;
+
+  --chips-color-primary: var(--ui-color-5);
+  --chips-color-secondary: var(--ui-color-0);
+  --chips-size: 1.4rem;
+
+  /* Loaders ---------------------------------------------------------------- */
+  /*
+  --loader-t: var(--ui-color-2);
+  --loader-lr: var(--ui-color-2);
+  --loader-b: var(--ui-color-5);
+  --loader-animation: 2000ms linear;
+
+  /* Branding --------------------------------------------------------------- */
+  /*
+  --brand-image-align: end;
+  --brand-image-width: 6rem;
+  --brand-image-margin: 1.2rem;
   --brand-name-color: var(--ui-color-5);
   --brand-name-weight: 600;
-  --brand-name-size: 3.2rem;
-  --brand-overline-space-b: 0;
+  --brand-name-size: 2.4rem;
+  --brand-name-font: var(--font-sans-display);
+  --brand-overline-margin-b: 0;
   --brand-overline-color: var(--ui-color-4);
   --brand-overline-size: 1.8rem;
-  --brand-caption-space-t: 0;
+  --brand-caption-margin-t: 0;
   --brand-caption-color: var(--ui-color-4);
   --brand-caption-size: 1.6rem;
-  --brand-image-space: 1.2rem;
-  --brand-image-width: 7.2rem;
 
   /* Avatars ---------------------------------------------------------------- */
-  --avatar-height: 4.8rem;
-  --avatar-color: var(--red-6);
-  --avatar-text: var(--red-1);
-  --avatar-id-size: 1.6rem;
+  /*
+  --avatar-radius: var(--radius-base);
+  --avatar-background: transparent;
+  --avatar-image-size: 4.8rem;
+  --avatar-image-radius: 50%;
+  --avatar-id-padding-x: .6rem 0;
+  --avatar-id-color: var(--ui-color-7);
+  --avatar-id-size: 1.4rem;
 
-  /* Color palette ---------------------------------------------------------- */
+  /* Headers and footers ---------------------------------------------------- */
+  /*
+  --header-max-width: var(--page-max-width);
+  --header-padding-x: 1.2rem;
+  --header-padding-y: 1.2rem;
+  --header-background: var(--ui-color-2);
+
+  /* Tooltips --------------------------------------------------------------- */
+  /*
+  --tooltip-background: var(--ui-color-1);
+  --tooltip-color: var(--ui-color-7);
+  --tooltip-hint: var(--ui-color-3);
+
+  /* Alerts ----------------------------------------------------------------- */
+  /* --alert-max-width: 36rem; */
+  /* --alert-space: 2.4rem; */
+  /* --alert-border: var(--ui-color-3); */
+  /* --alert-background: var(--ui-color-0); */
+
+  /* --toast-max-width: 36rem; */
+  /* --toast-space: 1.2rem 2.4rem; */
+  /* --toast-border: var(--ui-color-3); */
+  /* --toast-background: var(--ui-color-0); */
+
+  /* Color palette ========================================================== */
+  --grid-colors-columns: 11;
+  --grid-colors-rows: 11;
+
   --ui-color:  hsl(220, 24%, 44%);
   --red:       hsl(348, 83%, 47%);
   --orange:    hsl(33, 100%, 50%);
@@ -214,6 +364,7 @@
   --ui-color-8: hsl(220, 24%, 29%);
   --ui-color-9: hsl(220, 24%, 25%);
 
+  --red-0: hsl(348, 83%, 95%);
   --red-1: hsl(348, 83%, 90%);
   --red-2: hsl(348, 83%, 80%);
   --red-3: hsl(348, 83%, 69%);
@@ -224,6 +375,7 @@
   --red-8: hsl(348, 83%, 30%);
   --red-9: hsl(348, 83%, 25%);
 
+  --orange-0: hsl(33, 100%, 95%);
   --orange-1: hsl(33, 100%, 90%);
   --orange-2: hsl(33, 100%, 80%);
   --orange-3: hsl(33, 100%, 70%);
@@ -234,6 +386,7 @@
   --orange-8: hsl(33, 100%, 32%);
   --orange-9: hsl(33, 100%, 25%);
 
+  --gold-0: hsl(51, 100%, 95%);
   --gold-1: hsl(51, 100%, 90%);
   --gold-2: hsl(51, 100%, 80%);
   --gold-3: hsl(51, 100%, 70%);
@@ -244,6 +397,7 @@
   --gold-8: hsl(51, 100%, 32%);
   --gold-9: hsl(51, 100%, 25%);
 
+  --lime-0: hsl(90, 100%, 95%);
   --lime-1: hsl(90, 100%, 90%);
   --lime-2: hsl(90, 100%, 80%);
   --lime-3: hsl(90, 100%, 70%);
@@ -254,6 +408,7 @@
   --lime-8: hsl(90, 100%, 32%);
   --lime-9: hsl(90, 100%, 25%);
 
+  --green-0: hsl(120, 61%, 95%);
   --green-1: hsl(120, 61%, 90%);
   --green-2: hsl(120, 61%, 80%);
   --green-3: hsl(120, 61%, 70%);
@@ -264,6 +419,7 @@
   --green-8: hsl(120, 61%, 32%);
   --green-9: hsl(120, 61%, 25%);
 
+  --tiffany-0: hsl(174, 72%, 95%);
   --tiffany-1: hsl(174, 72%, 90%);
   --tiffany-2: hsl(174, 72%, 81%);
   --tiffany-3: hsl(174, 72%, 73%);
@@ -274,6 +430,7 @@
   --tiffany-8: hsl(174, 72%, 32%);
   --tiffany-9: hsl(174, 72%, 25%);
 
+  --blue-0: hsl(210, 100%, 95%);
   --blue-1: hsl(210, 100%, 90%);
   --blue-2: hsl(210, 100%, 81%);
   --blue-3: hsl(210, 100%, 73%);
@@ -284,6 +441,7 @@
   --blue-8: hsl(210, 100%, 32%);
   --blue-9: hsl(210, 100%, 25%);
 
+  --royalblue-0: hsl(225, 73%, 95%);
   --royalblue-1: hsl(225, 73%, 90%);
   --royalblue-2: hsl(225, 73%, 81%);
   --royalblue-3: hsl(225, 73%, 73%);
@@ -294,6 +452,7 @@
   --royalblue-8: hsl(225, 73%, 32%);
   --royalblue-9: hsl(225, 73%, 25%);
 
+  --purple-0: hsl(280, 61%, 95%);
   --purple-1: hsl(280, 61%, 90%);
   --purple-2: hsl(280, 61%, 80%);
   --purple-3: hsl(280, 61%, 70%);
@@ -304,6 +463,7 @@
   --purple-8: hsl(280, 61%, 32%);
   --purple-9: hsl(280, 61%, 25%);
 
+  --brown-0: hsl(19, 56%, 95%);
   --brown-1: hsl(19, 56%, 90%);
   --brown-2: hsl(19, 56%, 77%);
   --brown-3: hsl(19, 56%, 65%);

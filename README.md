@@ -29,100 +29,108 @@
 
 ### Elements - Bare elements (unclassed HTML / type selectors)
 - [x] Basic HTML
-  - body, div, hr, html, h1, h2, h3, h4, h5, h6, p, span
+  - body, h1, h2, h3, h4, h5, h6, hr, html, p
 - [x] Semantic sectioning
-  - address, article, aside, footer, header, main, nav, search, section
-- [x] Text Formatting
-  - a, b, blockquote, code, del, dialog, em, i, ins, kbd, mark, s, small, strong, sub, sup, u
-- [x] Icons (Ionicon - external lib)
-  - ion-icon
+  - address
+  - not [article, aside, footer, header, hgroup, main, nav, search, section]
+- [x] Text blocks
+  - blockquote
+  - not [div, pre]
+- [x] Interactive elements
+  - dialog
+  - not [details, summary]
+- [x] Semantic inline text
+  - a, b, code, del, em, i, ins, kbd, mark, small, strong, sub, sup
+  - not [abbr, bdi, bdo, br, cite, data, dfn, q, rp, rt, ruby, s, samp, span, time, u, var, wbr]
 - [x] Lists
   - dd, dl, dt, li, menu, ol, ul
 - [x] Tables
-  - caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr
+  - caption, table, tbody, td, tfoot, th, thead, tr
+  - not [col, colgroup]
 - [x] Images
   - figcaption, figure, img, picture, svg
 - [x] Audio and Video
   - audio, video
 - [x] Embedded
-  - iframe, object
+  - embed, iframe, object
 - [x] Scripting
   - canvas, noscript
 - [x] Buttons
   - button
 - [x] Forms
-  - datalist, fieldset, form, input, label, legend, optgroup, option, output, select, textarea
+  - fieldset, form, input, label, legend, output, select, textarea
+  - not [datalist, optgroup, option]
+- [ ] Progress bars
+  - meter, progress
 
 ### Objects - Layout classes, cosmetic-free design patterns
 - [x] Basic HTML
 - [x] Semantic sectioning
-- [x] Text formatting
-- [x] Icons (Ionicon - external lib)
+- [x] Text blocks
+- [x] Interactive elements
+- [x] Semantic inline text
 - [x] Lists
 - [x] Tables
 - [x] Images
-- [x] Audio and video
+- [x] Audio and Video
 - [x] Embedded
 - [x] Scripting
 - [x] Buttons
-- [x] Forms
-  - Sem formatação adicional (apenas formatação de bare elements)
+- [x] Forms - sem formatação adicional (apenas formatação de bare elements)
+- [ ] Progress bars
 
 ### Components - UI Classes, designed components, chunks of UI
-- [x] Messages (text messages)
-- [x] Grid layout
-- [x] Flexbox
-- [x] Containers
-- [x] Toolbars
-  - Toolbars and branding
-- [x] Avatars (personal avatar)
-
 - [ ] Wireframe
-- [ ] Banner (hero)
-- [ ] Menus and navigation (menu h, menu v, dropdown, breadcrumbs, pagination)
-- [ ] Messages (notice blocks, alerts, toasts and notify)
-- [ ] Text columns
-- [ ] Sticky
-- [ ] Tooltips
-- [ ] Badges
-- [ ] Cards
+- [ ] Containers
+- [ ] Grid layout
+- [ ] Flexbox
+- [ ] Icons (Ionicon - external lib)
+- [ ] Messages (text messages, notice blocks)
+- [ ] Indicators (tags, badges, pills and chips)
 - [ ] Loaders and spinners
-- [ ] Rating
-- [ ] Audio and video displays
+- [ ] Branding
+- [ ] Avatars (personal avatar)
+- [ ] Headers and footers
+- [ ] Toolbars (toolbars, sticky bar and branding)
+- [ ] Banner (hero)
+- [ ] Tooltips
+- [ ] Form components (toggle, button toggle, slider, range)
+- [ ] Cards
+- [ ] Menus (menu h, menu v, dropdown)
+- [ ] Navigation (breadcrumbs, pagination)
+- [ ] Stepper
+- [ ] Timeline
 - [ ] Collapsible
 - [ ] Accordion
 - [ ] Drawer
+- [ ] Alerts (alerts, toasts and notify)
 - [ ] Modals and popovers
 - [ ] Tabs and tab panels
-- [ ] Gallery
 - [ ] Carousel
-- [ ] Stepper
-- [ ] Timeline
+- [ ] Gallery
 - [ ] Parallax
-- [ ] Form components (toggle, button toggle, slider, range)
-- [ ] Dashboards [bars, donuts, lines, piechart, ...]
+- [ ] Dashboards (bars, donuts, lines, piechart, ...)
 
 ### Utilities - IDs and !important, helpers and overrides
-- [x] Color utils
-  - Color palette (borders, backgrounds and colors, gradients)
-- [x] Text utils
-  - Modificadores de texto padrão
-- [x] Spacing
-- [x] Borders (radius and lines)
-- [x] Animations (blink, pulse, rotate, spin)
-- [x] CSS linter
-  - atributos obrigatórios ou recomendados em tags
-  - tags e atributos marcados com status deprecated
-
-- [ ] Shadows (box and text)
+- [x] Color utils (color palette, borders, backgrounds and colors, gradients)
+- [ ] Text utils (modificadores de texto padrão)
+- [ ] Text utils (columns)
+- [ ] Spacing
+- [ ] Borders (radius and lines)
+- [ ] Elevation (box shadows)
+- [ ] Elevation (text shadows)
 - [ ] Opacity
 - [ ] Filters
 - [ ] Helper classes
 - [ ] Hover, focus, and other states
+- [ ] Animations (blink, pulse, rotate, spin)
 - [ ] Transitions
+- [ ] Theme (light / dark mode)
 - [ ] Breakpoints and responsive design
-- [ ] Light/Dark mode
+- [x] CSS linter
+  - atributos obrigatórios ou recomendados em tags
+  - tags e atributos marcados com status deprecated
 
 
 ---
-Desenvolvido por [Ednilson Robert](https://ednilsonrobert.github.io/).
+Desenvolvido por [Ed Robert](https://ednilsonrobert.github.io/).
