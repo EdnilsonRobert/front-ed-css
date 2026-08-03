@@ -5,7 +5,8 @@
 ============================================================================= */
 
 // Headers ---------------------------------------------------------------------
-.header {
+.header,
+.header-fixed {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,20 +15,9 @@
   background-color: var(--header-background);
 }
 
-.header-wrapper {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header-fixed {
   max-width: var(--header-max-width);
   margin-inline: auto;
-  padding-inline: var(--header-padding-x);
-  padding-block: var(--header-padding-y);
-  background-color: var(--header-background);
-}
-:has(> .header-wrapper) {
-  padding: unset;
-  background-color: unset;
 }
 
 /* END OF FILE ============================================================== */

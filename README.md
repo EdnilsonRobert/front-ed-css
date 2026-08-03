@@ -85,13 +85,13 @@
 - [x] Grid layout
 - [x] Flexbox
 - [x] Icons (Ionicon - external lib)
-- [ ] Messages (text messages, notice blocks)
-- [ ] Indicators (tags, badges, pills and chips)
-- [ ] Loaders and spinners
-- [ ] Branding
-- [ ] Avatars (personal avatar)
-- [ ] Headers and footers
-- [ ] Toolbars (toolbars, sticky bar and branding)
+- [x] Messages (text messages, notice blocks)
+- [x] Indicators (tags, badges, pills and chips)
+- [x] Loaders and spinners
+- [x] Branding
+- [x] Avatars (personal avatar)
+- [x] Headers and footers
+- [ ] Toolbars (toolbars, sticky bar)
 - [ ] Banner (hero)
 - [ ] Tooltips
 - [ ] Form components (toggle, button toggle, slider, range)

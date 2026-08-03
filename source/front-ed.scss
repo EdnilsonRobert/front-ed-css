@@ -39,32 +39,30 @@
 @use './5-objects/forms';
 
 // COMPONENTS - UI Classes, designed components, chunks of UI
+// @use './6-components/wireframes';
 @use './6-components/containers';
 @use './6-components/grid-layout';
 @use './6-components/flexbox';
 @use './6-components/icons';
+@use './6-components/messages';
+@use './6-components/indicators';
+@use './6-components/loaders';
+@use './6-components/branding';
+@use './6-components/avatars';
+@use './6-components/headers';
 
-// @use './6-components/wireframes';
-// @use './6-components/messages';
-// @use './6-components/indicators';
-// @use './6-components/loaders';
-// @use './6-components/branding';
-// @use './6-components/avatars';
-// @use './6-components/headers';
-// @use './6-components/toolbars';
-
-// [ ] Wireframe
+// [ ] Wireframes
 // [X] Containers
 // [X] Grid layout
 // [X] Flexbox
 // [X] Icons (Ionicon - external lib)
-// [ ] Messages (text messages, notice blocks)
-// [ ] Indicators (tags, badges, pills and chips)
-// [ ] Loaders and spinners
-// [ ] Branding
-// [ ] Avatars (personal avatar)
-// [ ] Headers and footers
-// [ ] Toolbars (toolbars, sticky bar and branding)
+// [X] Messages (text messages, notice blocks)
+// [X] Indicators (tags, badges, pills and chips)
+// [X] Loaders and spinners
+// [X] Branding
+// [X] Avatars (personal avatar)
+// [X] Headers and footers
+// [ ] Toolbars (toolbars, sticky bar)
 // [ ] Banner (hero)
 // [ ] Tooltips
 // [ ] Form components (toggle, button toggle, slider, range)

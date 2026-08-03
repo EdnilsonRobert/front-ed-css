@@ -238,102 +238,83 @@
 
   /* Icons ------------------------------------------------------------------ */
   --icon-color: var(--red);
+  --icon-base: 2.4rem;
   --icon-md: 3.2rem;
   --icon-lg: 4.8rem;
   --icon-xl: 6.4rem;
 
-
-
   /* Messages --------------------------------------------------------------- */
-  /*
-  --notice-block-max-width: 48rem;
+  --box-default-border: light-dark(var(--ui-color-2), var(--ui-color-2));
+  --box-default-background: light-dark(var(--ui-color-0), var(--ui-color-0));
+  --box-default-color: light-dark(var(--ui-color-7), var(--ui-color-7));
+  --box-positive-border: light-dark(var(--green-3), var(--green-3));
+  --box-positive-background: light-dark(var(--green-1), var(--green-1));
+  --box-positive-color: light-dark(var(--green-8), var(--green-8));
+  --box-negative-border: light-dark(var(--red-2), var(--red-2));
+  --box-negative-background: light-dark(var(--red-1), var(--red-1));
+  --box-negative-color: light-dark(var(--red-7), var(--red-7));
+  --box-warning-border: light-dark(var(--gold-4), var(--gold-4));
+  --box-warning-background: light-dark(var(--gold-1), var(--gold-1));
+  --box-warning-color: light-dark(var(--gold-9), var(--gold-9));
+  --box-info-border: light-dark(var(--blue-3), var(--blue-3));
+  --box-info-background: light-dark(var(--blue-1), var(--blue-1));
+  --box-info-color: light-dark(var(--blue-7), var(--blue-7));
+  --notice-block-max-width: var(--container-width-sm);
 
   /* Indicators ------------------------------------------------------------- */
-  /*
-  --tags-color-primary: var(--ui-color-5);
-  --tags-color-secondary: var(--ui-color-0);
+  --tags-color-primary: light-dark(var(--ui-color-5), var(--ui-color-5));
+  --tags-color-secondary: light-dark(var(--ui-color-0), var(--ui-color-0));
   --tags-size: 1.4rem;
 
-  --tags-labeled-color-primary: var(--ui-color-2);
-  --tags-labeled-color-secondary: var(--ui-color-1);
-  --tags-labeled-text-primary: var(--ui-color-7);
-  --tags-labeled-text-secondary: var(--ui-color-7);
+  --tags-labeled-color: light-dark(var(--ui-color-2), var(--ui-color-2));
+  --tags-text-primary: light-dark(var(--ui-color-7), var(--ui-color-7));
+  --tags-text-secondary: light-dark(var(--ui-color-7), var(--ui-color-7));
   --tags-labeled-size: 1.4rem;
 
-  --badges-color-primary: var(--ui-color-5);
-  --badges-color-secondary: var(--ui-color-0);
+  --badges-color-primary: light-dark(var(--ui-color-5), var(--ui-color-5));
+  --badges-color-secondary: light-dark(var(--ui-color-0), var(--ui-color-0));
   --badges-size: 1.4rem;
 
-  --pills-color-primary: var(--ui-color-5);
-  --pills-color-secondary: var(--ui-color-0);
+  --pills-color: light-dark(var(--ui-color-2), var(--ui-color-2));
+  --pills-text-primary: light-dark(var(--ui-color-7), var(--ui-color-7));
+  --pills-text-secondary: light-dark(var(--ui-color-7), var(--ui-color-7));
   --pills-size: 1.4rem;
 
-  --pills-labeled-color-primary: var(--ui-color-2);
-  --pills-labeled-color-secondary: var(--ui-color-1);
-  --pills-labeled-text-primary: var(--ui-color-7);
-  --pills-labeled-text-secondary: var(--ui-color-7);
-  --pills-labeled-size: 1.4rem;
-
-  --chips-color-primary: var(--ui-color-5);
-  --chips-color-secondary: var(--ui-color-0);
+  --chips-color-primary: light-dark(var(--ui-color-5), var(--ui-color-5));
+  --chips-color-secondary: light-dark(var(--ui-color-0), var(--ui-color-0));
   --chips-size: 1.4rem;
 
   /* Loaders ---------------------------------------------------------------- */
-  /*
-  --loader-t: var(--ui-color-2);
-  --loader-lr: var(--ui-color-2);
-  --loader-b: var(--ui-color-5);
-  --loader-animation: 2000ms linear;
+  --loader-size: 4.8rem;
+  --loader-stroke: .6rem;
+  --custom-loader-size: 9.6rem;
+  --custom-loader-stroke: .9rem;
+  --loader-t: light-dark(var(--ui-color-2), var(--ui-color-2));
+  --loader-lr: light-dark(var(--ui-color-2), var(--ui-color-2));
+  --loader-b: light-dark(var(--ui-color-5), var(--ui-color-5));
+  --loader-animation: spin-cw 2000ms linear infinite;
 
   /* Branding --------------------------------------------------------------- */
-  /*
   --brand-image-align: end;
   --brand-image-width: 6rem;
   --brand-image-margin: 1.2rem;
-  --brand-name-color: var(--ui-color-5);
-  --brand-name-weight: 600;
-  --brand-name-size: 2.4rem;
-  --brand-name-font: var(--font-sans-display);
-  --brand-overline-margin-b: 0;
-  --brand-overline-color: var(--ui-color-4);
-  --brand-overline-size: 1.8rem;
-  --brand-caption-margin-t: 0;
-  --brand-caption-color: var(--ui-color-4);
-  --brand-caption-size: 1.6rem;
+  --brand-caption-margin: 0;
+  --brand-caption-color: light-dark(var(--ui-color-5), var(--ui-color-5));
+  --brand-caption-size: 1.8rem;
 
   /* Avatars ---------------------------------------------------------------- */
-  /*
+  --avatar-padding: 0;
   --avatar-radius: var(--radius-base);
-  --avatar-background: transparent;
   --avatar-image-size: 4.8rem;
-  --avatar-image-radius: 50%;
-  --avatar-id-padding-x: .6rem 0;
-  --avatar-id-color: var(--ui-color-7);
-  --avatar-id-size: 1.4rem;
+  --avatar-image-radius: var(--radius-base);
+  --avatar-id-color: light-dark(var(--ui-color-5), var(--ui-color-5));
+  --avatar-id-size: 1.8rem;
 
   /* Headers and footers ---------------------------------------------------- */
-  /*
   --header-max-width: var(--container-width-xl);
   --header-padding-x: 1.2rem;
   --header-padding-y: 1.2rem;
-  --header-background: var(--ui-color-2);
-
-  /* Tooltips --------------------------------------------------------------- */
-  /*
-  --tooltip-background: var(--ui-color-1);
-  --tooltip-color: var(--ui-color-7);
-  --tooltip-hint: var(--ui-color-3);
-
-  /* Alerts ----------------------------------------------------------------- */
-  /* --alert-max-width: 36rem; */
-  /* --alert-space: 2.4rem; */
-  /* --alert-border: var(--ui-color-3); */
-  /* --alert-background: var(--ui-color-0); */
-
-  /* --toast-max-width: 36rem; */
-  /* --toast-space: 1.2rem 2.4rem; */
-  /* --toast-border: var(--ui-color-3); */
-  /* --toast-background: var(--ui-color-0); */
+  --header-background: light-dark(var(--ui-color-2), var(--ui-color-7));
 
   /* Animations ============================================================= */
   --anima-blink:    blink 700ms linear 100ms infinite;
