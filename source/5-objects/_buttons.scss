@@ -37,21 +37,4 @@
 
 .button-ghost { background-color: unset; }
 
-.button-large {
-  min-width: var(--button-large);
-  height: var(--button-large);
-  padding-inline: 2.4rem;
-  font-size: var(--button-large-font-size);
-
-  ion-icon { font-size: var(--button-large-icon-size); }
-}
-
-.button-small {
-  min-width: var(--button-small);
-  height: var(--button-small);
-  font-size: var(--button-small-font-size);
-
-  ion-icon { font-size: var(--button-small-icon-size); }
-}
-
 /* END OF FILE ============================================================== */

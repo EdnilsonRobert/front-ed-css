@@ -14,21 +14,15 @@ button {
   height: 4.8rem;
   padding-inline: 1.2rem;
   outline: unset;
-  border-radius: var(--button-radius);
   border: unset;
-  background-color: var(--button-background);
-  color: var(--button-color);
-  font-weight: var(--button-weight);
-  font-size: var(--button-text);
+  background-color: light-dark(var(--ui-color-0), var(--ui-color-7));
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
   font-family: inherit;
   line-height: var(--lh-125);
   vertical-align: bottom;
   cursor: default;
-
-  ion-icon {
-    color: var(--button-icon-color);
-    font-size: var(--button-icon-size);
-  }
 
   &:disabled { opacity: .5; }
 }
