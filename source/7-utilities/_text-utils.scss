@@ -31,27 +31,4 @@
 .to-lowercase { text-transform: lowercase; }
 .to-uppercase { text-transform: uppercase; }
 
-.deleted, .inserted {
-  padding-inline: .6rem;
-  border-radius: var(--radius-small);
-  line-height: inherit;
-}
-.deleted {
-  background-color: var(--red-1);
-  color: var(--red-7);
-  text-decoration: line-through;
-}
-.inserted {
-  background-color: var(--green-1);
-  color: var(--green-8);
-  text-decoration: unset;
-}
-
-.text-sub, .text-sup {
-  font-size: 1.2rem;
-  line-height: var(--lh-100);
-}
-.text-sub { vertical-align: sub; }
-.text-sup { vertical-align: super; }
-
 /* END OF FILE ============================================================== */
