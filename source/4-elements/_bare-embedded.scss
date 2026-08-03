@@ -4,15 +4,6 @@
   File: Embedded
 ============================================================================= */
 
-object {
-  display: block;
-  width: 100%;
-  max-width: var(--object-max-width);
-  margin-inline: auto;
-  border-radius: var(--radius-small);
-  scrollbar-width: thin;
-}
-
 iframe {
   display: block;
   overflow: auto;
@@ -22,6 +13,18 @@ iframe {
   border-radius: var(--radius-base);
   border: unset;
   scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar);
+}
+
+embed,
+object {
+  display: block;
+  width: 100%;
+  max-width: var(--embedded-max-width);
+  margin-inline: auto;
+  border-radius: var(--radius-sm);
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar);
 }
 
 /* END OF FILE ============================================================== */
