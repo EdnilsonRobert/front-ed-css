@@ -57,17 +57,17 @@ video:not([controls]) {
 }
 
 // DEPRECATED ------------------------------------------------------------------
-acronym, applet, big, blink, center, dir, embed, font, hgroup, marquee, menuitem, plaintext, rb, rtc, strike, tt, xmp {
+acronym, applet, big, blink, center, dir, font, marquee, menuitem, plaintext, rb, rtc, strike, tt, xmp {
   background-color: var(--red-2);
   color: var(--red-8);
 }
 
-applet, dir, embed, hgroup, xmp,
+applet, dir, xmp,
 :has(> acronym), :has(> big), :has(> blink), :has(> center), :has(> font),
 :has(> marquee), :has(> menuitem), :has(> plaintext), :has(> rb), :has(> rtc),
 :has(> strike), :has(> tt) {
   &::after {
-    content: 'Há tag descontinuada na marcação do HTML, utilize outra tag.';
+    content: 'Há tags descontinuadas na marcação do HTML, utilize outra tag.';
     display: block;
     padding: .6rem 1.2rem;
     background-color: var(--red-5);
