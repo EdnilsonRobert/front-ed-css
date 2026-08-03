@@ -5,11 +5,10 @@
 ============================================================================= */
 
 .avatar {
-  display: flex;
-  justify-content: left;
-  align-items: stretch;
+  height: var(--avatar-image-size);
+  padding-inline: var(--avatar-padding);
   border-radius: var(--avatar-radius);
-  background-color: var(--avatar-background);
+  background-color: unset;
 }
 
 .avatar-image {
@@ -18,8 +17,6 @@
 }
 
 .avatar-id {
-  padding-inline: var(--avatar-id-padding-x);
-  place-content: center;
   color: var(--avatar-id-color);
   font-size: var(--avatar-id-size);
   line-height: var(--lh-125);
