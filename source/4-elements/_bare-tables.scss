@@ -9,7 +9,6 @@ table {
   width: var(--table-width);
   margin-inline: auto;
   border-collapse: collapse;
-  background-color: var(--table-background);
 }
 
 caption {
@@ -21,15 +20,10 @@ caption {
 
 // col, colgroup {}
 
-thead {
-  border-block: .2rem solid var(--table-border);
-  background-color: var(--thead-background);
-}
+thead { border-block: .2rem solid var(--table-border); }
 
-tfoot { background-color: var(--tfoot-background); }
-
-tbody { background-color: var(--tbody-background); }
-
+// tfoot {}
+// tbody {}
 // tr {}
 
 th {
@@ -38,7 +32,6 @@ th {
   font-weight: var(--thead-weight);
   font-size: var(--thead-size);
   line-height: var(--lh-125);
-  text-align: var(--thead-align);
 }
 
 td {
