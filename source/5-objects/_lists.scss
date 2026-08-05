@@ -45,12 +45,4 @@
   span:first-of-type { flex-grow: 1; }
 }
 
-.menu-bar {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--menu-bar-cell), auto));
-  gap: var(--menu-bar-gap);
-
-  button { width: 100%; }
-}
-
 /* END OF FILE ============================================================== */
