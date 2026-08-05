@@ -24,13 +24,15 @@
 }
 
 [data-border] {
-  border-radius: var(--radius-base);
-  border: var(--border-base) solid;
-  border-color: attr(data-border type(<color>));
+  border-color: attr(data-border type(<color>)) !important;
 }
 
-[data-background] { background-color: attr(data-background type(<color>)); }
+[data-background] {
+  background-color: attr(data-background type(<color>)) !important;
+}
 
-[data-color] { color: attr(data-color type(<color>)); }
+[data-color] {
+  color: attr(data-color type(<color>)) !important;
+}
 
 /* END OF FILE ============================================================== */
