@@ -10,21 +10,11 @@ iframe {
   width: 100%;
   max-width: var(--iframe-max-width);
   margin-inline: auto;
-  border-radius: var(--radius-base);
   border: unset;
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar);
 }
 
-embed,
-object {
-  display: block;
-  width: 100%;
-  max-width: var(--embedded-max-width);
-  margin-inline: auto;
-  border-radius: var(--radius-sm);
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar);
-}
+// embed, object {}
 
 /* END OF FILE ============================================================== */
