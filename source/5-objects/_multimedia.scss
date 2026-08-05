@@ -4,10 +4,10 @@
   File: Multimedia (audio and video)
 ============================================================================= */
 
+// Audio -----------------------------------------------------------------------
 // https://chromium.googlesource.com/chromium/blink/+/72fef91ac1ef679207f51def8133b336a6f6588f/Source/core/css/mediaControls.css
 
 .audio-player {
-  border-radius: var(--radius-base);
   background-color: var(--audio-panel-color);
 
   &::-webkit-media-controls-panel {
@@ -20,7 +20,6 @@
   max-width: var(--audio-display-max-width);
   margin-inline: auto;
   padding: .6rem;
-  border-radius: var(--radius-md);
   border: .1rem solid var(--audio-display-border);
   background-color: var(--audio-display-background);
 
@@ -35,9 +34,9 @@
   margin-bottom: .6rem;
 }
 
-.audio-display-cover { border-radius: var(--radius-base); }
-
+// .audio-display-cover {}
 // .audio-display-info {}
+
 .audio-display-info-track {
   color: var(--audio-display-track);
   font-weight: var(--font-weight-bolder);
@@ -50,15 +49,16 @@
   line-height: var(--lh-100);
 }
 
+// Video -----------------------------------------------------------------------
 .video-display {
   max-width: var(--video-max-width);
   margin-inline: auto;
   padding: .6rem;
-  border-radius: var(--radius-md);
   background-color: var(--video-display-background);
 }
 
-.video-display-info { padding: .6rem; }
+.video-display-info { padding: .3rem .6rem; }
+
 .video-display-info-track {
   color: var(--video-display-track);
   font-weight: var(--font-weight-bolder);
