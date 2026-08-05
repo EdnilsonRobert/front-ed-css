@@ -21,7 +21,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--cell-min-width), 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(attr(data-cell rem), 1fr));
 }
 
 .gap-3  { gap: .3rem; }
