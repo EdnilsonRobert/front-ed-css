@@ -32,4 +32,12 @@
 .to-lowercase { text-transform: lowercase; }
 .to-uppercase { text-transform: uppercase; }
 
+.text-columns {
+  column-count: var(--text-columns);
+  column-width: var(--text-columns-min-width);
+  column-gap: var(--text-columns-gap);
+}
+
+.text-columns-span { column-span: all; }
+
 /* END OF FILE ============================================================== */
