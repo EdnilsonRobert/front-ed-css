@@ -8,7 +8,6 @@
   overflow: hidden;
   padding-inline: var(--image-display-padding-x);
   padding-block: var(--image-display-padding-y);
-  border-radius: var(--image-display-radius);
   background-color: var(--image-display-background);
   place-items: var(--image-display-align);
 }
@@ -20,7 +19,6 @@
   color: var(--image-caption-color);
   font-size: var(--image-caption-size);
   line-height: var(--lh-125);
-  text-align: var(--image-caption-align);
 }
 
 /* END OF FILE ============================================================== */
