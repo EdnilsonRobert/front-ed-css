@@ -22,12 +22,7 @@
   vertical-align: bottom;
   cursor: default;
 
-  ion-icon {
-    color: var(--button-icon-color);
-    font-size: var(--button-icon-size);
-  }
-
-  &.disabled { opacity: .5; }
+  ion-icon { font-size: var(--button-icon-size); }
 }
 
 .button-outlined {
