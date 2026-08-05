@@ -9,7 +9,7 @@ noscript {
   padding: .6rem 1.2rem;
   border-radius: var(--radius-sm);
   background-color: var(--red-5);
-  color: var(--ui-color-0);
+  color: var(--ui-color-1);
   font-size: 1.4rem;
   font-family: inherit;
   line-height: var(--lh-150);
@@ -17,7 +17,6 @@ noscript {
 
 canvas {
   display: var(--canvas-display);
-  border-radius: var(--radius-sm);
   border: .1rem solid var(--canvas-border);
   background-color: var(--canvas-background);
 }
