@@ -90,8 +90,7 @@ blockquote {
 dialog {
   position: unset;
   padding: 1.2rem;
-  border-radius: var(--radius-base);
-  border: var(--border-1) solid;
+  border: var(--border-1) solid var(--border-color-base);
   background-color: unset;
   color: inherit;
   font-size: inherit;
@@ -107,21 +106,16 @@ dialog {
 // a:hover MUST come after a:link and a:visited
 // a:active MUST come after a:hover
 a {
-  color: unset;
+  color: inherit;
   text-decoration: unset;
   cursor: default;
 }
-a:link    { color: unset; }
-a:visited { color: unset; }
-a:hover   { color: unset; }
-a:active  { color: unset; }
-a:focus   { color: unset; }
 
 b, strong { font-weight: var(--font-weight-bolder); }
 
 i, em { font-style: unset; }
 
-small { font-size: var(--font-size-small); }
+small { font-size: var(--font-size-sm); }
 
 sub, sup {
   font-size: 1.2rem;
@@ -150,13 +144,13 @@ del, ins {
   line-height: var(--lh-150);
 }
 del {
-  background-color: light-dark(var(--red-1), var(--red-9));
-  color: light-dark(var(--red-7), var(--red-2));
+  background-color: var(--negative-background);
+  color: var(--negative-color);
   text-decoration: line-through;
 }
 ins {
-  background-color: light-dark(var(--green-1), var(--green-9));
-  color: light-dark(var(--green-8), var(--green-2));
+  background-color: var(--positive-background);
+  color: var(--positive-color);
   text-decoration: unset;
 }
 
@@ -169,16 +163,16 @@ code, kbd {
 }
 code {
   padding-inline: .6rem;
-  background-color: light-dark(var(--ui-color-7), var(--ui-color-7));
-  color: light-dark(var(--green-3), var(--green-3));
+  background-color: var(--ui-color-7);
+  color: var(--green-3);
   font-weight: 400;
   font-family: var(--font-monospace);
   font-variation-settings: 'MONO' 1;
 }
 kbd {
   padding-inline: 1.2rem;
-  border: .1rem solid light-dark(var(--ui-color-3), var(--ui-color-5));
-  background-color: light-dark(var(--ui-color-0), var(--ui-color-8));
+  border: .1rem solid light-dark(var(--ui-color-3), var(--ui-color-4));
+  background-color: light-dark(var(--ui-color-0), var(--ui-color-7));
   color: light-dark(var(--ui-color-6), var(--ui-color-0));
   font-weight: var(--font-weight-bolder);
   font-family: var(--font-sans-text);
