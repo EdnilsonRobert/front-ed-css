@@ -1,0 +1,52 @@
+/* =============================================================================
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Navigation
+============================================================================= */
+
+// Breadcrumbs -----------------------------------------------------------------
+.breadcrumbs {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: .6rem;
+  font-size: 1.4rem;
+
+  ion-icon {
+    color: var(--crumb-splitter);
+    font-size: 1.6rem;
+  }
+}
+
+.crumb      { color: var(--crumb-color); }
+.crumbs-end { color: var(--crumb-end-color); }
+
+// Pagination ------------------------------------------------------------------
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+
+  a {
+    min-width: 3.6rem;
+    background-color: var(--pag-item-background);
+    color: var(--pag-item-color);
+    font-size: 1.4rem;
+    line-height: 3.6rem;
+    text-align: center;
+  }
+  ion-icon { font-size: 1.6rem; }
+
+  :has(> [name="chevron-back"]),
+  :has(> [name="chevron-forward"]) {
+    background-color: transparent;
+  }
+
+  .pagination-active {
+    background-color: transparent;
+    backdrop-filter: brightness(1.5);
+  }
+}
+
+/* END OF FILE ============================================================== */

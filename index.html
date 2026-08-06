@@ -54,6 +54,10 @@
         <span>Light</span> <span class="switcher-slider"></span> <span>Dark</span>
     </label>
 
+    <!-- =================================================================== -->
+    <!-- COLOR PALETTE ===================================================== -->
+    <!-- =================================================================== -->
+
     <!-- Color palette -->
     <section class="section" id="color-palette">
         <p class="section-title">Color palette</p>
@@ -200,10 +204,14 @@
         <p><code>data-border="&lt;color&gt;"</code></p>
         <p><code>data-background="&lt;color&gt;"</code></p>
         <p><code>data-color="&lt;color&gt;"</code></p>
-        <p data-border="var(--green-5)" data-background="var(--green-2)" data-color="var(--green-8)">
+        <p class="has-border" data-border="var(--green-5)" data-background="var(--green-2)" data-color="var(--green-8)">
             Todos os atributos aplicados
         </p>
     </section>
+
+    <!-- =================================================================== -->
+    <!-- HTML ELEMENTS ===================================================== -->
+    <!-- =================================================================== -->
 
     <!-- Headings -->
     <section class="section" id="headings">
@@ -250,7 +258,7 @@
 
         <p class="section-subtitle">Formatted</p>
         <p><code>.custom-p</code></p>
-        <p class="custom-p">In space no one can hear your scream.</p>
+        <p class="custom-p font-300 text-center">In space no one can hear your scream.</p>
 
         <p><code>.paragraph</code></p>
         <p class="paragraph">– Minha nossa – com um olhar sem brilho, Lambert encarou o andróide. – Você admira aquela coisa maldita.</p>
@@ -267,27 +275,27 @@
         <hr>
 
         <p class="section-subtitle">Formatted</p>
-        <p><code>.h-rule-66</code> (width = 66%)</p>
-        <hr class="h-rule-66">
+        <p><code>.hr-66</code> (width = 66%)</p>
+        <hr class="hr-66">
 
-        <p><code>.h-rule-50</code> (width = 50%)</p>
-        <hr class="h-rule-50">
+        <p><code>.hr-50</code> (width = 50%)</p>
+        <hr class="hr-50">
 
-        <p><code>.h-rule-33</code> (width = 33%)</p>
-        <hr class="h-rule-33">
+        <p><code>.hr-33</code> (width = 33%)</p>
+        <hr class="hr-33">
     </section>
 
     <!-- Basic HTML -->
-    <section class="container-fixed" id="basic-html">
+    <section class="section" id="basic-html">
         <p class="section-title">Basic HTML</p>
         <p class="section-subtitle">Exemplo de bloco de texto</p>
 
         <p class="heading-overline">Filme em destaque</p>
         <h1 class="heading-1">Alien, o oitavo passageiro</h1>
         <p class="heading-caption">Data de lançamento: 1979</p>
+        <hr class="hr-66">
 
-        <hr class="h-rule-50">
-        <p class="custom-p">In space no one can hear your scream.</p>
+        <p class="custom-p font-300 text-center">In space no one can hear your scream.</p>
         <p class="paragraph">Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
 
         <h2 class="heading-2">O reconhecimento da obra</h2>
@@ -306,9 +314,9 @@
         <p class="paragraph">Aliens (1986), Alien 3 (1992) e Alien Resurrection (1997), Prometheus (2012) e Alien: Covenant (2017).</p>
     </section>
 
-    <!-- Text Formatting -->
-    <section class="section" id="text-formatting">
-        <p class="section-title">Text formatting</p>
+    <!-- Text blocks -->
+    <section class="section" id="text-blocks">
+        <p class="section-title">Text blocks</p>
 
         <p class="section-subtitle">Quotation</p>
         <p><code>blockquote</code></p>
@@ -321,10 +329,20 @@
             <p>Vocês não podem matá-lo. Não sabem com o que estão lidando. Um organismo perfeito. A sua perfeição estrutural só se compara com sua hostilidade. Eu admiro a sua pureza. É um sobrevivente, desprovido de consciência, remorso ou ilusões de moralidade.</p>
             <p>Ash (Alien, o oitavo passageiro - 1979)</p>
         </blockquote>
+    </section>
+
+    <!-- Interactive elements -->
+    <section class="section" id="interactive">
+        <p class="section-title">Interactive elements</p>
 
         <p class="section-subtitle">Dialog</p>
         <p><code>dialog</code></p>
         <dialog open="open">Este conteúdo está dentro de um dialog</dialog>
+    </section>
+
+    <!-- Semantic inline text -->
+    <section class="section" id="semantic">
+        <p class="section-title">Semantic inline text</p>
 
         <p class="section-subtitle">Anchor</p>
         <p><code>a</code> <a href="./">Este é um exemplo de link em um págrafo</a></p>
@@ -447,13 +465,6 @@
             <li><ion-icon name="checkmark"></ion-icon> <span>Item de lista</span> <span>Complemento</span></li>
             <li><ion-icon name="checkmark"></ion-icon> <span>Item de lista</span> <span>Complemento</span></li>
         </ul>
-
-        <p><code>.menu-bar</code></p>
-        <menu class="menu-bar">
-            <li><button type="button">Botão do menu</button></li>
-            <li><button type="button">Botão do menu</button></li>
-            <li><button type="button">Botão do menu</button></li>
-        </menu>
     </section>
 
     <!-- Tables -->
@@ -649,21 +660,13 @@
         <p><code>iframe</code></p>
         <iframe src="./assets/iframe.html"></iframe>
 
-        <p><code>embed</code></p>
-        <embed src="./assets/document.pdf#view=Fit" type="application/pdf"/>
-
-        <p><code>object</code></p>
-        <object data="./assets/document.pdf#view=Fit" type="application/pdf"></object>
-
         <p class="section-subtitle">Formatted</p>
         <p><code>iframe</code> <code>.ratio-widescreen</code></p>
         <iframe class="iframe ratio-widescreen" src="./assets/iframe.html"></iframe>
 
         <p><code>iframe</code> <code>.ratio-landscape</code></p>
-        <iframe class="iframe ratio-landscape" src="./assets/document.pdf"></iframe>
+        <iframe class="iframe ratio-landscape" src="./assets/document.pdf#view=Fit"></iframe>
     </section>
-
-
 
     <!-- Scripting -->
     <section class="section" id="scripting">
@@ -675,6 +678,7 @@
         <p>Mesma formatação da classe <code>.noscript</code></p>
 
         <p><code>canvas</code> Canvas (gráficos via script)</p>
+
         <figure>
             <canvas id="js-canvas1" width="128" height="128"></canvas>
             <canvas id="js-canvas2" width="128" height="128"></canvas>
@@ -690,18 +694,17 @@
                 // CANVAS #2
                 const canvas2 = document.querySelector('#js-canvas2');
                 let ctx2 = canvas2.getContext('2d');
-                ctx2.beginPath();
-                ctx2.arc(64, 64, 50, 0, 2 * Math.PI);
-                ctx2.lineWidth = 9;
-                ctx2.strokeStyle = 'hsl(220, 24%, 90%)';
-                ctx2.stroke();
-
                 const x = 64;      // largura / 2
                 const y = 64;      // altura / 2;
                 const radius = 50; // raio do círculo
                 const startAngle = 1.5 * Math.PI;
                 const endAngle = .75 * Math.PI;
                 const counterclockwise = false;
+                ctx2.beginPath();
+                ctx2.arc(64, 64, 50, 0, 2 * Math.PI);
+                ctx2.lineWidth = 9;
+                ctx2.strokeStyle = 'hsl(220, 24%, 90%)';
+                ctx2.stroke();
                 ctx2.beginPath();
                 ctx2.lineCap = 'butt'; // butt, square, round
                 ctx2.arc(x, y, radius, startAngle, endAngle, counterclockwise);
@@ -899,6 +902,10 @@
         </form>
     </section>
 
+    <!-- =================================================================== -->
+    <!-- COMPONENTS ======================================================== -->
+    <!-- =================================================================== -->
+
     <!-- Containers -->
     <section class="section" id="containers">
         <p class="section-title">Containers</p>
@@ -913,8 +920,8 @@
             </ul>
         </div>
 
-        <p><code>.container-fixed</code></p>
-        <div class="container-fixed" data-background="var(--ui-color-0)">
+        <p><code>.section</code> <code>.has-max-width</code></p>
+        <div class="section has-max-width" data-background="var(--ui-color-0)">
             <ul>
                 <li>Max width: customizável</li>
                 <li>Margem eixo X: container centralizado</li>
@@ -924,20 +931,24 @@
         </div>
 
         <p class="section-subtitle">Block sizing</p>
-        <p><code>.block-large</code></p>
-        <div class="block-large" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
+        <p><code>.container-xl</code></p>
+        <div class="container-xl" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
 
-        <p><code>.block-medium</code></p>
-        <div class="block-medium" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
+        <p><code>.container-lg</code></p>
+        <div class="container-lg" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
 
-        <p><code>.block-small</code></p>
-        <div class="block-small" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
+        <p><code>.container-md</code></p>
+        <div class="container-md" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
+
+        <p><code>.container-sm</code></p>
+        <div class="container-sm" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
 
         <p><code>.margin-auto</code> Centraliza blocos de controle</p>
-        <div class="block-small margin-auto" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
+        <div class="container-sm margin-auto" style="height: 12rem;" data-background="var(--ui-color-0)"></div>
 
         <p class="section-subtitle">Aspect ratio</p>
-        <div class="grid-12 gap-12" style="max-width: 48rem;">
+
+        <div class="grid-12 gap-12 container-sm">
             <div class="ratio-landscape col-6 padding-6" data-background="var(--ui-color-2)">
                 <code>.ratio-landscape</code>
             </div>
@@ -982,7 +993,7 @@
 
         <p class="section-subtitle">Grid com número de colunas indefinido</p>
         <p><code>.grid</code></p>
-        <div class="grid gap-3">
+        <div class="grid gap-3" data-cell="9.6">
             <p data-background="var(--ui-color-2)">Célula com mais conteúdo</p>
             <p data-background="var(--ui-color-2)">Célula</p>
             <p data-background="var(--ui-color-2)">Célula</p>
@@ -1126,7 +1137,7 @@
 
         <p class="section-subtitle">Column child behaviour</p>
         <p><code>.column</code> > <code>.flex-grow</code></p>
-        <div class="grid gap-3">
+        <div class="grid gap-3" data-cell="6">
             <div class="column gap-3" data-background="var(--ui-color-0)">
                 <p class="flex-grow padding-6" data-background="var(--ui-color-2)">Com flex-grow</p>
                 <p class="padding-6" data-background="var(--ui-color-2)">Sem flex-grow</p>
@@ -1140,6 +1151,201 @@
         </div>
     </section>
 
+    <!-- Headers and footers -->
+    <section class="section" id="headers">
+        <p class="section-title">Header and footers</p>
+
+        <p><code>.header</code> > <code>.header-container</code></p>
+        <header class="header">
+            <div class="header-content">
+                <p>Conteúdo da esquerda</p>
+                <p>Conteúdo da direita</p>
+            </div>
+        </header>
+
+        <p><code>.header</code> > <code>.header-container</code> <code>.has-max-width</code></p>
+        <header class="header">
+            <div class="header-content has-max-width">
+                <p>Conteúdo da esquerda</p>
+                <p>Conteúdo da direita</p>
+            </div>
+        </header>
+    </section>
+
+    <!-- Banners -->
+    <section class="section" id="banners">
+        <p class="section-title">Banners</p>
+
+        <p><code>.banner</code></p>
+        <div class="banner ratio-widescreen">
+            <div class="banner-content" data-background="var(--ui-color-1)">
+                <p class="heading-4 padding-12 text-center" data-color="var(--ui-color-5)">Banner <br> content</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branding -->
+    <section class="section" id="branding">
+        <p class="section-title">Branding</p>
+
+        <p><code>.brand</code> > <code>.heading-3</code></p>
+        <div class="padding-x-24 padding-y-12" data-background="var(--ui-color-0)">
+            <hgroup class="brand">
+                <h1 class="heading-3">.front-ed.css</h1>
+            </hgroup>
+        </div>
+
+        <p><code>.brand</code> > <code>.heading-3 + .brand-caption</code></p>
+        <div class="padding-x-24 padding-y-12" data-background="var(--ui-color-0)">
+            <hgroup class="brand">
+                <h1 class="heading-3">.front-ed.css</h1>
+                <p class="brand-caption">Brand caption</p>
+            </hgroup>
+        </div>
+
+        <p><code>.brand</code> > <code>.brand-image + .brand-group</code></p>
+        <div class="padding-x-24 padding-y-12" data-background="var(--ui-color-0)">
+            <div class="brand">
+                <img class="brand-image" src="./favicon.svg" alt=".front-ed.css">
+                <hgroup class="brand-group">
+                    <h1 class="heading-3">.front-ed.css</h1>
+                    <p class="brand-caption">Brand caption</p>
+                </hgroup>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avatars -->
+    <section class="section" id="avatars">
+        <p class="section-title">Avatar</p>
+
+        <p><code>.avatar</code> > <code>.avatar-image + .avatar-id</code></p>
+        <button type="button" class="avatar">
+            <img class="avatar-image" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
+            <p class="avatar-id">Radical Ed (Edward)</p>
+            <ion-icon name="chevron-down"></ion-icon>
+        </button>
+    </section>
+
+    <!-- Dropdown button -->
+    <section class="section" id="dropdown">
+        <p class="section-title">Dropdown button</p>
+
+        <p><code>.button</code> <code>.dropdown</code> > <code>.dropdown-switcher + .dropdown-content</code></p>
+        <p><code>.dropdown-content</code> <code>.left</code> <code>.center</code> <code>.right</code></p>
+
+        <div class="row padding-x-24 padding-y-12" data-background="var(--ui-color-2)">
+            <label for="dropdown-switcher-l" class="button dropdown">
+                <ion-icon name="arrow-down"></ion-icon>
+                <input type="checkbox" class="dropdown-switcher" id="dropdown-switcher-l">
+                <div class="dropdown-content left has-shadow-4">
+                    <span class="button fill-width nowrap">
+                        <span class="flex-grow">Item do dropdown</span> <ion-icon name="chevron-forward"></ion-icon>
+                    </span>
+                    <span class="button fill-width nowrap">
+                        <span class="flex-grow">Segundo item</span> <ion-icon name="chevron-forward"></ion-icon>
+                    </span>
+                </div>
+            </label>
+
+            <label for="dropdown-switcher-c" class="button dropdown">
+                <ion-icon name="arrow-down"></ion-icon>
+                <input type="checkbox" class="dropdown-switcher" id="dropdown-switcher-c">
+                <div class="dropdown-content center has-shadow-4">
+                    <span class="button fill-width nowrap">
+                        <span class="flex-grow">Item do dropdown</span> <ion-icon name="chevron-forward"></ion-icon>
+                    </span>
+                    <span class="button fill-width nowrap">
+                        <span class="flex-grow">Segundo item</span> <ion-icon name="chevron-forward"></ion-icon>
+                    </span>
+                </div>
+            </label>
+
+            <label for="dropdown-switcher-r" class="button dropdown">
+                <ion-icon name="arrow-down"></ion-icon>
+                <input type="checkbox" class="dropdown-switcher" id="dropdown-switcher-r">
+                <div class="dropdown-content right has-shadow-4">
+                    <span class="button fill-width nowrap">
+                        <span class="flex-grow">Item do dropdown</span> <ion-icon name="chevron-forward"></ion-icon>
+                    </span>
+                    <span class="button fill-width nowrap">
+                        <span class="flex-grow">Segundo item</span> <ion-icon name="chevron-forward"></ion-icon>
+                    </span>
+                </div>
+            </label>
+        </div>
+
+        <p class="section-subtitle">Alignment</p>
+        <p><code>.dropdown-content</code> <code>.left</code> <code>.center</code> <code>.right</code></p>
+    </section>
+
+    <!-- Toolbars -->
+    <section class="section" id="toolbars">
+        <p class="section-title">Toolbars</p>
+
+        <p><code>.app-bar</code> > <code>button + .divider</code></p>
+        <div class="app-bar">
+            <button type="button"><ion-icon name="person"></ion-icon></button>
+            <button type="button"><ion-icon name="heart"></ion-icon></button>
+            <button type="button"><ion-icon name="camera"></ion-icon></button>
+            <span class="divider"></span>
+            <button type="button"><ion-icon name="mic"></ion-icon></button>
+            <span class="divider"></span>
+            <button type="button"><ion-icon name="calendar"></ion-icon></button>
+            <button type="button"><ion-icon name="chatbox-ellipses"></ion-icon></button>
+            <button type="button"><ion-icon name="ellipsis-vertical"></ion-icon></button>
+        </div>
+
+        <p><code>.sticky</code></p>
+        <div class="sticky padding-12" data-background="light-dark(var(--ui-color-2), var(--ui-color-7))">
+            <p>Sticky bar</p>
+        </div>
+    </section>
+
+    <!-- Menus -->
+    <section class="section" id="menus">
+        <p class="section-title">Menus</p>
+
+        <p class="section-subtitle">Nav bar</p>
+        <p><code>nav</code> > <code>.nav-bar</code> > <code>li</code> > <code>.nav-bar-link</code></p>
+        <nav>
+            <ul class="nav-bar">
+                <li><a class="nav-bar-link" href="./">Link 01</a></li>
+                <li><a class="nav-bar-link" href="./">Link 02</a></li>
+                <li><a class="nav-bar-link" href="./">Link 03</a></li>
+                <li><a class="nav-bar-link" href="./"><ion-icon name="settings-outline"></ion-icon> Link 04</a></li>
+            </ul>
+        </nav>
+
+        <p class="section-subtitle">Alignment</p>
+        <p><code>.nav-bar</code> <code>.center</code></p>
+        <nav>
+            <ul class="nav-bar center">
+                <li><a class="nav-bar-link" href="./">Link 01</a></li>
+                <li><a class="nav-bar-link" href="./">Link 02</a></li>
+                <li><a class="nav-bar-link" href="./">Link 03</a></li>
+                <li><a class="nav-bar-link" href="./">Link 04</a></li>
+            </ul>
+        </nav>
+
+        <p><code>.nav-bar</code> <code>.right</code></p>
+        <nav>
+            <ul class="nav-bar right">
+                <li><a class="nav-bar-link" href="./">Link 01</a></li>
+                <li><a class="nav-bar-link" href="./">Link 02</a></li>
+                <li><a class="nav-bar-link" href="./">Link 03</a></li>
+                <li><a class="nav-bar-link" href="./">Link 04</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Cards -->
+    <section class="section" id="cards">
+        <p class="section-title">Cards</p>
+
+        <p><code>.card</code></p>
+    </section>
+
     <!-- Icons -->
     <section class="section" id="icons">
         <p class="section-title">Icons</p>
@@ -1148,9 +1354,10 @@
         <p><ion-icon name="heart"></ion-icon> <code>&lt;ion-icon name="heart"&gt;</code></p>
         <p><ion-icon name="heart" size="small"></ion-icon> <code>size="small"</code></p>
         <p><ion-icon name="heart" size="large"></ion-icon> <code>size="large"</code></p>
+        <p><ion-icon name="heart" size="large" data-color="var(--red)"></ion-icon> <code>size="large" data-color</code></p>
 
         <p class="section-subtitle">Formatted</p>
-        <p><ion-icon class="icon" name="heart"></ion-icon> <code>.icon</code> cor customizável</p>
+        <p><ion-icon class="icon" name="heart"></ion-icon> <code>.icon</code></p>
         <p><ion-icon class="icon icon-md" name="heart"></ion-icon> <code>.icon-md</code> tamanho customizável</p>
         <p><ion-icon class="icon icon-lg" name="heart"></ion-icon> <code>.icon-lg</code> tamanho customizável</p>
         <p><ion-icon class="icon icon-xl" name="heart"></ion-icon> <code>.icon-xl</code> tamanho customizável</p>
@@ -1230,9 +1437,9 @@
         </div>
     </section>
 
-    <!-- Indicators -->
-    <section class="section" id="indicators">
-        <p class="section-title">Indicators</p>
+    <!-- Tagging -->
+    <section class="section" id="tagging">
+        <p class="section-title">Tagging</p>
         <!-- https://namethatui.com/web/badge-chip-pill -->
 
         <p class="section-subtitle">Tags</p>
@@ -1262,7 +1469,7 @@
         <p class="heading-caption">Usado para indicar status</p>
         <p>
             <span class="pill"><span>Status</span> <span>em teste</span></span>
-            <span class="pill"><span>Prioridade</span> <span>alta</span></span>
+            <span class="pill"><span>Prioridade</span> <span>alta</span> <ion-icon name="arrow-up"></ion-icon></span>
         </p>
 
         <p class="section-subtitle">Chips</p>
@@ -1279,83 +1486,65 @@
     <section class="section" id="loaders">
         <p class="section-title">Loaders</p>
 
-        <p><code>.loader</code></p>
-        <span class="loader"></span>
+        <p><code>.spinner</code></p>
+        <span class="spinner"></span>
 
-        <p><code>.custom-loader</code></p>
-        <span class="custom-loader"></span>
+        <p><code>.custom-spinner</code></p>
+        <span class="custom-spinner"></span>
     </section>
 
-    <!-- Branding -->
-    <section class="section" id="branding">
-        <p class="section-title">Branding</p>
+    <!-- Navigation -->
+    <section class="section" id="navigation">
+        <p class="section-title">Navigation</p>
 
-        <p><code>.brand</code> > <code>.heading-3</code></p>
-        <hgroup class="brand">
-            <h1 class="heading-3">.front-ed.css</h1>
-        </hgroup>
+        <p class="section-subtitle">Breadcrumbs</p>
 
-        <p><code>.brand</code> > <code>.heading-3 + .brand-caption</code></p>
-        <hgroup class="brand">
-            <h1 class="heading-3">.front-ed.css</h1>
-            <p class="brand-caption">Brand caption</p>
-        </hgroup>
+        <p><code>nav</code> <code>.breadcrumbs</code> > <code>.crumb + ion-icon + .crumbs-end</code></p>
+        <nav class="breadcrumbs">
+            <a class="crumb" href="./">Home</a>
+            <ion-icon name="chevron-forward"></ion-icon>
+            <a class="crumb" href="./">Nível 1</a>
+            <ion-icon name="chevron-forward"></ion-icon>
+            <a class="crumb" href="./">Nível 2</a>
+            <ion-icon name="chevron-forward"></ion-icon>
+            <span class="crumbs-end">Item atual</span>
+        </nav>
 
-        <p><code>.brand</code> > <code>.brand-image + .brand-group</code></p>
-        <div class="brand">
-            <img class="brand-image" src="./favicon.svg" alt=".front-ed.css">
-            <hgroup class="brand-group">
-                <h1 class="heading-3">.front-ed.css</h1>
-                <p class="brand-caption">Brand caption</p>
-            </hgroup>
-        </div>
+        <p class="section-subtitle">Pagination</p>
+        <p><code>nav</code> <code>.pagination</code> > <code>a</code></p>
+        <nav class="pagination">
+            <a href="./"><ion-icon name="chevron-back"></ion-icon></a>
+            <a href="./">01</a>
+            <a href="./">02</a>
+            <a class="pagination-active" href="./">03</a>
+            <a href="./">04</a>
+            <a><ion-icon name="ellipsis-horizontal"></ion-icon></a>
+            <a href="./">99</a>
+            <a href="./"><ion-icon name="chevron-forward"></ion-icon></a>
+        </nav>
     </section>
 
-    <!-- Avatars -->
-    <section class="section" id="avatars">
-        <p class="section-title">Avatar</p>
-
-        <p><code>.avatar</code> > <code>.avatar-image + .avatar-id</code></p>
-        <button type="button" class="avatar">
-            <img class="avatar-image" src="./assets/audio-cover-radical-ed.webp" alt="Cowboy Bebop">
-            <p class="avatar-id">Radical Ed (Edward)</p>
-            <ion-icon name="chevron-down"></ion-icon>
-        </button>
-    </section>
-
-    <!-- Headers and footers -->
-    <section class="section" id="headers">
-        <p class="section-title">Header and footers</p>
-
-        <p><code>.header</code></p>
-        <header class="header">
-            <p>Conteúdo da esquerda</p>
-            <p>Conteúdo da direita</p>
-        </header>
-
-        <p><code>.header-fixed</code></p>
-        <header class="header-fixed">
-            <p>Conteúdo da esquerda</p>
-            <p>Conteúdo da direita</p>
-        </header>
-    </section>
+    <!-- =================================================================== -->
+    <!-- UTILITIES ========================================================= -->
+    <!-- =================================================================== -->
 
     <!-- Text utilities -->
     <section class="section" id="text-utils">
         <p class="section-title">Text utilities</p>
 
         <p class="section-subtitle">Font weight</p>
-        <p><span class="font-light">Este texto contém a classe</span> <code>.font-light</code> (300)</p>
-        <p><span class="font-regular">Este texto contém a classe</span> <code>.font-regular</code> (400)</p>
-        <p><span class="font-medium">Este texto contém a classe</span> <code>.font-medium</code> (500)</p>
-        <p><span class="font-semibold">Este texto contém a classe</span> <code>.font-semibold</code> (600)</p>
-        <p><span class="font-bold">Este texto contém a classe</span> <code>.font-bold</code> (700)</p>
-        <p><span class="font-heavy">Este texto contém a classe</span> <code>.font-heavy</code> (800)</p>
-        <p><span class="font-black">Este texto contém a classe</span> <code>.font-black</code> (900)</p>
+        <p><span class="font-300">Este texto contém a classe</span> <code>.font-300</code></p>
+        <p><span class="font-400">Este texto contém a classe</span> <code>.font-400</code></p>
+        <p><span class="font-500">Este texto contém a classe</span> <code>.font-500</code></p>
+        <p><span class="font-600">Este texto contém a classe</span> <code>.font-600</code></p>
+        <p><span class="font-700">Este texto contém a classe</span> <code>.font-700</code></p>
+        <p><span class="font-800">Este texto contém a classe</span> <code>.font-800</code></p>
+        <p><span class="font-900">Este texto contém a classe</span> <code>.font-900</code></p>
 
         <p class="section-subtitle">Font size</p>
-        <p><span class="font-small">Este texto contém a classe</span> <code>.font-small</code></p>
-        <p><span class="font-large">Este texto contém a classe</span> <code>.font-large</code></p>
+        <p><span class="font-sm">Este texto contém a classe</span> <code>.font-sm</code></p>
+        <p><span class="font-md">Este texto contém a classe</span> <code>.font-md</code></p>
+        <p><span class="font-lg">Este texto contém a classe</span> <code>.font-lg</code></p>
 
         <p class="section-subtitle">Font family</p>
         <p><span class="font-sans-display">Este texto contém a classe</span> <code>.font-sans-display</code></p>
@@ -1372,6 +1561,23 @@
         <p class="section-subtitle">Text transformation</p>
         <p><span class="to-lowercase">Este texto contém a classe</span> <code>.to-lowercase</code></p>
         <p><span class="to-uppercase">Este texto contém a classe</span> <code>.to-uppercase</code></p>
+
+        <p class="section-subtitle">Text columns</p>
+        <p><code>.text-columns</code></p>
+        <div class="text-columns padding-6" data-background="var(--ui-color-0)">
+            <div class="text-columns-span">
+                <p class="heading-overline">Filme em destaque</p>
+                <h1 class="heading-3">Alien, o oitavo passageiro</h1>
+                <hr class="hr-66">
+            </div>
+
+            <p class="custom-p font-300">In space no one can hear your scream.</p>
+            <p class="paragraph">Alien, o Oitavo Passageiro (em inglês: Alien) é um filme britanico-estadunidense de 1979 dirigido por Ridley Scott. O título do filme refere-se ao antagonista primário: uma criatura alienígena altamente agressiva que persegue e mata a tripulação de uma nave espacial.</p>
+            <h2 class="heading-4">O reconhecimento da obra</h2>
+            <p class="paragraph">Alien foi aclamado pela crítica e foi um sucesso de bilheteria, recebendo o Oscar de melhores efeitos visuais, os Saturn Awards de melhor filme de ficção científica, melhor direção para Scott e melhor atriz coadjuvante para Cartwright, o Hugo Award de melhor apresentação dramática junto com várias indicações. Permaneceu muito elogiado nas décadas seguintes, sendo escolhido para preservação em 2002 pelo National Film Registry da Biblioteca do Congresso dos Estados Unidos, sendo considerado um filme "culturalmente, historicamente, ou esteticamente significante".</p>
+            <h2 class="heading-4">O sucesso de franquia Alien</h2>
+            <p class="paragraph">O sucesso de Alien criou uma franquia de livros, quadrinhos, jogos e brinquedos, como também três sequências e duas prequências. Também lançou a carreira de Weaver, dando a ela seu primeiro papel principal, e a história dos encontros de Ripley com os alienígenas se tornou a base para as histórias das sequências: Aliens, Alien 3 e Alien Resurrection.</p>
+        </div>
     </section>
 
     <!-- Spacing -->
@@ -1441,23 +1647,23 @@
         <p class="has-border-3 padding-6">Elemento com borda .3rem</p>
 
         <p class="section-subtitle">Border radius</p>
-        <p><code>.corner-square</code></p>
-        <div class="corner-square" style="height: 6rem;" data-background="var(--ui-color-5)"></div>
+        <p><code>.radius-0</code></p>
+        <div class="radius-0" style="height: 6rem;" data-background="var(--ui-color-5)"></div>
 
-        <p><code>.corner-circular</code></p>
-        <div class="corner-circular ratio-square" style="height: 6rem;" data-background="var(--ui-color-5)"></div>
+        <p><code>.radius-50</code></p>
+        <div class="radius-50 ratio-square" style="height: 6rem;" data-background="var(--ui-color-5)"></div>
 
-        <p><code>.corner-rounded</code></p>
-        <div class="corner-rounded" style="height: 6rem;" data-background="var(--ui-color-5)"></div>
+        <p><code>.radius</code></p>
+        <div class="radius" style="height: 6rem;" data-background="var(--ui-color-5)"></div>
 
         <p class="section-subtitle">Nested radius</p>
-        <div class="has-border corner-rounded-2 padding-6">
-            <code>.corner-rounded-2</code>
-            <div class="has-border corner-rounded-1 margin-t-6 padding-6">
-                <code>.corner-rounded-1</code>
-                <div class="has-border corner-rounded margin-t-6 padding-6">
-                    <code>corner-rounded</code>
-                    <p class="has-border corner-rounded-0 margin-t-6 padding-6"><code>.corner-rounded-0</code></p>
+        <div class="has-border radius-lg padding-6">
+            <code>.radius-lg</code>
+            <div class="has-border radius-md margin-t-6 padding-6">
+                <code>.radius-md</code>
+                <div class="has-border radius margin-t-6 padding-6">
+                    <code>radius</code>
+                    <p class="has-border radius-sm margin-t-6 padding-6"><code>.radius-sm</code></p>
                 </div>
             </div>
         </div>
@@ -1510,37 +1716,6 @@
         <p><code>.anima-spin-cw</code> <code>.anima-spin-ccw</code></p>
         <ion-icon class="icon-lg anima-spin-cw" name="ban"></ion-icon>
         <ion-icon class="icon-lg anima-spin-ccw" name="ban"></ion-icon>
-    </section>
-
-    <!-- Wireframes -->
-    <section class="section" id="wireframes">
-        <p class="section-title">Wireframes</p>
-
-        <p><code>.wf-stacked</code></p>
-        <div class="wf-stacked ratio-4-3" data-background="var(--ui-color-0)">
-            <p id="header"><code>.header</code></p>
-            <p id="hero"><code>.hero</code></p>
-            <p id="main"><code>.main</code></p>
-            <p id="aside"><code>.aside</code></p>
-            <p id="footer"><code>.footer</code></p>
-        </div>
-
-        <p><code>.wf-2-cols</code></p>
-        <div class="wf-2-cols ratio-4-3" data-background="var(--ui-color-0)">
-            <p id="header"><code>#header</code></p>
-            <p id="left"><code>#left</code></p>
-            <p id="main"><code>#main</code></p>
-            <p id="footer"><code>#footer</code></p>
-        </div>
-
-        <p><code>.wf-3-cols</code></p>
-        <div class="wf-3-cols ratio-4-3" data-background="var(--ui-color-0)">
-            <p id="header"><code>#header</code></p>
-            <p id="left"><code>#left</code></p>
-            <p id="main"><code>#main</code></p>
-            <p id="right"><code>#right</code></p>
-            <p id="footer"><code>#footer</code></p>
-        </div>
     </section>
 
     <!-- Progress bars - meter, progress -->

@@ -21,6 +21,7 @@
 `<wip> <!-- work in progress... -->`
 
 ### Settings - Global variables, config switches
+- [x] Variables (config.css)
 - [x] Color palette
 - [x] Tipografia
 
@@ -52,7 +53,8 @@
 - [x] Audio and Video
   - audio, video
 - [x] Embedded
-  - embed, iframe, object
+  - iframe
+  - not [embed, object]
 - [x] Scripting
   - canvas, noscript
 - [x] Buttons
@@ -80,53 +82,62 @@
 - [ ] Progress bars
 
 ### Components - UI Classes, designed components, chunks of UI
-- [ ] Wireframe
+- [ ] Wireframes
 - [x] Containers
 - [x] Grid layout
 - [x] Flexbox
-- [x] Icons (Ionicon - external lib)
-- [x] Messages (text messages, notice blocks)
-- [x] Indicators (tags, badges, pills and chips)
-- [x] Loaders and spinners
+- [x] Headers and footers
+- [x] Banners
 - [x] Branding
 - [x] Avatars (personal avatar)
-- [x] Headers and footers
-- [ ] Toolbars (toolbars, sticky bar)
-- [ ] Banner (hero)
-- [ ] Tooltips
-- [ ] Form components (toggle, button toggle, slider, range)
+- [x] Dropdown button
+- [x] Toolbars (app bar, sticky bar)
+- [x] Menus (nav bar)
+- [ ] Menus (nav menu)
+
 - [ ] Cards
-- [ ] Menus (menu h, menu v, dropdown)
-- [ ] Navigation (breadcrumbs, pagination)
-- [ ] Stepper
+
+- [x] Icons (Ionicon - external lib)
+- [x] Messages (text messages, notice blocks)
+- [x] Tagging (tags, badges, pills and chips)
+- [ ] Tooltips
+- [x] Loaders and spinners
+- [x] Navigation (breadcrumbs, pagination)
+
+- [ ] Steppers
 - [ ] Timeline
-- [ ] Collapsible
-- [ ] Accordion
-- [ ] Drawer
+
 - [ ] Alerts (alerts, toasts and notify)
 - [ ] Modals and popovers
+
+- [ ] Collapsible
+- [ ] Accordion
+- [ ] Drawers
+
 - [ ] Tabs and tab panels
 - [ ] Carousel
 - [ ] Gallery
-- [ ] Parallax
+
+- [ ] Form components (toggle, button toggle, slider, range)
 - [ ] Dashboards (bars, donuts, lines, piechart, ...)
+- [ ] Parallax
 
 ### Utilities - IDs and !important, helpers and overrides
-- [x] Color utils (color palette, borders, backgrounds and colors, gradients)
-- [x] Text utils (modificadores de texto padrão)
-- [ ] Text utils (columns)
+- [ ] Breakpoints and responsive design
+- [x] Color utils (color palette, borders, backgrounds and colors)
+- [ ] Color utils (gradients)
+- [x] Text utils (modificadores de texto, text columns)
 - [x] Spacing
 - [x] Borders (radius and lines)
 - [x] Elevation (box shadows)
 - [ ] Elevation (text shadows)
 - [ ] Opacity
 - [ ] Filters
-- [ ] Helper classes
-- [ ] Hover, focus, and other states
 - [x] Animations (blink, pulse, rotate, spin)
 - [ ] Transitions
+- [ ] States (hover, focus, ...)
 - [ ] Theme (light / dark mode)
-- [ ] Breakpoints and responsive design
+- [ ] Helper classes
 - [x] CSS linter
   - atributos obrigatórios ou recomendados em tags
   - tags e atributos marcados com status deprecated

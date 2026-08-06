@@ -43,44 +43,58 @@
 @use './6-components/containers';
 @use './6-components/grid-layout';
 @use './6-components/flexbox';
-@use './6-components/icons';
-@use './6-components/messages';
-@use './6-components/indicators';
-@use './6-components/loaders';
+@use './6-components/headers';
+@use './6-components/banners';
 @use './6-components/branding';
 @use './6-components/avatars';
-@use './6-components/headers';
+@use './6-components/dropdown';
+@use './6-components/toolbars';
+@use './6-components/menus';
+// @use './6-components/cards';
+@use './6-components/icons';
+@use './6-components/messages';
+@use './6-components/tagging';
+// @use './6-components/tooltips';
+@use './6-components/loaders';
+@use './6-components/navigation';
 
 // [ ] Wireframes
 // [X] Containers
 // [X] Grid layout
 // [X] Flexbox
-// [X] Icons (Ionicon - external lib)
-// [X] Messages (text messages, notice blocks)
-// [X] Indicators (tags, badges, pills and chips)
-// [X] Loaders and spinners
+// [X] Headers and footers
+// [X] Banners
 // [X] Branding
 // [X] Avatars (personal avatar)
-// [X] Headers and footers
-// [ ] Toolbars (toolbars, sticky bar)
-// [ ] Banner (hero)
-// [ ] Tooltips
-// [ ] Form components (toggle, button toggle, slider, range)
+// [X] Dropdown button
+// [X] Toolbars (app bar, sticky bar)
+// [X] Menus (nav bar)
+// [ ] Menus (nav menu)
 // [ ] Cards
-// [ ] Menus (menu h, menu v, dropdown)
-// [ ] Navigation (breadcrumbs, pagination)
-// [ ] Stepper
+// [X] Icons (Ionicon - external lib)
+// [X] Messages (text messages, notice blocks)
+// [X] Tagging (tags, badges, pills and chips)
+// [ ] Tooltips
+// [X] Loaders and spinners
+// [X] Navigation (breadcrumbs, pagination)
+
+// [ ] Steppers
 // [ ] Timeline
-// [ ] Collapsible
-// [ ] Accordion
-// [ ] Drawer
+
 // [ ] Alerts (alerts, toasts and notify)
 // [ ] Modals and popovers
+
+// [ ] Collapsible
+// [ ] Accordion
+// [ ] Drawers
+
 // [ ] Tabs and tab panels
 // [ ] Carousel
 // [ ] Gallery
-// [ ] Parallax
+
+// [ ] Form components (toggle, button toggle, slider, range)
 // [ ] Dashboards (bars, donuts, lines, piechart, ...)
+// [ ] Parallax
 
 // UTILITIES - IDs and !important, helpers and overrides
 @use './7-utilities/color-utils';
@@ -91,20 +105,21 @@
 @use './7-utilities/animations';
 @use './7-utilities/linter';
 
-// [X] Color utils (color palette, borders, backgrounds and colors, gradients)
-// [X] Text utils (modificadores de texto padrão)
-// [ ] Text utils (columns)
+// [ ] Breakpoints and responsive design
+// [X] Color utils (color palette, borders, backgrounds and colors)
+// [ ] Color utils (gradients)
+// [X] Text utils (modificadores de texto, text columns)
 // [X] Spacing
 // [X] Borders (radius and lines)
-// [X] Elevation (box and text shadows)
+// [X] Elevation (box shadows)
+// [ ] Elevation (text shadows)
 // [ ] Opacity
 // [ ] Filters
-// [ ] Helper classes
-// [ ] Hover, focus, and other states
 // [X] Animations (blink, pulse, rotate, spin)
 // [ ] Transitions
+// [ ] States (hover, focus, ...)
 // [ ] Theme (light / dark mode)
-// [ ] Breakpoints and responsive design
+// [ ] Helper classes
 // [X] CSS linter
 
 /* END OF FILE ============================================================== */
