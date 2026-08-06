@@ -4,23 +4,21 @@
   File: Loaders
 ============================================================================= */
 
-.loader {
-  width: var(--loader-size);
-  border: var(--loader-stroke) solid;
+.spinner {
+  width: 4.8rem;
+  border: .6rem solid;
 }
-
-.custom-loader {
-  width: var(--custom-loader-size);
-  border: var(--custom-loader-stroke) solid;
+.custom-spinner {
+  width: var(--custom-spinner-size);
+  border: var(--custom-spinner-stroke) solid;
 }
-
-.loader,
-.custom-loader {
+.spinner,
+.custom-spinner {
   display: block;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  border-color: var(--loader-t) var(--loader-lr) var(--loader-b);
-  animation: var(--loader-animation);
+  border-color: var(--spinner-color-scheme);
+  animation: var(--spinner-animation);
 }
 
 /* END OF FILE ============================================================== */
