@@ -6,8 +6,7 @@
 
 ion-icon { vertical-align: middle; }
 
-.icon { color: var(--icon-color); }
-
+.icon    { font-size: var(--icon-base); }
 .icon-md { font-size: var(--icon-md); }
 .icon-lg { font-size: var(--icon-lg); }
 .icon-xl { font-size: var(--icon-xl); }
