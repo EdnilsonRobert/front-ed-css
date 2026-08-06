@@ -4,57 +4,33 @@
   File: Toolbars
 ============================================================================= */
 
-// Toolbars --------------------------------------------------------------------
-.toolbar {
+.app-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-inline: var(--toolbar-space-x);
-  padding-block: var(--toolbar-space-y);
-  background-color: var(--toolbar-background);
+  gap: var(--app-bar-gap);
+
+  button {
+    flex-grow: 1;
+    height: var(--app-bar-height);
+  }
+
+  ion-icon {
+    color: var(--app-bar-icon-color);
+    font-size: var(--app-bar-icon-size);
+  }
 }
 
-.toolbar-wrapper {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: var(--toolbar-max-width);
-  margin-inline: auto;
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
-// Branding --------------------------------------------------------------------
-.brand-group {
-  display: flex;
-  gap: var(--brand-image-space);
-}
-
-.brand-image { width: var(--brand-image-width); }
-
-// .brand {}
-
-.brand-name,
-.brand-overline,
-.brand-caption {
-  padding-block: unset;
-  line-height: var(--lh-125);
-}
-
-.brand-name {
-  color: var(--brand-name-color);
-  font-weight: var(--brand-name-weight);
-  font-size: var(--brand-name-size);
-}
-
-.brand-overline {
-  margin-bottom: var(--brand-overline-space-b);
-  color: var(--brand-overline-color);
-  font-size: var(--brand-overline-size);
-}
-.brand-caption {
-  margin-top: var(--brand-caption-space-t);
-  color: var(--brand-caption-color);
-  font-size: var(--brand-caption-size);
+.divider {
+  width: var(--divider-width);
+  height: var(--divider-height);
+  margin-inline: var(--divider-margin);
+  background-color: var(--divider-color);
 }
 
 /* END OF FILE ============================================================== */
