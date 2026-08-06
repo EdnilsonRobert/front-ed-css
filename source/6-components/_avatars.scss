@@ -5,16 +5,13 @@
 ============================================================================= */
 
 .avatar {
-  height: var(--avatar-image-size);
-  padding-inline: var(--avatar-padding);
-  border-radius: var(--avatar-radius);
-  background-color: unset;
+  overflow: hidden;
+  height: var(--avatar-height);
+  padding-inline: var(--avatar-padding-x);
+  background-color: var(--avatar-background);
 }
 
-.avatar-image {
-  height: var(--avatar-image-size);
-  border-radius: var(--avatar-image-radius);
-}
+.avatar-image { height: var(--avatar-height); }
 
 .avatar-id {
   color: var(--avatar-id-color);
