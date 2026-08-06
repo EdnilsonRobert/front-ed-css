@@ -5,19 +5,18 @@
 ============================================================================= */
 
 // Headers ---------------------------------------------------------------------
-.header,
-.header-fixed {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: var(--header-padding-x);
-  padding-block: var(--header-padding-y);
+.header {
   background-color: var(--header-background);
 }
 
-.header-fixed {
-  max-width: var(--header-max-width);
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-inline: auto;
+  padding-inline: var(--header-padding-x);
+  padding-block: var(--header-padding-y);
+  background-color: var(--header-content-background);
 }
 
 /* END OF FILE ============================================================== */
