@@ -12,16 +12,15 @@
   gap: var(--brand-image-margin);
 }
 
+.brand-image { width: var(--brand-image-width); }
+
+// .brand-group {}
+
 .brand-caption {
-  margin-top: var(--brand-caption-margin);
   padding-block: unset;
   color: var(--brand-caption-color);
   font-size: var(--brand-caption-size);
   line-height: var(--lh-125);
 }
-
-.brand-image { width: var(--brand-image-width); }
-
-// .brand-group {}
 
 /* END OF FILE ============================================================== */
