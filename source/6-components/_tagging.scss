@@ -5,31 +5,30 @@
 ============================================================================= */
 
 // Tags ------------------------------------------------------------------------
-.tag {
-  display: inline-block;
-  padding-inline: .9rem;
-  border-radius: var(--radius-base);
-  background-color: var(--tags-color-primary);
-  color: var(--tags-color-secondary);
-  font-size: var(--tags-size);
-  line-height: var(--lh-150);
-}
-
+.tag,
 .tag-labeled {
   display: inline-flex;
   gap: .9rem;
   overflow: hidden;
-  padding-inline-end: .9rem;
   border-radius: var(--radius-base);
-  border: .2rem solid var(--tags-labeled-color);
-  color: var(--tags-text-primary);
-  font-size: var(--tags-labeled-size);
   line-height: var(--lh-150);
+}
+.tag {
+  padding-inline: .9rem;
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  font-size: var(--tag-size);
+}
+.tag-labeled {
+  padding-inline: 0 .9rem;
+  border: .2rem solid var(--tag-label-background);
+  color: var(--tag-label-color);
+  font-size: var(--tag-label-size);
 
   :first-child {
     padding-inline: .9rem;
-    background-color: var(--tags-labeled-color);
-    color: var(--tags-text-secondary);
+    background-color: var(--tag-label-background);
+    color: var(--tag-label-color);
   }
 }
 
@@ -38,28 +37,29 @@
   display: inline-block;
   padding-inline: .9rem;
   border-radius: var(--radius-base);
-  background-color: var(--badges-color-primary);
-  color: var(--badges-color-secondary);
-  font-size: var(--badges-size);
+  background-color: var(--badge-background);
+  color: var(--badge-color);
+  font-size: var(--badge-size);
   line-height: var(--lh-150);
 }
 
 // Pills -----------------------------------------------------------------------
 .pill {
   display: inline-flex;
+  align-items: center;
   gap: .9rem;
   overflow: hidden;
-  padding-inline-end: .9rem;
+  padding-inline: 0 .9rem;
   border-radius: var(--radius-base);
-  border: .2rem solid var(--pills-color);
-  color: var(--pills-text-primary);
-  font-size: var(--pills-size);
+  border: .2rem solid var(--pill-background);
+  color: var(--pill-color);
+  font-size: var(--pill-size);
   line-height: var(--lh-150);
 
   :first-child {
     padding-inline: .9rem;
-    background-color: var(--pills-color);
-    color: var(--pills-text-secondary);
+    background-color: var(--pill-background);
+    color: var(--pill-color);
   }
 }
 
@@ -70,8 +70,8 @@
   gap: .9rem;
   padding-inline: .9rem;
   border-radius: var(--radius-base);
-  background-color: var(--chips-color-primary);
-  color: var(--chips-color-secondary);
+  background-color: var(--chips-background);
+  color: var(--chips-color);
   font-size: var(--chips-size);
   line-height: var(--lh-150);
 }
