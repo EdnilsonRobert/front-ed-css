@@ -1,0 +1,21 @@
+/* =============================================================================
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Banners
+============================================================================= */
+
+.banner {
+  position: relative;
+  display: var(--banner-display);
+  justify-content: var(--banner-axis-main);
+  align-items: var(--banner-axis-cross);
+  gap: var(--banner-gap);
+  height: var(--banner-height);
+  padding-inline: var(--banner-padding-x);
+  padding-block: var(--banner-padding-y);
+  background: var(--banner-image) no-repeat center;
+  background-size: cover;
+  background-color: var(--banner-background);
+}
+
+/* END OF FILE ============================================================== */
