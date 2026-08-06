@@ -17,7 +17,6 @@
 }
 
 .audio-display {
-  max-width: var(--audio-display-max-width);
   margin-inline: auto;
   padding: .6rem;
   border: .1rem solid var(--audio-display-border);
@@ -51,7 +50,6 @@
 
 // Video -----------------------------------------------------------------------
 .video-display {
-  max-width: var(--video-max-width);
   margin-inline: auto;
   padding: .6rem;
   background-color: var(--video-display-background);
