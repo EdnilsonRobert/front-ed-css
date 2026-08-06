@@ -6,20 +6,16 @@
 
 // .body {}
 
-.section-fluid {
-  margin-block: var(--section-fluid-margin-y);
-  padding-inline: var(--section-fluid-padding-x);
-  padding-block: var(--section-fluid-padding-y);
-}
-
 .section {
-  max-width: var(--section-max-width);
   margin-inline: auto;
   margin-block: var(--section-margin-y);
   padding-inline: var(--section-padding-x);
   padding-block: var(--section-padding-y);
 }
 
+.has-max-width { max-width: var(--section-max-width); }
+
+.container-xl { max-width: var(--max-width-xl); }
 .container-lg { max-width: var(--max-width-lg); }
 .container-md { max-width: var(--max-width-md); }
 .container-sm { max-width: var(--max-width-sm); }
