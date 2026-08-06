@@ -1,0 +1,39 @@
+/* =============================================================================
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Dropdown
+============================================================================= */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-switcher {
+  position: absolute;
+  opacity: 0;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 6rem;
+  display: none;
+  padding: 1.2rem;
+  background-color: var(--ui-color-0);
+}
+
+.dropdown-content.left   {
+  left: 0;
+}
+.dropdown-content.right  {
+  right: 0;
+}
+.dropdown-content.center {
+  left: 50%;
+  translate: -50% 0;
+}
+
+.dropdown-switcher:checked ~ .dropdown-content {
+  display: block;
+}
+
+/* END OF FILE ============================================================== */
