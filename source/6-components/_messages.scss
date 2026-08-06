@@ -11,47 +11,22 @@
   align-items: center;
   gap: 1.2rem;
   padding: 1.2rem 2.4rem;
-  border-radius: var(--radius-base);
-  border: .1rem solid var(--box-default-border);
-  background-color: var(--box-default-background);
-  color: var(--box-default-color);
+  border: .1rem solid var(--default-border);
+  background-color: var(--default-background);
+  color: var(--default-color);
 
-  ion-icon { font-size: var(--icon-base); }
-}
-
-.message-positive {
-  border-color: var(--box-positive-border);
-  background-color: var(--box-positive-background);
-  color: var(--box-positive-color);
-}
-
-.message-negative {
-  border-color: var(--box-negative-border);
-  background-color: var(--box-negative-background);
-  color: var(--box-negative-color);
-}
-
-.message-warning {
-  border-color: var(--box-warning-border);
-  background-color: var(--box-warning-background);
-  color: var(--box-warning-color);
-}
-
-.message-info {
-  border-color: var(--box-info-border);
-  background-color: var(--box-info-background);
-  color: var(--box-info-color);
+  ion-icon { font-size: var(--icon-messages); }
 }
 
 // Notice blocks ---------------------------------------------------------------
 .notice-block {
   max-width: var(--notice-block-max-width);
   padding: 1.2rem;
-  border-radius: 0 var(--radius-base) var(--radius-base) 0;
-  border: .1rem solid var(--box-default-border);
+  border-radius: 0 var(--notice-block-radius) var(--notice-block-radius) 0;
+  border: .1rem solid var(--default-border);
   border-left-width: .6rem;
-  background-color: var(--box-default-background);
-  color: var(--box-default-color);
+  background-color: var(--default-background);
+  color: var(--default-color);
 }
 .notice-block-title {
   display: flex;
@@ -61,32 +36,38 @@
   font-weight: var(--font-weight-bolder);
   font-size: 1.4rem;
 
-  ion-icon { font-size: var(--icon-base); }
+  ion-icon { font-size: var(--icon-notices); }
 }
+
 .notice-block-text { padding-left: 3.6rem; }
 
+// Flavours --------------------------------------------------------------------
+.message-positive,
 .notice-block-positive {
-  border-color: var(--box-positive-border);
-  background-color: var(--box-positive-background);
-  color: var(--box-positive-color);
+  border-color: var(--positive-border);
+  background-color: var(--positive-background);
+  color: var(--positive-color);
 }
 
+.message-negative,
 .notice-block-negative {
-  border-color: var(--box-negative-border);
-  background-color: var(--box-negative-background);
-  color: var(--box-negative-color);
+  border-color: var(--negative-border);
+  background-color: var(--negative-background);
+  color: var(--negative-color);
 }
 
+.message-warning,
 .notice-block-warning {
-  border-color: var(--box-warning-border);
-  background-color: var(--box-warning-background);
-  color: var(--box-warning-color);
+  border-color: var(--warning-border);
+  background-color: var(--warning-background);
+  color: var(--warning-color);
 }
 
+.message-info,
 .notice-block-info {
-  border-color: var(--box-info-border);
-  background-color: var(--box-info-background);
-  color: var(--box-info-color);
+  border-color: var(--info-border);
+  background-color: var(--info-background);
+  color: var(--info-color);
 }
 
 /* END OF FILE ============================================================== */
