@@ -1,0 +1,35 @@
+/* =============================================================================
+  ITCSS layer: Components
+  Bundle: UI Classes, designed components, chunks of UI
+  File: Menus
+============================================================================= */
+
+// nav {}
+
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: var(--nav-bar-gap);
+  padding-inline: var(--nav-bar-padding-x);
+  padding-block: var(--nav-bar-padding-y);
+  background-color: var(--nav-bar-background);
+
+  li { padding: unset; }
+}
+
+.nav-bar.center { justify-content: center; }
+.nav-bar.right  { justify-content: right; }
+
+.nav-bar-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .9rem;
+  height: var(--nav-bar-link-height);
+  color: var(--nav-bar-link-color);
+  font-size: var(--nav-bar-link-size);
+}
+
+/* END OF FILE ============================================================== */
